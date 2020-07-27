@@ -2,7 +2,10 @@
 <odoo>
 	<template id="theme_menu_filamente_submenu_two" name="website.filamente_page">
 		<t t-call="website.layout">
-			<t t-set="additional_title">ULTM - 1010</t>
+			<t t-set="additional_title"> Ultem 1010 - EVO-tech 3D-Drucker</t>
+			<t t-set="website_meta_title"> Ultem 1010 - EVO-tech 3D-Drucker </t>
+			<t t-set="website_meta_description">  Ultem 1010 - EVO-tech 3D-Drucker </t>
+			
 			<div id="wrap" class="oe_structure oe_empty">
 				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
 					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none;     background-color: rgba(66, 117, 211, 0.63);">
@@ -10,13 +13,11 @@
 						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/druckmaterial-3d-druck_smaller.jpg&quot;); background-position: 50% 0px;" />
 					<div class="container">
 						<div class="row s_nb_column_fixed">
-							<div class=" jumbotron rounded pt32 pb32 col-lg-12"
-								data-name="Box">
+							<div class=" jumbotron rounded pt32 pb32 col-lg-12" data-name="Box">
 								<div class="row">
-									<div class="col-lg-12 s_title s_col_no_bgcolor"
-										data-name="Title">
+									<div class="col-lg-12 s_title s_col_no_bgcolor" data-name="Title">
 										<h1 class="s_title_default" style="text-align: center; ">
-											<font style="font-size: 50px; color: white;">
+											<font style="font-size: 48px; color: white;" class="font">
 												<b>ULTEM™ 1010 FILAMENT</b>
 											</font>
 										</h1>
@@ -66,24 +67,24 @@
 									<table>
 										<tbody>
 											<tr>
-												<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> HDT – Temperaturbeständigkeit </td>
-												<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> 215 °C</td>
+												<td  style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> HDT – Temperaturbeständigkeit </td>
+												<td  style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> 215 °C</td>
 											</tr>
 											<tr>
-												<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> UL94 V-0</td>
-												<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> 	1,5 mm</td>
+												<td  style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> UL94 V-0</td>
+												<td  style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> 	1,5 mm</td>
 											</tr>
 											<tr>
-												<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">FSTH</td>
-												<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">Passed</td>
+												<td  style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">FSTH</td>
+												<td  style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">Passed</td>
 											</tr>
 											<tr>
-												<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">Dichte</td>
-												<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">	1,27g/cm³</td>
+												<td  style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">Dichte</td>
+												<td  style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">	1,27g/cm³</td>
 											</tr>
 											<tr>
-												<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">Lagerung</td>
-												<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">
+												<td  style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">Lagerung</td>
+												<td  style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; " class="break">
 												Bei Raumtemperatur, geschützt vor direktem Sonnenlicht und Feuchtigkeit
 												</td>
 											</tr>
@@ -100,24 +101,24 @@
 									<table>
 										<tbody>
 											<tr>
-												<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> Extrusionstemperatur:	 </td>
-												<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> 	370–400 °C </td>
+												<td  style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> Extrusionstemperatur:	 </td>
+												<td  style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> 	370–400 °C </td>
 											</tr>
 											<tr>
-												<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> Druckbetttemperatur:</td>
-												<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> 	180 °C</td>
+												<td  style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> Druckbetttemperatur:</td>
+												<td  style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> 	180 °C</td>
 											</tr>
 											<tr>
-												<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">Druckoberfläche:</td>
-												<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">	PEI Folie</td>
+												<td  style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">Druckoberfläche:</td>
+												<td  style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">	PEI Folie</td>
 											</tr>
 											<tr>
-												<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">Aktivkohlefilter:</td>
-												<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">	Erforderlich</td>
+												<td  style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">Aktivkohlefilter:</td>
+												<td  style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">	Erforderlich</td>
 											</tr>
 											<tr>
-												<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">Innenraumheizung:</td>
-												<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">
+												<td  style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">Innenraumheizung:</td>
+												<td  style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">
 													100°C </td>
 											</tr>
 										</tbody>

@@ -2,8 +2,8 @@
 from odoo import http
 from odoo.http import request
 from odoo.addons.website.controllers import main
-
-
+ 
+  
 class ThemeMenu(http.Controller):
     @http.route('/', type='http', auth='public', website=True)
     def home_menu(self, **kw):
@@ -21,7 +21,9 @@ class ThemeMenu(http.Controller):
     def ueberuns_menu(self, **kw):
         return request.render('ehcs_evo_tech_website.theme_menu_ueber_page', {})
     
-    @http.route('/kunden-area/', type='http', auth='public', website=True)
+    @http.route([
+        '''/kunden-area/''',
+    ], type='http', auth="public", website=True)
     def kunden_area_menu(self, **kw):
         return request.render('ehcs_evo_tech_website.theme_menu_kundenarea_page', {})
     
@@ -29,13 +31,19 @@ class ThemeMenu(http.Controller):
     def contactus_menu(self, **kw):
         return request.render('ehcs_evo_tech_website.theme_menu_contactus_page', {})
     
+    @http.route('/kontakt/', type='http', auth='public', website=True)
+    def contact_us_menu(self, **kw):
+        return request.render('ehcs_evo_tech_website.theme_menu_contactus_page', {})
+    
     @http.route('/3d-druck-dienstleistung/', type='http', auth='public', website=True)
     def dienstleistung_menu(self, **kw):
         return request.render('ehcs_evo_tech_website.theme_menu_dienstleistung_page', {})
  
  
-class ThemSubeMenuOne(http.Controller): 
-    @http.route('/3d-drucker-el-102/', type='http', auth='public', website=True)
+class ThemSubeMenuOne(http.Controller):
+    @http.route([
+        '''/3d-drucker-el-102/''',
+    ], type='http', auth="public", website=True) 
     def drucker_submenu_one(self, **kw):
         return request.render('ehcs_evo_tech_website.theme_menu_drucker_submenu', {})
     
@@ -146,9 +154,9 @@ class ThemSubeMenufour(http.Controller):
     def menu_about_subtwo(self, **kw):
         return request.render('ehcs_evo_tech_website.theme_menu_about_subtwo', {})
     
-    @http.route('/termine/', type='http', auth='public', website=True)
-    def menu_about_subthree(self, **kw):
-        return request.render('ehcs_evo_tech_website.theme_menu_about_subthree', {})
+#     @http.route('/termine/', type='http', auth='public', website=True)
+#     def menu_about_subthree(self, **kw):
+#         return request.render('ehcs_evo_tech_website.theme_menu_about_subthree', {})
     
     @http.route('/jobs/', type='http', auth='public', website=True)
     def menu_about_subfour(self, **kw):
@@ -158,37 +166,47 @@ class ThemSubeMenufour(http.Controller):
     def menu_about_five(self, **kw):
         return request.render('ehcs_evo_tech_website.theme_menu_about_subfive', {})
 
-    @http.route('/events/opening-moenchengladbach/', type='http', auth='public', website=True)
-    def menu_about_subthree_moenchengladbach(self, **kw):
-        return request.render('ehcs_evo_tech_website.menu_about_subthree_moenchengladbach', {})
-    
-    @http.route('/events/fakuma-2/', type='http', auth='public', website=True)
-    def menu_about_subthree_event_fakuma(self, **kw):
-        return request.render('ehcs_evo_tech_website.menu_about_subthree_event_fakuma', {})
-    
-    @http.route('/events/formnext-2/', type='http', auth='public', website=True)
-    def menu_about_subthree_event_fakuma2(self, **kw):
-        return request.render('ehcs_evo_tech_website.menu_about_subthree_event_formnext2', {})
-    
+#     @http.route('/events/open-house-moenchengladbach/', type='http', auth='public', website=True)
+#     def menu_about_subthree_moenchengladbach(self, **kw):
+#         return request.render('ehcs_evo_tech_website.menu_about_subthree_moenchengladbach', {})
+#     
+#     @http.route('/events/fakuma-2/', type='http', auth='public', website=True)
+#     def menu_about_subthree_event_fakuma(self, **kw):
+#         return request.render('ehcs_evo_tech_website.menu_about_subthree_event_fakuma', {})
+#     
+#     @http.route('/events/formnext-2/', type='http', auth='public', website=True)
+#     def menu_about_subthree_event_fakuma2(self, **kw):
+#         return request.render('ehcs_evo_tech_website.menu_about_subthree_event_formnext2', {})
+
     
 class ThemSubeMenufive(http.Controller):
-    @http.route('/kunden-area/kvp-kontinuierlicher-verbesserungsprozess/', type='http', auth='public', website=True)
+    @http.route([
+        '''/kunden-area/kvp-kontinuierlicher-verbesserungsprozess/''',
+    ], type='http', auth="public", website=True) 
     def menu_customer_subone(self, **kw):
         return request.render('ehcs_evo_tech_website.theme_menu_customer_subone', {})
     
-    @http.route('/kunden-area/material-datenblaetter/', type='http', auth='public', website=True)
+    @http.route([
+        '''/kunden-area/material-datenblaetter/''',
+    ], type='http', auth="public", website=True) 
     def menu_customer_subtwo(self, **kw):
         return request.render('ehcs_evo_tech_website.theme_menu_customer_subtwo', {})
     
-    @http.route('/kunden-area/support/', type='http', auth='public', website=True)
+    @http.route([
+        '''/kunden-area/support/''',
+    ], type='http', auth="public", website=True) 
     def menu_customer_three(self, **kw):
         return request.render('ehcs_evo_tech_website.theme_menu_customer_subthree', {})
     
-    @http.route('/kunden-area/firmware/', type='http', auth='public', website=True)
+    @http.route([
+        '''/kunden-area/firmware/''',
+    ], type='http', auth="public", website=True)
     def menu_customer_four(self, **kw):
         return request.render('ehcs_evo_tech_website.theme_menu_customer_subfour', {})
     
-    @http.route('/kunden-area/simplify/', type='http', auth='public', website=True)
+    @http.route([
+        '''/kunden-area/simplify/''',
+    ], type='http', auth="public", website=True)
     def menu_customer_five(self, **kw):
         return request.render('ehcs_evo_tech_website.theme_menu_customer_subfive', {})
     
@@ -196,7 +214,9 @@ class ThemSubeMenufive(http.Controller):
 #     def menu_customer_six(self, **kw):
 #         return request.render('ehcs_evo_tech_website.theme_menu_customer_subtwo', {})
     
-    @http.route('/additive-fertigung/', type='http', auth='public', website=True)
+    @http.route([
+        '''/additive-fertigung/''',
+    ], type='http', auth="public", website=True)
     def menu_customer_seven(self, **kw):
         return request.render('ehcs_evo_tech_website.theme_menu_customer_subseven', {})
     
@@ -274,6 +294,31 @@ class ThemSubeMenuSimplifyTab(http.Controller):
     def theme_submenu_tab_inocon(self, **kw):
         return request.render('ehcs_evo_tech_website.theme_submenu_tab_inocon', {})
     
+    @http.route('/impressum/', type='http', auth='public', website=True)
+    def theme_submenu_tab_impressum(self, **kw):
+        return request.render('ehcs_evo_tech_website.theme_submenu_tab_impressum', {})
     
+    @http.route('/datenschutz/', type='http', auth='public', website=True)
+    def theme_submenu_tab_datenschutz(self, **kw):
+        return request.render('ehcs_evo_tech_website.theme_submenu_tab_datenschutz', {})
     
-    
+#     @http.route('/3d-drucker-in-deutschland/', type='http', auth='public', website=True)
+#     def theme_submenu_tab_drucker_deutschland(self, **kw):
+#         return request.render('ehcs_evo_tech_website.theme_submenu_tab_drucker_deutschland', {})
+#      
+#     @http.route('/rapid-prototyping-deutschland/', type='http', auth='public', website=True)
+#     def theme_submenu_tab_rapid_pro_deutschland(self, **kw):
+#         return request.render('ehcs_evo_tech_website.theme_submenu_tab_rapid_pro_deutschland', {})
+
+
+class WebsiteSale(http.Controller):
+    @http.route([
+        '''/shop''',
+        '''/shop/page/<int:page>''',
+        '''/shop/category/<model("product.public.category"):category>''',
+        '''/shop/category/<model("product.public.category"):category>/page/<int:page>''',
+        '''/shop/product/<model("product.template"):product>'''
+    ], type='http', auth="public", website=True)
+    def shop(self, **kw):
+        return request.render('ehcs_evo_tech_website.ehcs_page_404', {})
+        

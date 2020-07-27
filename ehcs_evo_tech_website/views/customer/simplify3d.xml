@@ -2,22 +2,24 @@
 <odoo>
 	<template id="theme_menu_customer_subseven_two" name="website.theme_menu_customer_subseven">
 		<t t-call="website.layout">
-			<t t-set="additional_title">Simplify 3D</t>
+			<t t-set="additional_title">Simplify3D | 3D Drucker Software | EVO-tech 3D Drucker aus Österreich</t>
+			<t t-set="website_meta_title"> Simplify3D | 3D Drucker Software | EVO-tech 3D Drucker aus Österreich </t>
+			<t t-set="website_meta_description">
+				Lesen Sie hier Tipps und Tricks, sowie Erklärungen rund um Simplify3D, die 3D Drucker Software, mit der die 3D Drucker von EVO-tech perfekt funktionieren.
+			</t>
+			
 			<div id="wrap" class="oe_structure oe_empty">
-
 				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
 					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
 					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
 						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/simplify3d-header-1.png&quot;); background-position: 50% 0px;" />
 						<div class="container">
 							<div class="row s_nb_column_fixed">
-								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
-									data-name="Box">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12" data-name="Box">
 									<div class="row">
-										<div class="col-lg-12 s_title s_col_no_bgcolor"
-											data-name="Title">
+										<div class="col-lg-12 s_title s_col_no_bgcolor" data-name="Title">
 											<h1 class="s_title_default" style="text-align: center; ">
-												<font style="font-size: 62px;color: white;">
+												<font style="font-size: 48px;color: white;" class="font">
 													<b>SIMPLIFY 3D</b>
 												</font>
 											</h1>
@@ -32,7 +34,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-12 pt32 ">
-								<p style="text-align: center;font-size: 15px;">
+								<p style="text-align: center;font-size: 16px;">
 									Simplify 3D ist eine Software mit der 3D Modelle in Anweisungen für den 3D Drucker übersetzt werden. Es können Modelle einfach importiert und optimiert werden. Die Software ermöglicht es bereits vor dem Druck die Drucksequenz zu simulieren und so mögliche Probleme frühzeitig zu erkennen.
 								</p>
 							</div>
@@ -45,13 +47,13 @@
 							<div class="col-lg-12 ">
 								<p class="lead" />
 								<div style="text-align: center;" class="blue">
-									<span style="font-size: 21px;">
+									<span style="font-size: 24px;">
 										<b>
 											Einleitung
 										</b>
 									</span>
 								</div>
-								<p style="text-align: center;font-size: 15px;">
+								<p style="text-align: center;font-size: 16px;">
 									Nach der Einrichtung von Simplify3d befindet man sich, nach dem Öffnen der Software, im Vorschaufenster. Im Mittelbereich befindet sich das Vorschaufenster, in diesem wird der Bauraum des 3D-Druckers abgebildet, links davon werden, in der oberen Hälfte des Fensters, die geladenen Modelle angezeigt, darunter werden die erstellten Prozesse angezeigt. Auf der rechten Seite des Fensters befinden sich die Werkzeuge zur Manipulation des Modells, der Einstellung der Ansicht sowie eine Schaltfläche zur Kontrolle eines über USB angeschlossenen 3D-Druckers und zur Generierung einer benutzerdefinierten Stützstruktur.
 								</p>
 							</div>
@@ -62,7 +64,6 @@
 				<section class="s_text_block " data-name="Text block" style="">
 					<div class="container">
 						<div class="row">
-							
 							<div class="col-lg-12 ">
 								<img src="/ehcs_evo_tech_website/static/src/img/simplify3d_startfenster_neu.png" style=" width: 100%; "></img>
 							</div>
@@ -76,7 +77,7 @@
 							<div class="col-lg-12 ">
 								<p class="lead" />
 								<div class="blue text-left">
-									<span style="font-size: 22px;">
+									<span style="font-size: 25px;">
 										<b>
 											Import eines Modells
 										</b>
@@ -106,7 +107,7 @@
 							<div class="col-lg-12 ">
 								<p class="lead" />
 								<div class="blue text-left">
-									<span style="font-size: 22px;">
+									<span style="font-size: 25px;">
 										<b>
 											Navigation im Vorschaufenster
 										</b>
@@ -131,7 +132,7 @@
 							<div class="col-lg-12 ">
 								<p class="lead" />
 								<div class="blue text-left">
-									<span style="font-size: 22px;">
+									<span style="font-size: 25px;">
 										<b>
 											Vordefinierte Ansichten
 										</b>
@@ -151,7 +152,7 @@
 						<div class="row">
 							<div class="col-lg-12 ">
 								<div class="blue text-left">
-									<span style="font-size: 22px;">
+									<span style="font-size: 25px;">
 										<b>
 											Position, Skalierung, Ausrichtung
 										</b>
@@ -184,7 +185,7 @@
 							<div class="col-lg-12 ">
 								<p class="lead" />
 								<div class="blue text-left">
-									<span style="font-size: 22px;">
+									<span style="font-size: 25px;">
 										<b>
 											Stützstruktur
 										</b>
@@ -208,7 +209,7 @@
 							<div class="col-lg-12 ">
 								<p class="lead" />
 								<div class="blue text-left">
-									<span style="font-size: 22px;">
+									<span style="font-size: 25px;">
 										<b>
 											Druck vorbereiten
 										</b>
@@ -253,7 +254,7 @@
 							<div class="col-lg-12 ">
 								<p class="lead" />
 								<div class="blue text-left">
-									<span style="font-size: 22px;">
+									<span style="font-size: 25px;">
 										<b>
 											G-Code Vorschau
 										</b>
@@ -283,7 +284,7 @@
 							<div class="col-lg-12 ">
 								<p class="lead" />
 								<div class="blue text-left">
-									<span style="font-size: 22px;">
+									<span style="font-size: 25px;">
 										<b> 
 											FFF-Profil
 										</b>
@@ -307,7 +308,7 @@
 							<div class="col-lg-12 ">
 								<p class="lead" />
 								<div class="blue text-left">
-									<span style="font-size: 22px;">
+									<span style="font-size: 25px;">
 										<b>
 											Factory-File
 										</b>
@@ -322,20 +323,19 @@
 					</div>
 				</section>
 				
-				
 				<section class="s_text_block " data-name="Text block" style="">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-12 ">
 								<p class="lead" />
 								<div style="text-align: center;" class="blue">
-									<span style="font-size: 22px;">
+									<span style="font-size: 25px;">
 										<b>
 											Die einzelnen Tabs von Simplify3D im Detail
 										</b>
 									</span>
 								</div>
-								<p style="text-align: center;font-size: 16px;">
+								<p style="text-align: center;font-size: 17px;">
 									Untenstehend finden Sie noch detaillierte Informationen zu den weiteren Programmtabs mit ausführlichen Erklärungen und Screenshots:
 								</p>
 							</div>
@@ -350,7 +350,7 @@
 								<div style="text-align: center; " class="blue" >
 									<a href="/additions-tab/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade"
 										style="color: white !important; background-color: #008bd2; width:100%"
-										data-original-title="" title="">Additions Tab
+										data-original-title="" title="additions-tab">Additions Tab
 									</a>
 								</div>
 							</div>
@@ -359,7 +359,7 @@
 								<div style="text-align: center; " class="blue">
 									<a href="/advanced-tab/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade"
 										style="color: white !important; background-color: #008bd2; width:100%"
-										data-original-title="" title="">Advanced Tab
+										data-original-title="" title="advanced-tab">Advanced Tab
 									</a>
 								</div>
 							</div>
@@ -368,7 +368,7 @@
 								<div style="text-align: center; " class="blue">
 									<a href="/extruder-tab/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade"
 										style="color: white !important; background-color: #008bd2; width:100%"
-										data-original-title="" title="">Extruder Tab
+										data-original-title="" title="extruder-tab">Extruder Tab
 									</a>
 								</div>
 							</div>
@@ -378,7 +378,7 @@
 								<div style="text-align: center; " class="blue" >
 									<a href="/infill-tab/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade"
 										style="color: white !important; background-color: #008bd2; width:100%"
-										data-original-title="" title="">Infill Tab
+										data-original-title="" title="infill-tab">Infill Tab
 									</a>
 								</div>
 							</div>
@@ -387,7 +387,7 @@
 								<div style="text-align: center; " class="blue">
 									<a href="/layer-tab/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade"
 										style="color: white !important; background-color: #008bd2; width:100%"
-										data-original-title="" title="">Layer Tab
+										data-original-title="" title="layer-tab">Layer Tab
 									</a>
 								</div>
 							</div>
@@ -396,7 +396,7 @@
 								<div style="text-align: center; " class="blue">
 									<a href="/other-tab/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade"
 										style="color: white !important; background-color: #008bd2; width:100%"
-										data-original-title="" title="">Other Tab
+										data-original-title="" title="other-tab">Other Tab
 									</a>
 								</div>
 							</div>
@@ -406,7 +406,7 @@
 								<div style="text-align: center; " class="blue" >
 									<a href="/speeds-tab/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade"
 										style="color: white !important; background-color: #008bd2; width:100%"
-										data-original-title="" title="">Speeds Tab
+										data-original-title="" title="speeds-tab">Speeds Tab
 									</a>
 								</div>
 							</div>
@@ -415,7 +415,7 @@
 								<div style="text-align: center; " class="blue">
 									<a href="/support-tab/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade"
 										style="color: white !important; background-color: #008bd2; width:100%"
-										data-original-title="" title="">Support Tab
+										data-original-title="" title="support-tab">Support Tab
 									</a>
 								</div>
 							</div>
@@ -424,14 +424,13 @@
 								<div style="text-align: center; " class="blue">
 									<a href="/temperature-tab/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade"
 										style="color: white !important; background-color: #008bd2; width:100%"
-										data-original-title="" title="">Temperature Tab
+										data-original-title="" title="temperature-tab">Temperature Tab
 									</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
-				
 				
 				<section class="pt32 pb32" data-name="Title" >
 					<div class="container">

@@ -2,27 +2,27 @@
 <odoo>
 	<template id="theme_menu_filamente_submenu_four" name="website.filamente_page">
 		<t t-call="website.layout">
-			<t t-set="additional_title"> ABS</t>
-			<div id="wrap" class="oe_structure oe_empty">
+			<t t-set="additional_title"> ABS Filament für 3D Druck - 1KG und 10 KG Spulen</t>
+			<t t-set="website_meta_title"> ABS Filament für 3D Druck - 1KG und 10 KG Spulen </t>
+			<t t-set="website_meta_description"> ABS Filament auf 1KG oder 10KG Spulen für viele Anwendungsgebiete im 3D Druck. Mehr Erfahren über Druckparameter, Materialeigenschaften und Finishing</t>
 			
+			<div id="wrap" class="oe_structure oe_empty">
 				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
 					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none;     background-color: rgba(66, 117, 211, 0.63);">
 					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
 						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/druckmaterial-3d-druck_smaller.jpg&quot;); background-position: 50% 0px;" />
 					<div class="container">
 						<div class="row s_nb_column_fixed">
-							<div class=" jumbotron rounded pt32 pb32 col-lg-12"
-								data-name="Box">
+							<div class=" jumbotron rounded pt32 pb32 col-lg-12" data-name="Box">
 								<div class="row">
-									<div class="col-lg-12 s_title s_col_no_bgcolor"
-										data-name="Title">
+									<div class="col-lg-12 s_title s_col_no_bgcolor" data-name="Title">
 										<h1 class="s_title_default" style="text-align: center; ">
-											<font style="font-size: 50px; color: white;">
+											<font style="font-size: 48px; color: white;" class="font">
 												<b> ABS FILAMENT</b>
 											</font>
 										</h1>
 										<h3 class="s_title_default" style="text-align: center; font-size: 24px; color: white;">
-										ACRYLNITRILE BUTADIEN STYROL
+											ACRYLNITRILE BUTADIEN STYROL
 										</h3>
 									</div>
 								</div>
@@ -42,15 +42,44 @@
 									ist ein hochwertiger, amorpher, thermoplastischer Kunststoff, der im professionellen 3D Druck am häufigsten eingesetzt wird. Das ABS Filament zeichnet sich durch seine Beständigkeit gegenüber Temperaturen bis 95 Grad, Ölen, Fetten und diversen Chemikalien aus.
 								</p>
 								
-								<h2 class="blue"> <b> Eigenschaften von ABS Filamenten </b> </h2>
+								<p class="o_default_snippet_text blue" style="font-size:23px;">
+									<b> Eigenschaften von ABS Filamenten	</b>
+								</p>
 								<p class="" style="font-size: 17px; ">
 										Das Datenblatt sowie das Sicherheitsdatenblatt, finden Sie unter folgenden Links:
 									
 									<ul id="ul" style="text-align: left; font-size: 0.9375rem; margin-left: -5%">
-										<li> ABS Filament Datenblatt</li>
-										<li>  Filament Sicherheitsdatenblätter gesamt</li>
+										<li> 
+											<t t-if ="not user_id._is_public()">
+										 		<a href="/ehcs_evo_tech_website/static/src/uploads/abs/evotech_abs.pdf" 
+													style=" color: #555555;" download="evotech_abs.pdf" >
+											  			ABS Filament Datenblatt
+											 	</a>
+											 </t>
+											 <t t-else="">
+											 	<a class="download-link" title="" href="/web/login/" data-wpel-link="internal"
+													style=" color: #555555;" target="_self" rel="follow">
+													ABS Filament Datenblatt
+												</a> 
+											 </t>
+										</li>
+										<li>  
+											<t t-if ="not user_id._is_public()">
+										 		<a href="/ehcs_evo_tech_website/static/src/uploads/abs/MSDS.rar" 
+													style=" color: #555555;" download="MSDS.rar" >
+											  		Filament Sicherheitsdatenblätter gesamt
+											 	</a>
+											 </t>
+											 <t t-else="">
+											 	<a class="download-link" title="" href="/web/login/" data-wpel-link="internal"
+													style=" color: #555555;" target="_self" rel="follow">
+													Filament Sicherheitsdatenblätter gesamt
+												</a> 
+											 </t>
+										</li>
 									</ul>
 									<br/>
+									
 									<b style="font-size: 17px; "> Auszug aus dem ABS-Datenblatt:</b>
 									<table>
 										<tbody>
@@ -91,9 +120,36 @@
 								</p>
 								
 								<ul id="ul" style="font-size: 17px; text-align: left; " >
-										<li>EL-102 FFF Dateien</li>
-										<li>EL-11 FFF Dateien </li>
+									<li> 
+										<t t-if ="not user_id._is_public()">
+									 		<a href="/ehcs_evo_tech_website/static/src/uploads/abs/EL102-FFF-V1.4-2.zip" 
+												style=" color: #555555;" download="EL102-FFF-V1.4-2.zip" >
+										  			EL-102 FFF Dateien
+										 	</a>
+										 </t>
+										 <t t-else="">
+										 	<a class="download-link" title="" href="/web/login/" data-wpel-link="internal"
+												style=" color: #555555;" target="_self" rel="follow">
+													EL-102 FFF Dateien
+											</a> 
+										 </t>
+									</li>
+									<li>  
+										<t t-if ="not user_id._is_public()">
+									 		<a href="/ehcs_evo_tech_website/static/src/uploads/abs/EL11 FFF V1.1.rar" 
+												style=" color: #555555;" download="EL11 FFF V1.1.rar" >
+										  			EL-11 FFF Dateien
+										 	</a>
+										 </t>
+										 <t t-else="">
+										 	<a class="download-link" title="" href="/web/login/" data-wpel-link="internal"
+												style=" color: #555555;" target="_self" rel="follow">
+													EL-11 FFF Dateien
+											</a> 
+										 </t>
+									</li>
 								</ul>
+								
 								<b style="font-size: 17px;">
 									ABS Druckparameter:
 								</b>
@@ -159,37 +215,67 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-9 pt32 pb32 text-left blue">
-								<h1>	<b> Downloads </b>	</h1>		
-							<ul id="ul" style="font-size: 17px; text-align: left; " class="blue">
-							<li>
-								<a class="download-link blue" title="Version 1"
-									href="https://evo-tech.eu/download/322789/"
-									data-wpel-link="internal" target="_self" rel="follow">ABS
-									Filament Datenblatt
-								</a>
-							</li>
-							<li>
-								<a class="download-link blue" title=""
-									href="https://evo-tech.eu/download/323065/"
-									data-wpel-link="internal" target="_self" rel="follow">Filament
-									Sicherheitsdatenblätter gesamt
-								</a>
-							</li>
-							<li>
-								<a class="download-link blue" title=""
-									href="https://evo-tech.eu/download/323111/"
-									data-wpel-link="internal" target="_self" rel="follow">EL-102
-									FFF Dateien
-								</a>
-							</li>
-							<li>
-								<a class="download-link blue" title=""
-									href="https://evo-tech.eu/download/323104/"
-									data-wpel-link="internal" target="_self" rel="follow">EL-11
-									FFF Dateien
-								</a>
-							</li>
-						</ul>					
+								<span class="blue" style="font-size: 28px; font-weight: 500; ">
+									Downloads
+								</span>		
+								<ul id="ul" style="font-size: 17px; text-align: left; " class="blue">
+									<li>
+										<t t-if ="not user_id._is_public()">
+										 	<a href="/ehcs_evo_tech_website/static/src/uploads/abs/evotech_abs.pdf" 
+												style=" color: #555555;" download="evotech_abs.pdf" class="blue">
+											  		ABS Filament Datenblatt
+											 </a>
+										 </t>
+										 <t t-else="">
+											<a class="download-link blue" title="" href="/web/login/" data-wpel-link="internal"
+												style=" color: #555555;" target="_self" rel="follow" >
+												ABS Filament Datenblatt
+											</a> 
+										 </t>
+									</li>
+									<li>
+										<t t-if ="not user_id._is_public()">
+										 	<a href="/ehcs_evo_tech_website/static/src/uploads/abs/MSDS.rar" 
+												style=" color: #555555;" download="MSDS.rar" class="blue">
+											  		Filament Sicherheitsdatenblätter gesamt
+											 </a>
+										 </t>
+										 <t t-else="">
+											<a class="download-link blue" title="" href="/web/login/" data-wpel-link="internal"
+												style=" color: #555555;" target="_self" rel="follow">
+													Filament Sicherheitsdatenblätter gesamt
+											</a> 
+										 </t>
+									</li>
+									<li>
+										<t t-if ="not user_id._is_public()">
+										 	<a href="/ehcs_evo_tech_website/static/src/uploads/abs/EL102 FFF V1.1.rar" 
+												style=" color: #555555;" download="EL102 FFF V1.1.rar" class="blue">
+											  		EL-102 FFF Dateien
+											 </a>
+										 </t>
+										 <t t-else="">
+											<a class="download-link blue" title="" href="/web/login/" data-wpel-link="internal"
+												style=" color: #555555;" target="_self" rel="follow">
+													EL-102 FFF Dateien
+											</a> 
+										 </t>
+									</li>
+									<li>
+										<t t-if ="not user_id._is_public()">
+										 	<a href="/ehcs_evo_tech_website/static/src/uploads/abs/EL11 FFF V1.1.rar" 
+												class="blue" style=" color: #555555;" download="EL11 FFF V1.1.rar" >
+											  		EL-11 FFF Dateien
+											 </a>
+										 </t>
+										 <t t-else="">
+											<a class="blue download-link" title="" href="/web/login/" data-wpel-link="internal"
+												style=" color: #555555;" target="_self" rel="follow">
+													EL-11 FFF Dateien
+											</a> 
+										 </t>
+									</li>
+								</ul>					
 							</div>
 						</div>
 					</div>
@@ -199,9 +285,9 @@
 			        <div class="container">
 			            <div class="row s_nb_column_fixed">
 			                <div class="col-lg-12 s_title pt16 pb16">
-			                    <h1 class="s_title_thin"><font  class="o_default_snippet_text blue">
-			                    	<b> Fragen und Antworten zum ABS Filament:	</b>
-			                    </font></h1>
+			                    <span class="blue" style="font-size: 28px; font-weight: 500; ">
+			                    	Fragen und Antworten zum ABS Filament:	
+			                    </span>
 			                </div>
 			            </div>
 			            <div class="row s_col_no_bgcolor">

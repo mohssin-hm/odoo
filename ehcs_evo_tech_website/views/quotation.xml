@@ -2,9 +2,13 @@
 <odoo>
 	<template id="theme_submenu_tab_angebotsanfrage" name="website.theme_submenu_tab_angebotsanfrage">
 		<t t-call="website.layout">
-			<t t-set="additional_title">Angebotsanfrage</t>
+			<t t-set="additional_title">Angebotsanfrage - EVO-tech 3D-Drucker</t>
+			<t t-set="website_meta_title"> Angebotsanfrage - EVO-tech 3D-Drucker</t>
+			<t t-set="website_meta_description">
+				Angebotsanfrage - EVO-tech 3D-Drucker
+			</t>
+			
 			<div id="wrap" class="oe_structure oe_empty">
-
 				<section class="s_text_image pt32 pb32" data-name="Image - Text" style="">
 					<div class="container">
 						<div class="row align-items-center">
@@ -19,7 +23,7 @@
 											<span class="o_form_heading o_fake_editable blue" style="font-size:36px;">
 												Angebotsanfrage
 											</span>
-											<p style="font-size:16px; color:#555555;">
+											<p style="font-size:17px; color:#555555;">
 												Bitte füllen Sie das untenstehende Formular aus. Wir werden uns so schnell wie möglich bei Ihnen melden!
 											</p>
 											
@@ -89,7 +93,6 @@
 											</div>
 										</div>
 										
-										
 										<div class="form-group row form-field o_website_form_custom o_fake_not_editable">
 											<div class="col-lg-10 col-md-4">
 												<label class="col-form-label o_fake_editable" for="Telephone" style=" font-size: 17px; font-weight:150; ">Telephone *
@@ -98,7 +101,6 @@
 													name="Telephone" required="" />
 											</div>
 										</div>
-										
 									
 										<div class="form-group row form-field o_website_form_custom o_fake_not_editable">
 											<div class="col-lg-10 col-md-4">
@@ -110,8 +112,9 @@
 										</div>
 										<div class="form-group row">
 											<div class="offset-lg-3 offset-md-4 col-md-8 col-lg-7">
-												<button class="btn btn-primary btn-lg flat o_website_form_send o_default_snippet_text"
-												style="background-color: white; border: 1px solid; color: #008bd2; margin-left : -45%" >Unverbindlich Anfragen</button>
+												<button class="btn btn-primary btn-lg flat o_website_form_send o_default_snippet_text text-left"
+												style="background-color: white; border: 1px solid; color: #008bd2; ">
+													Unverbindlich Anfragen</button>
 												<span id="o_website_form_result" />
 											</div>
 										</div>
@@ -121,28 +124,32 @@
 							
 							<div class="col-lg-4 ">
 								<div class="s_website_form container-fluid mt32 o_fake_not_editable">
-										<div class="container">
-											<div class="container">
-												<span style="font-size: 24px;" class="blue">
-														EVO-lizer 3D-Drucker
-												</span>
-												<br/>
-												<div class="row">
-													<div class=" text-center col-lg-12">
-														<img src="/ehcs_evo_tech_website/static/src/img/two.webp" style="width: 88%; "></img>
-														<p class=" " style="font-size: 18px; "> 
-															EL - 11
-														<br/><br/>
-														<img src="/ehcs_evo_tech_website/static/src/img/one.webp" style="width: 65%; "> </img>
-														<p class="" style="font-size: 18px; "> 
-															EL - 102 
-														</p>
-														<br/><br/>
-														</p>
-													</div>
-												</div>
+									<div class="container">
+										<div id="mpc_textblock-25eec45653a518" class="text-center mpc-textblock mpc-typography--mpc_preset_29 mpc-inited"
+												style="font-size: 24px; line-height: 1.1; max-width: 100%; color: rgb(0, 139, 210); text-transform: none; opacity: 1; font-family: &quot;Open Sans&quot; !important; font-weight: 700 !important;">
+											<span style="font-size: 24px;" class="blue">
+												EVO-lizer 3D-Drucker
+											</span>
+										</div>
+										<p/>
+										<div class="row">
+											<div class=" text-center col-lg-12">
+												<img src="/ehcs_evo_tech_website/static/src/img/two.webp"
+													style="width: 88%; " title="Portraitfoto"></img>
+												<p class=" " style="font-size: 18px; ">
+													EL - 11
+													<br /><br />
+													<img src="/ehcs_evo_tech_website/static/src/img/one.webp"
+														style="width: 65%; " title="Portraitfoto">
+													</img>
+													<p class="" style="font-size: 18px; ">
+														EL - 102
+													</p>
+													<br /><br />
+												</p>
 											</div>
 										</div>
+									</div>
 								</div>
 							</div>
 						</div>

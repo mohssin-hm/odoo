@@ -2,22 +2,24 @@
 <odoo>
 	<template id="theme_menu_customer_subfive" name="website.theme_menu_customer_subfive">
 		<t t-call="website.layout">
-			<t t-set="additional_title">Simplify</t>
+			<t t-set="additional_title">Simplify - EVO-tech 3D-Drucker</t>
+			<t t-set="website_meta_title"> Simplify - EVO-tech 3D-Drucker </t>
+			<t t-set="website_meta_description">
+				Simplify - EVO-tech 3D-Drucker
+			</t>
+			
 			<div id="wrap" class="oe_structure oe_empty">
-
 				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
 					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
 					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
 						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/data/standort_evotech_aussen.jpg&quot;); background-position: 50% 0px;" />
 						<div class="container">
 							<div class="row s_nb_column_fixed">
-								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
-									data-name="Box">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12" data-name="Box">
 									<div class="row">
-										<div class="col-lg-12 s_title s_col_no_bgcolor"
-											data-name="Title">
+										<div class="col-lg-12 s_title s_col_no_bgcolor" data-name="Title">
 											<h1 class="s_title_default" style="text-align: center; ">
-												<font style="font-size: 42px; color: white;">
+												<font style="font-size: 48px; color: white;" class="font">
 													<b>SIMPLIFY</b>
 												</font>
 											</h1>
@@ -32,43 +34,89 @@
 					<div class="container">
 						<div class="row">
 							<div class="pt32 pb32 text-left col-lg-8">
-								<p class=" " style="font-size: 16px; ">
+								<p class=" " style="font-size: 18px; ">
 									Simplify 3D ist ein sogenannter „Slicer“, der ähnlich wie beim Fräsen ein CAM, CAD-Daten in maschinenleslichen Code, sogenannten G-Code, verwandelt. Hierbei setzen wir bei EVO-tech den Marktführer Simplify 3D ein. Es können Modelle einfach importiert und optimiert werden. Die Software ermöglicht es bereits vor dem Druck die Drucksequenz zu simulieren und so mögliche Probleme frühzeitig zu erkennen. Eine Anleitung zur Bedieung von Simplify 3D finden Sie in unserem Know-How Bereich.
 								</p>
-								<p style="font-size: 16px; ">
+								<p style="font-size: 17px; ">
 									<b> Downloads: </b>
 								</p>
-								<ul id="ul" style="font-size: 16px; ">
+								<ul id="ul" style="font-size: 17px; ">
 									<li>
-										<a class="download-link" title="Version 4.1.2"
-											href="/web/login/" data-wpel-link="internal"
-											target="_self" rel="follow">Simplify
-											3D
-										</a>
+										<t t-if ="not user_id._is_public()">
+										 	<a href="/ehcs_evo_tech_website/static/src/uploads/support/EVOremoteDesk.exe" 
+												title="Version 4.1.2" style=" color: #555555;" download="EVOremoteDesk.exe" >
+											  		Simplify 3D
+											 </a>
+										 </t>
+										 <t t-else="">
+											<a class="download-link" title="Version 4.1.2" href="/web/login/" data-wpel-link="internal"
+												style=" color: #555555;" target="_self" rel="follow">
+													Simplify 3D
+											</a> 
+										 </t>
 									</li>
 									<li>
-										<a class="download-link" title=""
-											href="/web/login/" data-wpel-link="internal"
-											target="_self" rel="follow">EL-11
-											FFF Dateien
-										</a>
+										<t t-if ="not user_id._is_public()">
+										 	<a href="/ehcs_evo_tech_website/static/src/uploads/simplify/EL11 FFF V1.1.rar" 
+												style=" color: #555555;" download="EL11 FFF V1.1.rar" >
+											  		EL-11 FFF Dateien
+											 </a>
+										 </t>
+										 <t t-else="">
+											<a class="download-link" title="" href="/web/login/" data-wpel-link="internal"
+												style=" color: #555555;" target="_self" rel="follow">
+												EL-11 FFF Dateien
+											</a> 
+										 </t>
 									</li>
+									
 									<li>
-										<a class="download-link" title=""
-											href="/web/login/" data-wpel-link="internal"
-											target="_self" rel="follow">EL-102
-											FFF Dateien
-										</a>
+										<t t-if ="not user_id._is_public()">
+										 	<a href="/ehcs_evo_tech_website/static/src/uploads/simplify/EL102-FFF-V1.4-2.zip" 
+												style=" color: #555555;" download="EL102-FFF-V1.4-2.zip" >
+											  		EL-102 FFF Dateien V1.4 (Auslieferung bis 06/2020)
+											 </a>
+										 </t>
+										<t t-else="">
+											<a class="download-link" title="" href="/web/login/" data-wpel-link="internal"
+												style=" color: #555555;" target="_self" rel="follow">
+												EL-102 FFF Dateien V1.4 (Auslieferung bis 06/2020)
+											</a>
+										</t>
 									</li>
+									
 									<li>
-										<a class="download-link" title=""
-											href="/web/login/" data-wpel-link="internal"
-											target="_self" rel="follow">Anleitung
-											Aktualisierung FFF Dateien
-										</a>
+										<t t-if ="not user_id._is_public()">
+										 	<a href="/ehcs_evo_tech_website/static/src/uploads/simplify/EL102-V2-FFF-V2.0-2.zip" 
+												style=" color: #555555;" download="EL102-V2-FFF-V2.0-2.zip" >
+											  		EL-102 FFF Dateien V2.0 (Auslieferung ab 07/2020)
+											 </a>
+										 </t>
+										<t t-else="">
+											<a class="download-link" title="" href="/web/login/" data-wpel-link="internal"
+												style=" color: #555555;" target="_self" rel="follow">
+												EL-102 FFF Dateien V2.0 (Auslieferung ab 07/2020)
+											</a>
+										</t>
+									</li>
+									
+									<li>
+										<t t-if ="not user_id._is_public()">
+										 	<a href="/ehcs_evo_tech_website/static/src/uploads/simplify/Aktualisieren_der_Simplify3d_Settings_V2.pdf" 
+												style=" color: #555555;" download="Aktualisieren_der_Simplify3d_Settings_V2.pdf" >
+											  		Anleitung Aktualisierung FFF Dateien
+											 </a>
+										 </t>
+										<t t-else="">
+											<a class="download-link" title="" href="/web/login/" data-wpel-link="internal"
+												style=" color: #555555;" target="_self" rel="follow">
+												Anleitung Aktualisierung FFF Dateien
+											</a>
+										</t>
 									</li>
 								</ul>
 							</div>
+
 							<div class="text-left col-lg-4" >
 								<div class="container" style=" margin-top: 6%" >
 										<img src="/ehcs_evo_tech_website/static/src/img/simplify3d-3d-print-software-300x215.jpg" style=" border-radius: 8px; width:80%"> </img>
@@ -83,7 +131,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="pt32 pb32 text-center col-lg-12">
-								<span class="blue" style="font-size: 20px; ">
+								<span class="blue" style="font-size: 24px; ">
 									Aktualisieren der Simplify3D Einstellung
 								</span>
 								<br/>
@@ -99,45 +147,45 @@
 					<div class="container">
 						<div class="row">
 							<div class="pt32 pb32 text-left col-lg-7">
-								<p class="blue" style="font-size: 22px; ">
+								<p class="blue" style="font-size: 24px; ">
 									<u>
 										<b> Schritt 1 – Löschen der alten FFF Profile:	</b>
 									</u>
 								</p>
-								<ul id="ul" style="font-size: 16px; ">
+								<ul id="ul" style="font-size: 17px; ">
 									<li>
 										Im Fenster Prozesse auf Add / Hinzufügen klicken. Wenn bereits ein Prozess vorhanden ist können Sie ihn mit einem Doppelklick öffnen.
 									</li>
 								</ul>
 							</div>
 							<div class="pt32 pb32 text-left col-lg-5">
-								<img src="/ehcs_evo_tech_website/static/src/img/1.png" style=" border-radius: 8px; width:140% "> </img>
+								<img src="/ehcs_evo_tech_website/static/src/img/1.png" style=" border-radius: 8px; width:100% "> </img>
 							</div>
 							
 							<div class="pt32 pb32 text-left col-lg-7">
-								<ul id="ul" style="font-size: 16px; ">
+								<ul id="ul" style="font-size: 17px; ">
 									<li>
 										Im Menu, das sich daraufhin öffnet auf Remove oder Entfernen klicken
 									</li>
 								</ul>
 							</div>
 							<div class="pt32 pb32 text-left col-lg-5">
-								<img src="/ehcs_evo_tech_website/static/src/img/2-300x83.png" style=" border-radius: 8px; "> </img>
+								<img src="/ehcs_evo_tech_website/static/src/img/2-300x83.png" style="border-radius: 8px;width: 100%;"> </img>
 							</div>
 							
 							<div class="pt32 pb32 text-left col-lg-7">
-								<ul id="ul" style="font-size: 16px; ">
+								<ul id="ul" style="font-size: 17px; ">
 									<li>
 										Es wird eine Auswahl an möglichen Profilen angezeigt, hier alle bestehenden Profile von EVO-tech markieren. Die Persönlich erstellten Profile nicht markieren.
 									</li>
 								</ul>
 							</div>
 							<div class="pt32 pb32 text-left col-lg-5">
-								<img src="/ehcs_evo_tech_website/static/src/img/3-300x271.png" style=" border-radius: 8px; width:120%"> </img>
+								<img src="/ehcs_evo_tech_website/static/src/img/3-300x271.png" style=" border-radius: 8px; width:100%"> </img>
 							</div>
 							
 							<div class="pt32 pb32 text-left col-lg-7">
-								<ul id="ul" style="font-size: 16px; ">
+								<ul id="ul" style="font-size: 17px; ">
 									<li>
 										Danach mit OK bestätigen und die Profile werden gelöscht.
 									</li>
@@ -147,7 +195,7 @@
 								</ul>
 							</div>
 							<div class="pt32 pb32 text-left col-lg-5">
-								<img src="/ehcs_evo_tech_website/static/src/img/4-600x525.png" style=" border-radius: 8px; "> </img>
+								<img src="/ehcs_evo_tech_website/static/src/img/4-600x525.png" style=" border-radius: 8px; width:100%"> </img>
 							</div>
 						</div>
 					</div>
@@ -162,29 +210,29 @@
 										<b> Schritt 2 (Laden der neuen EVO-tech Profile):	</b>
 									</u>
 								</p>
-								<ul id="ul" style="font-size: 16px; ">
+								<ul id="ul" style="font-size: 17px; ">
 									<li>
 										Im Menü File den Punkt Import FFF profil“ auswählen
 									</li>
 								</ul>
 							</div>
 							<div class="pt32 pb32 text-left col-lg-5">
-								<img src="/ehcs_evo_tech_website/static/src/img/5-600x416.png" style=" border-radius: 8px;  "> </img>
+								<img src="/ehcs_evo_tech_website/static/src/img/5-600x416.png" style=" border-radius: 8px; width:100% "> </img>
 							</div>
 							
 							<div class="pt32 pb32 text-left col-lg-7">
-								<ul id="ul" style="font-size: 16px; ">
+								<ul id="ul" style="font-size: 17px; ">
 									<li>
 										Bei der folgenden Abfrage die neuen Files auswählen und mit OK bestätigen
 									</li>
 								</ul>
 							</div>
 							<div class="pt32 pb32 text-left col-lg-5">
-								<img src="/ehcs_evo_tech_website/static/src/img/6-768x324.png" style="border-radius: 8px;width: 135%;"> </img>
+								<img src="/ehcs_evo_tech_website/static/src/img/6-768x324.png" style="border-radius: 8px; width: 100%;"> </img>
 							</div>
 							
 							<div class="pt32 pb32 text-left col-lg-7">
-								<ul id="ul" style="font-size: 16px; ">
+								<ul id="ul" style="font-size: 17px; ">
 									<li>
 										Wenn die Profile importiert wurden zeigt Simplify3D folgende Meldung
 									</li>
@@ -194,7 +242,7 @@
 								</ul>
 							</div>
 							<div class="pt32 pb32 text-left col-lg-5">
-								<img src="/ehcs_evo_tech_website/static/src/img/7-600x250.png" style=" border-radius: 8px; "> </img>
+								<img src="/ehcs_evo_tech_website/static/src/img/7-600x250.png" style=" border-radius: 8px; width:100%"> </img>
 							</div>
 						</div>
 					</div>
@@ -205,9 +253,9 @@
 						<div class="row">
 							<div class="pt32 pb32 text-center col-lg-12">
 								<span class="blue" style="font-size: 22px; ">
-									<b>
+									<b> <i>
 										Bitte achten Sie darauf, dass in alten Factory Dateien immer noch die alten Prozesse hinterlegt sind. Leider müssen die Factory-Dateien mit den neuen Profilen neu erstellt werden.
-									</b>	
+									</i> </b>	
 								</span>
 								<br/>
 							</div>

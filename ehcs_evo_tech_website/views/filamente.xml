@@ -2,9 +2,11 @@
 <odoo>
 	<template id="theme_menu_filamente_page" name="website.filamente_page">
 		<t t-call="website.layout">
-			<t t-set="additional_title">Filamente</t>
+			<t t-set="additional_title">Filamente &amp; Materialien für 3D Drucker | EVO-tech Österreich 3D Druck</t>
+			<t t-set="website_meta_title"> Filamente &#38; Materialien für 3D Drucker | EVO-tech Österreich 3D Druck </t>
+			<t t-set="website_meta_description"> Finden Sie geeignete Filamente für Ihren 3D Drucker. Beeindruckende &#38; qualitativ hochwertige 3D Druck Filamente von EVO-tech. Jetzt kontaktieren!</t>
+
 			<div id="wrap" class="oe_structure oe_empty">
-				
 				<section class="s_banner parallax s_parallax_is_fixed pt96 pb96 s_parallax_no_overflow_hidden"
 					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background-color:rgba(66, 117, 211, 0.42); ">
 					<span class="s_parallax_bg oe_img_bg oe_custom_bg" 
@@ -13,13 +15,14 @@
 							<div class="row s_nb_column_fixed">
 								<div class="col-lg-12 jumbotron pt32 pb32 rounded " data-name="Box" style="color: white;">
 									<center> 
-										<div class="col-lg-12 s_title s_col_no_bgcolor"
-											data-name="Title">
+										<div class="col-lg-12 s_title s_col_no_bgcolor" data-name="Title">
 											<span class="s_title_thin">
 												<b>
-												<font style="font-size: 48px;">
-													<b> EVO-PLASTICS	</b>
-												</font>
+													<h1>
+														<font style="font-size: 48px;">
+															<b> EVO-PLASTICS	</b>
+														</font>
+													</h1>
 												</b>
 											</span>
 										</div>
@@ -49,7 +52,7 @@
 										</b>
 									</span>
 								</div>
-								<p style="text-align: center;font-size: 15px;">
+								<p style="text-align: center;font-size: 16px;">
 									Mit derzeit 11 selbst entwickelten technischen Kunststoffen hat sich EVO-tech auch im Filament-Bereich einen erstklassigen Ruf erarbeitet. 
 									Doch diese Reputation beruht nicht nur auf der beeindruckenden Produktvielfalt, sondern vor allem auch auf qualitativen Argumenten:
 								</p>
@@ -61,11 +64,11 @@
 										</b>
 									</span>
 								</div>
-								<p style="text-align: center;font-size: 15px;">
+								<p style="text-align: center;font-size: 16px;">
 									Filamente von EVO-tech sind flammhemmend, UV- und temperaturbeständig bis über 200 °C, elektrostatisch dissipativ, 
 									lebensmitteltauglich, abriebfest und chemikalienbeständig.
 								</p>
-								<p style="text-align: center;font-size: 15px;">
+								<p style="text-align: center;font-size: 16px;">
 									Die Entwicklung eigener technischer Kunststoffe erfolgt selbstverständlich abgestimmt auf die Verarbeitung mit den EVO-lizer 3D-Druckern. 
 									Und was noch wichtiger ist: im Bedarfsfall abgestimmt auf spezielle Kundenanforderung.
 								</p>
@@ -79,8 +82,12 @@
 						<div class="row">
 							<div class="col-lg-4 pt32 pb32 text-center">
 								<img src="/ehcs_evo_tech_website/static/src/img/f1.webp"> </img>
-								<h2 class="o_default_snippet_text blue">PPS(Polyphenylensulfid)</h2>
-								<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: -1%;"></hr>
+								<h4 class="o_default_snippet_text blue">
+									PPS 
+									<br/>
+									(Polyphenylensulfid)
+								</h4>
+								<hr style="width: 20%;height:4px;background: #008bd2;margin-top: 1%;"> </hr>
 								<p class="o_default_snippet_text" style="font-size: 14px; ">
 									Hohe Chemie- und Temperaturbeständigkeit bis 200°C, hohe elektrische Durchschlagsfestigkeit, 
 									nur mit Hochtemperaturdüse einsetzbar.
@@ -88,16 +95,16 @@
 							</div>
 							<div class="col-lg-4 pt32 pb32 text-center" style="color: #555555; background-color: #f8f9fa !important;">
 								<img src="/ehcs_evo_tech_website/static/src/img/f2.webp"> </img>
-								<h2 class="o_default_snippet_text blue">ABS-ESD (Acrylnitril Butadien Styrol-ESD)</h2>
-								<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: -1%;"></hr>
+								<h4 class="o_default_snippet_text blue">ABS-ESD <br/> (Acrylnitril Butadien Styrol-ESD)</h4>
+								<hr style="width: 20%;height:4px;background: #008bd2;margin-top: 1%;"> </hr>
 								<p class="o_default_snippet_text" style="font-size: 14px; ">
 									Elektrostatisch dissipativer (energieaufnehmender) Kunststoff, Einsatzgebiet in der Elektroindustrie und in der Verarbeitung von Pulver.
 								</p>
 							</div>
 							<div class="col-lg-4 pt32 pb32 text-center">
 								<img src="/ehcs_evo_tech_website/static/src/img/f3.webp"> </img>
-								<h2 class="o_default_snippet_text blue">ABS-FR (Acrylnitril-Butadien-Styrol Fire retardant)</h2>
-								<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: -1%;"></hr>
+								<h4 class="o_default_snippet_text blue">ABS-FR <br/> (Acrylnitril-Butadien-Styrol Fire retardant)</h4>
+								<hr style="width: 20%;height:4px;background: #008bd2;margin-top: 1%;"> </hr>
 								<p class="o_default_snippet_text" style="font-size: 14px; ">
 									Schwer entflammbares ABS, entwickelt für den Maschinenbau und die Elektroindustrie.
 								</p>
@@ -110,24 +117,28 @@
 						<div class="row">
 							<div class="col-lg-4 pt32 pb32 text-center" style="color: #555555; background-color: #f8f9fa !important;">
 								<img src="/ehcs_evo_tech_website/static/src/img/f4.webp"> </img>
-								<h2 class="o_default_snippet_text blue">TPE(Thermoplastisches Elastomer)</h2>
-								<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: -2%;"></hr>
+								<h4 class="o_default_snippet_text blue">
+									TPE
+									<br/>
+										(Thermoplastisches Elastomer)
+								</h4>
+								<hr style="width: 20%;height:4px;background: #008bd2;margin-top: 1%;"> </hr>
 								<p class="o_default_snippet_text" style="font-size: 14px; ">
 									Thermoplastisches Elastomer mit einer Shore-Härte von 85 A, ideal geeignet für elastische oder abdichtende Teile.
 								</p>
 							</div>
 							<div class="col-lg-4 pt32 pb32 text-center" >
 								<img src="/ehcs_evo_tech_website/static/src/img/f5.webp"> </img>
-								<h2 class="o_default_snippet_text blue">ASA(Acrylester-Styrol-Acrylnitril)</h2>
-								<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: -2%;"></hr>
+								<h4 class="o_default_snippet_text blue">ASA <br/> (Acrylester-Styrol-Acrylnitril)</h4>
+								<hr style="width: 20%;height:4px;background: #008bd2;margin-top: 1%;"> </hr>
 								<p class="o_default_snippet_text" style="font-size: 14px; ">
 									Hohe UV- und Witterungsbeständigkeit, eingesetzt im Außenbereich.
 								</p>
 							</div>
 							<div class="col-lg-4 pt32 pb32 text-center" style="color: #555555; background-color: #f8f9fa !important;">
 								<img src="/ehcs_evo_tech_website/static/src/img/f6.webp"> </img>
-								<h2 class="o_default_snippet_text blue">HIPS (High Impact Polystyrol)</h2>
-								<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: -2%;"></hr>
+								<h4 class="o_default_snippet_text blue">HIPS <br/> (High Impact Polystyrol)</h4>
+								<hr style="width: 20%;height:4px;background: #008bd2;margin-top: 1%;"> </hr>
 								<p class="o_default_snippet_text" style="font-size: 14px; ">
 									Auswaschbares Supportmaterial, wird benötigt um Hinterschneidungen und Überhänge fertigen zu können.
 								</p>
@@ -140,24 +151,24 @@
 						<div class="row">
 							<div class="col-lg-4 pt32 pb32 text-center">
 								<img src="/ehcs_evo_tech_website/static/src/img/f7.webp"> </img>
-								<h2 class="o_default_snippet_text blue">ABS (Acrylnitril-Butadien-Styrol)</h2>
+								<h4 class="o_default_snippet_text blue">ABS <br/> (Acrylnitril-Butadien-Styrol)</h4>
 								<p class="o_default_snippet_text" style="font-size: 14px; ">
-								<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: -1%;"></hr>
+								<hr style="width: 20%;height:4px;background: #008bd2;margin-top: 1%;"> </hr>
 									Vielseitige Nachbearbeitungsmöglichkeiten (Schleifen, Lackieren, Kleben, Fillern)
 								</p>
 							</div>
 							<div class="col-lg-4 pt32 pb32 text-center " style="color: #555555; background-color: #f8f9fa !important;">
 								<img src="/ehcs_evo_tech_website/static/src/img/f8.webp"> </img>
-								<h2 class="o_default_snippet_text blue">Industriestandard 1,75 mm</h2>
-								<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: 0%;"></hr>
+								<h4 class="o_default_snippet_text blue">Industriestandard 1,75 mm</h4>
+								<hr style="width: 20%;height:4px;background: #008bd2;margin-top: 1%;"> </hr>
 								<p class="o_default_snippet_text" style="font-size: 14px; ">
 									Der EVO-lizer bietet als offenes System höchste Flexibilität beim verwendeten Material und ist kompatibel mit allen 1,75 mm Filamenten anderer Hersteller.
 								</p>
 							</div>
 							<div class="col-lg-4 pt32 pb32 text-center">
 								<img src="/ehcs_evo_tech_website/static/src/img/f9.webp"> </img>
-								<h2 class="o_default_snippet_text blue">Iglidur</h2>
-								<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: 0%;"></hr>
+								<h4 class="o_default_snippet_text blue">Iglidur</h4>
+								<hr style="width: 20%;height:4px;background: #008bd2;margin-top: 1%;"> </hr>
 								<p class="o_default_snippet_text" style="font-size: 14px; ">
 									Hohe Abriebsfestigkeit, Einsatz bei bewegten Teilen.
 								</p>
@@ -170,24 +181,24 @@
 						<div class="row">
 							<div class="col-lg-4 pt32 pb32 text-center " style="color: #555555; background-color: #f8f9fa !important;">
 								<img src="/ehcs_evo_tech_website/static/src/img/f10.webp"> </img>
-								<h2 class="o_default_snippet_text blue">Kundenspezifische Entwicklungen</h2>
-								<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: -2%;"></hr>
+								<h4 class="o_default_snippet_text blue">Kundenspezifische Entwicklungen</h4>
+								<hr style="width: 20%;height:4px;background: #008bd2;margin-top: 1%;"> </hr>
 								<p class="o_default_snippet_text" style="font-size: 14px; ">
 									Gerne entwickeln wir mit Ihnen für Ihre Anforderungen abgestimmte Materialien, kontaktieren Sie uns!
 								</p>
 							</div>
 							<div class="col-lg-4 pt32 pb32 text-center">
 								<img src="/ehcs_evo_tech_website/static/src/img/f11.webp"> </img>
-								<h2 class="o_default_snippet_text blue">Viele Möglichkeiten – viele Farben</h2>
-								<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: -2%;"></hr>
+								<h4 class="o_default_snippet_text blue">Viele Möglichkeiten – viele Farben</h4>
+								<hr style="width: 20%;height:4px;background: #008bd2;margin-top: 1%;"> </hr>
 								<p class="o_default_snippet_text" style="font-size: 14px; ">
 									Viele Farben sind verfügbar, ab 25 kg Sonderfarben möglich
 								</p>
 							</div>
 							<div class="col-lg-4 pt32 pb32 text-center " style="color: #555555; background-color: #f8f9fa !important;">
 								<img src="/ehcs_evo_tech_website/static/src/img/f12.webp"> </img>
-								<h2 class="o_default_snippet_text blue">PET (Polyethylenterephthalat)</h2>
-								<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: -2%;"></hr>
+								<h4 class="o_default_snippet_text blue">PET <br/> (Polyethylenterephthalat)</h4>
+								<hr style="width: 20%;height:4px;background: #008bd2;margin-top: 1%;"> </hr>
 								<p class="o_default_snippet_text" style="font-size: 14px; ">
 									Lebensmitteltaugliches Polymer, Einsatz in der Verarbeitung und Verpackung von Lebensmittel.
 								</p>
@@ -200,16 +211,16 @@
 						<div class="row">
 							<div class="col-lg-4 pt32 pb32 text-center">
 								<img src="/ehcs_evo_tech_website/static/src/img/f13.webp"> </img>
-								<h2 class="o_default_snippet_text blue">PLA (Polylactid)</h2>
-								<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: 0%;"></hr>
+								<h4 class="o_default_snippet_text blue">PLA (Polylactid)</h4>
+								<hr style="width: 20%;height:4px;background: #008bd2;margin-top: 1%;"> </hr>
 								<p class="o_default_snippet_text" style="font-size: 14px; ">
 									Kompostierbares Biopolymer, leicht glänzende Oberfläche, wird eingesetzt im Design- und Architekturbereich.
 								</p>
 							</div>
 							<div class="col-lg-4 pt32 pb32 text-center " style="color: #555555; background-color: #f8f9fa !important;">
 								<img src="/ehcs_evo_tech_website/static/src/img/f14.webp"> </img>
-								<h2 class="o_default_snippet_text blue">ABS-PC</h2>
-								<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: 0%;"></hr>
+								<h4 class="o_default_snippet_text blue">ABS-PC</h4>
+								<hr style="width: 20%;height:4px;background: #008bd2;margin-top: 1%;"> </hr>
 								<p class="o_default_snippet_text" style="font-size: 14px; ">
 									Vereint die hohe Festigkeit und Wärmeformbeständigkeit von PC, sowie die einfache Verarbeitbarkeit von ABS.
 								</p>

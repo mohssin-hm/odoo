@@ -2,22 +2,24 @@
 <odoo>
 	<template id="theme_menu_customer_subthree" name="website.theme_menu_customer_subthree">
 		<t t-call="website.layout">
-			<t t-set="additional_title">Support</t>
+			<t t-set="additional_title">Support - EVO-tech 3D-Drucker</t>
+			<t t-set="website_meta_title"> Support - EVO-tech 3D-Drucker </t>
+			<t t-set="website_meta_description">
+				Support - EVO-tech 3D-Drucker
+			</t>
+			
 			<div id="wrap" class="oe_structure oe_empty">
-
 				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
 					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
 					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
 						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/data/standort_evotech_aussen.jpg&quot;); background-position: 50% 0px;" />
 						<div class="container">
 							<div class="row s_nb_column_fixed">
-								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
-									data-name="Box">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12" data-name="Box">
 									<div class="row">
-										<div class="col-lg-12 s_title s_col_no_bgcolor"
-											data-name="Title">
+										<div class="col-lg-12 s_title s_col_no_bgcolor" data-name="Title">
 											<h1 class="s_title_default" style="text-align: center; ">
-												<font style="font-size: 42px; color: white;">
+												<font style="font-size: 48px; color: white;" class="font">
 													<b>SUPPORT</b>
 												</font>
 											</h1>
@@ -33,34 +35,55 @@
 					<div class="container">
 						<div class="row">
 							<div class="pt32 pb32 text-left col-lg-8">
-								<p class=" " style="font-size: 16px; ">
+								<p class=" " style="font-size: 18px; ">
 									Unser kompetentes Support Team steht Ihnen gerne während unserer Öffnungszeiten per E-Mail oder Telefon zur Verfügung. Bitte werfen Sie vor einer Kontaktaufnahme einen kurzen Blick auf unsere FAQ und halten Sie bei einem Anruf G-Codes, Factoriefiles und Fotos des Problems bereit. Gerne helfen wir Ihnen bei Softwarefragen auch mit unserem Fernwartungstool Anydesk direkt auf Ihrem Bildschirm weiter. Nach dem Downlaod der Software öffnet sich ein Fenster mit einer Nummer die Sie unserem Support mitteilen sollen. Damit haben wir 
 									<b> EINMALIG </b> Zugriff auf Ihren Rechner und Sie können alles verfolgen, was wir auf Ihrem System machen.
 								</p>
-								<p style="font-size: 16px; ">
+								<p style="font-size: 17px; ">
 									<b> Downloads: </b>
 								</p>
-								<ul id="ul" style="font-size: 16px; ">
+								<ul id="ul" style="font-size: 17px; ">
 										<li>
-											<a class="download-link" title=""
-												href="/web/login/" data-wpel-link="internal"
-												target="_self" rel="follow">
-												EVOremoteDesk Fernwartungssoftware
-											</a>
+											<t t-if ="not user_id._is_public()">
+											 	<a href="/ehcs_evo_tech_website/static/src/uploads/support/EVOremoteDesk.exe" 
+													style=" color: #555555;" download="EVOremoteDesk.exe" >
+											  			EVOremoteDesk Fernwartungssoftware
+												</a>
+											</t>
+											 <t t-else="">
+												<a class="download-link" title="" href="/web/login/" data-wpel-link="internal"
+													style=" color: #555555;" target="_self" rel="follow">
+													EVOremoteDesk Fernwartungssoftware
+												</a>	 
+											 </t>
 										</li>
 										<li>
-											<a class="download-link" title=""
-												href="/web/login/" data-wpel-link="internal"
-												target="_self" rel="follow">
-												EL-11 Handbuch
-											</a>
+											<t t-if ="not user_id._is_public()">
+											 	<a href="/ehcs_evo_tech_website/static/src/uploads/support/Evolizer_Handbuch_V1_15_20191024_touch_DE.pdf" 
+													style=" color: #555555;" download="Evolizer_Handbuch_V1_15_20191024_touch_DE.pdf" >
+											  			EL-11 Handbuch
+												</a>
+											</t>
+											<t t-else="">
+											 	<a class="download-link" title="" href="/web/login/" data-wpel-link="internal"
+													style=" color: #555555;" target="_self" rel="follow">
+														EL-11 Handbuch
+												</a>
+											</t>
 										</li>
 										<li>
-											<a class="download-link" title=""
-												href="/web/login/" data-wpel-link="internal"
-												target="_self" rel="follow">
-												EL-102 Handbuch
-											</a>
+											<t t-if ="not user_id._is_public()">
+											 	<a href="/ehcs_evo_tech_website/static/src/uploads/support/Handbuch-EL-102-B1800-003.1-A-1.pdf" 
+													style=" color: #555555;" download="Handbuch-EL-102-B1800-003.1-A-1.pdf" >
+											  			EL-102 Handbuch
+												</a>
+											</t>
+											<t t-else="">
+												<a class="download-link" title="" href="/web/login/" data-wpel-link="internal"
+													style=" color: #555555;" target="_self" rel="follow">
+													EL-102 Handbuch
+												</a>
+											</t>
 										</li>
 									</ul>
 							</div>

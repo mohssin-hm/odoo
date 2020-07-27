@@ -7,7 +7,8 @@
     "version": "13.0.1.0.0",
     "category": "Website",
     "depends": [
-        "theme_odoo_experts","website",
+        "theme_odoo_experts","website","website_cookie_notice",
+        "website_event_questions","website_event_sale",
     ],
     "data": [
         "data/menu.xml",
@@ -16,6 +17,7 @@
         "data/about_sub.xml",
         "data/customer_sub.xml",
         "views/web_asset_template.xml",
+        "views/language.xml",
         "views/website.xml",
         "views/home.xml",
         "views/filamente.xml",
@@ -25,6 +27,10 @@
         "views/contactus.xml",
         "views/dienstleistung.xml",
         "views/mega_menu.xml",
+        "views/footer_datenschutz.xml",
+        "views/footer_impressum.xml",
+        "views/footer_drucker_deutschland.xml",
+        "views/footer_rapid_prototyping.xml",
         
         "views/printer_submenu_one.xml",
         "views/printer_submenu_two.xml",
@@ -57,8 +63,9 @@
         "views/about/academy.xml",
         "views/about/presse.xml",
         "views/about/jobs.xml",
-        "views/about/termine.xml",
-        "views/about/event_opening.xml",
+#         "views/about/termine.xml",
+#         "views/about/event_opening.xml",
+        "views/about/website_event.xml",
         
         "views/customer/kvp.xml",
         "views/customer/handbücher.xml",

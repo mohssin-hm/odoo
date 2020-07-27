@@ -2,22 +2,22 @@
 <odoo>
 	<template id="theme_menu_filamente_submenu_nine" name="website.filamente_page">
 		<t t-call="website.layout">
-			<t t-set="additional_title"> ASA </t>
-			<div id="wrap" class="oe_structure oe_empty">
+			<t t-set="additional_title"> ASA Kunststoff Filament für 3D Druck - EVO-tech 3D Drucker </t>
+			<t t-set="website_meta_title"> ASA Kunststoff Filament für 3D Druck - EVO-tech 3D Drucker</t>
+			<t t-set="website_meta_description"> ASA Kunststoff ist ein witterungsbeständiges, sowie UV-beständiges Filament für 3D Druck. Jetzt über Filamente von EVO-tech informieren!</t>
 			
+			<div id="wrap" class="oe_structure oe_empty">
 				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
 					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none;     background-color: rgba(66, 117, 211, 0.63);">
 					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
 						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/druckmaterial-3d-druck_smaller.jpg&quot;); background-position: 50% 0px;" />
 					<div class="container">
 						<div class="row s_nb_column_fixed">
-							<div class=" jumbotron rounded pt32 pb32 col-lg-12"
-								data-name="Box">
+							<div class=" jumbotron rounded pt32 pb32 col-lg-12" data-name="Box">
 								<div class="row">
-									<div class="col-lg-12 s_title s_col_no_bgcolor"
-										data-name="Title">
+									<div class="col-lg-12 s_title s_col_no_bgcolor" data-name="Title">
 										<h1 class="s_title_default" style="text-align: center; ">
-											<font style="font-size: 50px; color: white;">
+											<font style="font-size: 48px; color: white;" class="font">
 												<b> ASA FILAMENT </b>
 											</font>
 										</h1>
@@ -54,8 +54,8 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-6 pt32 pb32 text-center">
-								<p class="o_default_snippet_text blue" style="font-size:23px;margin-left: -52%;">
-									Verarbeitungsparameter:
+								<p class="o_default_snippet_text blue text-left " style="font-size:22px;">
+									<b> Verarbeitungsparameter:	</b>
 								</p>
 								<table>
 									<tbody>
@@ -81,9 +81,13 @@
 
 								</p>
 								<br/>
-								<a href="/3d-drucker-el-11/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade " style="color: white !important; background-color: #008bd2;" data-original-title="" title="">Continue to EL-11</a>
+								<a href="/3d-drucker-el-11/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade " 
+									style="color: white !important; background-color: #008bd2; margin-left: 5%; margin-top: 3%;" data-original-title="" 
+									title="3d-drucker-el-11">Continue to EL-11</a>
 								
-								<a href="/3d-drucker-el-102/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade " style="color: white !important; background-color: #008bd2; margin-left: 5%;" data-original-title="" title="">Continue to EL102 </a>
+								<a href="/3d-drucker-el-102/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade " 
+									style="color: white !important; background-color: #008bd2; margin-left: 5%; margin-left: 5%; margin-top: 3%;" data-original-title="" 
+									title="3d-drucker-el-102">Continue to EL102 </a>
 							</div>
 						</div>
 					</div>
@@ -132,26 +136,24 @@
 					</div>
 				</section>
 				
-				<section class="" data-name="Title" style="background-color: #008bd2!important">
+				<section class="s_call_to_action bg-200 pt28 pb28" data-name="Call to Action" style="background-color: #008bd2!important">
 					<div class="container">
-						<div class="row s_nb_column_fixed">
-							<div class="col-lg-12 s_title pt15" style="text-align: center;">
-								<div class="row align-items-center" style="margin-top: 1%;">
-									<div class="col-lg-1 ">
-										<i class="mpc-transition fa fa-4x fa-phone" style="color: white;margin-left: 60%;margin-top: -10%;"></i>
-									</div>
-									<div class="col-lg-6 ">
-										<p style="font-size:20px;color: white; margin-top:1%">
-										Sie benötigen mehr Informationen? Wir beraten Sie gerne.
-										</p>	
-									</div>
-								</div>
-								<p class="s_title_default">
-									<a href="/contactus/" class="blue btn btn-gamma flat btn-lg" data-original-title="" title="" 
-										style="background-color: white; margin-left:80%; margin-top : -7%; ">
-										<b style=" font-size: 14px; "> Jetzt Kontaktieren </b>
-									</a>
+						<div class="row">
+							<div class="col-lg-1 pb24">
+								<p class="lead o_default_snippet_text pt16 text-center" style="font-size:20px; color:white; ">
+									<i class="mpc-transition fa fa-3x fa-phone" style=" color: white; "></i>	
 								</p>
+							</div>
+							<div class="col-lg-8 pb24">
+								<p class=" o_default_snippet_text pt16 " style="font-size:20px; color:white; font-weight: 600;">
+									Sie benötigen mehr Informationen? Wir beraten Sie gerne.
+								</p>
+							</div>
+							<div class="col-lg-3 s_btn text-right pt8 pb24" data-name="Button" style=" ">
+								<a href="/kontakt/" class="blue btn btn-gamma flat btn-lg hvr-fade" 
+										style="background-color: white; font-size: 16px;">
+										<b> Jetzt Kontaktieren </b>
+								</a>
 							</div>
 						</div>
 					</div>

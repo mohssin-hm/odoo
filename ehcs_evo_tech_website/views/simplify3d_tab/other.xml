@@ -2,22 +2,24 @@
 <odoo>
 	<template id="theme_submenu_tab_other" name="website.theme_submenu_tab_other">
 		<t t-call="website.layout">
-			<t t-set="additional_title">Other Tab</t>
+			<t t-set="additional_title">Other Tab - EVO-tech 3D-Drucker</t>
+			<t t-set="website_meta_title"> Other Tab - EVO-tech 3D-Drucker</t>
+			<t t-set="website_meta_description">
+				Other Tab - EVO-tech 3D-Drucker
+			</t>
+			
 			<div id="wrap" class="oe_structure oe_empty">
-
 				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
 					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
 					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
 						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/img_6646_3-scaled.jpg&quot;); background-position: 50% 0px;" />
 						<div class="container">
 							<div class="row s_nb_column_fixed">
-								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
-									data-name="Box">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12" data-name="Box">
 									<div class="row">
-										<div class="col-lg-12 s_title s_col_no_bgcolor"
-											data-name="Title">
+										<div class="col-lg-12 s_title s_col_no_bgcolor" data-name="Title">
 											<h1 class="s_title_default" style="text-align: center; ">
-												<font style="font-size: 62px;color: white;">
+												<font style="font-size: 48px;color: white;" class="font">
 													<b>Other TAB</b>
 												</font>
 											</h1>
@@ -35,167 +37,167 @@
 								<img src="/ehcs_evo_tech_website/static/src/img/simplify3d_tab/other-tab.png" style=" width: 100%; "></img>
 							</div>
 							<div class="col-lg-12 pt32 text-left">
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 24px;" class="blue">
 									<b>
 										Bridging
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Bridging bedeutet, dass zwischen zwei festen Strukturten eine horizontale Linie ohne Stützstruktur gedruckt wird. Der Kunststofffaden wird hierbei vom Druckkopf, meist mit angepassten Extrusions- und Geschwindigkeitseinstellungen, zwischen zwei festen Punkten gespannt. Bridging-Einstellungen hängen zu einem großen Teil vom Aufbau des Druckers und dem verwendeten Material ab.
 								</p>
 
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Unsupported Area Threshold
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Die Unsupported Area Threshold gibt den Flächeninhalt des Überhanges an, ab dem die Bridging Einstellungen wirksam werden.
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Extra Inflation Distance
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Gibt an, wie weit die Brücke mit den festen Strukturen überlappt. Höhere Werte geben festere Verbindungen, was besonders bei stark schwindenden Materialien notwendig ist.
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Bridging extrusion multiplier
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Der Bridging extrusion multiplier gibt an, wieviel Material beim erstellen von Brücken im Vergleich zur normalen Extrusion verwendet wird.
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Bridging Speed Multiplier
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Der Bridging speed multiplier gibt an, wie schnell die Brücken im Vergleich zur Default Printing Speed gedruckt werden.
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Use fixed bridging infill angle
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Mit dieser Checkbox kann der Winkel zur X-Achse angegeben werden, in dem dann das Infill für alle Brücken gedruckt wird. Simplify3d entscheidet dann nicht mehr selbst, welcher Winkel am besten für die jeweilige Brücke geeignet ist, sonder verwendet den hier eingestellten.
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Apply bridging settings to perimeters
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Mit dieser Checkbox lassen sich die Einstellungen für Brücken auch auf die Perimeter der Brücken anwenden. Standardmäßig werden diese nicht auf Perimeter der Brücken sondern nur für das Infill verwendet.
 								</p>
 								
 								<br></br>
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 24px;" class="blue">
 									<b>
 										Dimensional Adjustments
 									</b>
 								</p>
 								<br></br>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Horizontal size compensation
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Mittels der Horizontal size compensation lassen sich die Toleranzen des 3D-gedruckten Modells in xy-Richtung anpassen. 3D-gedruckte Objekte neigen dazu, an der Außenseite etwas größer zu werden, während Bohrungen und Ausnehmungen meist etwas kleiner werden. Würde man das Objekt einfach skalieren um diesen Effekt zu umgehen, würde sich zum Beispiel der Abstand zweier Bohrungen zueinander verändert. Die Horizontal size compensation dagegen verändert nur die Position der Außenlinie, wodurch die Abstände im Inneren des Bauteils zueinander unverändert bleiben.
 
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Filament Properties
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Simplify3d bietet die Möglichkeit die Materialkosten und das Bauteilgewicht zu berechnen. Dafür können in diesem Bereich die Daten des Filaments eingegeben werden. Die Ergebnisse können nach der Berechnung des G-Codes im Bereich oben links abgelesen werden.
 
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Filament Toolhead Index
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Gibt an, in welchem Extruder des Druckers das Filament geladen ist.
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Filament diameter
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Gibt den Nenndurchmesser des Filaments an. Diese Einstellung ist auch für die Berechnung des Vorschubs verantwortlich, da sie in die volumetrische Berechnung mit einfließt.
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Filament price
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Gibt den Preis pro Kilogramm Filament an.
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Filament density
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Gibt die Dichte des verwendeten Materials an.
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 24px;" class="blue">
 									<b>
 										Tool Change Retraction
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									In diesem Bereich können Einstellungen für den Retract beim Werkzeugwechsel getroffen werden. Es empfiehlt sich bei der Verwendung von mehreren Düsen das Filament, aus der Heizzone der nicht verwendeten Düse, zurückzuziehen. Dies ist notwendig, da es bei zu langem Verweilen des Filaments bei hohen Temperaturen zum thermischen Abbau und zum Verstopfen der Düse kommen kann.
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Tool change retraction distance
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Gibt die Distanz an, die das Filament bei einem Werkzeugwechsel aus der passiven Düse zurückgezogen wird. Diese sollte so groß gewählt werden, dass das Filament sicher aus der Heizzone herausgezogen wird. Bei Verwendung eines Direkt-Extruders muss jedoch darauf geachtet werden, das Filament nicht bis hinter die Vorschubeinheit zurückzuziehen.
 
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Tool change extra restart distance
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Gibt die zusätzliche Distanz an, die das Filament in der aktiven Düse nach dem Werzeugwechsel vorgeschoben wird. Dies wird gemacht, um das Material zu kompensieren, das, während die Düse beheizt aber nicht verwendet wurde, aus der Düse auslief und gleichzeitig genügend Druck aufzubauen um einen sauberen Startpunkt der ersten Linie zu erreichen.
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Tool change retraction speed
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Gibt die Geschwnindigkeit an, mit der das Filament vor- und zurückgeschoben wird.
 
 								</p>
@@ -204,7 +206,6 @@
 							<div class="col-lg-12 pt32 text-center">
 								<a href="/simplify3d/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade" style="color: white !important; background-color: #008bd2; "
 									data-original-title="" title="">
-									
 									Zurück zur Übersicht
 								</a>
 							</div>							

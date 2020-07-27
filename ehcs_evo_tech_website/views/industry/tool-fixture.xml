@@ -2,22 +2,24 @@
 <odoo>
 	<template id="theme_menu_branchen_subthree" name="website.theme_menu_branchen_subthree">
 		<t t-call="website.layout">
-			<t t-set="additional_title">WERKZEUG UND VORRICHTUNGSBAU</t>
+			<t t-set="additional_title"> 3D Drucker von Evo-tech | Einsatz im Werkzeug und Vorrichtungsbau </t>
+			<t t-set="website_meta_title"> 3D Drucker von Evo-tech | Einsatz im Werkzeug und Vorrichtungsbau </t>
+			<t t-set="website_meta_description">
+				Anwendungsbeispiele für den 3D Druck als Ersatz für das Fräsen von Einzelteilen im Werkzeug und Vorrichtungsbau.
+			</t>
+			
 			<div id="wrap" class="oe_structure oe_empty">
-
 				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
 					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
 					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
 						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/entwicklung_2000x700_100.jpg&quot;); background-position: 50% 0px;" />
 						<div class="container">
 							<div class="row s_nb_column_fixed">
-								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
-									data-name="Box">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12" data-name="Box">
 									<div class="row">
-										<div class="col-lg-12 s_title s_col_no_bgcolor"
-											data-name="Title">
+										<div class="col-lg-12 s_title s_col_no_bgcolor" data-name="Title">
 											<h1 class="s_title_default" style="text-align: center; ">
-												<font style="font-size: 52px; color: white;">
+												<font style="font-size: 48px; color: white;" class="fnt">
 													<b>WERKZEUG UND VORRICHTUNGSBAU</b>
 												</font>
 											</h1>
@@ -45,7 +47,7 @@
 								<p class=" blue" style="font-size: 20px; ">
 									<b> Anwendungsbeispiele: </b>
 								</p>
-								<ul id="ul" style="font-size: 15px; margin-left: -25px; ">
+								<ul id="ul" style="font-size: 16px; margin-left: -25px; ">
 									<li>Vakuumgreifer</li>
 									<li>3D Konturspannbacken </li>
 									<li>Messvorrichtungen</li>
@@ -62,13 +64,13 @@
 						<div class="row">
 							<div class="pt32 pb32 text-left col-lg-6">
 								<div class="media_iframe_video o_we_selected_image"
-									data-oe-expression="//www.youtube.com/embed/yzjwCw2jTWU?autoplay=0&amp;rel=0&amp;loop=1&amp;playlist=yzjwCw2jTWU&amp;modestbranding=1">
+									data-oe-expression="//youtube.com/embed/yzjwCw2jTWU?autoplay=0&amp;rel=0&amp;loop=1&amp;playlist=yzjwCw2jTWU&amp;modestbranding=1">
 									<div class="css_editable_mode_display" data-original-title=""
 										title="" aria-describedby="tooltip210892">
 									</div>
 									<div class="media_iframe_video_size" contenteditable="false">
 									</div>
-									<iframe src="//www.youtube.com/embed/yzjwCw2jTWU?autoplay=0&amp;rel=0&amp;loop=1&amp;playlist=yzjwCw2jTWU&amp;modestbranding=1"
+									<iframe src="//youtube.com/embed/yzjwCw2jTWU?autoplay=0&amp;rel=0&amp;loop=1&amp;playlist=yzjwCw2jTWU&amp;modestbranding=1"
 										frameborder="0" contenteditable="false"
 										allowfullscreen="allowfullscreen"></iframe>
 								</div>
@@ -76,13 +78,13 @@
 							
 							<div class="pt32 pb32 text-left col-lg-6" style="width:130%"> 
 								<div class="media_iframe_video o_we_selected_image"
-									data-oe-expression="//www.youtube.com/embed/IhC9neGNdIY?autoplay=0&amp;rel=0&amp;loop=1&amp;playlist=IhC9neGNdIY&amp;modestbranding=1">
+									data-oe-expression="//youtube.com/embed/IhC9neGNdIY?autoplay=0&amp;rel=0&amp;loop=1&amp;playlist=IhC9neGNdIY&amp;modestbranding=1">
 									<div class="css_editable_mode_display" data-original-title=""
 										title="" aria-describedby="tooltip495352">
 									</div>
 									<div class="media_iframe_video_size" contenteditable="false">
 									</div>
-									<iframe src="//www.youtube.com/embed/IhC9neGNdIY?autoplay=0&amp;rel=0&amp;loop=1&amp;playlist=IhC9neGNdIY&amp;modestbranding=1"
+									<iframe src="//youtube.com/embed/IhC9neGNdIY?autoplay=0&amp;rel=0&amp;loop=1&amp;playlist=IhC9neGNdIY&amp;modestbranding=1"
 										frameborder="0" contenteditable="false"
 										allowfullscreen="allowfullscreen"></iframe>
 								</div>
@@ -101,7 +103,7 @@
 					<div class="container">
 						<div class="row">
 							<div class=" pb32 text-left col-lg-6">
-								<ul id="ul" style="font-size: 15px; margin-left: -25px; ">
+								<ul id="ul" style="font-size: 16px; margin-left: -25px; ">
 									<li>rationelle Fertigung von Einzelteilen oder individualisierten Kleinserien </li>
 									<li> Konstruktionsfreiheit auf höchstem Niveau  </li>
 									<li> längere Standzeiten der Werkzeuge  </li>
@@ -110,7 +112,7 @@
 							</div>
 							
 							<div class=" pb32 text-left col-lg-6" style="width:130%"> 
-								<ul id="ul" style="font-size: 15px; margin-left: -25px; ">
+								<ul id="ul" style="font-size: 16px; margin-left: -25px; ">
 									<li> Reduktion von Ausschussquoten und Stückkosten   </li>
 									<li> verkürzte Produktionszyklen  </li>
 									<li> u. v. m. </li>
@@ -202,11 +204,13 @@
 						<div class="row">
 							<div class="pt32 pb32 text-left col-lg-6">
 								<center>
-									<img src="/ehcs_evo_tech_website/static/src/img/facc2.webp"></img> <br/> <br/>
+									<a href="/3d-drucker-el-102/">
+										<img src="/ehcs_evo_tech_website/static/src/img/facc2.webp"></img> <br/> <br/>
+									</a>
 									<p class="blue" style=" font-size: 18px; ">
 										<b> 3D Drucker EL-102	</b>
 									</p>
-									<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: -1%;"></hr>
+									<hr style="width: 20%; height:4px; background: #008bd2;margin-top: 1%;"/>
 									<p style=" font-size: 15px; ">
 										Ermöglicht gleichzeitiges Drucken mehrerer Bauteile und die Verarbeitung von großen Materialmengen bis zu einer Größe von 500 x 400 x 510 mm (B x T x H).
 									</p>
@@ -215,17 +219,19 @@
 								<center>
 								<a href="/3d-drucker-el-102/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade "
 										style="color: white !important; background-color: #008bd2;"
-										data-original-title="" title="">Mehr zum EL-102</a>
+										data-original-title="" title="3d-drucker-el-102">Mehr zum EL-102</a>
 								</center>
 							</div>
 							
 							<div class="pt32 pb32 text-left col-lg-6">
 								<center>
-									<img src="/ehcs_evo_tech_website/static/src/img/facc1.webp"> </img> <br/><br/>
+									<a href="/3d-drucker-el-11/">
+										<img src="/ehcs_evo_tech_website/static/src/img/facc1.webp"> </img> <br/><br/>
+									</a>
 									<p class="blue" style=" font-size: 18px; ">
 										<b> 3D Drucker EL-11	</b>
 									</p>
-									<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: -1%;"></hr>
+									<hr style="width: 20%; height:4px; background: #008bd2;margin-top: 1%;"/>
 									<p style=" font-size: 15px; ">
 										Ermöglicht Erstellung von Bauteilen bis 270 x 200 x 210mm (B x T x H) bei extrem geringen Betriebskosten und offenem System für Filamente.
 									</p>
@@ -234,7 +240,7 @@
 								<center>
 								<a href="/3d-drucker-el-11/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade "
 										style="color: white !important; background-color: #008bd2;"
-										data-original-title="" title="">Mehr zum EL-11</a>
+										data-original-title="" title="3d-drucker-el-11">Mehr zum EL-11</a>
 								</center>
 							</div>
 						</div>
@@ -275,28 +281,30 @@
 					</div>
 				</section>
 				
-				<section class="pt28 pb28" data-name="Title" style="background-color: #008bd2!important">
+				<section class="s_call_to_action bg-200 pt28 pb28" data-name="Call to Action" style="background-color: #008bd2!important">
 					<div class="container">
-						<div class="row s_nb_column_fixed">
-							<div class="col-lg-12 s_title " style="text-align: center;">
-								<div class="row align-items-center">
-									<div class="col-lg-6 ">
-										<p style="font-size:20px;color: white; margin-top: 5%;">
-										Sie benötigen mehr Informationen? Wir beraten Sie gerne.
-										</p>	
-									</div>
-								</div>
-								<p class="s_title_default">
-									<a href="/contactus/" class="blue btn btn-gamma flat btn-lg" data-original-title="" title="" 
-										style="background-color: white; margin-left:80%; margin-top : -7%; ">
-										<b style=" font-size: 14px; "> Jetzt Kontaktieren </b>
-									</a>
+						<div class="row">
+							<div class="col-lg-1 pb24">
+								<p class="lead o_default_snippet_text pt16 text-center" style="font-size:20px; color:white; ">
+									<i class="mpc-transition fa fa-3x fa-phone" style=" color: white; "></i>	
 								</p>
+							</div>
+							<div class="col-lg-8 pb24">
+								<p/>
+								<p class=" o_default_snippet_text pt16 " style="font-size:20px; color:white; font-weight: 600;">
+									Sie benötigen mehr Informationen? Wir beraten Sie gerne.
+								</p>
+							</div>
+							<div class="col-lg-3 s_btn text-right pt8 pb24" data-name="Button" style=" ">
+								<a href="/kontakt/" class="blue btn btn-gamma flat btn-lg hvr-fade" 
+										style="background-color: white; font-size: 16px;">
+										<b> Jetzt Kontaktieren </b>
+								</a>
 							</div>
 						</div>
 					</div>
 				</section>
-				
+								
 				<section class="s_text_image pt32 pb32" data-name="Text - Image">
 					<div class="container">
 						<div class="row align-items-center">
@@ -310,11 +318,11 @@
 								<br/>
 								<a href="/metusan/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade"
 											style="color: white !important; background-color: #008bd2;"
-											data-original-title="" title="">Mehr Informationen</a>
+											data-original-title="" title="metusan">Mehr Informationen</a>
 							</div>
 							<div class="col-lg-6 pt16 pb16">
 								<img src="/ehcs_evo_tech_website/static/src/img/metusan_600x300_10.jpg.webp"
-									class="img img-fluid mx-auto" alt="Odoo • Text and Image"
+									class="img img-fluid mx-auto" 
 									data-original-title="" title="" aria-describedby="tooltip597079"/>
 							</div>
 							<hr style=" border-top-style: solid; border-top-color: #f9f9f9; width: 99%; border-top-width: 3px; "></hr>	
@@ -331,7 +339,7 @@
 		       	 <div class="container">
 		            <div class="row">
 		                <div class="pt32 text-center col-lg-3 pb0">
-		                    <a href="https://www.siemens.com/at/de/home.html" title="siemens"
+		                    <a href="https://new.siemens.com/at/de.html" title="siemens"
 								class="mpc-item mpc-transition" data-wpel-link="external"
 								target="_self" rel="follow">
 								<img class="mpc-transition "
@@ -340,7 +348,7 @@
 							</a>
 		                </div>
 		                 <div class="pt32 text-center col-lg-3 pb0">
-		                   <a href="https://schleich.com/de/"
+		                   <a href="https://schleich.com/"
 								title="schleich" class="mpc-item mpc-transition"
 								data-wpel-link="external" target="_self" rel="follow">
 								<img class="mpc-transition "
@@ -350,16 +358,16 @@
 							</a>
 		                </div>
 		                <div class="pt32 pb32 text-center col-lg-3">
-		                   <a href="https://www.boehringer-ingelheim.at/de"
+		                   <a href="https://boehringer-ingelheim.at/de"
 								title="boehringer-ingelheim" class="mpc-item mpc-transition"
 								data-wpel-link="external" target="_self" rel="follow">
 								<img class="mpc-transition "
-									src="/ehcs_evo_tech_website/static/src/img/logo//boehringer_250x250_00-250x100.png"
+									src="/ehcs_evo_tech_website/static/src/img/logo/boehringer_250x250_00-250x100.png"
 									width="250" height="100" alt="boehringer Logo"
 									title="boehringer_250x250_00"/>
 							</a>
 		                </div><div class="pt32 pb32 text-center col-lg-3">
-		                   <a href="https://www.innotech.at/de/home"
+		                   <a href="https://innotech.at/"
 								title="innotech" class="mpc-item mpc-transition"
 								data-wpel-link="external" target="_self" rel="follow">
 								<img class="mpc-transition "
@@ -369,9 +377,8 @@
 							</a>
 		                </div>
 		                
-		                
 		                 <div class="pt32 text-center col-lg-3 pb0">
-		                    <a href="https://www.agru.at/de/" title="agru"
+		                    <a href="https://agru.at/de/" title="agru"
 								class="mpc-item mpc-transition" data-wpel-link="external"
 								target="_self" rel="follow">
 								<img class="mpc-transition "
@@ -389,7 +396,7 @@
 							</a>
 		                </div>
 		                <div class="pt32 pb32 text-center col-lg-3">
-			                  <a href="https://www.igus.at/" title="igus"
+			                  <a href="https://igus.at/" title="igus"
 									class="mpc-item mpc-transition" data-wpel-link="external"
 									target="_self" rel="follow">
 									<img class="mpc-transition "
@@ -398,7 +405,7 @@
 								</a>
 			                </div>
 		                <div class="pt32 pb32 text-center col-lg-3">
-		                  <a href="https://www.dicht.de/de/" title="dicht"
+		                  <a href="https://dicht.de/de/" title="dicht"
 								class="mpc-item mpc-transition" data-wpel-link="external"
 								target="_self" rel="follow">
 								<img class="mpc-transition "
@@ -409,7 +416,7 @@
 		                </div>
 		                
 		                <div class="pt32 text-center col-lg-3 pb0">
-		                    <a href="https://www.drcollin.de/"
+		                    <a href="https://collin-solutions.com/en/"
 								title="drcollin" class="mpc-item mpc-transition"
 								data-wpel-link="external" target="_self" rel="follow">
 								<img class="mpc-transition "
@@ -418,7 +425,7 @@
 							</a>
 		                </div>
 		                 <div class="pt32 text-center col-lg-3 pb0">
-		                     <a href="https://www.wintersteiger.com/de/Home"
+		                     <a href="https://wintersteiger.com/de/Unternehmen"
 								title="wintersteiger" class="mpc-item mpc-transition"
 								data-wpel-link="external" target="_self" rel="follow">
 								<img class="mpc-transition "
@@ -428,7 +435,7 @@
 							</a>
 		                </div>
 		                <div class="pt32 pb32 text-center col-lg-3">
-		                   <a href="https://www.kiefer-mold.de/"
+		                   <a href="https://kiefer-mold.de/"
 								title="kiefer" class="mpc-item mpc-transition"
 								data-wpel-link="external" target="_self" rel="follow">
 								<img class="mpc-transition "
@@ -438,7 +445,7 @@
 							</a>
 		                </div>
 		                <div class="pt32 pb32 text-center col-lg-3">
-		                   <a href="https://www.mkm-international.de/"
+		                   <a href="https://mkm-international.de/"
 								title="mkm-international" class="mpc-item mpc-transition"
 								data-wpel-link="external" target="_self" rel="follow">
 								<img class="mpc-transition "
@@ -448,7 +455,7 @@
 		                </div>
 		                
 		                <div class="pt32 pb32 text-center col-lg-3">
-		                  <a href="https://www.metusan.at/" title="metusan"
+		                  <a href="https://metusan.at/" title="metusan"
 								class="mpc-item mpc-transition" data-wpel-link="external"
 								target="_self" rel="follow">
 								<img class="mpc-transition "
@@ -458,7 +465,7 @@
 							</a>
 		                </div>
 		                <div class="pt32 pb32 text-center col-lg-3">
-		                   <a href="https://www.mkm-international.de/"
+		                   <a href="https://sixio.de/"
 								title="mkm-international" class="mpc-item mpc-transition"
 								data-wpel-link="external" target="_self" rel="follow">
 								<img class="mpc-transition "
@@ -470,23 +477,25 @@
 		        </div>
 		    </section>
 				
-				<section class="pt28 pb28" data-name="Title" style="background-color: #008bd2!important">
+			<section class="s_call_to_action bg-200 pt28 pb28" data-name="Call to Action" style="background-color: #008bd2!important">
 					<div class="container">
-						<div class="row s_nb_column_fixed">
-							<div class="col-lg-12 s_title " style="text-align: center;">
-								<div class="row align-items-center">
-									<div class="col-lg-6 ">
-										<p style="font-size:20px;color: white; margin-top: 5%;">
-										Sie benötigen mehr Informationen? Wir beraten Sie gerne.
-										</p>	
-									</div>
-								</div>
-								<p class="s_title_default">
-									<a href="/contactus/" class="blue btn btn-gamma flat btn-lg" data-original-title="" title="" 
-										style="background-color: white; margin-left:80%; margin-top : -7%; ">
-										<b style=" font-size: 14px; "> Jetzt Kontaktieren </b>
-									</a>
+						<div class="row">
+							<div class="col-lg-1 pb24">
+								<p class="lead o_default_snippet_text pt16 text-center" style="font-size:20px; color:white; ">
+									<i class="mpc-transition fa fa-3x fa-phone" style=" color: white; "></i>	
 								</p>
+							</div>
+							<div class="col-lg-8 pb24">
+								<p/>
+								<p class=" o_default_snippet_text pt16 " style="font-size:20px; color:white; font-weight: 600;">
+									Sie benötigen mehr Informationen? Wir beraten Sie gerne.
+								</p>
+							</div>
+							<div class="col-lg-3 s_btn text-right pt8 pb24" data-name="Button" style=" ">
+								<a href="/kontakt/" class="blue btn btn-gamma flat btn-lg hvr-fade" 
+										style="background-color: white; font-size: 16px;">
+										<b> Jetzt Kontaktieren </b>
+								</a>
 							</div>
 						</div>
 					</div>

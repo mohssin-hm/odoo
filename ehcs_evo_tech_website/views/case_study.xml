@@ -2,7 +2,12 @@
 <odoo>
 	<template id="theme_submenu_tab_anwenderbericht" name="website.theme_submenu_tab_anwenderbericht">
 		<t t-call="website.layout">
-			<t t-set="additional_title">Anwenderbericht-pmt/</t>
+			<t t-set="additional_title">Anwenderbericht PMT - EVO-tech 3D-Drucker/</t>
+			<t t-set="website_meta_title"> Anwenderbericht PMT - EVO-tech 3D-Drucker</t>
+			<t t-set="website_meta_description">
+				Anwenderbericht PMT - EVO-tech 3D-Drucker
+			</t>
+			
 			<div id="wrap" class="oe_structure oe_empty">
 				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
 					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
@@ -10,13 +15,11 @@
 						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/+.jpg&quot;); background-position: 50% 0px;" />
 						<div class="container">
 							<div class="row s_nb_column_fixed">
-								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
-									data-name="Box">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12" data-name="Box">
 									<div class="row">
-										<div class="col-lg-12 s_title s_col_no_bgcolor"
-											data-name="Title">
+										<div class="col-lg-12 s_title s_col_no_bgcolor" data-name="Title">
 											<h1 class="s_title_default" style="text-align: center; ">
-												<font style="font-size: 42px; color: white;">
+												<font style="font-size: 48px; color: white;" class="font_size">
 													<b>ANWENDERBERICHT PMT</b>
 												</font>
 											</h1>
@@ -32,12 +35,11 @@
 						<div class="row">
 							<div class="col-lg-12 ">
 								<br/><br/>
-								<p style="text-align: center;font-size: 23px; " class="blue">
+								<p style="text-align: center;font-size: 26px; " class="blue">
 									<b> Anwenderbericht PMT GmbH </b>
 								</p>
-								<p style="text-align: center;font-size: 15px; " >
+								<p style="text-align: center;font-size: 17px; " >
 									 Das 2005 gegründete Unternehmen PMT GmbH mit Sitz in Nordrhein-Westfalen berät seine Kunden sowohl während des Produktentstehungsprozesses als auch bei der Optimierung vorhandener Produkte in Bezug auf die konstruktive Auslegung sowie auf den Einsatz geeigneter Fertigungsverfahren und Werkstoffe.
-
 								</p>
 							</div>
 						</div>
@@ -50,25 +52,27 @@
 					<div class="container">
 						<div class="row">
 							<div class="pt32 pb32 text-left col-lg-7">
-								<p class=" blue" style="font-size: 20px; ">
+								<p class=" blue" style="font-size: 24px; ">
 									<b>Additive Fertigung</b>
 								</p>
-								<p style="font-size: 16px; ">
+								<p style="font-size: 17px; ">
 									Wir haben schon sehr früh damit begonnen, uns mit der additiven Fertigung auseinanderzusetzen. Wir beschäftigen uns mit allen neuen Fertigungsverfahren, weil wir unseren Kunden immer die beste Lösung für ihre jeweilige Aufgabenstellung bieten möchten. Das beinhaltet manchmal auch, bestehende Fertigungsstrategien zu verlassen und neue Wege zu gehen“, erzählt Axel Meier, Geschäftsführer von PMT.
 								</p>
-								<p style="font-size: 16px; ">
+								<p style="font-size: 17px; ">
 									„Bei der Projektrealisierung untersuchen wir für unsere Kunden die optimale Technologie zum günstigsten Preis. Wir finden das kostengünstigste Fertigungsverfahren für das Bauteil und/oder die Baugruppe. Ebenso kümmern wir uns um einen reibungslosen Wechsel der Fertigungstechnologie bei bestehenden Bauteilen, sofern das ein wirtschaftlicher Vorteil für unseren Kunden ist.
 								</p>
-								<p style="font-size: 16px; ">
-									„Wir halten den 3D-Druck für eine Zukunftstechnologie und möchten die Zukunft in diesem Bereich mitgestalten. Die additive Fertigung befindet sich unseres Erachtens noch in den Kinderschuhen und daher sehen wir hier ein Riesenpotenzial.“
+								<p style="font-size: 17px; ">
+									<i>
+										„Wir halten den 3D-Druck für eine Zukunftstechnologie und möchten die Zukunft in diesem Bereich mitgestalten. Die additive Fertigung befindet sich unseres Erachtens noch in den Kinderschuhen und daher sehen wir hier ein Riesenpotenzial.“
+									</i>
 								</p>
-								<p class=" blue" style="font-size: 20px; ">
-									<b>Additive Fertigung</b>
+								<p class=" blue" style="font-size: 22px; ">
+									<b>Axel Meier, Geschäftsführer der PMT GmbH</b>
 								</p>
 							</div>
 							
 							<div class="pt32 pb32 text-left col-lg-5" >
-								<img src="/ehcs_evo_tech_website/static/src/img/bauteil-el102.jpg.webp"></img>
+								<img src="/ehcs_evo_tech_website/static/src/img/bauteil-el102.jpg.webp" class="responsive"></img>
 							</div>
 						</div>
 						<hr style=" border-top-style: solid; border-top-color: #f9f9f9; width: 68%; border-top-width: 3px; "></hr>
@@ -80,13 +84,13 @@
 					<div class="container">
 						<div class="row">
 							<div class="pt32 pb32 text-left col-lg-12">
-								<p class=" blue" style="font-size: 20px; ">
+								<p class=" blue" style="font-size: 24px; ">
 									<b>Wirtschaftliche Fertigung geringer Losgrößen</b>
 								</p>
-								<p style="font-size: 16px; ">
+								<p style="font-size: 17px; ">
 									So gelang es bereits, bestehende Greiferkomponenten eines Kunden so auszulegen, dass Gewichts- und Kosteneinsparungen möglich wurden. Die Möglichkeiten des neuen EL-102 wurden jedoch erst bei einem jüngeren Projekt sichtbar. „Für einen Kunden aus der Futtermittelindustrie wurden Gehäuse für ein Steuergerät benötigt. Solche Gehäuse müssen bestimmte Rahmenbedingungen erfüllen, die nur mit einem angepassten Gehäusedesign zu erreichen sind. Standardgehäuse eignen sich für diesen Zweck leider nicht und eine Spritzgussform dafür herzustellen würde den Kostenrahmen bei den niedrigen Losgrößen bei weitem sprengen. In diesem Fall war ein 3D-gedrucktes Gehäuse die erste Wahl. Mit dem EL-102 von EVO-tech ist es gelungen, die beiden Gehäuseteile schnell und kostengünstig bereitzustellen. Bei der niedrigen Losgröße unserer Meinung nach eigentlich die einzig wirtschaftlich sinnvolle Vorgehensweise“, freut sich Meier.
 								</p>
-								<p style="font-size: 16px; ">
+								<p style="font-size: 17px; ">
 									„Die Herausforderung bei Teilen in dieser Größe besteht darin, dass sich ein fertigungsbedingter Bauteilverzug unmittelbar auf die Funktion auswirkt. Mit unserer Bauraumtemperierung und einem stabilen Bauprozess ist es gelungen, die Gehäusekomponenten mit unserer Maschine so zu fertigen, dass alle Teile ineinanderpassen“, ergänzt Kaltenbrunner.
 								</p>
 							</div>
@@ -99,16 +103,16 @@
 					<div class="container">
 						<div class="row">
 							<div class="pt32 pb32 text-left col-lg-7">
-								<p class=" blue" style="font-size: 20px; ">
+								<p class=" blue" style="font-size: 24px; ">
 									<b>FFF Verfahren mit großem Potential</b>
 								</p>
-								<p style="font-size: 16px; ">
+								<p style="font-size: 17px; ">
 									Im FFF-Verfahren sieht Meier im Moment für derartige Anwendungsfälle das größte Potenzial, weil die Materialvielfalt und die vergleichsweise geringen Maschinenkosten für ihn die wirtschaftlichste Kombination darstellen. „Wir sind froh, in EVO-tech einen Partner gefunden zu haben, der nicht nur eine solide Maschinentechnologie liefert, sondern uns bei Fragen schnell weiterhilft und einen guten technischen Service bietet“, lobt der PMT-Geschäftsführer die Zusammenarbeit mit EVO-tech.
 								</p>
-								<p style="font-size: 16px; ">
+								<p style="font-size: 17px; ">
 									„Reproduzierbarkeit und damit die Möglichkeit Serienteile zu produzieren gilt in der Additiven Fertigung als zentrale Herausforderung. Mit dem EL-102 bieten machen wir in dieser Hinsicht einen großen Schritt nach vorne.“
 								</p>
-								<p class=" blue" style="font-size: 20px; ">
+								<p class=" blue" style="font-size: 22px; ">
 									<b>Markus Kaltenbrunner, Geschäftsführer der EVO-tech GmbH</b>
 								</p>
 							</div>
@@ -119,31 +123,39 @@
 									<b> 3D Drucker EL-102	</b>
 								</span>
 								<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: -1%;"/>
-								<p style="font-size: 14px; ">
+								<p style="font-size: 15px; ">
 									Ermöglicht gleichzeitiges Drucken mehrerer Bauteile und die Verarbeitung von großen Materialmengen bis zu einer Größe von 500 x 400 x 510 mm (B x T x H).
 								</p>
 								<a href="/3d-drucker-el-102/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade "
 										style="color: white !important; background-color: #008bd2;"
-										data-original-title="" title="">Mehr zum EL-102</a>
+										data-original-title="" title="3d-drucker-el-102">Mehr zum EL-102</a>
 							</div>
 						</div>
 					</div>
 				</section>
 					
-				<section class="pt28 pb28" data-name="Title" style="background-color: #008bd2!important">
-						<div class="container">
-							<div class="row s_nb_column_fixed">
-								<div class="col-lg-12 s_title pt16 pb16" style="text-align: center;">
-									<p class="s_title_default">
-										<p style="font-size:20px;color: white;margin-left: -30%; margin-top:1%">Gehen Sie mit uns gemeinsam den nächsten EVO-lutionsschritt in der additiven Fertigung.</p>
-										<a href="/contactus/" class="blue btn btn-gamma flat btn-lg" data-original-title="" title="" 
-											style="background-color: white; margin-left:80%; margin-top : -7%; ">
-											<b style=" font-size: 14px; "> Jetzt Kontaktieren </b>
-										</a>
-									</p>
-								</div>
+				<section class="s_call_to_action bg-200 pt28 pb28" data-name="Call to Action" style="background-color: #008bd2!important">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-1 pb24">
+								<p class="lead o_default_snippet_text pt16 text-center" style="font-size:20px; color:white; ">
+									<i class="mpc-transition fa fa-3x fa-phone" style=" color: white; "></i>	
+								</p>
+							</div>
+							<div class="col-lg-8 pb24">
+								<p/>
+								<p class=" o_default_snippet_text pt16 " style="font-size:20px; color:white; font-weight: 600;">
+									Gehen Sie mit uns gemeinsam den nächsten EVO-lutionsschritt in der additiven Fertigung.
+								</p>
+							</div>
+							<div class="col-lg-3 s_btn text-right pt8 pb24" data-name="Button" style=" ">
+								<a href="/kontakt/" class="blue btn btn-gamma flat btn-lg hvr-fade" 
+										style="background-color: white; font-size: 16px;">
+										<b> Jetzt Kontaktieren </b>
+								</a>
 							</div>
 						</div>
+					</div>
 				</section>
 				
 				<section class="pt32 pb32" data-name="Title" >

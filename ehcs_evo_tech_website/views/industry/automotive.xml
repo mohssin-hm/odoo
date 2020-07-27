@@ -2,22 +2,24 @@
 <odoo>
 	<template id="theme_menu_branchen_subone" name="website.theme_menu_branchen_subone_automotive">
 		<t t-call="website.layout">
-			<t t-set="additional_title">Automotive</t>
+			<t t-set="additional_title">3D Druck Einsatz in der Automobilindustrie | EVO-tech 3D Drucker</t>
+			<t t-set="website_meta_title"> 3D Druck Einsatz in der Automobilindustrie | EVO-tech 3D Drucker</t>
+			<t t-set="website_meta_description">
+				Entwicklung von Prototypen und Bauteilen in der Automobilindustrie mit 3D Druck. Erfahren Sie mehr über den Einsatz von 3D Druckern in der Automotive.
+			</t>
+			
 			<div id="wrap" class="oe_structure oe_empty">
-
 				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
 					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
 					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
 						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/automotive_2000x700_100.jpg&quot;); background-position: 50% 0px;" />
 						<div class="container">
 							<div class="row s_nb_column_fixed">
-								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
-									data-name="Box">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12" data-name="Box">
 									<div class="row">
-										<div class="col-lg-12 s_title s_col_no_bgcolor"
-											data-name="Title">
+										<div class="col-lg-12 s_title s_col_no_bgcolor" data-name="Title">
 											<h1 class="s_title_default" style="text-align: center; ">
-												<font style="font-size: 42px;color: white;">
+												<font style="font-size: 48px;color: white;" class="font">
 													<b>AUTOMOTIVE</b>
 												</font>
 											</h1>
@@ -34,13 +36,13 @@
 							<div class="col-lg-12 pt32 pb32">
 								<p class="lead" />
 								<div style="text-align: center;" class="blue">
-									<span style="font-size: 20px;">
+									<span style="font-size: 22px;">
 										<b>
 											EVO-LIZER 3D-Druck befeuert die Automobilindustrie
 										</b>
 									</span>
 								</div>
-								<p style="text-align: center;font-size: 15px;">
+								<p style="text-align: center;font-size: 16px;">
 									Die Automobilbranche gilt als eine der Treiberindustrien der additiven Fertigung. Diese Erfahrung machen wir bei EVO-tech so gut wie jeden Tag. Die Anforderungen der Branche werden immer spezifischer, auch die Nachfrage nach neuen technischen Spezialkunststoffen steigt.
 								</p>
 							</div>
@@ -52,16 +54,16 @@
 					<div class="container">
 						<div class="row">
 							<div class="pt32 pb32 text-left col-lg-8">
-								<p class=" blue" style="font-size: 18px; ">
+								<p class=" blue" style="font-size: 22px; ">
 									<b>   Additive Fertigung im Automotive </b>
 								</p>
-								<p class="o_default_snippet_text " style="font-size:14px;">	
+								<p class="o_default_snippet_text " style="font-size:17px;">	
 									Tatsächlich erkennen im Automotive-Bereich sowohl Hersteller als auch Zulieferer die zahlreichen Vorteile der additiven Fertigung. Sei es im hausinternen Rapid Prototyping, bei Endbauteilen in Kleinserie oder im Rapid Tooling, also beim effizienten Werkzeug- aber auch Vorrichtungsbau.
 								</p>
-								<p class=" " style="font-size: 14px; ">
+								<p class=" " style="font-size: 18px; ">
 									 <b> Die wichtigsten Vorteile	</b>
 								</p>
-								<ul id="ul" style="font-size: 14px; margin-left: -25px; ">
+								<ul id="ul" style="font-size: 17px; ">
 									<li>Leasing hilft Ihrer Liquidität  </li>
 									<li> Schont das Eigenkapital </li>
 									<li> Stärkt Ihre Bonität  </li>
@@ -69,19 +71,20 @@
 									<li> Garantie inklusive </li>
 									<li> Gewährleistet absolute Kostensicherheit </li>
 								</ul>
-								<p class="o_default_snippet_text " style="font-size:14px;">	
+								<p class="o_default_snippet_text " style="font-size:17px;">	
 									Mit dem EVO-lizer bietet EVO-tech der Automobilindustrie einen hoch innovativen 3D-Drucker an, der genau diese Vorteile in die Praxis umsetzt. Schnell, kostengünstig und in erstklassiger Qualität. Auf Basis seiner intelligenten und modularen Konzeption und unseres anwendungstechnischen Know-hows passen wir sowohl den EVO-lizer als auch die Filamentqualitäten punktgenau an die jeweiligen Anspruchsvoraussetzungen an.
 								</p>
 							</div>
 							
 							<div class="pt32 pb32 text-left col-lg-4">
-								<div class="media_iframe_video" data-oe-expression="//www.youtube.com/embed/FER1f8iuTig?autoplay=0&amp;rel=0&amp;loop=1&amp;playlist=FER1f8iuTig&amp;modestbranding=1"
-									style=" width: 130%; ">
+								<div class="media_iframe_video responsive" 
+										data-oe-expression="//youtube.com/embed/FER1f8iuTig?autoplay=0&amp;rel=0&amp;loop=1&amp;playlist=FER1f8iuTig&amp;modestbranding=1"
+									style=" width: 100%; ">
 									<div class="css_editable_mode_display">
 									</div>
 									<div class="media_iframe_video_size" contenteditable="false">
 									</div>
-									<iframe src="//www.youtube.com/embed/FER1f8iuTig?autoplay=0&amp;rel=0&amp;loop=1&amp;playlist=FER1f8iuTig&amp;modestbranding=1"
+									<iframe src="//youtube.com/embed/FER1f8iuTig?autoplay=0&amp;rel=0&amp;loop=1&amp;playlist=FER1f8iuTig&amp;modestbranding=1"
 										frameborder="0" contenteditable="false"
 										allowfullscreen="allowfullscreen"></iframe>
 								</div>
@@ -99,18 +102,20 @@
 				
 				<section class="s_features  pt30 pb0" data-name="Features" style="color: #555555; background-color: #f8f9fa !important;">
 					<div class="container">
-							<center class="blue" style=" font-size: 22px; ">
+							<center class="blue" style=" font-size: 24px; ">
 								<b> 	Die 3D Drucker der EL Serie bieten neue Möglichkeiten in der Automobilbranche	</b>
 							</center>
 						<div class="row">
 							<div class="pt32 pb32 text-left col-lg-6">
 								<center>
-									<img src="/ehcs_evo_tech_website/static/src/img/facc2.webp"></img> <br/> <br/>
+									<a href="/3d-drucker-el-102/">
+										<img src="/ehcs_evo_tech_website/static/src/img/facc2.webp"></img> <br/> <br/>
+									</a>
 									<p class="blue" style=" font-size: 18px; ">
 										<b> 3D Drucker EL-102	</b>
 									</p>
-									<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: -1%;"></hr>
-									<p style=" font-size: 15px; ">
+									<hr style="width: 20%; height:4px; background: #008bd2;margin-top: 1%;"/>
+									<p style=" font-size: 17px; ">
 										Ermöglicht gleichzeitiges Drucken mehrerer Bauteile und die Verarbeitung von großen Materialmengen bis zu einer Größe von 500 x 400 x 510 mm (B x T x H).
 									</p>
 								</center>
@@ -118,26 +123,28 @@
 								<center>
 								<a href="/3d-drucker-el-102/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade "
 										style="color: white !important; background-color: #008bd2;"
-										data-original-title="" title="">Mehr zum EL-102</a>
+										data-original-title="" title="3d-drucker-el-102">Mehr zum EL-102</a>
 								</center>
 							</div>
 							
 							<div class="pt32 pb32 text-left col-lg-6">
 								<center>
-									<img src="/ehcs_evo_tech_website/static/src/img/facc1.webp"> </img> <br/><br/>
+									<a href="/3d-drucker-el-11/">
+										<img src="/ehcs_evo_tech_website/static/src/img/facc1.webp"> </img> <br/><br/>
+									</a>
 									<p class="blue" style=" font-size: 18px; ">
 										<b> 3D Drucker EL-11	</b>
 									</p>
-									<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: -1%;"></hr>
-									<p style=" font-size: 15px; ">
+									<hr style="width: 20%; height:4px; background: #008bd2;margin-top: 1%;"/>
+									<p style=" font-size: 17px; ">
 										Ermöglicht Erstellung von Bauteilen bis 270 x 200 x 210mm (B x T x H) bei extrem geringen Betriebskosten und offenem System für Filamente.
 									</p>
 								</center>
 								<br/>
 								<center>
 								<a href="/3d-drucker-el-11/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade "
-										style="color: white !important; background-color: #008bd2;"
-										data-original-title="" title="">Mehr zum EL-11</a>
+										style="color: white !important;background-color: #008bd2;margin-top: 6%;"
+										data-original-title="" title="3d-drucker-el-11">Mehr zum EL-11</a>
 								</center>
 							</div>
 						</div>
@@ -153,7 +160,7 @@
 		       	 <div class="container">
 		            <div class="row">
 		                <div class="pt32 text-center col-lg-3 pb0">
-		                    <a href="https://www.siemens.com/at/de/home.html" title="siemens"
+		                    <a href="https://new.siemens.com/at/de.html" title="siemens"
 								class="mpc-item mpc-transition" data-wpel-link="external"
 								target="_self" rel="follow">
 								<img class="mpc-transition " src="/ehcs_evo_tech_website/static/src/img/logo/siemens.png"
@@ -170,7 +177,7 @@
 							</a>
 		                </div>
 		                <div class="pt32 pb32 text-center col-lg-3">
-		                    <a href="https://www.paschinger.eu/de/start/"
+		                    <a href="https://paschinger.eu/de/start/"
 								title="paschinger" class="mpc-item mpc-transition"
 								data-wpel-link="external" target="_self" rel="follow">
 								<img class="mpc-transition "
@@ -179,7 +186,7 @@
 									title="Paschinger_250x250_00"/>
 							</a>
 		                </div><div class="pt32 pb32 text-center col-lg-3">
-		                    <a href="https://www.greiner.at/konzern/"
+		                    <a href="https://greiner.com/greiner-ag/unternehmen/"
 									title="greiner" class="mpc-item mpc-transition"
 									data-wpel-link="external" target="_self" rel="follow">
 									<img class="mpc-transition "
@@ -188,7 +195,7 @@
 								</a>
 		                </div>
 		                 <div class="pt32 text-center col-lg-3 pb0">
-		                    <a href="https://www.greiner-extrusion-group.com/de/startseite.html"
+		                    <a href="https://greinerextrusion.com/"
 								title="greiner-extrusion-group" class="mpc-item mpc-transition"
 								data-wpel-link="external" target="_self" rel="follow">
 								<img class="mpc-transition "
@@ -206,7 +213,7 @@
 							</a>
 		                </div>
 		                <div class="pt32 pb32 text-center col-lg-3">
-		                    <a href="https://www.se-k.de/" title="se-k"
+		                    <a href="https://se-k.de/" title="se-k"
 								class="mpc-item mpc-transition" data-wpel-link="external"
 								target="_self" rel="follow">
 								<img class="mpc-transition "
@@ -215,7 +222,7 @@
 									title="se_logo_sprachen"/>
 							</a>
 		                </div><div class="pt32 pb32 text-center col-lg-3">
-		                    <a href="https://www.sixio.eu/" title="sixio"
+		                    <a href="https://sixio.de/" title="sixio"
 								class="mpc-item mpc-transition" data-wpel-link="external"
 								target="_self" rel="follow">
 								<img class="mpc-transition "

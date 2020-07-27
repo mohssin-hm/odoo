@@ -2,22 +2,24 @@
 <odoo>
 	<template id="theme_submenu_tab_extruder" name="website.theme_submenu_tab_extruder">
 		<t t-call="website.layout">
-			<t t-set="additional_title">Extruder Tab</t>
+			<t t-set="additional_title">Extruder Tab - EVO-tech 3D-Drucker</t>
+			<t t-set="website_meta_title"> Extruder Tab - EVO-tech 3D-Drucker</t>
+			<t t-set="website_meta_description">
+				Extruder Tab - EVO-tech 3D-Drucker
+			</t>
+			
 			<div id="wrap" class="oe_structure oe_empty">
-
 				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
 					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
 					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
 						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/img_6646_3-scaled.jpg&quot;); background-position: 50% 0px;" />
 						<div class="container">
 							<div class="row s_nb_column_fixed">
-								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
-									data-name="Box">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12" data-name="Box">
 									<div class="row">
-										<div class="col-lg-12 s_title s_col_no_bgcolor"
-											data-name="Title">
+										<div class="col-lg-12 s_title s_col_no_bgcolor" data-name="Title">
 											<h1 class="s_title_default" style="text-align: center; ">
-												<font style="font-size: 62px;color: white;">
+												<font style="font-size: 48px; color: white;" class="font">
 													<b>Extruder TAB</b>
 												</font>
 											</h1>
@@ -28,7 +30,7 @@
 						</div>
 				</section>
 				
-					<section class="s_text_block pt32 " data-name="Text block" style="">
+				<section class="s_text_block pt32 " data-name="Text block" style="">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-12 pt32 ">
@@ -43,21 +45,21 @@
 								</p>
 								<br/>
 
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Extruder Toolhead Index:
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Dieser Parameter gibt die Nummer des Extruders an. Über diesen Index weiß die Firmware welcher Motor für den Vorschub des Filaments verantwortlich ist, welcher Temperatursensor die Temperatur abliest und welche Heizeinheit für das Erreichen der Verarbeitungstemperatur zuständig ist.
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Nozzle Diameter
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 										Der Durchmesser der verwendeten Düse wirkt sich auf die
 										Druckgeschwindigkeit und die Detailgenauigkeit aus. Mit einer größeren
 										Düse lassen sich dickere und breitere Bahnen drucken, was die Druckzeit
@@ -70,21 +72,21 @@
 										<b> <u> Thin Wall Behaviour“</u></b>  und „ <u><b>Single Extrusion </b> </u>“)
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Extrusion Multiplier
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Der Extrusionsmultiplikator verändert die Rate mit der das Filament vorgeschoben wird und damit den Volumenstrom, der aus der Düse austritt. Bevor dieser Parameter verändert wird sollte erst überprüft werden, ob das Filament mit der richtigen Temperatur extrudiert wird und ob das Zahnrad der Vorschubeinheit intakt und sauber ist. Wenn beides gegeben ist, ist der Extrusionsmultiplikator eine einfache Lösung für Über- bzw. Unterextrusion. Der Wert sollte nicht mehr als 0,2 von 1 abweichen. Darüber oder darunter sollte der Filamentdurchmesser auf zu starke Abweichungen überprüft werden.
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Extrusion Width
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Die Extrusion Width gibt an, wie breit eine vom 3D-Drucker gezogene Linie ist. Die Extrusion Width trägt dem Umstand Rechnung, dass Kunststoffschmelzen dazu neigen sich beim Austritt aus engen Querschnitten, etwa der Düse eines 3D-Druckers auszudehnen (Barrus Effekt). Die Einstellung „Auto“ nimmt den Düsendurchmesser und multipliziert ihn mit 1,2. Dies ist ein guter Richtwert für Düsendurchmesser unter 0,8 mm, für größere Düsen sollte der Wert mit dem „Manual“-Tab vom Benutzer eingestellt werden.
 									<br/>
 									Normal: 1,2 fache des Düsendurchmessers <br/>
@@ -100,73 +102,72 @@
 								</p>
 								<b></b>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Retraction
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Retraction bezeichnet das Zurückziehen des Filaments beim Verfahren des Druckkopfs ohne Extrusion. Dies geschieht um Phänomen wie „Stringing“, das Nachziehen von feinen Fäden bei sehr zähen Filamenten, sowie „Blobs“, kleine Kunststoffbrocken, die sich während des Verfahrens an der Düsenspitze bilden und dann am Bauteil haften, zu vermeiden, indem der Druck vom Filament genommen wird.
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Retraction Distance
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Die Retraction Distance gibt an, wie weit das Filament zurückgezogen wird. Da der Weg zwischen Vorschubeinheit und Hot-End bei Bowden-Extrudern sehr viel größer ist als bei Direkt-Extrudern (siehe Bowden vs. Direkt) und das Filament somit über einen größeren Bereich komprimiert wird, sollte der Wert bei diesen Systemen auch entsprechend größer sein. Für Direkt-Extruder ist 1 mm ein guter Richtwert, für Bowden-Systeme sollten etwa 6 mm gewählt werden.
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Extra Restart Distance
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Dieser Wert gibt an, wieviel Filament nach dem Verfahren zusätzlich zu dem zurückgezogenen extrudiert werden soll und sollte nur verwendet werden, wenn nach dem Verfahren Fehlstellen auftreten.
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Retraction Vertical Lift
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Dieser Wert gibt an, wie weit sich der Druckkopf, beim Durchführen einer Retraction, in z-Richtung vom Bauteil entfernt. Dies kann helfen Spuren, die durch das Streifen der Düse über die oberste Schicht, am Bauteil entstehen zu verhindern.
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Retraction Speed
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Dieser Wert gibt die Geschwindigkeit an, mit der das Filament zurückgezogen wird.
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Coast at End
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Dieser Wert gibt an, wie weit vor dem Absetzen des Druckkopfs die Extrusion des Filaments gestoppt wird. Die restliche Distanz bis zum Absetzen wird dann mit dem noch in der Düse befindlichen Druck überbrückt.
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Wipe Nozzle
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Dieser Parameter gibt an wie weit die Düse abgewischt wird. Nachdem der äußerste Perimeter gezogen ist und das Filament durch die Retract Einstellungen zurückgezogen ist, kann sich noch ein kleiner Rest Kunststoff an der Spitze der Düse befinden. Dieser wird dann durch die Bewegung der Düse über den bereits gedruckten Bereich abgestreift.
 								</p>
 							</div>
 							<div class="col-lg-12 pt32 text-center">
 								<a href="/simplify3d/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade" style="color: white !important; background-color: #008bd2; "
 									data-original-title="" title="">
-									
 									Zurück zur Übersicht
 								</a>
 							</div>							

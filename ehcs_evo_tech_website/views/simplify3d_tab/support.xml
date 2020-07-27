@@ -2,22 +2,24 @@
 <odoo>
 	<template id="theme_submenu_tab_support" name="website.theme_submenu_tab_support">
 		<t t-call="website.layout">
-			<t t-set="additional_title">Support Tab</t>
+			<t t-set="additional_title">Support Tab - EVO-tech 3D-Drucker</t>
+			<t t-set="website_meta_title"> Support Tab - EVO-tech 3D-Drucker</t>
+			<t t-set="website_meta_description">
+				Support Tab - EVO-tech 3D-Drucker
+			</t>
+			
 			<div id="wrap" class="oe_structure oe_empty">
-
 				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
 					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
 					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
 						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/img_6646_3-scaled.jpg&quot;); background-position: 50% 0px;" />
 						<div class="container">
 							<div class="row s_nb_column_fixed">
-								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
-									data-name="Box">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12" data-name="Box">
 									<div class="row">
-										<div class="col-lg-12 s_title s_col_no_bgcolor"
-											data-name="Title">
+										<div class="col-lg-12 s_title s_col_no_bgcolor" data-name="Title">
 											<h1 class="s_title_default" style="text-align: center; ">
-												<font style="font-size: 62px;color: white;">
+												<font style="font-size: 48px;color: white;" class="font">
 													<b>Support TAB</b>
 												</font>
 											</h1>
@@ -35,191 +37,191 @@
 								<img src="/ehcs_evo_tech_website/static/src/img/simplify3d_tab/support-tab.png" style=" width: 100%; "></img>
 							</div>
 							<div class="col-lg-12 pt32 text-left">
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Stützmaterial wird beim 3D-Druck benötigt um überhängende Strukturen zu fertigen. Man unterscheidet zwischen Break Away Support und Soluble Support.
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Break Away Support ist eine Stützstruktur die lose mit dem Bauteil verbunden ist und nach dem Druck mechanisch entfernt werden kann. Das hierfür verwendete Material kann mit dem Modellmaterial identisch sein.
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Soluble Support ist fest mit dem Bauteil verbunden und wird nach dem Druck chemisch gelöst. Hierfür ist es notwendig, dass der Teil der Stützstruktur, der mit dem Bauteil in Kontakt ist, aus einem anderen Material als das Model Material besteht.
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Einige der Einstellung für Stützstrukturen sind auch aus dem Vorschaufenster zugänglich, außerdem besteht dort die Möglichkeit, zusätzlich zu den automatisch platzierten Stützstrukturen eigene Stützstrukturen zu definieren
 								</p>
 
 								<br/>
-								<p style="font-size: 22px;" class="blue">
+								<p style="font-size: 24px;" class="blue">
 									<b>
 										Support Material Generation
 									</b>
 								</p>
 								<br/>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Generate Support Material
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Diese Einstellung legt fest, mit welchem Extruder die Stützstruktur gedruckt wird.
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Support Infill Percentage
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Der Support Infill Percentage gibt die Dichte der Stützstruktur an. Dichtere Stützstrukturen bieten mehr Stabilität und Halt während dem Druck, sind danach aber schwerer zu entfernen.
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Extra Inflation Distance
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Diese Option gibt an, wie weit über das Bauteil hinaus die Stützstruktur gedruckt werden soll. Dies ist besonders bei Break Away Support hilfreich, da es das Entfernen der Stützstruktur vereinfacht. Sinnvolle Werte für die Extra Inflation Distance sind 1 bis 2 Milimeter.
 									<br/>
 									Achtung: Bei einer Kombination aus hohen Werten für die Inflation Distance und dünnwandigen Bateilen, kann es sein, dass die Stützstruktur durch die Außenwand ragt
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Support Base Layers
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Support Base Layers sind Schichten, die unter der Stützstruktur gedruckt werden, um die Haftung und Stabilität ebendieser zu verstärken. Dies ist besonders dann vonnöten, wenn hohe und dünne Stützstrukturen gefertigt werden sollen. In der Regel reicht eine Schicht aus.
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Combine Support Every … Layers
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Der hier eingegebene Wert multipliziert mit der Primary Layer Height ergibt die Dicke einer Schicht der Stützstruktur. Der Standardwert für diese Option ist 1. Soll die Druckzeit verkürzt werden kann der Wert auf 2 eingestellt werden.
 									<br/>
 									Die Verwendung von höheren Werten ist nur dann anzuraten, wenn Modell und Stützstruktur mit unterschiedlich dicken Düsen gefertigt werden. (Beispiel: Das Modell wird mit Extruder 1, mit einer 0,4mm Düse gedruckt und die Stützstruktur mit Extruder 2, mit einer 0,7mm Düse) Hier gilt die selbe Faustregel wie bei der Primary Layer Height: die Schichtstärke sollte zwischen 25 und 75% des Düsendurchmessers liegen.
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Dense Support:
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Dense Support ist eine dichte Stützstruktur, welche oberhalb der normalen Stützstruktur gedruckt wird. Diese kann verwendet werden, um, mit einem Füllgrad von 60 bis 80%, eine bessere Oberfläche für das darauf liegende Bauteil zu schaffen oder, mit einem Füllgrad von 100% und der Verwendung des zweiten Extruders, eine chemisch lösbare Verbindung zwischen der normalen Stützstruktur und dem Bauteil zu schaffen
-								</p>
-								
-								<p style="font-size: 20px;" class="blue">
-									<b>
-										Dense Support Extruder
-									</b>
-								</p>
-								<p style="font-size: 16px;">
-									Gibt den Extruder an, mit dem die dichte Stützstruktur gedruckt wird.
-								</p>
-								
-								<p style="font-size: 20px;" class="blue">
-									<b>
-										Dense Support Layer
-									</b>
-								</p>
-								<p style="font-size: 16px;">
-									Diese Option gibt die Anzahl der Schichten an, die in dichter Stützstruktur ausgeführt werden.
-								</p>
-								
-								<p style="font-size: 20px;" class="blue">
-									<b>
-										Dense Infill Percentage
-									</b>
-								</p>
-								<p style="font-size: 16px;">
-									Dense Infill Percentage gibt den Füllgrad der dichten Stützstruktur an.
 								</p>
 								
 								<p style="font-size: 22px;" class="blue">
 									<b>
+										Dense Support Extruder
+									</b>
+								</p>
+								<p style="font-size: 17px;">
+									Gibt den Extruder an, mit dem die dichte Stützstruktur gedruckt wird.
+								</p>
+								
+								<p style="font-size: 22px;" class="blue">
+									<b>
+										Dense Support Layer
+									</b>
+								</p>
+								<p style="font-size: 17px;">
+									Diese Option gibt die Anzahl der Schichten an, die in dichter Stützstruktur ausgeführt werden.
+								</p>
+								
+								<p style="font-size: 22px;" class="blue">
+									<b>
+										Dense Infill Percentage
+									</b>
+								</p>
+								<p style="font-size: 17px;">
+									Dense Infill Percentage gibt den Füllgrad der dichten Stützstruktur an.
+								</p>
+								
+								<p style="font-size: 24px;" class="blue">
+									<b>
 										Automatic Placement:
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Die hier getroffenen Einstellungen kommen nur zum Tragen, wenn im Vorschaufenster keine benutzerdefinierten Stützstrukturen generiert wurden.
 `								</p>
 								
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Support Type
 									</b>
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Normal:
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Durch diese Einstellung wird überall am Bauteil eine Stützstruktur berechnet, sowohl jene Bereiche die ihren Ursprung an der Bauplattform haben als auch jene die am Bauteil ansetzen. Durch diese Einstellung erhält man überall dort eine Stützstruktur, wo diese benötigt wird, die ansatzpunkte können aber sichtbare Artefakte an der Bauteiloberfläche hinterlassen.
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										From Build Platform only:
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Diese Einstellung generiert nur jene Stützstrukturen, eine Verbindung zur Bauplattform haben. Dadurch entstehen keine sichtbaren Artefakte an der Bauteiloberfläche, jedoch werden Überhänge, die eine Stützstruktur benötigen wür
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Support Pillar Resolution
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Die Support Pillar Resolution gibt die Auflösung des Gitters an, mit der die Stützstruktur berechnet wird. Eine hohe Auflösung (niedriger Millimeter Wert) sorgt dafür, dass alle Überhänge erfasst werden, jedoch kann es vorkommen, dass die Stützstrukturen zu dünn sind und während des Druckvorganges abbrechen. Eine niedrige Auflösung (hoher Millimeter Wert) erfasst eventuell nicht alle Überhänge, jedoch werden Stützstrukturen breiter und stabiler ausgeführt.
 								</p>
 								<br/>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Es können bei der Berechnung der Stützstruktur verschiedene Auflösungen kombiniert werden.
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Max. Overhang Angle
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									GGibt denn Winkel des Überhanges an, ab dem eine Stützstruktur generiert wird. 0° bedeutet vertikal, 90° horizontal. Als sinnvoller Wert hat sich hier, aus Erfahrungswerten, etwa 43° ergeben. Höhere Werte bedeuten weniger Stützstrukturen.
 								</p>
 								
 								<br/>
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 24px;" class="blue">
 									<b>
 										Separation from Part
 									</b>
 								</p>
 								<br/>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Horizontal Offset from Part
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Gibt den Abstand an, den die Stützstruktur in xy-Richtung zum Bauteil einhält. Ein zu niedriger Wert führt dazu, dass die Stützstruktur am Bauteil haftet und sichtbare Marker hinterlässt. Ein zu hoher Wert kann dazu führen, dass die Stützstruktur unnötig weit vom Bauteil entfernt ist und Überhänge, die gestützt werden müssten keine Stütze erhalten. Ein guter Richtwert ist der halbe Düsendurchmesser.
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Upper Vertical Separation Layers
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Gibt die Anzahl an Schichten an, die zwischen der obersten Schicht der Stützstruktur und dem Bauteil liegen. Der Abstand in z-Richtung ergibt sich aus diesem Wert und der Primary Layer Height.
 									<br/>
 									Bei der Verwendung von löslichem Stützmaterial sollte dieser Wert Null betragen.
@@ -227,21 +229,21 @@
 									Für die Verwendung von Break-Away Support sollte dieser Wert Eins betragen. Bei der Verwendung von dünnen Schichtstärken (etwa 0,1 mm und darunter) kann es, für Materialien mit starker Schichthaftung, zweckmäßig sein den Wert weiter zu erhöhen, wenn sich die Stützstruktur nur schwer lösen lässt.
 								</p>
 								
-								<p style="font-size: 20px;" class="blue">
+								<p style="font-size: 22px;" class="blue">
 									<b>
 										Lower Vertical Separation Layers
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Gibt die Anzahl der Schichten an, die zwischen der untersten Schicht der Stützstruktur und dem Bauteil an. Der Abstand in z-Richtung ergibt sich aus diesem Wert und der Primary Layer Height.
 								</p>
 								
-								<p style="font-size: 22px;" class="blue">
+								<p style="font-size: 24px;" class="blue">
 									<b>
 										Support Infill Angles
 									</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Gibt den Winkel der Linien der Stützstruktur an. Für Break-Away Support sollte hier nur ein Winkel verwendet werden, da sich die Stützstruktur dann leichter entfernen lässt. Soll diese jedoch ohnehin chemisch gelöst wertden könne auch zwei Winkel, welche zueinander um 90° gedreht sind, verwendet werden. Dies ergibt eine stabilere Struktur und mehr Oberfläche, was das Auflösen beschleunigt.
 								</p>
 							</div>

@@ -2,22 +2,27 @@
 <odoo>
 	<template id="theme_menu_about_subtwo" name="website.theme_menu_about_subtwo">
 		<t t-call="website.layout">
-			<t t-set="additional_title">Academy</t>
+			<t t-set="additional_title">Ausbildungen im 3D Druck mit der Evo-tech Academy</t>
+			<t t-set="website_meta_title">Ausbildungen im 3D Druck mit der Evo-tech Academy</t>
+			<t t-set="website_meta_description">
+				Wählen Sie zwischen verschiedenen Schulungen Ausbildungsmodulen im
+				3D-Druck. Wir bieten fachspezifische Weiterbildungen, die alle
+				erfolgsrelevanten Teilbereiche der additiven Fertigung mit EVO-tech
+				umfassen. Jetzt informieren!
+			</t>
+			
 			<div id="wrap" class="oe_structure oe_empty">
-
 				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
 					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
 					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
 						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/data/standort_evotech_aussen.jpg&quot;); background-position: 50% 0px;" />
 						<div class="container">
 							<div class="row s_nb_column_fixed">
-								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
-									data-name="Box">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12" data-name="Box">
 									<div class="row">
-										<div class="col-lg-12 s_title s_col_no_bgcolor"
-											data-name="Title">
+										<div class="col-lg-12 s_title s_col_no_bgcolor" data-name="Title">
 											<h1 class="s_title_default" style="text-align: center; ">
-												<font style="font-size: 42px; color: white;">
+												<font style="font-size: 48px; color: white;" class="font">
 													<b>ACADEMY</b>
 												</font>
 											</h1>
@@ -34,13 +39,13 @@
 							<div class="col-lg-12 pt32 pb32">
 								<p class="lead" />
 								<div style="text-align: center;" class="blue">
-									<span style="font-size: 22px;">
+									<span style="font-size: 24px;">
 										<b>
 											Mehr Wissen für mehr Produktivität im professionellen 3D-Druck
 										</b>
 									</span>
 								</div>
-								<p style="text-align: center;font-size: 15px;">
+								<p style="text-align: center;font-size: 17px;">
 									Unsere Erfahrung zeigt: Know-how ist gerade auch in der additiven Fertigung ein höchst effektiver Produktivitäts-Treiber. Aus diesem Grund geben wir unser umfangreiches Wissen im Rahmen von Schulungen und Ausbildungen an unsere Kunden weiter. Die zentralen Aspekte dieser fachspezifischen Weiterbildung umfassen alle erfolgsrelevanten Teilbereiche der additiven Fertigung mit EVO-tech.
 								</p>
 							</div>
@@ -52,10 +57,10 @@
 					<div class="container">
 						<div class="row">
 							<div class="pt32 pb32 text-left col-lg-6">
-								<p class=" blue" style="font-size: 21px; ">
+								<p class=" blue" style="font-size: 22px; ">
 									<b>   Ausbildungsschwerpunkte</b>
 								</p>
-								<ul id="ul" style="font-size: 16px; margin-left: -25px; ">
+								<ul id="ul" style="font-size: 17px; margin-left: -25px; ">
 									<li>Mehrwert durch 3D Druck im Unternehmen schaffen </li>
 									<li>Anwendungsfälle im Unternehmen identifizieren und umsetzen  </li>
 									<li>Basiswissen EVO-lizer Hard- und Software </li>
@@ -65,10 +70,10 @@
 							</div>
 							
 							<div class="pt32 pb32 text-left col-lg-6" style="width:130%">
-								 <p class=" blue" style="font-size: 21px; ">
+								 <p class=" blue" style="font-size: 22px; ">
 									<b>   Wählen Sie zwischen verschiedenen Ausbildungsmodulen! </b>
 								</p>
-								<p style="font-size:15px;">
+								<p style="font-size:17px;">
 									Je nach Modul bieten wir Ihnen bzw. Ihren Mitarbeitern die Chance, mehr oder weniger tief in die ebenso komplexe wie lukrative Welt der additiven Fertigung einzutauchen. Die freie Wahl genießen Sie auch im Hinblick auf den Ausbildungsort und die Art der Wissensvermittlung. Wir schulen sowohl bei Ihnen vor Ort als auch an unserem Unternehmenssitz in Schörfling. Darüber hinaus bieten wir auch Online-Tutorials an.
 								</p>
 							</div>
@@ -81,16 +86,16 @@
 					<div class="container">
 						<div class="row">
 							<div class="pt32 pb32 text-left col-lg-6">
-								<span class=" blue" style="font-size: 21px; ">
+								<span class=" blue" style="font-size: 24px; ">
 									<b>   Modul 1 (EVO-lizer Starter)</b>
 								</span>
-								<p style="font-size:15px;">
+								<p style="font-size:17px;">
 									3D Printing Starter richtet sich an alle Neuanwender der EVO-tech 3D-Drucker EL-11 und EL-102.
 								</p>
-								<p style="font-size:15px;">
+								<p style="font-size:17px;">
 									Inhalte:
 								</p>
-								<ul id="ul" style="font-size: 16px; margin-left: -25px; ">
+								<ul id="ul" style="font-size: 17px; margin-left: -25px; ">
 									<li>Dauer 6 Stunden </li>
 									<li>Direkt vor Ort bei unseren Kunden   </li>
 									<li> 2-5 Teilnehmer mit CAD oder CAM Erfahrung </li>
@@ -104,16 +109,16 @@
 							</div>
 							
 							<div class="pt32 pb32 text-left col-lg-6" style="width:130%">
-								 <span class=" blue" style="font-size: 21px; ">
+								 <span class=" blue" style="font-size: 24px; ">
 									<b>   Modul 2 (3D Printing Advanced) </b>
 								</span>
-								<p style="font-size:15px;">
+								<p style="font-size:17px;">
 									3D Printing Advanced richtet sich an Anwender, die bereits die ersten Erfahrungen im Umgang mit den EVO-tech 3D Druckern EL-11 und EL-102 sammeln konnten. Auf die spezifische Anforderungen der Seminarteilnehmer gehen wir selbstverständlich individuell ein. Gerne bieten wir unsere Trainings auch in Englisch an.
 								</p>
-								<p style="font-size:15px;">
+								<p style="font-size:17px;">
 									Inhalte:
 								</p>
-								<ul id="ul" style="font-size: 16px; margin-left: -25px; ">
+								<ul id="ul" style="font-size: 17px; margin-left: -25px; ">
 									<li>Dauer 8 Stunden </li>
 									<li>3D Druck-Vorkenntnisse notwendig   </li>
 									<li> Erweiterte Wartungstätigkeiten </li>
@@ -130,10 +135,10 @@
 					<div class="container">
 						<div class="row">
 							<div class="pt32 pb32 text-left col-lg-8">
-								<span class=" blue" style="font-size: 20px; ">
+								<span class=" blue" style="font-size: 22px; ">
 									<b>   Nächste Academy Termine:</b>
 								</span> <br/>
-								<span style="font-size:15px;">
+								<span style="font-size:17px;">
 									Mehr Informationen erhalten Sie hier!
 								</span>
 							</div>
@@ -143,23 +148,25 @@
 					</div>
 				</section>
 				
-				<section class="pt28 pb28" data-name="Title" style="background-color: #008bd2!important">
+				<section class="s_call_to_action bg-200 pt28 pb28" data-name="Call to Action" style="background-color: #008bd2!important">
 					<div class="container">
-						<div class="row s_nb_column_fixed">
-							<div class="col-lg-12 s_title " style="text-align: center;">
-								<div class="row align-items-center">
-									<div class="col-lg-6 ">
-										<p style="font-size:20px;color: white; margin-top: 5%;">
-										Sie benötigen mehr Informationen? Wir beraten Sie gerne.
-										</p>	
-									</div>
-								</div>
-								<p class="s_title_default">
-									<a href="/contactus/" class="blue btn btn-gamma flat btn-lg" data-original-title="" title="" 
-										style="background-color: white; margin-left:80%; margin-top : -7%; ">
-										<b style=" font-size: 14px; "> Jetzt Kontaktieren </b>
-									</a>
+						<div class="row">
+							<div class="col-lg-1 pb24">
+								<p class="lead o_default_snippet_text pt16 text-center" style="font-size:20px; color:white; ">
+									<i class="mpc-transition fa fa-3x fa-phone" style=" color: white; "></i>	
 								</p>
+							</div>
+							<div class="col-lg-8 pb24">
+								<p/>
+								<p class=" o_default_snippet_text pt16 " style="font-size:20px; color:white; font-weight: 600;">
+									Sie benötigen mehr Informationen? Wir beraten Sie gerne.
+								</p>
+							</div>
+							<div class="col-lg-3 s_btn text-right pt8 pb24" data-name="Button" style=" ">
+								<a href="/kontakt/" class="blue btn btn-gamma flat btn-lg hvr-fade" 
+										style="background-color: white; font-size: 16px;">
+										<b> Jetzt Kontaktieren </b>
+								</a>
 							</div>
 						</div>
 					</div>

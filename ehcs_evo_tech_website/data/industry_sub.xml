@@ -2,7 +2,7 @@
 <odoo>
 	<data>
 		<!-- SUBMENU BRANCHEN -->
-		<record id="menu_branchen_subone" model="website.menu">
+		<!-- <record id="menu_branchen_subone" model="website.menu">
 			<field name="name">Automotive</field>
 			<field name="url">/automotive/</field>
 			<field name="sequence" type="int">61</field>
@@ -49,7 +49,6 @@
 			<field name="parent_id" ref="ehcs_evo_tech_website.menu_branchen" />
 			<field name="website_id" ref="website.default_website" />
 		</record>
-
-		
+ -->		
 	</data>
 </odoo>

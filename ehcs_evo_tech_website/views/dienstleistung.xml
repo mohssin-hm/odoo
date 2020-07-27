@@ -2,13 +2,16 @@
 <odoo>
 	<template id="theme_menu_dienstleistung_page" name="website.ueber_page">
 		<t t-call="website.layout">
-			<t t-set="additional_title">3d Druck Dienstleistung</t>
-			<div id="wrap" class="oe_structure oe_empty">
+			<t t-set="additional_title"> 3D Druck Dienstleistung - EVO-tech 3D-Drucker </t>
+			<t t-set="website_meta_title"> 3D Druck Dienstleistung - EVO-tech 3D-Drucker </t>
+			<t t-set="website_meta_description">
+				3D Druck Dienstleistung - EVO-tech 3D-Drucker
+			</t>
 
+			<div id="wrap" class="oe_structure oe_empty">
 				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
 					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none;     background: rgba(34, 30, 34, 0.32);">
 					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
-						
 						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/data/dienstleistung-scaled.jpg&quot;); background-position: 50% 0px;" />
 						<div class="container">
 							<div class="row s_nb_column_fixed">
@@ -17,9 +20,10 @@
 									<div class="row">
 										<div class="col-lg-12 s_title s_col_no_bgcolor"
 											data-name="Title">
-											<h1 class="s_title_default" style="text-align: center; ">
-												<font style="font-size: 62px;color: antiquewhite;">
-													<b>3d druck dienstleistung</b>
+											<h1 class="s_title_default responsive" style="text-align: center; ">
+												<font style="font-size: 48px;color: antiquewhite;" class="font">
+													<b>3d druck dienstleistung
+													</b>
 												</font>
 											</h1>
 										</div>
@@ -39,13 +43,13 @@
 											Wir unterstützen Sie von der Idee bis zur Serienfertigung
 									</span>
 								</div>
-								<p style="text-align: center;font-size: 15px;">
+								<p style="text-align: center;font-size: 16px;">
 									3D Druck ist nicht gleich 3D Druck und oftmals sind für besondere Anwendungen Spezialmaschinen und Materialien von Nöten oder es müssen Auslastungsspitzen abgedeckt werden.
 									Deswegen bieten wir unseren Kunden neben unseren Maschinen auch ein 3D Druckservice mit allen gängigen Technologien, Bauteilfinishing,
 									Technologieberatung und fertigungsgerechte Konstruktion an.
 								</p>
 								<img width="1753" height="158" src="/ehcs_evo_tech_website/static/src/img/data/workflow_dienstleistung.jpg.webp" alt="" 
-									sizes="(max-width: 1753px) 100vw, 1753px" style="width: 100%; "/>	
+									class="responsive" sizes="(max-width: 1753px) 100vw, 1753px" style="width: 100%; "/>	
 							</div>
 						</div>
 					</div>
@@ -56,7 +60,7 @@
 						<div class="row align-items-center">
 							<div class="col-lg-6 pb16 pt16">
 								<h2 class="blue"> <b> Nutzen Sie unser Know How </b> </h2>
-								<p class="" style="font-size: 15px; ">
+								<p class="" style="font-size: 16px; ">
 									Egal in welcher Entwicklungsstufe Sie sich gerade befinden und vor welcher Herausforderung Sie stehen.
 									Wir nehmen uns gerne um Ihre Projekte an und begleiten Sie von der Idee hin zum fertigen Serienprodukt.
 									<br/>
@@ -66,7 +70,7 @@
 									</b>
 									<br/>
 									
-									<ul id="ul" style="font-size: 15px; margin-left: -25px; ">
+									<ul id="ul" style="font-size: 16px; margin-left: -25px; ">
 										<li>Ideenworkshop</li>
 										<li>Beratung bzgl. der Wahl des richtigen additiven
 											Fertigungsverfahrens</li>
@@ -80,33 +84,24 @@
 								</p>
 							</div>
 							<div class="col-lg-6 pt16 pb16">
-								<a id="bannerLink1" href="#"
-									onclick="void window.open(this.href); return false;">
-									<img id="bannerImage1"
-										src="/ehcs_evo_tech_website/static/src/img/data/baugruppe1-1920x1080.jpg.webp"
-										class="img img-fluid mx-auto" 
-										data-original-title="" title="" aria-describedby="tooltip597079"/>
-								</a>
-								<script>
-									var links = ["#","#","#","#"];
-							        var images = ["/ehcs_evo_tech_website/static/src/img/data/baugruppe2-1920x1080.jpg.webp",
-													"/ehcs_evo_tech_website/static/src/img/data/baugruppe2-1920x1080.jpg.webp",
-													"/ehcs_evo_tech_website/static/src/img/data/baugruppe_internorm-1920x1080.jpg.webp",
-													"/ehcs_evo_tech_website/static/src/img/data/baugruppe3-1920x1080.jpg.webp",
-													];
-							        var i = 0;
-							        var renew = setInterval(function(){
-							            if(links.length == i){
-							                i = 0;
-							            }
-							            else {
-							            document.getElementById("bannerImage1").src = images[i]; 
-							            document.getElementById("bannerLink1").href = links[i]; 
-							            i++;
-							
-							        }
-							        },2000);
-								</script>
+								<div class="container">
+									<div class="carousel slide" id="main-carousel" data-ride="carousel" data-interval="1000">
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img class="d-block img-fluid" src="/ehcs_evo_tech_website/static/src/img/data/baugruppe1-1920x1080.jpg.webp" alt=""/>
+											</div>
+											<div class="carousel-item">
+												<img class="d-block img-fluid" src="/ehcs_evo_tech_website/static/src/img/data/baugruppe2-1920x1080.jpg.webp" alt=""/>
+											</div>
+											<div class="carousel-item">
+												<img class="d-block img-fluid" src="/ehcs_evo_tech_website/static/src/img/data/baugruppe2-1920x1080.jpg.webp" alt=""/>
+											</div>
+											<div class="carousel-item">
+												<img src="/ehcs_evo_tech_website/static/src/img/data/baugruppe3-1920x1080.jpg.webp" alt="" class="d-block img-fluid"/>
+											</div>
+										</div><!-- /.carousel-inner -->
+									</div><!-- /.carousel -->
+								</div><!-- /.container -->
 							</div>
 						</div>
 					</div>
@@ -115,14 +110,16 @@
 				<section class="s_features pt32 pb32 " data-name="Features" style="background-color: #f8f9fa !important; color: #555555; ">
 			        <div class="container">
 			        	<center>
-				        	<h2 class="blue">
+				        	<h2 class="blue" style="font-size: 25px; font-weight: 500; ">
 								 Verfügbare 3D Drucktechnologien
 				        	</h2>
 			        	</center>
 			            <div class="row">
-			                <div class="pt32 pb32 text-center col-lg-3">
-								<h1 style="text-align: left;" class=" blue">FDM/FFF</h1>
-								<p style="text-align: left;font-size: 15px;">Fused deposition Modeling</p>
+			                <div class="pt32 pb32  col-lg-3">
+								<span class="blue" style="font-size: 28px;  font-weight: 500; ">
+									FDM/FFF
+								</span>
+								<p style="text-align: left;font-size: 16px;">Fused deposition Modeling</p>
 								<p style="text-align: left;font-size: 18px;">
 									<strong>Vorteile:</strong>
 								</p>
@@ -134,9 +131,11 @@
 								</ul>
 			                </div>
 
-			                <div class="pt32 pb32 text-center col-lg-3">
-			                    <h1 style="text-align: left;" class=" blue">SLS</h1>
-								<p style="text-align: left;font-size: 15px;">Slektives Lasersintern</p>
+			                <div class="pt32 pb32  col-lg-3">
+			                    <span class="blue" style="font-size: 28px; text-align: left; font-weight: 500; ">
+			                    	SLS
+			                    </span>
+								<p style="text-align: left;font-size: 16px;">Slektives Lasersintern</p>
 								<p style="text-align: left;font-size: 18px;">
 									<strong>Vorteile:</strong>
 								</p>
@@ -146,9 +145,11 @@
 								</ul>
 			                </div>
 			                
-			                <div class="pt32 pb32 text-center col-lg-3">
-			                     <h1 style="text-align: left;" class=" blue">HP-MJF</h1>
-								<p style="text-align: left;font-size: 15px;">HP Multi Jet Fusion</p>
+			                <div class="pt32 pb32  col-lg-3">
+			                    <span class="blue" style="font-size: 28px; text-align: left; font-weight: 500; ">
+			                    	HP-MJF
+			                    </span> 
+								<p style="text-align: left;font-size: 16px;">HP Multi Jet Fusion</p>
 								<p style="text-align: left;font-size: 18px;">
 									<strong>Vorteile:</strong>
 								</p>
@@ -158,9 +159,11 @@
 								</ul>
 			                </div>
 			                
-			                <div class="pt32 pb32 text-center col-lg-3">
-								 <h1 style="text-align: left;" class=" blue">Polyjet</h1>
-								<p style="text-align: left;font-size: 15px;"> </p>
+			                <div class="pt32 pb32  col-lg-3">
+								<span class="blue" style="font-size: 28px; font-weight: 500; ">
+									Polyjet
+								</span>
+								<p style="text-align: left;font-size: 16px;"> </p>
 								<p style="text-align: left;font-size: 18px; margin-top:20%">
 									<strong>Vorteile:</strong>
 								</p>
@@ -321,14 +324,16 @@
 								<form action="/website_form/" method="post" class="s_website_form container-fluid mt32 o_fake_not_editable"
 									enctype="multipart/form-data" data-name="Form Builder" data-model_name="mail.mail" data-success_page="/contactus-thank-you">
 									<div class="container">
-										<h1 class="o_form_heading o_fake_editable">
+										<span class="blue" style="font-size: 28px; font-weight: 500; ">
 											<div id="mpc_textblock-25eec45653a518" class="mpc-textblock mpc-typography--mpc_preset_29 mpc-inited"
 												style="font-size: 24px; line-height: 1.1; max-width: 100%; color: rgb(0, 139, 210); text-transform: none; opacity: 1; font-family: &quot;Open Sans&quot; !important; font-weight: 700 !important;">
-												<h1 style="margin-left: 15%; ">Kontaktieren Sie uns!</h1>
+												<span class="blue" style="font-size: 28px; font-weight: 500; ">
+													Kontaktieren Sie uns!
+												</span>
 											</div>
 											<div role="form" class="wpcf7" id="wpcf7-f324633-p324567-o1" lang="en-US" dir="ltr"
 												style="box-sizing: inherit; color: rgb(66, 66, 66); font-family: Lato, sans-serif; font-size: 19px; text-transform: none;" />
-										</h1>
+										</span>
 										<div class="row form-group form-field d-none">
 											<div class="col-lg-10 col-md-4">
 												<label class="col-form-label o_fake_editable" for="email_to">
@@ -352,7 +357,7 @@
 										<div class="form-group row form-field o_website_form_custom o_fake_not_editable">
 											<div class="col-lg-10 col-md-4">
 												<label class="col-form-label o_fake_editable" for="Surname" style=" font-size: 17px; font-weight:150; "> 
-													Surname*
+													Nachname*
 												</label>
 												<input type="text" class="form-control o_website_form_input"
 													name="Surname" required="" />
@@ -432,7 +437,7 @@
 										<div class="form-group row">
 											<div class="offset-lg-3 offset-md-4 col-md-8 col-lg-7">
 												<button class="btn btn-primary btn-lg flat o_website_form_send o_default_snippet_text"
-												style="background-color: white; border: 1px solid; color: #008bd2; margin-left : -45%" >Absenden</button>
+												style="background-color: white; border: 1px solid; color: #008bd2; " >Absenden</button>
 												<span id="o_website_form_result" />
 											</div>
 										</div>
@@ -477,13 +482,6 @@
 						</div>
 					</div>
 				</section>
-
-
-				<!-- <img width="1753" height="158" src="https://evo-tech.eu/wp-content/uploads/2020/03/workflow_dienstleistung.jpg" alt="" 
-					srcset="https://evo-tech.eu/wp-content/uploads/2020/03/workflow_dienstleistung.jpg 1753w, https://evo-tech.eu/wp-content/uploads/2020/03/workflow_dienstleistung-300x27.jpg 300w, https://evo-tech.eu/wp-content/uploads/2020/03/workflow_dienstleistung-600x54.jpg 600w, https://evo-tech.eu/wp-content/uploads/2020/03/workflow_dienstleistung-1024x92.jpg 1024w, https://evo-tech.eu/wp-content/uploads/2020/03/workflow_dienstleistung-768x69.jpg 768w, https://evo-tech.eu/wp-content/uploads/2020/03/workflow_dienstleistung-1536x138.jpg 1536w, https://evo-tech.eu/wp-content/uploads/2020/03/workflow_dienstleistung-536x48.jpg 536w" 
-					sizes="(max-width: 1753px) 100vw, 1753px"/>		 -->		
-				
-				
 			</div>
 		</t>
 	</template>

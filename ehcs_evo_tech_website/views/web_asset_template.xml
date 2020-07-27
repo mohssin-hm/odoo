@@ -22,9 +22,8 @@
                t-thumbnail="/ehcs_evo_tech_website/static/src/img/data/snippet.png"/>
              <t t-snippet="ehcs_evo_tech_website.megamenu_style_5"
                t-thumbnail="/ehcs_evo_tech_website/static/src/img/data/snippet.png"/>
-             <t t-snippet="ehcs_evo_tech_website.megamenu_style_6"
-               t-thumbnail="/ehcs_evo_tech_website/static/src/img/data/snippet.png"/>
-               
+           <!--   <t t-snippet="ehcs_evo_tech_website.megamenu_style_6"
+               t-thumbnail="/ehcs_evo_tech_website/static/src/img/data/snippet.png"/> -->
 		 </xpath>
 	 </template>
 	 

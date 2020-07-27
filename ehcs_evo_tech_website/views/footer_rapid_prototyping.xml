@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_submenu_tab_rapid_pro_deutschland" name="website.theme_submenu_tab_rapid_pro_deutschland">
+		<t t-call="website.layout">
+			<t t-set="additional_title">Rapid Prototyping - EVO-tech 3D-Drucker</t>
+			<t t-set="website_meta_title"> Rapid Prototyping - EVO-tech 3D-Drucker </t>
+			<t t-set="website_meta_description">
+				Rapid Prototyping - EVO-tech 3D-Drucker
+			</t>
+			
+			<div id="wrap" class="oe_structure oe_empty">
+				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
+					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
+					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/img_6646_3-scaled.jpg&quot;); background-position: 50% 0px;" />
+						<div class="container">
+							<div class="row s_nb_column_fixed">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
+									data-name="Box">
+									<div class="row">
+										<div class="col-lg-12 s_title s_col_no_bgcolor" data-name="Title">
+											<h1 class="s_title_default" style="text-align: center; ">
+												<font style="font-size: 55px;color: white;" class="font">
+													<b>RAPID PROTOTYPING IN DEUTSCHLAND </b>
+												</font>
+											</h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</section>
+				
+				<section class="s_text_block pt32 pb32" data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 pb32">
+								<p class="lead" />
+								<div style="text-align: center;" class="blue">
+									<span style="font-size: 22px;">
+										<b>
+											Was ist Rapid Prototyping?
+										</b>
+									</span>
+								</div>
+								<p style="text-align: center;font-size: 17px;">
+									Rapid Prototyping, als Kurzform wird auch RP verwendet, beschreibt verschiedene schnelle Herstellungsverfahren von Prototypen. Das Rapid Prototyping, auf Deutsch übersetzt der „schnelle Modellbau“, ermöglicht es physische Modelle in sehr kurzer Zeit zu fertigen. Als Basis für diese 3D Modelle werden dreidimensionale CAD (Computer Aided Design) Daten verwendet. Das Verfahren des Rapid Prototyping wird in verschiedenen Branchen in ganz Deutschland eingesetzt. Entweder zum Beschleunigen einer Produktentwicklung, zum Testen vorläufiger Ergebnisse oder zum Visualisieren erster Ideen. Außerdem erhält man durch Rapid Prototyping mehr Sicherheit beim Übergang in die Serienfertigung.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_text_image pt32 pb32" data-name="Text - Image">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-6 pb16 pt16">
+								<span class="blue" style="font-size: 22px;" > 
+									<b> Vorteile von Rapid Prototyping für die deutsche Industrie  </b> </span>
+								<ul id="ul" style="font-size: 17px; ">
+									<li>Schnelle Fertigung von Modellen </li>
+									<li>Effektive Präsentation von Produktneuheiten und Ideen </li>
+									<li>Mehr Flexibilität bei der Produktgestaltung und schnellere Anpassbarkeit </li>
+									<li>Kosten- und Zeitersparnis im Product Development </li>
+									<li>Funktionelles und formales Testen der Funktionen direkt möglich </li>
+									<li>Schnelleres Verarbeiten und Implementieren von Verbesserungen </li>
+									<li>Verkürzung der Produktentwicklungs- und Markteinführungszeit </li>
+								</ul>
+							</div>
+							<div class="col-lg-6">
+								<img src="/ehcs_evo_tech_website/static/src/img/frf3358_2.jpg"
+									class="img img-fluid mx-auto"  data-original-title="" title="" aria-describedby="tooltip597079"/>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_text_image pt32 pb32" data-name="Text - Image">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-5">
+								<img src="/ehcs_evo_tech_website/static/src/img/frf3366_1.jpg"
+									class="img img-fluid mx-auto"  data-original-title="" title="" aria-describedby="tooltip597079"/>
+							</div>
+							<div class="col-lg-7 pb16 pt16">
+								<span class="blue" style="font-size: 22px;" > 
+									<b> Wie funktioniert Rapid Prototyping</b> 
+								</span>
+								<br/>
+								<p style="font-size: 17px;" >
+									Man unterscheidet mehrere Verfahren beim Rapid Prototyping. Dabei ist die schnellste und kostengünstigste Prototypenherstellung ganz klar der 3D Druck. Es handelt sich hier um eine additive Fertigungstechnologie. Der Prototyp  wird durch schichtweises Auftragen des Materials gefertigt. Für diese Art der Prototypenfertigung benötigt man eine CAD (Computer Aided Design) oder 3D Programmiersoftware. Diese Daten werden an den 3D Drucker gesendet, der daraus das Modell fertigt.  So werden Schichten von Flüssigpulver oder Plattenmaterial übereinander gelegt und der Prototyp schichtweise aufgebaut. Die einzelnen Schichten werden automatisch miteinander verbunden. Dieser Vorgang führt zu einer enormen Kosten- und Zeitersparnis im gesamten Fertigungsprozess, denn der Prototyp eines Produkts oder eines Bauteils ist schnell verfügbar und kann sogar firmenintern angefertigt werden. Je nach Größe und Anzahl der Modelle kann die Produktionszeit natürlich variieren, doch in der Regel dauert die Herstellung eines Prototypen nur wenige Stunden. Mit Hilfe des 3D Drucks können aber nicht nur Prototypen oder Modelle direkt in Deutschland hergestellt werden, sondern auch Bauteile für die Serienproduktion oder Ersatzteile.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_text_block pt32 " data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 pb32">
+								<p class="lead" />
+								<div style="text-align: center;" class="blue">
+									<span style="font-size: 24px;">
+										<b>
+											Bekannte Rapid Prototyping Verfahren in Deutschland
+										</b>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_text_block  pb32" data-name="Text block" style="color: #555555; background-color: #f8f9fa !important;">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 pb32">
+								<p class="lead" />
+								<div style="text-align: left;" class="blue">
+									<span style="font-size: 22px;">
+										<b>
+											Selektives Lasersintern (SLS)
+										</b>
+									</span>
+								</div>
+								<p style="text-align: left; font-size: 17px;">
+									Bei diesem Verfahren erfolgt die Herstellung der Prototypen mit Hilfe eines Lasers. Es werden beim selektiven Lasersintern kunststoffähnliche pulverförmige Materialien verwendet (z.B. Alumide oder Polyamide), die durch den Laserstrahl miteinander verschmolzen werden.
+
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="s_text_block  pb32" data-name="Text block" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 pb32">
+								<p class="lead" />
+								<div style="text-align: left;" class="blue">
+									<span style="font-size: 22px;">
+										<b>
+											Stereolithografie (SLA)
+										</b>
+									</span>
+								</div>
+								<p style="text-align: left; font-size: 17px;">
+									Beim Stereolithografie – Verfahren wird das Werkstück in ein flüssiges Photopolymer abgesenkt. Danach fährt ein Laser schichtweise über das Materialstück, bis die gewünschte Form erreicht ist. Es handelt sich bei der SLA um ein äußerst präzises Verfahren, mit dem man besonders glatte Oberflächen erzeugen kann.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_text_block  pb32" data-name="Text block" style="color: #555555; background-color: #f8f9fa !important;">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 pb32">
+								<p class="lead" />
+								<div style="text-align: left;" class="blue">
+									<span style="font-size: 22px;">
+										<b>
+											Fused Filament Fabrication (FFF)
+										</b>
+									</span>
+								</div>
+								<p style="text-align: left; font-size: 17px;">
+									Dieses Rapid Prototyping Verfahren ist ein Fertigungsverfahren, das auf schichtweise Verschmelzung beruht. Hier wird der Prototyp schichtweise aus einem Kunststoff hergestellt, der geschmolzen wird. Bei diesem 3D Druck Verfahren wird meist mit dem Kunststoff ABS gearbeitet, der sehr beständig und robust ist.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="s_text_block  pb32" data-name="Text block" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 pb32">
+								<p class="lead" />
+								<div style="text-align: left;" class="blue">
+									<span style="font-size: 22px;">
+										<b>
+											Selektives Laserschmelzen (SLM)
+										</b>
+									</span>
+								</div>
+								<p style="text-align: left; font-size: 17px;">
+									Das Selektive Laserschmelzen ist ein Rapid Prototyping Verfahren zum Fertigen von Metall-Prototypen verwendet wird. Die Modelle werden im Schichtverfahren aufgebaut.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_text_block  pb32" data-name="Text block" style="color: #555555; background-color: #f8f9fa !important;">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 pb32">
+								<p class="lead" />
+								<div style="text-align: left;" class="blue">
+									<span style="font-size: 22px;">
+										<b>
+											3D Printing (3DP)
+										</b>
+									</span>
+								</div>
+								<p style="text-align: left; font-size: 17px;">
+									Beim 3D Printing wird das Modell aus einem gipsartigem Pulver gefertigt und Schicht für Schicht aufgetragen. Durch ein Bindemittel haften die Schichten aneinander und verschmelzen miteinander. 3D Druck ist ein sehr kostengünstiges und besonders schnelles Verfahren.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_text_block pt32 " data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 pb32">
+								<p class="lead" />
+								<div style="text-align: center;" class="blue">
+									<span style="font-size: 24px;">
+										<b>
+											Unterschiedliche Zweige von Rapid Prototypen
+										</b>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="s_text_image pt32 pb32" data-name="Text - Image">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-6 pb16 pt16">
+								<span class="blue" style="font-size: 22px;" > 
+									<b>
+										Designprototyp
+									</b> 
+								</span>
+								<p style="font-size: 17px;" >
+									Ein Designprototyp wird gefertigt, um ästhetische und ergonomische Merkmale vorerst testen zu können.
+								</p>
+								
+								<span class="blue" style="font-size: 22px;" > 
+									<b>
+										Konzeptprototyp
+									</b> 
+								</span>
+								<p style="font-size: 17px;" >
+									Dieser Prototyp dient dazu, um eine Idee oder ein bestimmtes Konzept zu veranschaulichen.
+								</p>
+								
+								<span class="blue" style="font-size: 22px;" > 
+									<b>
+										Funktionsprototyp
+									</b> 
+								</span>
+								<p style="font-size: 17px;" >
+									Ein Funktionsprototyp hat bereits die wichtigsten Funktionen, die auch das spätere Endprodukt aufweisen soll. Anhand dieses Prototyps können mechanische, elektrische, akustische oder thermische Funktionen getestet und überprüft werden.
+								</p>
+								
+								<span class="blue" style="font-size: 22px;" > 
+									<b>
+										Geometrischer Prototyp
+									</b> 
+								</span>
+								<p style="font-size: 17px;" >
+									Diese Art von Prototyp ist ein maßgenaues Modell, welches für die erste Montage, bzw. ersten Gebrauch verwendet wird. Es dient zum Testen und Kontrollieren der Passgenauigkeit und der Toleranzen.
+								</p>
+							</div>
+							<div class="col-lg-6">
+								<img src="/ehcs_evo_tech_website/static/src/img/1f84xtkk-2.gif"
+									class="img img-fluid mx-auto"  data-original-title="" title="" aria-describedby="tooltip597079"/>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_features  pt30 pb0" data-name="Features" style="color: #555555; background-color: #f8f9fa !important;">
+					<div class="container">
+						<br/> <br/> <br/>
+						<center class="blue" style=" font-size: 24px; ">
+							<b> 	Mit 3D Druck mehr Effizienz im Prototypenbau in Deutschland 	</b>
+						</center>
+						<div class="row">
+							<div class="pt32 pb32 text-left col-lg-6">
+								<center>
+									<a href="/3d-drucker-el-102/">
+										<img src="/ehcs_evo_tech_website/static/src/img/facc2.webp"></img> <br/> <br/>
+									</a>
+									<p class="blue" style=" font-size: 18px; ">
+										<b> 3D Drucker EL-102	</b>
+									</p>
+									<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: -1%;"></hr>
+									<p style=" font-size: 16px; ">
+										Gleichzeitiges Drucken mehrerer Prototypen möglich, sowie eine Verarbeitung von großen Materialmengen bis zu einer Größe von 500 x 400 x 510 mm (B x T x H).
+									</p>
+								</center>
+								<br/> 
+								<center>
+								<a href="/3d-drucker-el-102/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade "
+										style="color: white !important; background-color: #008bd2;"
+										data-original-title="" title="3d-drucker-el-102">Mehr zum EL-102</a>
+								</center>
+							</div>
+							
+							<div class="pt32 pb32 text-left col-lg-6">
+								<center>
+									<a href="/3d-drucker-el-11/">
+										<img src="/ehcs_evo_tech_website/static/src/img/facc1.webp"> </img> <br/><br/>
+									</a>
+									<p class="blue" style=" font-size: 18px; ">
+										<b> 3D Drucker EL-11	</b>
+									</p>
+									<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: -1%;"></hr>
+									<p style=" font-size: 16px; ">
+										Für die Erstellung von Bauteilen bis 270 x 200 x 210mm (B x T x H) bei extrem niedrigen Betriebskosten und einem offenem System für Filamente.
+									</p>
+								</center>
+								<br/>
+								<center>
+								<a href="/3d-drucker-el-11/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade "
+										style="color: white !important; background-color: #008bd2;"
+										data-original-title="" title="3d-drucker-el-11">Mehr zum EL-11</a>
+								</center>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_call_to_action bg-200 pt28 pb28" data-name="Call to Action" style="background-color: #008bd2!important">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-9 pb24">
+								<p class=" o_default_snippet_text pt16 " style="font-size:16px; color:white; ">
+									Wenn Sie mehr über die Einsatzmöglichkeiten eines EVO-tech 3D Druckers für Rapid Prototyping wissen <br/>
+									möchten oder Ihre Anforderungen an einen 3D Drucker mit uns besprechen wollen, kontaktieren Sie unser <br/>
+									Team in Deutschland!
+								</p>
+							</div>
+							<div class="col-lg-3 s_btn text-right pt8 pb24" data-name="Button" style=" ">
+								<a href="/kontakt/" class="blue btn btn-gamma flat btn-lg hvr-fade" 
+										style="background-color: white; font-size: 16px;">
+										<b> Jetzt Kontaktieren </b>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="pt32 pb32" data-name="Title" >
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+						</div>
+					</div>
+				</section>
+				
+			</div>
+		</t>
+	</template>
+</odoo>

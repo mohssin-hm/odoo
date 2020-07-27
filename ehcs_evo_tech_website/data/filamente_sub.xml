@@ -3,7 +3,7 @@
 	<data>
 	
 		<!-- SUBMENU filamente -->
-		<record id="menu_filamente_subone" model="website.menu">
+		<!-- <record id="menu_filamente_subone" model="website.menu">
 			<field name="name">Ultem 9085</field>
 			<field name="url">/filamente/ultem-9085/</field>
 			<field name="sequence" type="int">41</field>
@@ -146,6 +146,6 @@
 				ref="ehcs_evo_tech_website.menu_filamente" />
 			<field name="website_id" ref="website.default_website" />
 		</record>
-
+ -->
 	</data>
 </odoo>

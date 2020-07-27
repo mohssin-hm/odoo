@@ -2,26 +2,28 @@
 <odoo>
 	<template id="theme_menu_branchen_subtwo" name="website.theme_menu_branchen_subtwo">
 		<t t-call="website.layout">
-			<t t-set="additional_title">Maschinenbau</t>
+			<t t-set="additional_title">3D Drucker von Evo-tech | Einsatz von 3D Druck im Maschinenbau</t>
+			<t t-set="website_meta_title"> 3D Drucker von Evo-tech | Einsatz von 3D Druck im Maschinenbau </t>
+			<t t-set="website_meta_description">
+				3D Drucker sind im Maschinenbau vielseitig einsetzbar. Von Sonderbauteilen bis zur Serienfertigung. Erfahren Sie mehr über 3D Druck im Maschinenbau.
+			</t>
+			
 			<div id="wrap" class="oe_structure oe_empty">
-
 				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
 					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
 					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
 						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/maschinenbau_2000x700_100.jpg&quot;); background-position: 50% 0px;" />
 						<div class="container">
 							<div class="row s_nb_column_fixed">
-								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
-									data-name="Box">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12" data-name="Box">
 									<div class="row">
-										<div class="col-lg-12 s_title s_col_no_bgcolor text-center"
-											data-name="Title">
+										<div class="col-lg-12 s_title s_col_no_bgcolor text-center" data-name="Title">
 											<h1 class="s_title_default" style="text-align: center; ">
-												<font style="font-size: 52px; color: white;">
+												<font style="font-size: 48px; color: white;" class="font">
 													<b>MASCHINENBAU</b>
 												</font>
 											</h1>
-											<span class="s_title_default " style="text-align: center;color: white; font-size:24px;">
+											<span class="s_title_default break" style="text-align: center;color: white; font-size:24px;">
 													<b>3D DRUCK IM MASCHINENBAU</b>
 											</span>
 										</div>
@@ -43,7 +45,7 @@
 										</b>
 									</span>
 								</div>
-								<p style="text-align: center;font-size: 15px;">
+								<p style="text-align: center;font-size: 16px;">
 									Mit dem EVO-lizer und intelligenten technischen Kunststoffen setzt EVO-tech neue Standards bei der kosteneffizienten und raschen Fertigung von hochwertigen Kunststoffbauteilen von Losgröße 1 bis zu Kleinserien von mehreren hundert Stück. Gerade auch für Maschinenbauunternehmen erweisen sich die Resultate unserer Arbeit als wettbewerbsrelevante Vorteile.
 								</p>
 							</div>
@@ -58,7 +60,7 @@
 								<p class=" blue" style="font-size: 20px; ">
 									<b>   Vorteile</b>
 								</p>
-								<ul id="ul" style="font-size: 15px; margin-left: -25px; ">
+								<ul id="ul" style="font-size: 16px; margin-left: -25px; ">
 									<li>Sonderbauteile und Einzelanfertigungen wie Prototypen sind ein erfolgsrelevanter Faktor, der ständig an Bedeutung gewinnt. </li>
 									<li> Konventionelle Produktionsverfahren wie etwa Spritzguss verursachen hohe Kosten und verlängern die Entwicklungszeit.  </li>
 									<li> Additive Fertigung auf dem Niveau von EVO-tech hat auch das Potenzial für Serienanwendungen. Zum Beispiel von Halterungen. </li>
@@ -67,12 +69,12 @@
 							
 							<div class="pt32 pb32 text-left col-lg-4" style="width:130%"> 
 								<div class="media_iframe_video"
-									data-oe-expression="//www.youtube.com/embed/IhC9neGNdIY?autoplay=0&amp;rel=0&amp;loop=1&amp;playlist=IhC9neGNdIY&amp;modestbranding=1">
+									data-oe-expression="//youtube.com/embed/IhC9neGNdIY?autoplay=0&amp;rel=0&amp;loop=1&amp;playlist=IhC9neGNdIY&amp;modestbranding=1">
 									<div class="css_editable_mode_display">
 									</div>
 									<div class="media_iframe_video_size" contenteditable="false">
 									</div>
-									<iframe src="//www.youtube.com/embed/IhC9neGNdIY?autoplay=0&amp;rel=0&amp;loop=1&amp;playlist=IhC9neGNdIY&amp;modestbranding=1"
+									<iframe src="//youtube.com/embed/IhC9neGNdIY?autoplay=0&amp;rel=0&amp;loop=1&amp;playlist=IhC9neGNdIY&amp;modestbranding=1"
 										frameborder="0" contenteditable="false"
 										allowfullscreen="allowfullscreen"></iframe>
 								</div>
@@ -88,7 +90,7 @@
 								<p class=" blue" style="font-size: 20px; ">
 									<b>   3D-Druck mit optimierten Filamenten für den Maschinenbau-Sektor</b>
 								</p>
-								<p style="font-size:15px;">
+								<p style="font-size:16px;">
 									EVO-tech versteht unter professionellem 3D-Druck nicht nur die Bereitstellung erstklassiger Hardware in Form des EVO-lizers. Als Komplettanbieter beraten wir Maschinenbauunternehmen auch in allen 3D-nahen Anwendungsfragen. Zum Beispiel bei der Wahl der optimalen Kunststoffe. Mit derzeit 11 selbst entwickelten Filamenten (z. B. ABS-ESD, ABS-FR und PPS) und einer Reihe von anwendungsoptimierten Modifikationen genießt EVO-tech auch auf diesem Sektor erstklassige Reputation.
 								</p>
 								
@@ -100,7 +102,7 @@
 										Wichtigsten Eigenschaften
 									</b>
 								</p>
-								<ul id="ul" style="font-size: 15px; margin-left: -25px; ">
+								<ul id="ul" style="font-size: 16px; margin-left: -25px; ">
 									<li>flammhemmend </li>
 									<li> UV- und temperaturbeständig bis über 200 °C  </li>
 									<li> elektrostatisch dissipativ, lebensmitteltauglich  </li>
@@ -121,13 +123,13 @@
 									<img class="card-img-top" src="/ehcs_evo_tech_website/static/src/img/b1.webp"/>
 									<div class="card-body" style="color: #555555; background-color: #f8f9fa !important;">
 										<h2 class="card-title o_default_snippet_text blue">KOLM Engines </h2>
-										<hr style="width: 10%;border: 2px solid #008bd2!important;margin-top: -3%;"></hr>
-										<p class="card-text o_default_snippet_text" style="font-size: 15px; ">
+										<hr style="width: 20%; height:4px; background: #008bd2;margin-top: 1%;"/>
+										<p class="card-text o_default_snippet_text" style="font-size: 16px; ">
 											DI Johann Kolm (CEO von Kolm Engines) hat sich mit seinem Unternehmen an die Spitze eines Marktsegmentes gesetzt, in dem es darum geht, 4-Takt-Benzinmotoren für den Modellbau zu konstruieren und zu bauen.
 										</p>
 											<a href="/kolm-motoren/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade"
 											style="color: white !important; background-color: #008bd2;"
-											data-original-title="" title="">Mehr Informationen</a>
+											data-original-title="" title="kolm-motoren">Mehr Informationen</a>
 									</div>
 								</div>
 							</div>
@@ -136,13 +138,13 @@
 									<img class="card-img-top" src="/ehcs_evo_tech_website/static/src/img/met1.jpg"/>
 									<div class="card-body" style="color: #555555; background-color: #f8f9fa !important;">
 										<h2 class="card-title o_default_snippet_text blue">Paschinger Prototypen  &amp;  Maschinenbau e.U.</h2>
-										<hr style="width: 10%;border: 2px solid #008bd2!important;margin-top: -1%;"></hr>
-										<p class="card-text o_default_snippet_text" style="font-size: 15px; ">
+										<hr style="width: 20%; height:4px; background: #008bd2;margin-top: 1%;"/>
+										<p class="card-text o_default_snippet_text" style="font-size: 16px; ">
 											Für die Firma Paschinger sind 3D Drucker eine attraktive Ergänzung des Maschinenparks, mit welcher auftragsspezifische Vorrichtung auch ganz einfach über Nacht produziert werden können. So können Zeit- und Personalressourcen gespart werden.
 										</p>
 											<a href="/kolm-motoren/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade"
 											style="color: white !important; background-color: #008bd2; margin-top: 6%;"
-											data-original-title="" title="">Mehr Informationen</a>
+											data-original-title="" title="kolm-motoren">Mehr Informationen</a>
 									</div>
 								</div>
 							</div>
@@ -151,13 +153,13 @@
 									<img class="card-img-top" src="/ehcs_evo_tech_website/static/src/img/met2.jpg"/>
 									<div class="card-body" style="color: #555555; background-color: #f8f9fa !important;">
 										<h2 class="card-title o_default_snippet_text blue">Inocon Technologie GmbH </h2>
-										<hr style="width: 10%;border: 2px solid #008bd2!important;margin-top: -3%;"></hr>
-										<p class="card-text o_default_snippet_text" style="font-size: 15px; ">
+										<hr style="width: 20%; height:4px; background: #008bd2;margin-top: 1%;"/>
+										<p class="card-text o_default_snippet_text" style="font-size: 16px; ">
 											Kleine Stückzahlen, große Teilevielfalt und hohe Materialanforderungen für die Produktion von Plasmabeschichtungsanlagen sind die täglichen Herausforderungen der Inocon Technologie GmbH.
 										</p>
 											<a href="/inocon/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade"
 											style="color: white !important; background-color: #008bd2;"
-											data-original-title="" title="">Mehr Informationen</a>
+											data-original-title="" title="inocon">Mehr Informationen</a>
 									</div>
 								</div>
 							</div>
@@ -174,7 +176,7 @@
 		       	 <div class="container">
 		            <div class="row">
 		                <div class="pt32 text-center col-lg-3 pb0">
-		                    <a href="https://www.siemens.com/at/de/home.html" title="siemens"
+		                    <a href="https://new.siemens.com/at/de.html" title="siemens"
 								class="mpc-item mpc-transition" data-wpel-link="external"
 								target="_self" rel="follow">
 								<img class="mpc-transition "
@@ -183,7 +185,7 @@
 							</a>
 		                </div>
 		                 <div class="pt32 text-center col-lg-3 pb0">
-		                    <a href="https://www.greiner.at/konzern/"
+		                    <a href="https://greiner.com/greiner-ag/unternehmen/"
 								title="greiner" class="mpc-item mpc-transition"
 								data-wpel-link="external" target="_self" rel="follow">
 								<img class="mpc-transition "
@@ -192,16 +194,16 @@
 							</a>
 		                </div>
 		                <div class="pt32 pb32 text-center col-lg-3">
-		                   <a href="https://www.boehringer-ingelheim.at/de"
+		                   <a href="https://boehringer-ingelheim.at/de"
 								title="boehringer-ingelheim" class="mpc-item mpc-transition"
 								data-wpel-link="external" target="_self" rel="follow">
 								<img class="mpc-transition "
-									src="/ehcs_evo_tech_website/static/src/img/logo//boehringer_250x250_00-250x100.png"
+									src="/ehcs_evo_tech_website/static/src/img/logo/boehringer_250x250_00-250x100.png"
 									width="250" height="100" alt="boehringer Logo"
 									title="boehringer_250x250_00"/>
 							</a>
 		                </div><div class="pt32 pb32 text-center col-lg-3">
-		                   <a href="https://www.innotech.at/de/home"
+		                   <a href="https://innotech.at/"
 								title="innotech" class="mpc-item mpc-transition"
 								data-wpel-link="external" target="_self" rel="follow">
 								<img class="mpc-transition "
@@ -213,7 +215,7 @@
 		                
 		                
 		                 <div class="pt32 text-center col-lg-3 pb0">
-		                    <a href="https://www.agru.at/de/" title="agru"
+		                    <a href="https://agru.at/de/" title="agru"
 								class="mpc-item mpc-transition" data-wpel-link="external"
 								target="_self" rel="follow">
 								<img class="mpc-transition "
@@ -231,7 +233,7 @@
 							</a>
 		                </div>
 		                <div class="pt32 pb32 text-center col-lg-3">
-		                    <a href="https://www.ematec.com/de/"
+		                    <a href="https://ematec.com/de/"
 								title="ematec" class="mpc-item mpc-transition"
 								data-wpel-link="external" target="_self" rel="follow">
 								<img class="mpc-transition "
@@ -240,7 +242,7 @@
 							</a>
 		                </div>
 		                <div class="pt32 pb32 text-center col-lg-3">
-		                   <a href="https://www.faigle.com/de/"
+		                   <a href="https://faigle.com/de/"
 								title="faigle" class="mpc-item mpc-transition"
 								data-wpel-link="external" target="_self" rel="follow">
 								<img class="mpc-transition "
@@ -250,7 +252,7 @@
 		                </div>
 		                
 		                <div class="pt32 text-center col-lg-3 pb0">
-		                    <a href="https://www.drcollin.de/"
+		                    <a href="https://drcollin.de/"
 								title="drcollin" class="mpc-item mpc-transition"
 								data-wpel-link="external" target="_self" rel="follow">
 								<img class="mpc-transition "
@@ -268,7 +270,7 @@
 							</a>
 		                </div>
 		                <div class="pt32 pb32 text-center col-lg-3">
-		                   <a href="https://www.thinktec-bayern.com/"
+		                   <a href="https://thinktec-bayern.com/"
 								title="thinktec" class="mpc-item mpc-transition"
 								data-wpel-link="external" target="_self" rel="follow">
 								<img class="mpc-transition "
@@ -278,7 +280,7 @@
 							</a>
 		                </div>
 		                <div class="pt32 pb32 text-center col-lg-3">
-		                   <a href="https://www.mkm-international.de/"
+		                   <a href="https://mkm-international.de/"
 								title="mkm-international" class="mpc-item mpc-transition"
 								data-wpel-link="external" target="_self" rel="follow">
 								<img class="mpc-transition "
@@ -289,27 +291,25 @@
 		            </div>
 		        </div>
 		    </section>
-				
-				<section class="pt28 pb28" data-name="Title" style="background-color: #008bd2!important">
+			
+			<section class="s_call_to_action bg-200 pt28 pb28" data-name="Call to Action" style="background-color: #008bd2!important">
 					<div class="container">
-						<div class="row s_nb_column_fixed">
-							<div class="col-lg-12 s_title pt16 pb16" style="text-align: center;">
-								<div class="row align-items-center">
-									<div class="col-lg-1 pb16 pt16">
-										<i class="mpc-transition fa fa-5x fa-phone" style=" color: white; "></i>	
-									</div>
-									<div class="col-lg-6 pb16 pt16">
-										<p style="font-size:20px;color: white; margin-top:1%">
-										Sie benötigen mehr Informationen? Wir beraten Sie gerne.
-										</p>	
-									</div>
-								</div>
-								<p class="s_title_default">
-									<a href="/contactus/" class="blue btn btn-gamma flat btn-lg" data-original-title="" title="" 
-										style="background-color: white; margin-left:80%; margin-top : -7%; ">
-										<b style=" font-size: 14px; "> Jetzt Kontaktieren </b>
-									</a>
+						<div class="row">
+							<div class="col-lg-1 pb24">
+								<p class="lead o_default_snippet_text pt16 text-center" style="font-size:20px; color:white; ">
+									<i class="mpc-transition fa fa-3x fa-phone" style=" color: white; "></i>	
 								</p>
+							</div>
+							<div class="col-lg-8 pb24">
+								<p class=" o_default_snippet_text pt16 " style="font-size:20px; color:white; font-weight: 600;">
+									Sie benötigen mehr Informationen? Wir beraten Sie gerne.
+								</p>
+							</div>
+							<div class="col-lg-3 s_btn text-right pt8 pb24" data-name="Button" style=" ">
+								<a href="/kontakt/" class="blue btn btn-gamma flat btn-lg hvr-fade" 
+										style="background-color: white; font-size: 16px;">
+										<b> Jetzt Kontaktieren </b>
+								</a>
 							</div>
 						</div>
 					</div>

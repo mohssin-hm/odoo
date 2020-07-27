@@ -3,7 +3,7 @@
 	<data>
 		
 		<!-- SUBMENU About -->
-		<record id="menu_about_subone" model="website.menu">
+		<!-- <record id="menu_about_subone" model="website.menu">
 			<field name="name">Über Uns</field>
 			<field name="url">/ueber-uns/</field>
 			<field name="sequence" type="int">71</field>
@@ -22,6 +22,7 @@
 		<record id="menu_about_subthree" model="website.menu">
 			<field name="name">Termine</field>
 			<field name="url">/termine/</field>
+			<field name="url">/event/</field>
 			<field name="sequence" type="int">73</field>
 			<field name="parent_id" ref="ehcs_evo_tech_website.menu_ueberuns" />
 			<field name="website_id" ref="website.default_website" />
@@ -41,7 +42,7 @@
 			<field name="sequence" type="int">75</field>
 			<field name="parent_id" ref="ehcs_evo_tech_website.menu_ueberuns" />
 			<field name="website_id" ref="website.default_website" />
-		</record>
+		</record> -->
 		
 	</data>
 </odoo>

@@ -2,28 +2,30 @@
 <odoo>
 	<template id="theme_menu_branchen_five" name="website.theme_menu_branchen_five">
 		<t t-call="website.layout">
-			<t t-set="additional_title">Prototypenbau</t>
+			<t t-set="additional_title">3D Drucker von Evo-tech | Einsatz von 3D Druck im Prototypenbau</t>
+			<t t-set="website_meta_title"> 3D Drucker von Evo-tech | Einsatz von 3D Druck im Prototypenbau</t>
+			<t t-set="website_meta_description">
+				Prototypen effizient mit 3D Druck erstellen und Time to Market-Phase verringern und Fehler frühzeitig erkennen. Lesen Sie mehr über 3D Druck für Prototypen!
+			</t>
+			
 			<div id="wrap" class="oe_structure oe_empty">
-
 				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
 					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
 					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
 						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/bauteil-el-102-1.jpg&quot;); background-position: 50% 0px;" />
 						<div class="container">
 							<div class="row s_nb_column_fixed">
-								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
-									data-name="Box">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12" data-name="Box">
 									<div class="row">
-										<div class="col-lg-12 s_title s_col_no_bgcolor" style="margin-top: 10%; "
-											data-name="Title">
+										<div class="col-lg-12 s_title s_col_no_bgcolor" style="margin-top: 10%; " data-name="Title">
 											<h1 class="s_title_default" style="text-align: center; ">
-												<font style="font-size: 50px; color: white;">
+												<font style="font-size: 48px; color: white;" class="font">
 													<b>PROTOTYPENBAU</b>
 												</font>
-											</h1>
-											<h1 style="color:white; text-align: center; color: white;">
-												DER PROTOTYPENBAU MITTELS 3D DRUCK
-												
+												<br/>
+												<font style="font-size: 26px; color: white;" class="font">
+													DER PROTOTYPENBAU MITTELS 3D DRUCK
+												</font>
 											</h1>
 										</div>
 									</div>
@@ -37,10 +39,10 @@
 						<div class="row">
 							<div class="col-lg-12 ">
 								<br/><br/>
-								<p style="text-align: center;font-size: 23px; " class="blue">
+								<p style="text-align: center;font-size: 24px; " class="blue">
 									<b> und die Auswirkungen für das Unternehmen </b>
 								</p>
-								<p style="text-align: center;font-size: 15px; " >
+								<p style="text-align: center;font-size: 17px; " >
 									 Die Innovationskraft im Unternehmen steigt – die Kosten dafür sinken beträchtlich! Dies ist eine einmalige Voraussetzung für alle Unternehmen und alle Branchen, deren Erfolgsfaktor von Innovationen abhängt! Durch die Verfügbarkeit der additiven Fertigung im Betrieb und den damit einhergehenden Möglichkeiten steht ein niederschwelliger Zugang zur Generierung von Prototypen zur Verfügung. So kann sehr schnell ein erster Proof of Concept einer Idee entstehen – das Um und Auf für ein weiteres, effektives Vorgehen in der Entwicklungsphase. Dies betrifft jedoch nicht nur die Neuentwicklung von Produkten sondern auch den innerbetrieblichen Vorrichtungsbau, den Bau von Messvorrichtungen für das Qualitätsmanagement, Laborhilfsmittel, Ersatzteile und vieles mehr.
 								</p>
 							</div>
@@ -54,10 +56,10 @@
 						<div class="row">
 							<div class="col-lg-12 ">
 								<br/>
-								<p style="text-align: center;font-size: 23px; " class="blue">
+								<p style="text-align: center;font-size: 24px; " class="blue">
 									<b> Warum Prototypen fertigen?</b>
 								</p>
-								<p style="text-align: center;font-size: 15px; " >
+								<p style="text-align: center;font-size: 17px; " >
 									 Durch straffe Zeitpläne werden die Entwicklungszeiten gekürzt. Dadurch steigt die Gefahr suboptimaler Produktdesigns und konstruktiver Fehler, die in der Serienproduktion zu erheblichen Problemen führen können. Diese Logik gilt für so gut wie alle Branchen. Sei es der Automobilbau, die Elektronikindustrie oder der Maschinen-, Werkzeug- und Vorrichtungsbau.
 								</p>
 							</div>
@@ -71,17 +73,17 @@
 					<div class="container">
 						<div class="row">
 							<div class="pt32 pb32 text-left col-lg-7">
-								<p class=" blue" style="font-size: 22px; ">
+								<p class=" blue" style="font-size: 24px; ">
 									<b>Ideen schnell, kostengünstig und präzise umsetzen. Schwachstellen schnell identifizieren.</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Tatsächlich ebnet der EVO-lizer einen niederschwelligen Zugang für die schnelle und präzise Generierung von aussagekräftigen Modellen. Oder anders gesagt: Erste Proofs of Concept von Ideen lassen sich schnell, kostengünstig und äußerst präzise erstellen. Mögliche Fehler werden sofort offensichtlich. Damit erweist sich der hausinterne Prototypenbau für jedes Unternehmen nicht nur als unverzichtbar, sondern als essentieller Innovationstreiber.
 								</p>
 								
 								<p style="font-size: 16px;">
 									<b>Einsatzgebiete</b>
 								</p>
-								<ul id="ul" style="font-size: 16px; margin-left: -3%;">
+								<ul id="ul" style="font-size: 17px; margin-left: -3%;">
 									<li>Innerbetrieblicher Vorrichtungsbau </li>
 									<li>Messvorrichtungen für das Qualitätsmanagement </li>
 									<li>Laborhilfsmittel </li>
@@ -91,7 +93,8 @@
 							</div>
 							
 							<div class="text-center col-lg-5" >
-								<img src="/ehcs_evo_tech_website/static/src/img/prototypenbau_1200x480_100-1024x410.png" style="width: 160%;margin-top: 10%;"></img>
+								<img src="/ehcs_evo_tech_website/static/src/img/prototypenbau_1200x480_100-1024x410.png" 
+									class="responsive" style="margin-top: 10%;"></img>
 							</div>
 						</div>
 					</div>
@@ -105,10 +108,10 @@
 								<img src="/ehcs_evo_tech_website/static/src/img/frf3366_1.jpg" style="width: 100%;margin-top: 10%;"></img>
 							</div>
 							<div class="pt32 pb32 text-left col-lg-7">
-								<p class=" blue" style="font-size: 22px; ">
+								<p class=" blue" style="font-size: 24px; ">
 									<b>Die EVO-lizer Serie setzt neue Maßstäbe in Richtung Time to Market</b>
 								</p>
-								<p style="font-size: 16px;">
+								<p style="font-size: 17px;">
 									Um den Ansprüchen der heutigen Zeit an eine realistische, den Bedürfnissen angepassten Time to Market genüge zu tun, ist die EL – 3D Drucker Serie im Rahmen des Prototypenbaus unersetzlich. Produktzyklen werden immer kürzer, die Entwicklungszeit muss gestrafft werden. Und damit Time to Market auf ein notwendiges Minimum reduziert werden – ohne die Fehlerquoten in der Serienproduktion ansteigen zu lassen!   Dies betrifft vor allem die Prototypen im Automobilbau, die Entwicklung von Gehäusen von Consumer-Elektronikgeräten, Ergonomietests von Bedieneinheiten, die Produktion von Erstmuster für Messen zur Produktpräsentation, die Demonstration von Detaillösungen, wie zum Beispiel die RC Car Entwicklung der CNC-Academy oder das Luftverteilungssystem der KOLM Engineering.
 								</p>
 								
@@ -117,22 +120,23 @@
 					</div>
 				</section>
 				
-				
 				<section class="s_features  pt30 pb0" data-name="Features" style="color: #555555; background-color: #f8f9fa !important;">
 					<div class="container">
-							<center class="blue" style=" font-size: 22px; ">
+							<center class="blue" style=" font-size: 24px; ">
 								<br/><br/>
 								<b> 	Präzise Erstellung von Prototypen mit der EL 3D-Drucker Serie</b>
 							</center>
 						<div class="row">
 							<div class="pt32 pb32 text-left col-lg-6">
 								<center>
-									<img src="/ehcs_evo_tech_website/static/src/img/facc2.webp"></img> <br/> <br/>
+									<a href="/3d-drucker-el-102/">
+										<img src="/ehcs_evo_tech_website/static/src/img/facc2.webp"></img> <br/> <br/>
+									</a>
 									<p class="blue" style=" font-size: 18px; ">
 										<b> 3D Drucker EL-102	</b>
 									</p>
-									<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: -4%;"></hr>
-									<p style=" font-size: 15px; ">
+									<hr style="width: 20%; height:4px; background: #008bd2;margin-top: 1%;"/>
+									<p style=" font-size: 17px; ">
 										Ermöglicht gleichzeitiges Drucken mehrerer Bauteile und die Verarbeitung von großen Materialmengen bis zu einer Größe von 500 x 400 x 510 mm (B x T x H).
 									</p>
 								</center>
@@ -140,18 +144,20 @@
 								<center>
 								<a href="/3d-drucker-el-102/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade "
 										style="color: white !important; background-color: #008bd2;"
-										data-original-title="" title="">Mehr zum EL-102</a>
+										data-original-title="" title="3d-drucker-el-102">Mehr zum EL-102</a>
 								</center>
 							</div>
 							
 							<div class="pt32 pb32 text-left col-lg-6">
 								<center>
-									<img src="/ehcs_evo_tech_website/static/src/img/facc1.webp"> </img> <br/><br/>
+									<a href="/3d-drucker-el-11/">
+										<img src="/ehcs_evo_tech_website/static/src/img/facc1.webp"> </img> <br/><br/>
+									</a>
 									<p class="blue" style=" font-size: 18px; ">
 										<b> 3D Drucker EL-11	</b>
 									</p>
-									<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: -4%;"></hr>
-									<p style=" font-size: 15px; ">
+									<hr style="width: 20%; height:4px; background: #008bd2;margin-top: 1%;"/>
+									<p style=" font-size: 17px; ">
 										Ermöglicht Erstellung von Bauteilen bis 270 x 200 x 210mm (B x T x H) bei extrem geringen Betriebskosten und offenem System für Filamente.
 									</p>
 								</center>
@@ -159,7 +165,7 @@
 								<center>
 								<a href="/3d-drucker-el-11/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade "
 										style="color: white !important; background-color: #008bd2;"
-										data-original-title="" title="">Mehr zum EL-11</a>
+										data-original-title="" title="3d-drucker-el-11">Mehr zum EL-11</a>
 								</center>
 							</div>
 						</div>
@@ -170,8 +176,10 @@
 					<div class="container">
 						<div class="row align-items-center">
 							<div class="col-lg-6 pb16 pt16">
-								<p class="blue" style="font-size:20px;"> <b> Früherkennung von Fehlern mit Prototypen des EVO-lizers </b> </p>
-								<p class="" style="font-size: 15px; ">
+								<p class="blue" style="font-size:24px;"> 
+									<b> Früherkennung von Fehlern mit Prototypen des EVO-lizers </b> 
+								</p>
+								<p class="" style="font-size: 17px; ">
 									Das Schreckgespenst im Rahmen jeder Produktentwicklung: Fehler bei Prototypen, die sich im schlimmsten Fall bis zur Serienfertigung durchziehen und dort bei Behebung eine enorme Kostenexplosion verursachen. Mit dem Einsatz des EVO-lizers kann diese Entwicklung verhindert werden – Fehler können bei Prototypen frühzeitig erkannt und durch den Einsatz von mehr Entwicklungszyklen bzw. mehreren Revisionen in kürzester Zeit überarbeitet und gelöst werden. Der Launch wird nicht gefährdet, Time to Market kann eingehalten werden!
 									<br/>
 								</p>
@@ -191,19 +199,22 @@
 						<div class="row align-items-center">
 							<div class="col-lg-6 pt16 pb16">
 								<div class="media_iframe_video"
-									data-oe-expression="//www.youtube.com/embed/IhC9neGNdIY?autoplay=0&amp;rel=0&amp;loop=1&amp;playlist=IhC9neGNdIY&amp;modestbranding=1">
+									data-oe-expression="//youtube.com/embed/IhC9neGNdIY?autoplay=0&amp;rel=0&amp;loop=1&amp;playlist=IhC9neGNdIY&amp;modestbranding=1">
 									<div class="css_editable_mode_display">
 									</div>
 									<div class="media_iframe_video_size" contenteditable="false">
 									</div>
 									<iframe
-										src="//www.youtube.com/embed/IhC9neGNdIY?autoplay=0&amp;rel=0&amp;loop=1&amp;playlist=IhC9neGNdIY&amp;modestbranding=1"
+										src="//youtube.com/embed/IhC9neGNdIY?autoplay=0&amp;rel=0&amp;loop=1&amp;playlist=IhC9neGNdIY&amp;modestbranding=1"
 										frameborder="0" contenteditable="false"
 										allowfullscreen="allowfullscreen"></iframe>
 								</div>
 							</div>
+							
 							<div class="col-lg-6 pb16 pt16">
-								<h2 class="blue"> <b> Designen ohne Kostenexplosion – mit den EL 3D-Druckern ist dies möglich! </b> </h2>
+								<p class="blue" style="font-size:24px;"> 
+									<b> Designen ohne Kostenexplosion – mit den EL 3D-Druckern ist dies möglich! </b> 
+								</p>
 								<p class="" style="font-size: 16px; ">
 									Wie erfahren der Designer sein mag, es ist kaum möglich auf Anhieb den sozusagen ersten Wurf perfekt zu gestalten. Einen Prototyp in Händen halten kann vieles erleichtern – was funktioniert, was funktioniert nicht – und warum? Mit dem EVO-lizern bleiben Sie flexibel und können einen Trial and Error Prozess auch mehrmals durchlaufen ohne sich für Kostenexplosionen rechtfertigen zu müssen bzw. langwierige Freigabeprocedere zu argumentieren.
 								</p>
@@ -223,35 +234,36 @@
 						<div class="row">
 							<div class="col-lg-12 ">
 								<br/>
-								<p style="text-align: center;font-size: 23px; " class="blue">
+								<p style="text-align: center;font-size: 24px; " class="blue">
 									<b> Prototypen von EVO-lizer – testen Sie in der realen Welt! </b>
 								</p>
-								<p style="text-align: center;font-size: 15px; " >
+								<p style="text-align: center;font-size: 17px; " >
 									 Mit Prototypen unserer 3D-Drucker wissen Sie genau wie ein Produkt wirklich aussehen wird, bevor man in teure Werkzeuge investiert. Mit den unterschiedlichsten Filamenten von EVO-tech ist vieles möglich! Damit steht einem oder mehreren Testläufen in der realen Welt nichts mehr im Wege!
 								</p>
 							</div>
 						</div>
 					</div>
 				</section>	<br/><br/>
-					
 				
-				<section class="pt28 pb28" data-name="Title" style="background-color: #008bd2!important">
+				<section class="s_call_to_action bg-200 pt28 pb28" data-name="Call to Action" style="background-color: #008bd2!important">
 					<div class="container">
-						<div class="row s_nb_column_fixed">
-							<div class="col-lg-12 s_title " style="text-align: center;">
-								<div class="row align-items-center">
-									<div class="col-lg-6 ">
-										<p style="font-size:20px;color: white; margin-top: 5%;">
-										Sie benötigen mehr Informationen? Wir beraten Sie gerne.
-										</p>	
-									</div>
-								</div>
-								<p class="s_title_default">
-									<a href="/contactus/" class="blue btn btn-gamma flat btn-lg" data-original-title="" title="" 
-										style="background-color: white; margin-left:80%; margin-top : -7%; ">
-										<b style=" font-size: 14px; "> Jetzt Kontaktieren </b>
-									</a>
+						<div class="row">
+							<div class="col-lg-1 pb24">
+								<p class="lead o_default_snippet_text pt16 text-center" style="font-size:20px; color:white; ">
+									<i class="mpc-transition fa fa-3x fa-phone" style=" color: white; "></i>	
 								</p>
+							</div>
+							<div class="col-lg-8 pb24">
+								<p/>
+								<p class=" o_default_snippet_text pt16 " style="font-size:20px; color:white; font-weight: 600;">
+									Sie benötigen mehr Informationen? Wir beraten Sie gerne.
+								</p>
+							</div>
+							<div class="col-lg-3 s_btn text-right pt8 pb24" data-name="Button" style=" ">
+								<a href="/kontakt/" class="blue btn btn-gamma flat btn-lg hvr-fade" 
+										style="background-color: white; font-size: 16px;">
+										<b> Jetzt Kontaktieren </b>
+								</a>
 							</div>
 						</div>
 					</div>

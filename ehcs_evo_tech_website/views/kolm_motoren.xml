@@ -2,7 +2,12 @@
 <odoo>
 	<template id="theme_submenu_tab_kolm_motoren" name="website.theme_submenu_tab_kolm_motoren">
 		<t t-call="website.layout">
-			<t t-set="additional_title">KOLM MOTOREN</t>
+			<t t-set="additional_title">Evo-tech 3D Drucker | Anwendungsbeispiele von Kunden im 3D Druck - Kolm</t>
+			<t t-set="website_meta_title">Evo-tech 3D Drucker | Anwendungsbeispiele von Kunden im 3D Druck - Kolm</t>
+			<t t-set="website_meta_description">
+				Additive Fertigung bietet enorme Einsparungspotentiale. Lesen Sie hier mehr über Anwendungsbeispiele unserer Kunden im 3D Druck. 
+			</t>
+			
 			<div id="wrap" class="oe_structure oe_empty">
 				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
 					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
@@ -10,13 +15,11 @@
 						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/img_6646-scaledq.jpg&quot;); background-position: 50% 0px;" />
 						<div class="container">
 							<div class="row s_nb_column_fixed">
-								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
-									data-name="Box">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12" data-name="Box">
 									<div class="row">
-										<div class="col-lg-12 s_title s_col_no_bgcolor"
-											data-name="Title">
+										<div class="col-lg-12 s_title s_col_no_bgcolor" data-name="Title">
 											<h1 class="s_title_default" style="text-align: center; ">
-												<font style="font-size: 42px; color: white;">
+												<font style="font-size: 48px; color: white;" class="font">
 													<b>KOLM MOTOREN</b>
 												</font>
 											</h1>
@@ -27,17 +30,19 @@
 						</div>
 				</section>
 					
-					<section class="s_text_image pt32 pb32" data-name="Text - Image">
+				<section class="s_text_image pt32 pb32" data-name="Text - Image">
 					<div class="container">
 						<div class="row align-items-center">
 							<div class="col-lg-6 pb16 pt16">
-								<h2 class="blue"> <b> MASSARBEIT ERFORDERT INDIVIDUELLE LÖSUNGEN  </b> </h2>
-								<p style="font-size: 15px; ">
-								<b style="font-size: 16px; ">
-									Folgende Leistungen bieten wir Ihnen an:
-								</b>
+								<span class="blue" style="font-size: 28px; font-weight: 500; ">
+									<b> MASSARBEIT ERFORDERT INDIVIDUELLE LÖSUNGEN  </b> 
+								</span>
+								<p style="font-size: 18px; ">
+									<b>
+										Entwicklung von Hochleistungs-Benzinmotoren für den Modellflug!
+									</b>
 								</p>
-								<p class="" style="font-size: 15px; ">
+								<p class="" style="font-size: 16px; ">
 									Die Aufgabenstellung war, die Kühlluftführung beim Weltrekordmotor zu optimieren. Nur durch Optimierung im Detail wurde es möglich, aus 310 cm³ Hubraum 25 PS zu generieren und damit den Geschwindigkeitsweltrekord von 308 km/h aufzustellen. Die dadurch gewonnenen Erkenntnisse wurden in Serienteile überführt. Durch die hohe Komplexität, die hohe Variantenvielfalt und die dadurch bedingten geringen Stückzahlen werden die Luftführungen nach wie vor mit dem EVOlizer gefertigt und als Bestandteil einer Komplettlösung verkauft.
 								</p>
 							</div>
@@ -51,12 +56,12 @@
 					</div>
 				</section>
 					
-				<section class="s_text_block  " data-name="Text block" >
+				<section class="s_text_block" data-name="Text block" >
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-12 ">
 								<br/><br/>
-								<p style="text-align: left; font-size: 21px; " class="blue">
+								<p style="text-align: left; font-size: 26px; " class="blue">
 									<b> Der Einsatz des EVO-lizers bei KOLM Motoren </b>
 								</p>
 								<p style="text-align: left; font-size: 16px; " >
@@ -73,14 +78,14 @@
 						<div class="row">
 							<div class="col-lg-12 ">
 								<br/><br/>
-								<p style="text-align: left; font-size: 21px; " class="blue">
+								<p style="text-align: left; font-size: 26px; " class="blue">
 									<b>Lösungen ohne Kompromisse</b>
 								</p>
 								<p style="text-align: left; font-size: 16px; " >
 									Es wird besonderer Wert auf ausgereifte und erprobte Lösungen gelegt, sowohl bei Normteilen, als auch bei sämtlichem Material! Kompromisse, die zu Lasten der Qualität der Motoren gehen könnten, werden absolut nicht eingegangen. So werden Wuchtgewichte aus Wolfram für Kurbelwellen, Helicoil-Einsätze für hoch beanspruchte Gewinde, Kurbelgehäuse aus Luftfahrtaluminium, gebaute Kurbelwellen und nadelgelagerte Stahlpleuel verbaut – also nur das Beste vom Besten.
 								</p>
 								<br/>
-								<p style="text-align: left; font-size: 15px; " >
+								<p style="text-align: left; font-size: 16px; " >
 									Weiters sind alle hochbelasteten Stahlteile gehärtet oder nitriert. Darüberhinaus werden die Kolm Motoren auch einem 100 Stunden Dauertest unterzogen und leistungsgeprüft. Ein hauseigener Leistungsprüfstand ermöglicht eine exakte Aussage zur Leistung der einzelnen Motoren.
 								</p>
 							</div>
@@ -94,13 +99,13 @@
 						<div class="row">
 							<div class="col-lg-12 ">
 								<br/><br/>
-								<p style="text-align: left; font-size: 21px; " class="blue">
+								<p style="text-align: left; font-size: 26px; " class="blue">
 									<b> KOLM Engines – Weltmarktführer bei großvolumigen Viertaktmotoren für den Modellflug! </b>
 								</p>
 								<p style="text-align: left; font-size: 16px; " >
 									DI Johann Kolm (CEO von Kolm Engines) hat sich mit seinem Unternehmen an die Spitze eines Marktsegmentes gesetzt, in dem es darum geht, 4-Takt-Benzinmotoren für den Modellbau zu konstruieren und zu bauen. Die Konstruktion erfolgt mit Hilfe eines 3D-CAD-Systems, die Daten werden zum Teil in das CAD/CAM-System übernommen, teilweise werden die Teile auch „händisch“ programmiert. Das Besondere an KOLM Engines ist, dass von der Entwicklung bis zur Produktion der Einzelteile alles im Haus passiert und alle Teile genaueste Qualitätskontrollen durchlaufen, bevor diese verbaut werden. Natürlich ist ein Teile- bzw. Messprotokoll ebenso selbstverständlich wie die Registrierung mittels Seriennummer.
 								</p>
-								<p style="text-align: left; font-size: 15px; " >
+								<p style="text-align: left; font-size: 16px; " >
 									<i> In der Weltspitze zählt jedes kleine Detail.	</i>
 								</p>
 								<p style="text-align: left; font-size: 16px; " >
