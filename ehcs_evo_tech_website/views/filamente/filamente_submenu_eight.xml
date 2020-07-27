@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_menu_filamente_submenu_eight" name="website.filamente_page">
+		<t t-call="website.layout">
+			<t t-set="additional_title"> iglidur </t>
+			<div id="wrap" class="oe_structure oe_empty">
+				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
+					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none;     background-color: rgba(66, 117, 211, 0.63);">
+					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/druckmaterial-3d-druck_smaller.jpg&quot;); background-position: 50% 0px;" />
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+							<div class=" jumbotron rounded pt32 pb32 col-lg-12"
+								data-name="Box">
+								<div class="row">
+									<div class="col-lg-12 s_title s_col_no_bgcolor"
+										data-name="Title">
+										<h1 class="s_title_default" style="text-align: center; ">
+											<font style="font-size: 50px; color: white;">
+												<b>IGLIDUR®</b>
+											</font>
+										</h1>
+										<h3 class="s_title_default" style="text-align: center; font-size: 24px; color: white;">
+											FILAMENT FÜR 3D DRUCK
+										</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_features pt32 pb0" data-name="Features" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-6 pt32 pb32 text-center">
+								<p class="o_default_snippet_text blue" style="font-size:25px; margin-left: -52%;">
+									<b> Verarbeitungsparameter:	</b>
+								</p>
+								<table>
+									<tbody>
+										<tr>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> Extrusionstemperatur:	 </td>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> 240 – 265 °C</td>
+										</tr>
+										<tr>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> Plattformtemperatur:	</td>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> 		95 – 110 °C</td>
+										</tr>
+									</tbody>
+								</table>
+								<br/>
+								<p class="o_default_snippet_text text-left " style="font-size:16px;">
+									Der Name Iglidur beschreibt eine Produktmarke der Firma Igus für ein sogenanntes Tribo-Filament, das speziell für die 3D Druck Branche entwickelt worden ist und eine 50 mal höhere Abriebfestigkeit gegenüber konventionellen 3D Druck Materialien aufweist. Somit besitzen Iglidur-Werkstücke eine wesentlich höhere Lebensdauer.
+								</p>
+							</div>
+							
+							<div class="col-lg-6 pt32 pb32 text-left" style="color: #555555; background-color: #f8f9fa !important;">
+								<p class="o_default_snippet_text " style="font-size:16px;">
+									Dieses Filament eröffnet komplett neue Möglichkeiten für den 3D Druck von Prototypen oder Spezial-Bauteilen. Durch die exzellenten tribologischen Eigenschaften (das bedeutet Reibungs- und Verschleißverhalten) wird Iglidur besonders empfohlen für Ersatz- oder Verschleißteile, die durch Gleiten oder Drehen bewegt werden können, wie zum Beispiel Gleitlager, Antriebsmuttern, Zahnräder.
+								</p>
+								<br/>
+								<p class="o_default_snippet_text " style="font-size:16px;">	
+									Dieser Spezial-Kunststoff ist in 2 Ausführungen erhältlich: Der I150 ist leicht zu verarbeiten und kann daher von Anfängern gut verarbeitet werden. Der I180 ist etwas anspruchsvoller in der Verarbeitung und sollte daher von erfahrenen Anwendern verwendet werden.
+								</p>
+								<p class="o_default_snippet_text " style="font-size:16px;">
+									Iglidur ist perfekt geeignet für EVO-tech Drucker, da es nur verwendet werden kann, wenn der 3D Drucker das FDM Verfahren (=Fused Deposition Modeling) unterstützt.
+								</p>
+								<p class="o_default_snippet_text " style="font-size:16px;">
+									Iglidur ist in der Farbe weiß erhältlich.
+								</p>
+								<p class="o_default_snippet_text " style="font-size:16px;">
+									<b> 	Verarbeitungs-Hinweise:	</b>
+								</p>
+								<p class="o_default_snippet_text " style="font-size:16px;">
+									Iglidur ist in der Farbe weiß erhältlich.
+								</p>
+								
+								<a href="/3d-drucker-el-11/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade " style="color: white !important; background-color: #008bd2;" data-original-title="" title="">Continue to EL-11</a>
+								
+								<a href="/3d-drucker-el-102/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade " style="color: white !important; background-color: #008bd2; margin-left: 5%;" data-original-title="" title="">Continue to EL102 </a>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_features pt32 pb0" data-name="Features" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-6 pt32 pb32 text-left" >
+								<span class="o_default_snippet_text blue" style="font-size:22px;">
+									Post-Processing
+								</span>
+								<br/>
+								<p class="o_default_snippet_text " style="font-size:16px;">	
+									Für Iglidur steht eine breite Palette an Post-Processing Methoden zur Verfügung. Der Kunststoff kann lackiert und geklebt werden.
+								</p>
+							</div>
+							
+							<div class="col-lg-6 pt32 pb32 text-left" >
+								<span class="o_default_snippet_text blue" style="font-size:22px;">
+									Einsatzbereiche
+								</span>
+								<br/>
+								<p class="o_default_snippet_text " style="font-size:16px;">	
+									Prototypen, Kleinserien, bewegliche Teile, Ersatzteile
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				
+				<section class="" data-name="Title" style="background-color: #008bd2!important">
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+							<div class="col-lg-12 s_title pt12" style="text-align: center;">
+								<div class="row align-items-center" style="margin-top: 1%;">
+									<div class="col-lg-1 ">
+										<i class="mpc-transition fa fa-4x fa-phone" style="color: white;margin-left: 60%;margin-top: -10%;"></i>
+									</div>
+									<div class="col-lg-6 ">
+										<p style="font-size:20px;color: white; margin-top:1%">
+										Sie benötigen mehr Informationen? Wir beraten Sie gerne.
+										</p>	
+									</div>
+								</div>
+								<p class="s_title_default">
+									<a href="/contactus/" class="blue btn btn-gamma flat btn-lg" data-original-title="" title="" 
+										style="background-color: white; margin-left:80%; margin-top : -7%; ">
+										<b style=" font-size: 14px; "> Jetzt Kontaktieren </b>
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="pt40 pb32" data-name="Title" >
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+						</div>
+					</div>
+				</section>
+			
+			</div>
+		</t>
+	</template>
+</odoo>

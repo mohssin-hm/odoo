@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_menu_customer_subone" name="website.theme_menu_customer_subone">
+		<t t-call="website.layout">
+			<t t-set="additional_title">KVP</t>
+			<div id="wrap" class="oe_structure oe_empty">
+			
+				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
+					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
+					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/evotech_2000x700_100.jpg&quot;); background-position: 50% 0px;" />
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+							<div class=" jumbotron rounded pt32 pb32 col-lg-12"
+								data-name="Box">
+								<div class="row">
+									<div class="col-lg-12 s_title s_col_no_bgcolor"
+										data-name="Title">
+										<h1 class="s_title_default" style="text-align: center; ">
+											<font style="font-size: 62px;color: white;">
+												<b>KVP</b>
+											</font>
+										</h1>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_features  pb0" data-name="Features">
+					<div class="container">
+						<div class="row">
+							<div class="pt32 pb32 text-left col-lg-8">
+								<p class=" blue" style="font-size: 20px; ">
+									<b>   KVP-Kontinuierlicher Verbesserungsprozess</b>
+								</p>
+								<p style="font-size: 16px; ">
+									Wir bei EVO-tech glauben daran, dass wir auf Dauer nur Erfolgreich sein können, wenn wir unsere Bestandskunden aktiv in unsere Entwicklungs- und Verbesserungsprozesse einbeziehen. Über 400 Bestandskunden mit im Schnitt 3 AnwenderInnen ergeben für uns 1.200 potentielle IdeengeberInnen, die eine andere Sicht auf unsere Produkte haben als wir als Entwickler. Mit dieser Homepageseite wollen wir Ihnen die Möglichkeit geben uns Feedback und Verbesserungsvorschläge zu senden. Neben den Feedback zu unseren Maschinen nehmen wir gerne auch Featurewünsche, Materialwünsche, Verbesserungsvorschläge zu unserer Kommunikation oder Unternehmensabläufen entgegen.
+								</p>
+								<p  style="font-size: 16px; ">
+									Falls Sie uns größere Dateimengen zukommen lassen wollen, können Sie dies auch gerne per Mail an support@evo-tech.eu machen.
+								</p>
+								<p  style="font-size: 16px; ">
+									Weitere Informationen zum KVP finden sie hier.
+								</p>
+							</div>
+							
+							<div class="pt32 pb32 text-left col-lg-4" style=""> 
+									<img class="card-img-top" src="/ehcs_evo_tech_website/static/src/img/s1.png"/>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_features  pb0" data-name="Features">
+					<div class="container">
+						<div class="row">
+							<div class="pt32 pb32 text-left col-lg-8">
+								<p class=" blue" style="font-size: 22px; ">
+									<b>KVP-Vorschlag senden </b>
+								</p>
+								
+								<form action="/website_form/" method="post" class="s_website_form container-fluid mt32 o_fake_not_editable"
+										enctype="multipart/form-data" data-name="Form Builder"
+										contenteditable="false" data-model_name="mail.mail" data-success_page="/contactus-thank-you">
+										<div class="container">
+											<div class="row form-group form-field d-none">
+												<div class="col-lg-8 col-md-4">
+													<label class="col-form-label" for="email_to">
+													</label>
+												</div>
+												<div class="col-lg-8 col-md-8">
+													<input type="text" class="form-control o_website_form_input"
+														name="email_to" value="mehuljadav0077@gmail.com"/>
+												</div>
+											</div>
+											<div class="form-group row form-field o_website_form_custom o_website_form_required_custom o_fake_not_editable"
+												contenteditable="false">
+												<div class="col-lg-8 col-md-4">
+													<label class="col-form-label o_fake_editable" for="Name"
+														contenteditable="true">
+														<span style="font-family: &quot;Open Sans&quot;; font-size: 17px; font-weight: 400;">Name*</span>
+													</label>
+													<input type="text" class="form-control o_website_form_input"
+														name="Name" required=""/>
+												</div>
+											</div>
+									
+											<div class="form-group row form-field o_website_form_required_custom o_fake_not_editable"
+												contenteditable="false">
+												<div class="col-lg-8 col-md-4">
+													<label class="col-form-label o_fake_editable" for="email_from"
+														contenteditable="true">
+														<span
+															style="font-family: &quot;Open Sans&quot;; font-size: 17px; font-weight: 400;">Email*</span>
+													</label>
+													<input type="email" class="form-control o_website_form_input"
+														name="email_from" required=""/>
+												</div>
+											</div>
+									
+											<div class="form-group row form-field o_website_form_required_custom o_fake_not_editable"
+												contenteditable="false">
+												<div class="col-lg-8 col-md-4">
+													<label class="col-form-label o_fake_editable" for="subject"
+														contenteditable="true">
+														<span
+															style="font-family: &quot;Open Sans&quot;; font-size: 17px; font-weight: 400;">Betreff</span>
+													</label>
+													<input type="text" class="form-control o_website_form_input" name="subject"  />
+												</div>
+											</div>
+											
+											<div class="form-group row form-field o_website_form_custom o_website_form_required_custom o_fake_not_editable"
+												contenteditable="false">
+												<div class="col-lg-8 col-md-4">
+													<label class="col-form-label o_fake_editable"
+														for="Description" contenteditable="true">
+														<span style="font-family: &quot;Open Sans&quot;; font-size: 17px; font-weight: 400;">suggestion</span>
+													</label>
+													<textarea class="form-control o_website_form_input" name="Description"  ></textarea>
+												</div>
+											</div>
+											
+											<div class="row form-group form-field o_website_form_custom o_fake_not_editable"
+												contenteditable="false">
+												<div class="col-lg-8 col-md-4">
+													<label class="col-form-label o_fake_editable" for="Custom File Upload" contenteditable="true">
+														<span style="font-family: &quot;Open Sans&quot;; font-size: 17px; font-weight: 400;">Datei hochladen:</span>
+													</label>
+													<br/>
+													<input type="file" class=" o_website_form_input" name="Custom File Upload"/>
+												</div>
+											</div>
+											<div class="form-group row">
+												<div class="offset-lg-7 offset-md-4 col-md-8 col-lg-7">
+													<button class="btn btn-primary flat btn-lg o_website_form_send o_default_snippet_text text-left" 
+														style="background-color: white; border: 1px solid; color: #008bd2; margin-left:-108%; margin-top:5% ">
+														Send</button>
+													<span id="o_website_form_result"></span>
+												</div>
+											</div>
+										</div>
+									</form>
+							</div>
+							
+							<div class="pt32 pb32 text-left col-lg-4" style="width:130%"> 
+							</div>
+						</div>
+					</div>
+				</section>
+				
+
+			</div>
+		</t>
+	</template>
+</odoo>

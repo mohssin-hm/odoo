@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_menu_customer_subseven_two" name="website.theme_menu_customer_subseven">
+		<t t-call="website.layout">
+			<t t-set="additional_title">Simplify 3D</t>
+			<div id="wrap" class="oe_structure oe_empty">
+
+				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
+					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
+					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/simplify3d-header-1.png&quot;); background-position: 50% 0px;" />
+						<div class="container">
+							<div class="row s_nb_column_fixed">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
+									data-name="Box">
+									<div class="row">
+										<div class="col-lg-12 s_title s_col_no_bgcolor"
+											data-name="Title">
+											<h1 class="s_title_default" style="text-align: center; ">
+												<font style="font-size: 62px;color: white;">
+													<b>SIMPLIFY 3D</b>
+												</font>
+											</h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</section>
+				
+				<section class="s_text_block pt32 " data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 ">
+								<p style="text-align: center;font-size: 15px;">
+									Simplify 3D ist eine Software mit der 3D Modelle in Anweisungen für den 3D Drucker übersetzt werden. Es können Modelle einfach importiert und optimiert werden. Die Software ermöglicht es bereits vor dem Druck die Drucksequenz zu simulieren und so mögliche Probleme frühzeitig zu erkennen.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="s_text_block " data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<p class="lead" />
+								<div style="text-align: center;" class="blue">
+									<span style="font-size: 21px;">
+										<b>
+											Einleitung
+										</b>
+									</span>
+								</div>
+								<p style="text-align: center;font-size: 15px;">
+									Nach der Einrichtung von Simplify3d befindet man sich, nach dem Öffnen der Software, im Vorschaufenster. Im Mittelbereich befindet sich das Vorschaufenster, in diesem wird der Bauraum des 3D-Druckers abgebildet, links davon werden, in der oberen Hälfte des Fensters, die geladenen Modelle angezeigt, darunter werden die erstellten Prozesse angezeigt. Auf der rechten Seite des Fensters befinden sich die Werkzeuge zur Manipulation des Modells, der Einstellung der Ansicht sowie eine Schaltfläche zur Kontrolle eines über USB angeschlossenen 3D-Druckers und zur Generierung einer benutzerdefinierten Stützstruktur.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<br/><br/>
+				<section class="s_text_block " data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							
+							<div class="col-lg-12 ">
+								<img src="/ehcs_evo_tech_website/static/src/img/simplify3d_startfenster_neu.png" style=" width: 100%; "></img>
+							</div>
+						</div>
+					</div>
+				</section>		<br/><br/>
+				
+				<section class="s_text_block " data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<p class="lead" />
+								<div class="blue text-left">
+									<span style="font-size: 22px;">
+										<b>
+											Import eines Modells
+										</b>
+									</span>
+								</div>
+								<p style="font-size: 16px;" class="text-left">
+									Nach der Einrichtung von Simplify3d befindet man sich, nach dem Öffnen der Software, im Vorschaufenster. Im Mittelbereich befindet sich das Vorschaufenster, in diesem wird der Bauraum des 3D-Druckers abgebildet, links davon werden, in der oberen Hälfte des Fensters, die geladenen Modelle angezeigt, darunter werden die erstellten Prozesse angezeigt. Auf der rechten Seite des Fensters befinden sich die Werkzeuge zur Manipulation des Modells, der Einstellung der Ansicht sowie eine Schaltfläche zur Kontrolle eines über USB angeschlossenen 3D-Druckers und zur Generierung einer benutzerdefinierten Stützstruktur.
+								</p>
+								<p style="font-size: 16px;" class="text-left">
+									In der Steuerleiste am oberen Bildschirmrand, unter dem Reiter „Files“ mit der Option „Import Models“. Nach dem Auswählen dieser Option öffnet sich ein Fenster des Explorers, in dem zu dem entsprechenden Modell navigiert und dieses ausgewählt werden kann. Es können auch mehrere Modelle im selben Ordner ausgewählt werden, diese werden automatisch angeordnet. Alternativ kann dieser Workflow auch über die Schaltfläche „Import Models“ am linken Bildschirmrand oder über den Shortcut „Strg + I“ gestartet werden.
+								</p>
+								<p style="font-size: 16px;" class="text-left">
+									Außerdem können Modelle per Drag-and-Drop direkt in das Vorschaufenster geladen werden.
+								</p>
+								<p style="font-size: 16px;" class="text-left">
+									Werden Modelle nicht zusammen importiert kann es vorkommen, dass sie einander überlappen. In diesem Fall können sie einfach mittels der Schaltfläche „Center and Arrange“, am linken Bildschirmrand, angeordnet werden. Sollten zu viele Modelle geladen worden sein können diese mittels Linksklick, aus dem Vorschaufenster oder der Auflistung am linken Bildschirmrand, ausgewählt und mit der Schaltfläche „Delete Models“ gelöscht werden.
+								</p>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>	
+					</div>
+				</section>
+				
+				<section class="s_text_block " data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<p class="lead" />
+								<div class="blue text-left">
+									<span style="font-size: 22px;">
+										<b>
+											Navigation im Vorschaufenster
+										</b>
+									</span>
+								</div>
+								<p style="font-size: 16px;" class="text-left">
+									Sind die Modelle ins Vorschaufenster importiert, können sie hier auch begutachtet werden.
+								</p>
+								<p style="font-size: 16px;" class="text-left">
+									Mit dem Scrollrad der Maus kann die Ansicht gezoomt werden, mit der linken Maustaste kann die Ansicht gedreht werden und mit der rechten Maustaste kann die Ansicht verschoben werden. Die mittlere Maustaste, bzw. der Klick auf das Mausrad setzen die Ansicht zurück.
+								</p>
+								<p style="font-size: 16px;" class="text-left">
+									Diese Navigation ist im G-Code Vorschaufenster identisch.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="s_text_block " data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<p class="lead" />
+								<div class="blue text-left">
+									<span style="font-size: 22px;">
+										<b>
+											Vordefinierte Ansichten
+										</b>
+									</span>
+								</div>
+								<p style="font-size: 16px;" class="text-left">
+									Am rechten Bildschirmrand befindet sich zusätzlich eine Schaltfläche mit vordefinierten Ansichten.
+								</p>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>	
+					</div>
+				</section>
+				
+				<section class="s_text_block " data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<div class="blue text-left">
+									<span style="font-size: 22px;">
+										<b>
+											Position, Skalierung, Ausrichtung
+										</b>
+									</span>
+								</div>
+								<p style="font-size: 16px;" class="text-left">
+									Innerhalb des Vorschaufensters können die Modelle auch bis zu einem gewissen Grad modifiziert werden. Ein Doppelklick auf das Modell öffnet am rechten Bildschirmrand eine Schaltfläche.
+								</p>
+								<p style="font-size: 16px;" class="text-left">
+									Im obersten Bereich „Change Position“ lässt sich die Position des Modells ändern, indem der Offset des Modellursprungs zum Ursprung des Bauraums definiert wird.
+								</p>
+								<p style="font-size: 16px;" class="text-left">
+									Im obersten Bereich „Change Position“ lässt sich die Position des Modells ändern, indem der Offset des Modellursprungs zum Ursprung des Bauraums definiert wird.
+								</p>
+								<p style="font-size: 16px;" class="text-left">
+									Im untersten Bereich dieser Schaltfläche, „Change Rotation“ lässt sich die Orientierung des Modells verändern. Dies geschieht, indem es in einem definierten Winkel um die einzelnen Achsen gedreht wird.
+								</p>
+								<p style="font-size: 16px;" class="text-left">
+									Im oberen Bereich des rechten Bildschirmrandes befindet sich außerdem eine weitere Schaltfläche, mittels derer das Modell „freihand“, direkt im Vorschaufenster, modifiziert werden kann.
+								</p>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>	
+					</div>
+				</section>
+				
+				<section class="s_text_block " data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<p class="lead" />
+								<div class="blue text-left">
+									<span style="font-size: 22px;">
+										<b>
+											Stützstruktur
+										</b>
+									</span>
+								</div>
+								<p style="font-size: 16px;" class="text-left">
+									One of the greatest strengths of Simplify3D is the generation of a
+									support structure defined by the user. The corresponding button is on
+									the right edge of the screen. The corresponding workflow is explained
+									in more detail under “ <u><b> User </b></u> -generated <u><b> support structure</b></u> „.
+								</p>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>	
+					</div>
+				</section>
+				
+				<section class="s_text_block " data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<p class="lead" />
+								<div class="blue text-left">
+									<span style="font-size: 22px;">
+										<b>
+											Druck vorbereiten
+										</b>
+									</span>
+								</div>
+								<p style="font-size: 16px;" class="text-left">
+									In der unteren Hälfte des linken Bildschirmrandes befindet sich der
+									Bereich „Processes“. Der Slicingvorgang von Simplify3D ist auf
+									Prozessen aufgebaut. Mittels verschiedener Prozesse können die
+									Verarbeitungsparameter für unterschiedliche Regionen des Modells
+									variiert werden. Dies wird im Punkt „<u> <b> Arbeiten mit mehreren Prozessen“ </b> </u>
+									 noch einmal genauer betrachtet.
+									support structure
+									„.
+								</p>
+								<p style="font-size: 16px;" class="text-left">
+									Mittels der Schaltfläche „Add“ lässt sich ein weiterer Prozess der
+									Prozessschaltfläche hinzufügen. Nach betätigen der Schaltfläche öffnet
+									sich ein Fenster, in dem die Prozesseinstellungen getroffen werden
+									können. Die Einstellungen in diesem Fenster werden unter dem Punkt
+									<u> <b>
+									„Einstellungen im Prozessfenster“ </b> </u> näher erläutert.
+								</p>
+								<p style="font-size: 16px;" class="text-left">
+									Neben der „Add“-Schaltfläche befindet sich die „Delete“-Schaltfläche,
+									mit der nicht mehr benötigte Prozesse gelöscht werden können. Mit der
+									darunter liegenden „Edit Process Settings“-Schaltfläche lassen sich die
+									Einstellungen eines Prozesses ändern.
+								</p>
+								<p style="font-size: 16px;" class="text-left">
+									Mit der „Prepare to Print”-Schaltfläche werden die Modelle für den 3D-Druck vorbereitet. Nach dem Betätigen der Schaltfläche öffnet sich ein Fenster, in dem der Prozess, welcher verwendet werden soll, ausgewählt werden kann. Befindet sich nur ein Prozess im Prozessfenster wechselt das Vorschaufenster direkt zur G-Code Vorschau.
+								</p>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>	
+					</div>
+				</section>
+				
+				<section class="s_text_block " data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<p class="lead" />
+								<div class="blue text-left">
+									<span style="font-size: 22px;">
+										<b>
+											G-Code Vorschau
+										</b>
+									</span>
+								</div>
+								<p style="font-size: 16px;" class="text-left">
+									In der G-Code Vorschau werden die Werkzeugpfade des Druckkopfs grafisch dargestellt. Am linken Bildschirmrand befindet sich ein kleines Fenster, in dem Daten zum Ausdruck angezeigt werden. Simplify3D berechnet die Druckzeit, den Materialverbrauch sowie die Materialkosten (wenn diese Informationen zum Filament vorliegen).
+								</p>
+								<p style="font-size: 16px;" class="text-left">
+									Im Bereich darunter kann die Vorschau angepasst werden. Mit den Checkboxen lassen sich die Bauplattform, der Druckkopf, die Leerfahrtwege und die Positionen der Retractions anzeigen. Das Dropdown Menü bietet die Möglichkeit die farbliche Darstellung zu ändern. Standardmäßig werde hier die unterschiedlichen Features dargestellt, jedoch können auch die Druckgeschwindigkeit, der für einen Prozess zuständige Werkzeugkopf sowie der Prozess angezeigt werden.
+								</p>
+								<p style="font-size: 16px;" class="text-left">
+									Mittels der Schaltfläche „Save Toolpaths to Disk“ kann der generierte Werkzeugpfad gespeichert werden.
+								</p>
+								<p style="font-size: 16px;" class="text-left">
+									AM unteren Bildschirmrand befindet sich eine Schaltfläche zur Visualisierung des Druckprozesses. Da auf diese weise der Druckvorgang simuliert werden kann können Probleme, die später an der Maschine auftreten können frühzeitig erkannt und mit entsprechenden Änderungen der Einstellungen behoben werden.
+								</p>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>	
+					</div>
+				</section>
+				
+				<section class="s_text_block " data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<p class="lead" />
+								<div class="blue text-left">
+									<span style="font-size: 22px;">
+										<b> 
+											FFF-Profil
+										</b>
+									</span>
+								</div>
+								<p style="font-size: 16px;" class="text-left">
+									Ein FFF-Profil speichert die gesamten Einstellungen eines 3D-Drucker Profils. Hauptsächlich wird es verwendet, um die Software nach der Installation auf den entsprechenden 3D-Drucker zu konfigurieren.
+								</p>
+								<p style="font-size: 16px;" class="text-left">
+									Um ein FFF-Profil zu laden gibt es am linken obern Bildschirmrand, unter dem Reiter „Datei“ den Menüpunkt „Import FFF“.
+								</p>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>	
+					</div>
+				</section>
+				
+				<section class="s_text_block " data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<p class="lead" />
+								<div class="blue text-left">
+									<span style="font-size: 22px;">
+										<b>
+											Factory-File
+										</b>
+									</span>
+								</div>
+								<p style="font-size: 16px;" class="text-left">
+									Ein Factory-File speichert die Momentan im Vorschaufenster befindlichen Modelle, sowie die Prozeese im Prozessfenster ab. Die Hauptaufgabe dieses File-Formats ist die Kommunikation. Auf diese Weise können Verarbeitungsparameter direkt kommuniziert werden und müssen nicht erst mühsam aus dem G-Code abgelesen werden.
+								</p>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>	
+					</div>
+				</section>
+				
+				
+				<section class="s_text_block " data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<p class="lead" />
+								<div style="text-align: center;" class="blue">
+									<span style="font-size: 22px;">
+										<b>
+											Die einzelnen Tabs von Simplify3D im Detail
+										</b>
+									</span>
+								</div>
+								<p style="text-align: center;font-size: 16px;">
+									Untenstehend finden Sie noch detaillierte Informationen zu den weiteren Programmtabs mit ausführlichen Erklärungen und Screenshots:
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="s_text_block " data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-4 ">
+								<p class="lead" />
+								<div style="text-align: center; " class="blue" >
+									<a href="/additions-tab/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade"
+										style="color: white !important; background-color: #008bd2; width:100%"
+										data-original-title="" title="">Additions Tab
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-4 ">
+								<p class="lead" />
+								<div style="text-align: center; " class="blue">
+									<a href="/advanced-tab/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade"
+										style="color: white !important; background-color: #008bd2; width:100%"
+										data-original-title="" title="">Advanced Tab
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-4 ">
+								<p class="lead" />
+								<div style="text-align: center; " class="blue">
+									<a href="/extruder-tab/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade"
+										style="color: white !important; background-color: #008bd2; width:100%"
+										data-original-title="" title="">Extruder Tab
+									</a>
+								</div>
+							</div>
+							
+							<div class="col-lg-4 ">
+								<p class="lead" />
+								<div style="text-align: center; " class="blue" >
+									<a href="/infill-tab/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade"
+										style="color: white !important; background-color: #008bd2; width:100%"
+										data-original-title="" title="">Infill Tab
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-4 ">
+								<p class="lead" />
+								<div style="text-align: center; " class="blue">
+									<a href="/layer-tab/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade"
+										style="color: white !important; background-color: #008bd2; width:100%"
+										data-original-title="" title="">Layer Tab
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-4 ">
+								<p class="lead" />
+								<div style="text-align: center; " class="blue">
+									<a href="/other-tab/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade"
+										style="color: white !important; background-color: #008bd2; width:100%"
+										data-original-title="" title="">Other Tab
+									</a>
+								</div>
+							</div>
+							
+							<div class="col-lg-4 ">
+								<p class="lead" />
+								<div style="text-align: center; " class="blue" >
+									<a href="/speeds-tab/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade"
+										style="color: white !important; background-color: #008bd2; width:100%"
+										data-original-title="" title="">Speeds Tab
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-4 ">
+								<p class="lead" />
+								<div style="text-align: center; " class="blue">
+									<a href="/support-tab/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade"
+										style="color: white !important; background-color: #008bd2; width:100%"
+										data-original-title="" title="">Support Tab
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-4 ">
+								<p class="lead" />
+								<div style="text-align: center; " class="blue">
+									<a href="/temperature-tab/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade"
+										style="color: white !important; background-color: #008bd2; width:100%"
+										data-original-title="" title="">Temperature Tab
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				
+				<section class="pt32 pb32" data-name="Title" >
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+						</div>
+					</div>
+				</section>
+				
+			</div>
+		</t>
+	</template>
+</odoo>

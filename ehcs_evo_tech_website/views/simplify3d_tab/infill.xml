@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_submenu_tab_infill" name="website.theme_submenu_tab_infill">
+		<t t-call="website.layout">
+			<t t-set="additional_title">Infill Tab</t>
+			<div id="wrap" class="oe_structure oe_empty">
+
+				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
+					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
+					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/img_6646_3-scaled.jpg&quot;); background-position: 50% 0px;" />
+						<div class="container">
+							<div class="row s_nb_column_fixed">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
+									data-name="Box">
+									<div class="row">
+										<div class="col-lg-12 s_title s_col_no_bgcolor"
+											data-name="Title">
+											<h1 class="s_title_default" style="text-align: center; ">
+												<font style="font-size: 62px;color: white;">
+													<b>Infill TAB</b>
+												</font>
+											</h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</section>
+				
+				<section class="s_text_block pt32 " data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 ">
+								<img src="/ehcs_evo_tech_website/static/src/img/infill-tab.png.webp" style=" width: 100%; "></img>
+								<p style="font-size: 16px;margin-top: 2%;">
+									Im Infill Tab wird die Füllung des Bauteils eingestellt. Hier kann die Fülldichte sowie die Struktur der Füllung bestimmt werden. Die Wahl des richtigen Infill hat Einfluss auf die Druckzeit sowie die Stabilität des fertigen Bauteils.
+								</p>
+							</div>
+							<div class="col-lg-12 pt32 text-left">
+								<br/>
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										General
+									</b>
+								</p>
+								<br/>
+								
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Infill Extruder
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Diese Option legt den Extruder fest, mit dem das Infill gedruckt wird.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Internal Infill Pattern
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Das Internal Infill Pattern legt die Grundstruktur der inneren Füllung fest. Das Standardpattern ist Rectlinear. Sollen stabilere Bauteile gefertigt werden sind die Patterns Triangular und Full Honeycomb eine gute Wahl. Das Wiggle Pattern ist nur für ästhetische Zwecke zu empfehlen, da es die Druckzeit am meisten in die Länge zieht, und gleichzeitig die geringste Stabilität aufweist.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Rectliniear
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Mit der Einstellung “Rectlinear” besteht das Infill aus zueinander parallelen Linien, die abwechselnd mit jeder Schicht +45° und -45° zur x-Achse orientiert sind.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Grid
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Die “Grid” Infillstruktur ist der “Rectlinear” Einstellung sehr ähnlich. Der Unterschied besteht hier darin, dass in jeder Schicht sowohl die +45° als auch die -45° Bahnen gedruckt werden. Hierdurch entsteht zwar ein weitmaschigeres Netz, die Struktur an sich ist aber stabiler.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Triangular
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									„Triangular“ Infill ist eine dreieckige Füllstruktur. Hier werden die Bahnen in 0°, +60° und -60° in einer Schicht gelegt.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Wiggle
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Die Wiggle-Infillstruktur besteht aus Zick-Zack-Linien, die einer imaginären Leitlinie folgen. Die eingestellte Orientierung gibt die Orientierung der Leitlinie an.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Fast Honeycomb
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Fast Honeycomb ist eine Wabenförmige Infillstruktur, jedoch wird nur jede zweite Schicht die vollwertige Wabenstruktur gedruckt, während in der anderen Schicht ein Zick-Zack-Muster, ähnlich dem Wiggle-Infill, darüber gedruckt wird.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Full Honeycomb
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Full Honeycomb ist eine Wabenförmige Infillstruktur. Im Gegensatz zu Fast Honeycomb wird hier in jeder Schicht eine vollwertige Wabenstruktur gedruckt und in der nächsten Schicht um 120° gedreht.
+								</p>
+								<img src="/ehcs_evo_tech_website/static/src/img/simplify3d_tab/infillstrukturen.png" style=" width: 100%; ">
+								</img>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										External Infill Pattern
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Das External Infill Pattern legt die Struktur der „Top Solid Layer“ und „Bottom Solid Layer“ fest. Der Füllgrad beträgt dabei immer 100 %.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Rectlinear
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Mit der Einstellung “Rectlinear” besteht das Infill aus zueinander parallelen Linien, die abwechselnd mit jeder Schicht +45° und -45° zur x-Achse orientiert sind.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Concentric
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Concentric bedeutet, dass die Linien des Infills konzentrisch zu den Linien der Perimeter verlaufen.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Interior Infill Percentage
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Der Interior Infill Percentage legt den Füllgrad der inneren Struktur fest. Höhere Füllgrade ergeben stabilere Bauteile, jedoch steigt die Druckzeit und der Materialverbrauch.
+									<br/>
+									Bei der Verwendung von geringen Füllgraden sollte bedacht werden, dass genügen Top Solid Layers verwendet werden, da diese beim Überbrücken von großen offenen Bereichen zum Aufreißen neigen.
+									<br/>
+									Soll ein voll ausgefülltes Bauteil gefertigt werden sind Füllgrade von 98-99% eine gute Wahl. Bei 100% besteht in der Regel das Problem, dass zu viel Material verwendet wird und dieses nach oben ausweicht, wodurch die die nächste Schicht verschmiert wird und im schlimmsten Fall die Düse mit dem Bauteil kollidiert und der entsprechende Motor Schritte überspringt, was zu einem Versatz im Bauteil führt.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Outline Overlap
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Der Outline Overlap gibt an, zu wieviel Prozent der Extrusion Width sich Infill und Perimeter überlappen. Der Standardwert liegt hier bei 10%. Bei der Verwendung von Düsen mit großem Durchmesser sollte dieser Wert erhöht werden, um Löcher im Bauteil zu vermeiden.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Infill Extrusion Width
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Gibt das Verhältnis der Extrusion Width des Infill zur Extrusion Width der Perimeter an. Der Standardwert hierbei sin 100%. Bei Materialien mit hoher Schwindung kann das Erhöhen dieses Wertes helfen Spannungsrisse zwischen den Schichten zu vermeiden.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Minimum Infill Length
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Gibt die minimale Länge an, die eine Infill Linie haben muss, um gedruckt zu werden. Der Standardwert liegt hier bei etwa 3 mm. Durch diese Einstellung werden unnötige Verfahrwege des Druckkopfs vermieden, jedoch kann es, wenn der Wert zu hoch gewählt wurde, vorkommen, dass das Bauteil an Stellen kein Infill erhält wo es eigentlich notwendig wäre.
+
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Combine Infill Every … layers
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Gibt an, wie dick eine Schicht des Infills im Verhältnis zur Primary Layer Height ist. Der hier eingegebene Wert, multipliziert mit der Primary Layer Height ergibt die Schichthöhe des Infills.
+									<br/>
+									Diesen Wert zu erhöhen ist besonders dann von Vorteil, wenn Perimeter und Infill mit unterschiedlichen Düsendurchmessern gefertigt werden, da man sowohl die Detailgenauigkeit einer feinen Düse für die Perimeter als auch die Geschwindigkeit einer breiten Düse für das Infill erhält.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Include Solid Diaphragm every … layers
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Mit dieser Checkbox wird alle paar Schichten eine Schicht des Infills mit 100% Füllgrad gedruckt. Dies erhöht die Stabilität des Bauteils erhöht aber auch die Druckzeit und den Materialverbrauch.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Internal Infill Angle Offsets
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									GIn diesem Bereich werden die Winkel des Infills definiert. Simplify3d hinterlegt hier Standardwerte für jeden Infilltyp, die vom Anwender für Spezialanwendungen weiter angepasst werden können.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Print every Infill angle on each layer
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Mit dieser Checkbox werden alle vorher definierten Winkel in jede Schicht gedruckt. Diese Einstellung sollte nur mit niedrigen Füllgraden verwendet werden, da die Überlappenden Linien über die Schichthöhe hinausragen können.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										External Infill Angle Offsets
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									In diesem Bereich werden die Winkel des Infills der Top und Bottom Solid Layers definiert. Simplify3d hinterlegt hier Standardwerte für jeden Infilltyp, die vom Anwender für Spezialanwendungen weiter angepasst werden können.
+
+								</p>
+								
+							</div>
+							<div class="col-lg-12 pt32 text-center">
+								<a href="/simplify3d/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade" style="color: white !important; background-color: #008bd2; "
+									data-original-title="" title="">
+									
+									Zurück zur Übersicht
+								</a>
+							</div>							
+						</div>
+					</div>
+				</section>
+				
+				<section class="pt32 pb32" data-name="Title" >
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+						</div>
+					</div>
+				</section>
+				
+			</div>
+		</t>
+	</template>
+</odoo>

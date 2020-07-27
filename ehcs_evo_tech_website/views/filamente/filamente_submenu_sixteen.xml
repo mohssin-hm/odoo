@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_menu_filamente_submenu_sixteen" name="website.filamente_page">
+		<t t-call="website.layout">
+			<t t-set="additional_title"> EVO-SUPP </t>
+			<div id="wrap" class="oe_structure oe_empty">
+			
+				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
+					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background-color:rgba(66, 117, 211, 0.63); ">
+					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/druckmaterial-3d-druck_smaller.jpg&quot;); background-position: 50% 0px;" />
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+							<div class=" jumbotron rounded pt32 pb32 col-lg-12"
+								data-name="Box">
+								<div class="row">
+									<div class="col-lg-12 s_title s_col_no_bgcolor"
+										data-name="Title">
+										<h1 class="s_title_default" style="text-align: center; ">
+											<font style="font-size: 50px; color: white;">
+												<b> EVO-SUPP</b>
+											</font>
+										</h1>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				
+				<section class="s_features pt32 pb0" data-name="Features" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 pt32 pb32 text-center">
+								<p class="o_default_snippet_text blue text-left" style="font-size:23px ; ">
+									Das Stützmaterial für Ihre 3D Druck Anwendung
+								</p>
+								<p class="o_default_snippet_text  text-left" style="font-size:16px;">
+									ABS –ESD (für electrostatic discharge oder electrostatic sensitive devices) als 3D-Druck Filament kommt bei allen elektrostatisch gefährdeten Bauelementen zum Einsatz. Dazu gehören nahezu alle elektrischen, elektronischen und optoelektronischen sowie zahlreiche elektromechanische Bauteile. Das ABS-ESD Filament garantiert aufgrund seiner dissipativen (energieaufnehmenden) Eigenschaften das sichere und kontrollierte Ableiten elektrostatischer Aufladungen.
+								</p>
+								<p class="o_default_snippet_text text-left" style="font-size:16px;">
+									Diese könnten andernfalls einen kurzen, hohen elektrischen Strom- und Energieimpuls bewirken, die die Funktion der Komponenten beeinträchtigen oder diese zur Gänze beschädigen kann. Auch aus Sicherheitsgründen muss in vielen Bereichen ABS-ESD verwendet werden, da plötzliche Spannungsentladungen zu Explosionen führen können. Mit ABS-ESD als thermoplastischem Kunststoff lassen sich somit 3D gedruckte Bauteile erstellen, die ein sicheres und dauerhaftes Ableiten der statischen Elektrizität garantieren.
+								</p>
+								<p class="o_default_snippet_text text-left" style="font-size:16px;">
+									Anwendungsgebiete finden sich im Elektronik- und Halbleiterbereich, im Bau von Ventilatoren und Pumpen, sowie in der Medizin. Diese dissipative Eigenschaft ist auch überall dort notwendig, wo mit Pulver gearbeitet wird oder wo Staub nicht von den Kunststoffkomponenten angezogen werden darf.
+								</p>
+							</div>
+							<div class="col-lg-4 pt32 pb32 text-left" >
+								<img src="/ehcs_evo_tech_website/static/src/img/fileweb.webp" style="width: 170%; "></img>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_features pt32 pb0" data-name="Features"  style="color: #555555; background-color: #f8f9fa !important;">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 pb32 text-center">
+								<p class="o_default_snippet_text  text-center" style="font-size:16px ; font-style: italic; ">
+									„Das Stützmaterial SUPP ermöglicht, mehr komplexe und kleine Bauteile in weniger Zeit und zu geringeren Kosten herzustellen. Der oft so kritische Nacharbeitsaufwand wird dadurch signifikant reduziert.“ 
+								</p>
+								<p class="o_default_snippet_text text-center blue" style="font-size:18px;">
+									Markus Kaltenbrunner, Geschäftsführer EVO-tech
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_features pt32 pb0" data-name="Features" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 pt32 pb32 text-left" >
+								<p class="o_default_snippet_text " style="font-size:16px;">	
+									Da das manuelle Entfernen sehr viel mehr Zeit und Ressourcen benötigt, ermöglicht das laugenlösliche Stützmaterial SUPP signifikante Zeit- und Kosteneinsparungen. In der eingesparten Zeit können andere, wertschöpfende Tätigkeiten durchgeführt werden. Insgesamt verringert sich dadurch auch die Zeit für die Herstellung von Prototypen mit komplexen Geometrien und die Time-to-market wird verkürzt. Außerdem wird durch das Auswaschen das Supportmaterial sauberer entfernt, als beim manuellen Entstützen. Die Laugenlösung ist je nach örtlichen Vorschriften dann verdünnt oder unverdünnt über das örtliche Abwassersystem zu entsorgen. Dies ist ein wesentliche Vorteil gegenüber Orangen- oder Limonenöl, die bei anderen Stützmaterialien beim Auswaschen zum Einsatz kommen und säurehaltig sind bzw. teils einen eher unangenehmen Geruch haben Aus diesen Gründen ist auch die Handhabung der Lösung und der Bauteile beim Auswaschvorgang angenehmer, unproblematischer und einfacher.
+								</p>
+							</div>
+							
+							<div class="col-lg-4 pt32 pb32 text-left" >
+								<span class="o_default_snippet_text blue" style="font-size:22px;">
+									<b>
+										VORTEILE:
+									</b>
+								</span>
+								<br/>
+								<ul id="ul" style="text-align: left; font-size: 0.9375rem; margin-left: -5%">
+									<li> Erleichtert das Entstützen von filigranen Bauteilen mit feinen Geometrien </li>
+									<li>  Für komplexe Bauteile mit Überhängen und Hinterschneidungen </li>
+									<li> Zeit und Kosteneinsparung  </li>
+									<li>  Leichte Entsorgung </li>
+								</ul>
+								
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				
+				<section class="" data-name="Title" style="background-color: #008bd2!important">
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+							<div class="col-lg-12 s_title pt12" style="text-align: center;">
+								<div class="row align-items-center" style="margin-top: 1%;">
+									<div class="col-lg-1 ">
+										<i class="mpc-transition fa fa-4x fa-phone" style="color: white;margin-left: 60%;margin-top: -10%;"></i>
+									</div>
+									<div class="col-lg-6 ">
+										<p style="font-size:20px;color: white; margin-top:1%">
+										Sie benötigen mehr Informationen? Wir beraten Sie gerne.
+										</p>	
+									</div>
+								</div>
+								<p class="s_title_default">
+									<a href="/contactus/" class="blue btn btn-gamma flat btn-lg" data-original-title="" title="" 
+										style="background-color: white; margin-left:80%; margin-top : -7%; ">
+										<b style=" font-size: 14px; "> Jetzt Kontaktieren </b>
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="pt40 pb32" data-name="Title" >
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+						</div>
+					</div>
+				</section>
+				
+			</div>
+		</t>
+	</template>
+</odoo>

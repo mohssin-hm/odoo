@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_submenu_tab_layer" name="website.theme_submenu_tab_layer">
+		<t t-call="website.layout">
+			<t t-set="additional_title">Layer Tab</t>
+			<div id="wrap" class="oe_structure oe_empty">
+
+				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
+					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
+					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/img_6646_3-scaled.jpg&quot;); background-position: 50% 0px;" />
+						<div class="container">
+							<div class="row s_nb_column_fixed">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
+									data-name="Box">
+									<div class="row">
+										<div class="col-lg-12 s_title s_col_no_bgcolor"
+											data-name="Title">
+											<h1 class="s_title_default" style="text-align: center; ">
+												<font style="font-size: 62px;color: white;">
+													<b>Layer TAB</b>
+												</font>
+											</h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</section>
+				
+				<section class="s_text_block pt32 " data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 ">
+								<img src="/ehcs_evo_tech_website/static/src/img/simplify3d_tab/Layer_Tab_EVO_tech_3D_Drucker.png" style=" width: 100%; "></img>
+							</div>
+							<div class="col-lg-12 pt32 text-left">
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Layer Settings
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Mit den Einstellungen in diesem Bereich lässt sich ein Prozess in Z-Richtung ab einer eingestellten Höhe starten bzw. beenden. Dies kann von Nutzen sein um ein Modell in Z-Richtung aufzuteilen, indem man einfach den Druck ab einer eingestellten Höhe abbricht, oder das Bauteil mit unterschiedlichen Einstellungen, z.B. unterschiedlich dicke Schichten, drucken möchte.
+								</p>
+
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Primary Extruder
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Diese Einstellung legt fest, mit welchem Extruder Perimeter sowie die untersten und obersten Schichten gedruckt werden.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Primary Layer Height
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Dieser Wert gibt an, wie dick eine Schicht des gedruckten Bauteils ist. Dieser Wert sollte sich etwa zwischen 25 und 75 % des Düsendurchmessers bewegen.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Top Solid Layers
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Dieser Wert gibt die Anzahl der oberen Deckschichten des Bauteils an. Dieser Wert multipliziert mit der Primären Schichtdicke ergibt die obere Wandstärke des Bauteils.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Bottom Solid Layers
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Dieser Wert gibt die Anzahl der unteren Deckschichten des Bauteils an. Dieser Wert multipliziert mit der Primären Schichtdicke ergibt die untere Wandstärke des Bauteils. Hierbei gilt es jedoch zu beachten, dass die erste Schicht eines 3D-gedruckten Bauteils manchmal etwas dicker ausgeführt wird, um Probleme durch die Unebenheiten der Bauplattform zu umgehen.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Perimeter Shells
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Perimeter bilden die Oberfläche des Bauteils nach. Die Anzahl der Perimeter multipliziert mit der Extrusionsbreite ergibt die äußere Wandstärke. Perimeter tragen maßgeblich zur Stabilität eines 3D-gedruckten Bauteils bei.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Outline Direction
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Für Perimeter lässt sich noch einstellen, ob diese von Außen nach Innen oder von Innen nach Außen gedruckt werden sollen. Perimeter von Innen nach Außen zu Drucken gibt diesen bessere Stabilität wenn Überhänge gedruckt werden sollen, während die umgekehrte Richtung besser für senkrechte Flächen geeignet ist.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Print islands sequentially without optimization
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Wird diese Option aktiviert werden die Perimeter kleiner Bereiche nicht auf Druckzeit optimiert, sondern so, dass die Düse möglichst wenig Strahlungswärme auf einmal dort abgibt, um ein Überhitzen des Bereichs zu vermeiden. Dies sorgt für bessere Qualität bei kleinen Bereichen, kann jedoch die Druckzeit in die Länge ziehen.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Single outline corkscrew printing mode (vase mode)
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Diese Option legt das Infill auf 0% und die Anzahl der Perimeter auf 1 fest. Bei Auswahl dieser Option werden keine Schichten mehr gedruckt, stattdessen wird die z-Höhe kontinuierlich erhöht und die Oberfläche des Bauteils mit einer durchgehenden Spirale nachgebildet, um Unebenheiten im Bauteil, wie sie etwa durch das An- und Absetzen des Druckkopfes beim Schichtwechsel entstehen zu vermeiden.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										First Layer Settings
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Um eine gute Haftung mit der Bauplattform zu erzielen wird die erste Schicht eines Bauteils oft etwas dicker und mit geringerer Druckgeschwindigkeit ausgeführt als der Rest.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										First Layer Height
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Gibt an, wie hoch die erste Schicht im Vergleich zur <b> <u>  Primary Layer
+									Height </u></b> ausgeführt wird. Für Düsendurchmesser bis 0,8 mm ist 150 % ein
+									guter Richtwert, darüber sollte der Wert etwas niedriger gewählt
+									werden.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										First Layer Width
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Gibt an, wie breit die Bahnen der ersten Schicht im Vergleich zur 
+									<b> <u> Extrusion Width </u></b> ausgeführt werden. Für Düsendurchmesser bis 0,8 mm ist 150 % ein guter Richtwert, darüber sollte der Wert etwas niedriger gewählt werden.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										First Layer Speed
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Gibt an, wie schnell die Bereiche der ersten Schicht im Vergleich zu den Einstellungen im <b> <u> Speeds </u></b>Tab gedruckt werden.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Start Points
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Die Start- bzw. Endpunkte der äußersten Perimeter hinterlassen manchmal sichtbare Marker im Bauteil und können im schlimmsten Fall sogar die Struktur schwächen. Die Einstellungen dieses Unterpunktes bieten die Möglichkeit die Platzierung dieser Start- und Endpunkte zu steuern.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Use random start points for all perimeters
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Mit dieser Einstellung werden die Start- und Endpunkte zufällig verteilt. Diese Option verlängert die Druckzeit führt aber meist zu stabileren Bauteilen.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Optimize start points for fastest printing speed
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Mit dieser Option steht die Minimierung der Druckzeit im Vordergrund. Die Start- und Endpunkte werden so platziert, dass der Druckkopf den geringsten Leerfahrtweg hat.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Choose start point closest to specific location
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Mit dieser Option können die Start- und Endpunkte an einer bestimmten Stelle platziert werden, etwa an Ecken oder versteckt hinter einer Wölbung des Bauteils. Dies ist dann sinnvoll, wenn ästhetische Aspekte im Vordergrund stehen.
+								</p>
+								
+							</div>
+							<div class="col-lg-12 pt32 text-center">
+								<a href="/simplify3d/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade" style="color: white !important; background-color: #008bd2; "
+									data-original-title="" title="">
+									
+									Zurück zur Übersicht
+								</a>
+							</div>							
+						</div>
+					</div>
+				</section>
+				
+				<section class="pt32 pb32" data-name="Title" >
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+						</div>
+					</div>
+				</section>
+				
+			</div>
+		</t>
+	</template>
+</odoo>

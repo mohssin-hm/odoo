@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_menu_filamente_submenu_three" name="website.filamente_page">
+		<t t-call="website.layout">
+			<t t-set="additional_title"> Polyamid-cf Filamente </t>
+			<div id="wrap" class="oe_structure oe_empty">
+				
+				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
+					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none;     background-color: rgba(66, 117, 211, 0.63);">
+					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/headerbilder_evo-tech_evo-plastics8_2000x700_100-copy.png&quot;); background-position: 50% 0px;" />
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+							<div class=" jumbotron rounded pt32 pb32 col-lg-12"
+								data-name="Box">
+								<div class="row">
+									<div class="col-lg-12 s_title s_col_no_bgcolor"
+										data-name="Title">
+										<h1 class="s_title_default" style="text-align: center; ">
+											<font style="font-size: 50px; color: #008bd2;">
+												<b>PA CF FILAMENT</b>
+											</font>
+										</h1>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_text_image pt32 pb32" data-name="Text - Image">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-9 pb16 pt16">
+								<p class="" style="font-size: 18px; ">
+									<b style="font-size: 22px; " class="blue">
+										 Eigenschaften des kohlefaserverstärkten Polyamid:
+									</b> <br/>
+									Das kohlefaserverstärkte Polyamid CF ist ein schwarzes Filament mit Mikro-Karbonfasern und zeichnet sich durch die
+									<b> höchste spezifische Festigkeit, </b> 
+									die höchste 
+									<b> Biegefestigkeit </b> 
+									und die höchste 
+									<b> Reißlänge </b> 
+									aller FFF-Thermoplaste aus. Diese Eigenschaften erlauben es, starke, stabile und leichte Werkzeuge und Teile zu bauen. Es ist möglich, steife und formstabile Konstruktionsteile die bis zu 2-mal steifer als z.B. ABS Thermoplaste (Kunststoffe) sind, zu erhalten. Die Teile erreichen eine hohe Oberflächenqualität und Hitzetoleranz. 
+									Auch Metallkomponenten können durch Polyamid CF ersetzt werden.
+								</p>	
+									<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>	
+								<p class="" style="font-size: 18px; ">
+									<br/><br/>
+									„Durch das neue Polyamid CF können hochfeste Bauteile vor Ort gedruckt werden, was die 
+									<b> Produktionszeit </b> 
+									um  <b> bis zu 6 Wochen reduziert. </b> Außerdem können die <b> Kosten </b>
+									für die Bauteile um <b> bis zu 90% gesenkt </b> werden.“
+								</p>
+								<b style="font-size: 22px; " class="blue">
+									Markus Kaltenbrunner, Geschäftsführer EVO-tech
+								</b>
+							</div>
+							<div class="col-lg-3 pt16 pb16">
+								<img src="/ehcs_evo_tech_website/static/src/img/piry.png"
+									class="img img-fluid mx-auto" alt="Odoo • Text and Image"
+									data-original-title="" title="" aria-describedby="tooltip597079"/>
+									<center style="font-size:15px;">
+										<b> Gewichtsoptimiertes Drohnenbauteil	</b>
+									</center>
+							</div>
+						</div>
+					</div>
+				</section>
+					
+				<section class="s_text_image pt32 pb32" data-name="Text - Image">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-6 pb16 pt16">
+								<h1 class="blue"> <b> Einsatzbereiche:  </b> </h1>
+								<p class="" style="font-size: 17px; ">
+									Dieses Material ist geeignet für hoch-feste Prototypen bei industriellen Anwendungen, sowie für finale Funktionsbauteile bei Kleinserien und Sonderanfertigungen. Ebenso ist dieses Filament perfekt geeignet für Werkzeuge, Vorrichtungen, Schablonen, Montagewerkzeuge, Montagehilfen und Produktionswerkzeuge.
+								</p>
+							</div>
+							<div class="col-lg-6 pt16 pb16">
+								<h1 class="blue"> <b> Vorteile des Polyamid CF:  </b> </h1>
+								<p class="" style="font-size: 17px; ">
+									<ul style="text-align: left;font-size: 17px;" id="ul">
+										<li>Leicht, stabil, kohlefaserverstärkt </li>
+										<li> Beste Relation zwischen Festigkeit und Gewicht </li>
+										<li>Sehr gute Wiederholgenauigkeit </li>
+										<li> Beste mechanische Eigenschaften unter den FFF Materialien </li>
+									</ul>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				
+				<section class="pt28 pb28" data-name="Title" style="background-color: #008bd2!important">
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+							<div class="col-lg-12 s_title pt16 " style="text-align: center;">
+								<div class="row align-items-center">
+									<div class="col-lg-1 pb16 pt16">
+										<i class="mpc-transition fa fa-5x fa-phone" style=" color: white; "></i>	
+									</div>
+									<div class="col-lg-6 pb16 pt16">
+										<p style="font-size:20px;color: white;margin-left: -70%; margin-top:1%">
+										<span style=" margin-left: -3%; ">
+											T: +43 7662 38400
+										</span>
+											<br />
+											E:
+												<a style="color: #ffffff;" href="mailto:office@evo-tech.eu">office@evo-tech.eu</a>
+									</p>	
+									</div>
+								</div>
+								
+								<p class="s_title_default">
+									<a href="/contactus/" class="blue btn btn-gamma flat btn-lg" data-original-title="" title="" 
+										style="background-color: white; margin-left:80%; margin-top : -13%; ">
+										<b style=" font-size: 14px; "> Jetzt Kontaktieren </b>
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="pt28 pb28" data-name="Title" >
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+							<div class="col-lg-12 s_title pt16 pb16" style="text-align: center;">
+								<div class="row align-items-center">
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				
+			</div>
+		</t>
+	</template>
+</odoo>

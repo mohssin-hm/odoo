@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_submenu_tab_cnc_academy" name="website.theme_submenu_tab_cnc_academy">
+		<t t-call="website.layout">
+			<t t-set="additional_title">CNC ACADEMY</t>
+			<div id="wrap" class="oe_structure oe_empty">
+
+				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
+					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
+					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/ferngesteuertes-auto_600x300_101.jpg&quot;); background-position: 50% 0px;" />
+						<div class="container">
+							<div class="row s_nb_column_fixed">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
+									data-name="Box">
+									<div class="row">
+										<div class="col-lg-12 s_title s_col_no_bgcolor"
+											data-name="Title">
+											<h1 class="s_title_default" style="text-align: center; ">
+												<font style="font-size: 42px; color: white;">
+													<b>CNC ACADEMY</b>
+												</font>
+											</h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</section>
+					
+				<section class="s_text_block  " data-name="Text block" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<br/><br/>
+								<p style="text-align: left; font-size: 21px; " class="blue">
+									<b> VOM PROTOTYPEN DIREKT ZUM ENDPRODUKT! </b>
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									<b>
+									High Speed Rennauto kostengünstig entwickeln &amp; produzieren
+									</b>
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Im Zuge eines Abschlussprojektes der PTHL- Lienz wurde mit der CNC-Academy kooperiert. Bei diesem Abschlussprojekt hatte ein Team von 4 Schülern die Aufgabe, ein ferngesteuertes, 70km/h schnelles RC-Car (ferngesteuertes Rennauto) zu entwickeln und zu produzieren. Im Projektteam war Matthias Umfahrer, ein RC Spezialist – österreichischer Jugendmeister und Kärntner Vize-Meister. Die besondere Aufgabenstellung war es, das Auto nicht nur zu konstruieren, sondern gleichzeitig auf einen elektrischen (also auch in diesem Bereich ist Nachhaltigkeit ein Thema!) Antrieb umzurüsten. Für Insider: Basis bildete ein Mugen MBX7.
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Optimale Grundlage dafür bietet das auch in Österreich erfolgreiche System der dualen Ausbildung: einerseits Lehre im Unternehmen, andererseits begleitende Berufsschule. Doch gerade in hochspezialisierten, technischen Berufsbildern stößt dieses System an die Grenzen – aus technologischer und finanzieller Sicht. Hier bietet sich die CNC-Academy, als Partner der Berufsschule einerseits und zum Unternehmen als Lehrherr andererseits, als praxisorientierter Lernort an.
+								</p>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>	
+					</div>
+				</section>
+				
+				<section class="s_text_block  " data-name="Text block" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<br/><br/>
+								<p style="text-align: left; font-size: 21px; " class="blue">
+									<b> Eine Vielzahl an Teilen wurde mit dem EVO-lizer gedruckt und auch gleich 1:1 verbaut! </b>
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Mit Hilfe des EVO-lizers, der in der CNC-Academy für die Schüler zur Verfügung stand, wurden eine Menge Teile gedruckt und getestet. Aber nicht nur das: aufgrund der hohen Festigkeit und extremen Materialeigenschaften sind zahlreiche gedruckte Teile verwendet worden und wurden nicht mehr (wie anfangs geplant) durch CNC-gefräste Teile ersetzt. Dies zeigt und beweist, wie groß die Qualität von gedruckten Teilen eines EVO-lizers ist!
+								</p>
+								<br/>
+								<p style="text-align: left; font-size: 15px; " >
+									Der 3D-Druck ist DIE Technologie der Stunde und unerlässlich für die Ausbildung junger Menschen, um für die Erfordernisse der Zukunft gerüstet zu sein!
+
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Der 3D-Druck ist DIE Technologie der Stunde und unerlässlich für die Ausbildung junger Menschen, um für die Erfordernisse der Zukunft gerüstet zu sein!
+								</p>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>
+					</div>
+				</section>
+				
+				<section class="s_text_block  " data-name="Text block" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<br/><br/>
+								<p style="text-align: left; font-size: 21px; " class="blue">
+									<b> Erst mit dem EVO-lizer war ein Projekt dieses Umfangs in so kurzer Zeit möglich! </b>
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Nur durch Einsatz des EVO-lizers für den 3D Druck war es möglich, dieses Projekt zu realisieren! In nur 10 Wochen in der CNC-Academy wurden die konstruktiven und mechanischen Arbeiten umgesetzt und soweit durchgeführt, dass die restlichen mechanischen Teile in der PHTL-Lienz gefertigt werden konnten. Kurz gesagt: eine enorme Zeit- und Kostenersparnis bildete die Basis dafür, dass ein Team einer HTL in einer zukunftsorientierten Art und Weise ein Projekt durchführen konnte, das absolutem High-End Standard entspricht!
+								</p>
+								<img src="/ehcs_evo_tech_website/static/src/img/cnc-academy_1200x800_100.jpg " style="width:100%;"> </img>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>
+					</div>
+				</section>
+				
+				<section class="s_text_block  " data-name="Text block" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<br/><br/>
+								<p style="text-align: left; font-size: 21px; " class="blue">
+									<b> Der Einsatz des EVO-lizers in der CNC Academy!  </b>
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Die CNC-Academy verwendet einen EVO-lizer für die Ausbildung – der EVO-lizer ist ein unverzichtbarer Bestandteil geworden und wird laufend in der Prototypenphase eingesetzt. Dies hat zur Folge, dass Teile einerseits wesentlich schneller aber auch deutlich günstiger produziert und in der Folge getestet werden können.
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Darüber hinaus übernehmen die ausgedruckten Kunststoffteile aufgrund der hohen Qualität Aufgaben, die früher Fräs- bzw. Drehteilen vorbehalten waren. So können gedruckte mit konventionell gefertigten Teilen kombiniert werden, wodurch sich die Vorteile von addierender und subtrahierender Technologie ideal kombinieren lassen.
+								</p>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>
+					</div>
+				</section>
+				
+					
+				<section class="s_text_block  " data-name="Text block" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<br/><br/>
+								<p style="text-align: left; font-size: 21px; " class="blue">
+									<b> Die CNC Academy – Brücke in der Hochtechnologie!   </b>
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Ein nicht alltägliches Projekt wurde von einem Team der Privaten Technischen Höheren Lehranstalt (PTHL) in Lienz mit Hilfe des EVO-lizers umgesetzt. Kooperiert wurde dabei mit der CNC-Academy Greifenburg. Die CNC-Academy führt betriebsübergreifende Fortbildungen für Mitarbeiter aus technologieorientierten Unternehmen durch, die gezielte Aufgabenstellungen im Bereich der CNC-Fertigung haben. Zu diesem Zweck werden individuelle CNC-Trainings nach genauen Zieldefinitionen des Unternehmens entwickelt (schwerpunktmäßig als praktische Ausbildung) – und zwar für lebenslanges und berufsbegleitendes Lernen.
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Optimale Grundlage dafür bietet auch das in Österreich erfolgreiche System der dualen Ausbildung: einerseits Lehre im Unternehmen, andererseits durch die begleitende Berufsschule. Doch gerade in hochspezialisierten, technischen Berufsbildern stößt dieses System an die Grenzen aus technologischer und finanzieller Sicht. Hier bietet sich die CNC-Academy als Partner der Berufsschule einerseits und zum Unternehmen als Lehrherr andererseits als praxisorientierter Lernort an.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				
+				<section class="pt32 pb32" data-name="Title" >
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+						</div>
+					</div>
+				</section>
+				
+			</div>
+		</t>
+	</template>
+</odoo>

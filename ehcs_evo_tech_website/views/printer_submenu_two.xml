@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_menu_drucker_submenu_two" name="website.theme_menu_drucker_submenu_two">
+		<t t-call="website.layout">
+			<t t-set="additional_title">Eco-tech 3D Drucker El 11</t>
+			<div id="wrap" class="oe_structure oe_empty">
+
+				<section class="s_banner parallax s_parallax_is_fixed pt96 pb96 s_parallax_no_overflow_hidden" data-scroll-background-ratio="1" data-name="Banner"
+					style="background-image: none;">
+					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+						style="background-image: url(&quot;/theme_odoo_experts/static/src/img/backgrounds/03.jpg&quot;); background-position: 50% 0px;" />
+						<div class="container">
+							<section class="s_text_image pt32 pb32" data-name="Text - Image">
+						<div class="container">
+							<div class="row align-items-center">
+								<div class="col-lg-7 pb16 pt16">
+									<span class="blue" style="    font-size: 40px;">
+										<b> Der EL-11 3D-Drucker.	</b>
+									</span>
+									<br/>
+									<span class="blue" style="font-size:26px;">
+										 Die Zukunft des 3D-Druck. Mit der EL Serie beginnt sie von Neuem.
+									 </span>
+										<p class="" style="font-size: 15px; ">
+											Seit seinem Roll-out hat der zu hundert Prozent in Österreich gefertigte EL-11 viele neue Standards im professionellen 
+											3D-Druck etabliert. Seine durchdachte Konstruktion, die extrem geringen Betriebskosten, das offene Materialsystem 
+											und viele andere Eigenschaften machen ihn zum perfekten Einsteigergerät für industrielle und gewerbliche Anwendungen im 
+											professionellen 3D-Druck.
+											<br/>
+										</p>
+										<a href="/angebotsanfrage/?evolizer=EL-102" class="btn btn-danger blue rounded-circle btn-lg hvr-fade "
+											style="color: white !important; background-color: #008bd2;"
+											data-original-title="" title=""> Jetzt Angebot einholen </a>
+								</div>
+								<div class="col-lg-5 pt16 pb16">
+									<img src="/ehcs_evo_tech_website/static/src/img/etch.png"
+										class="img img-fluid mx-auto" 
+										data-original-title="" title="" aria-describedby="tooltip597079"/>
+								</div>
+							</div>
+						</div>
+					</section>
+						</div>
+				</section>
+				
+				<section class="pt32 pb32" data-name="Title" >
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+						</div>
+					</div>
+				</section>
+				
+				 <section class="s_features_grid pb24 pt0" data-name="Features Grid">
+						<div class="container">
+							<center>
+								<p class="blue align-items-center" style="font-size:23px;">
+										<b> Vorteile des EL-11 3D-Druckers </b>
+								</p>
+							</center>
+							<div class="row">
+								<div class="col-lg-6 s_col_no_bgcolor pb24">
+									<div class="row">
+										<div class="col-lg-12 pt16 pb16" data-name="Box">
+											<img src="/ehcs_evo_tech_website/static/src/img/s21.webp" class=" fa-files-o   s_features_grid_icon" />
+											<div class="s_features_grid_content">
+												<p class="o_default_snippet_text blue" style="font-size:20px;">Geschlossener, beheizter Innenraum
+												</p>
+												<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: 1%;margin-left: 1%;"></hr>
+												<p class="o_default_snippet_text" style="font-size: 15px; ">
+													Ein besonderes Augenmerk wurde auf die aktive Filterung der Abgase mit Hilfe von Aktivkohlefilter gelegt. Die automatische Temperierung des Bauraums ermöglicht eine optimale Bauteilequalität.
+												</p>
+												<ul id="ul" style="font-size: 15px; text-align: left; " >
+														<li>
+															Eingebauter Aktivkohlefilter
+														</li>
+														<li>
+															Geräuscharm (max 49 dB)
+														</li>
+														<li> 
+															Bürotauglich
+														</li>
+														<li> 
+															Bauraum Volumen 11,3 Liter
+														</li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-lg-12 pt16 pb16" data-name="Box" style="color: #555555; background-color: #f8f9fa !important; ">
+											<img src="/ehcs_evo_tech_website/static/src/img/s22.webp" class=" fa-files-o   s_features_grid_icon" />
+											<div class="s_features_grid_content" >
+												<p class="o_default_snippet_text blue" style="font-size:20px;">Präzision </p>
+												<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: -1%;margin-left: 1%;"></hr>
+												<p class="o_default_snippet_text" style="font-size: 15px; ">
+													Linearachsen mit Kugelumlaufspindeln für höchste Genauigkeit.
+												</p>
+											</div>
+										</div>
+										<div class="col-lg-12 pt16 pb16" data-name="Box">
+											<img src="/ehcs_evo_tech_website/static/src/img/s23.webp" class=" fa-files-o   s_features_grid_icon" />
+											<div class="s_features_grid_content">
+												<p class="o_default_snippet_text blue" style="font-size:20px;"> Smartphone Zugriff </p>
+												<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: 1%;margin-left: 1%;"></hr>
+												<p class="o_default_snippet_text" style="font-size: 15px; ">
+													Immer und überall auf den Druckprozess zugreifen – mit Ihrem eigenen Smartphone!
+												</p>
+											</div>
+										</div>
+										<div class="col-lg-12 pt16 pb16" data-name="Box" style="color: #555555; background-color: #f8f9fa !important; ">
+											<img src="/ehcs_evo_tech_website/static/src/img/s24.webp" class=" fa-files-o   s_features_grid_icon" />
+											<div class="s_features_grid_content">
+												<p class="o_default_snippet_text blue" style="font-size:20px;">Webcam Inside </p>
+												<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: 1%;margin-left: 1%;"></hr>
+												<p class="o_default_snippet_text" style="font-size: 15px; ">
+												Optional ist der EVO-lizer mit einer Webcam ausgestattet. Dies ermöglicht die Beobachtung des Druckfortschrittes von jedem Ort aus, Zeitrafferaufnahmen inklusive.
+												</p>
+											</div>
+										</div>
+										<div class="col-lg-12 pt16 pb16" data-name="Box" >
+											<img src="/ehcs_evo_tech_website/static/src/img/s25.webp" class=" fa-files-o   s_features_grid_icon" />
+											<div class="s_features_grid_content">
+												<p class="o_default_snippet_text blue" style="font-size:20px;">12 technische Kunststoffe
+												 </p>
+												<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: -2%;margin-left: 1%;"></hr>
+												<p class="o_default_snippet_text" style="font-size: 15px; ">
+													Bereits 12 selbst entwickelte technische Kunststoffe machen den EVO-lizer zu einem Allrounder – selbstverständlich sind auch Materialien anderer Hersteller einsetzbar.
+												</p>
+												<ul id="ul" style="font-size: 15px; text-align: left; " >
+													<li>
+														Flammhemmend
+													</li>
+													<li>
+														UV-beständig
+													</li>
+													<li> 
+														Über 200°C temperaturbeständig
+													</li>
+													<li>
+														Elektrostatisch dissipativ
+													</li>
+													<li>
+														Lebensmitteltauglich
+													</li>
+													<li> 
+														Abriebsfest
+													</li>
+													<li>
+														Chemikalienbeständig
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								
+								<div class="col-lg-6 s_col_no_bgcolor pb24">
+									<div class="row">
+										<div class="col-lg-12 pt16 pb16" data-name="Box">
+											<img src="/ehcs_evo_tech_website/static/src/img/s26.webp" class=" fa-files-o   s_features_grid_icon" />
+											<div class="s_features_grid_content">
+												<p class="o_default_snippet_text blue" style="font-size:20px;"> Made in Austria </p>
+												<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: 1%;margin-left: 1%;"></hr>
+												<p class="o_default_snippet_text" style="font-size: 15px; ">
+													Als einziger 3D Drucker seiner Klasse wird der EVO-lizer zu 100% in Österreich gefertigt.
+												</p>
+												<ul id="ul" style="font-size: 15px; text-align: left; " >
+														<li>
+															Kauf direkt beim Hersteller
+														</li>
+														<li>
+															Know-How Transfer durch EVO-tech Academy
+														</li>
+														<li> 
+															Schneller und direkter Service in Ihrer Nähe
+														</li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-lg-12 pt16 pb16" data-name="Box" style="color: #555555; background-color: #f8f9fa !important; margin-top:73px">
+											<img src="/ehcs_evo_tech_website/static/src/img/s27.webp" class=" fa-files-o   s_features_grid_icon" />
+											<div class="s_features_grid_content">
+												<p class="o_default_snippet_text blue" style="font-size:20px;"> Hochtemperatur-Düse
+												</p>
+												<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: 1%;margin-left: 1%;"></hr>
+												<p class="o_default_snippet_text" style="font-size: 15px; "> Auf Wunsch wird der EVO-lizer mit Hochtemperaturdüsen bis 330°C ausgerüstet.
+												</p>
+											</div>
+										</div>
+										<div class="col-lg-12 pt16 pb16" data-name="Box">
+											<img src="/ehcs_evo_tech_website/static/src/img/s28.webp" class=" fa-files-o   s_features_grid_icon" />
+											<div class="s_features_grid_content">
+												<p class="o_default_snippet_text blue" style="font-size:20px;">Geringe Produktionskosten </p>
+												<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: 1%;margin-left: 1%;"></hr>
+												<ul id="ul" style="font-size: 15px; text-align: left; " >
+														<li>
+															Bis zu 5x günstigeres Verbrauchsmaterial
+														</li>
+														<li>
+															Wartungsfreie Führungen
+														</li>
+														<li> 
+															Verschleißteile einfach wechselbar
+														</li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-lg-12 pt16 pb16" data-name="Box" style="color: #555555; background-color: #f8f9fa !important; ">
+											<img src="/ehcs_evo_tech_website/static/src/img/s29.webp" class=" fa-files-o   s_features_grid_icon" />
+											<div class="s_features_grid_content">
+												<p class="o_default_snippet_text blue" style="font-size:20px;">Connectivity</p>
+												<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: 1%;margin-left: 1%;"></hr>
+												<p class="o_default_snippet_text" style="font-size: 15px; "> 
+													Mit dem EVO-lizer immer am letzten Stand der Technik:
+												</p>
+												<ul id="ul" style="font-size: 15px; text-align: left; " >
+														<li>
+															WLAN-, LAN- Schnittstelle
+														</li>
+														<li>
+															USB Schnittstelle
+														</li>
+														<li> 
+															Per Webbrowser steuerbar
+														</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					
+					<section class="s_text_image pt32 pb32" data-name="Text - Image">
+						<div class="container">
+							<div class="row align-items-center">
+								<div class="col-lg-7 pb16 pt16">
+									<p class="blue" style="font-size:22px;"> <b> Offenes Materialsystem und große Filamentvielfalt
+									 </b> </p>
+										<p class="" style="font-size: 15px; ">
+											Anders als konventionelle 3D Druck Modelle bindet sich der EVO-lizer nicht an bestimmte Hersteller technischer Kunststoffe.
+											 Mit 12 selbst entwickelten Filamenten bietet Ihnen EVO-tech jedoch eine große Auswahl an Kunststoffen, die speziell für den 
+											 EVO-lizer Industrie 3D-Drucker optimiert wurden.
+											<br/>
+										</p>
+										<ul id="ul" style="font-size: 15px; margin-left: -25px; ">
+											<li>flammhemmend </li>
+											<li> UV- und temperaturbeständig bis über 200 °C </li>
+											<li> elektrostatisch dissipativ </li>
+											<li>lebensmitteltauglich </li>
+											<li>abriebfest und chemikalienbeständig</li>
+										</ul>
+										<a href="/filamente/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade "
+											style="color: white !important; background-color: #008bd2;"
+											data-original-title="" title=""> Mehr Informationen</a>
+								</div>
+								<div class="col-lg-5 pt16 pb16">
+									<img src="/ehcs_evo_tech_website/static/src/img/img1.webp"
+										class="img img-fluid mx-auto" 
+										data-original-title="" title="" aria-describedby="tooltip597079"/>
+								</div>
+							</div>
+						</div>
+					</section>
+					
+				<section class="s_text_block pt32 pb32" data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 pb32">
+								<p class="lead" />
+								<div style="text-align: center;" class="blue">
+									<span style="font-size: 24px;">
+										<b>
+											Touch &#38; Play
+										</b>
+									</span>
+								</div>
+								<p style="text-align: center;font-size: 15px;">
+									Das Cockpit des EVO-lizers bildet ein hochauflösendes Touch Display. Über diesen Bildschirm verwalten Sie Druckaufträge, nehmen Einstellungen vor und behalten den gesamten Druckverlauf mit allen Informationen immer im Überblick. Die technischen Daten:
+								</p>
+								<center>
+									<ul id="ul" style="font-size: 15px; margin-left: -25px; ">
+										<li>800 x 480 Touch Display  </li>
+										<li> 70° Sichtbereich </li>
+										<li>125 ppi Punktdichte  </li>
+									</ul>
+								</center>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_text_image pt32 pb32" data-name="Text - Image">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-6 pt16 pb16">
+								<img src="/ehcs_evo_tech_website/static/src/img/save1.webp"
+									class="img img-fluid mx-auto" 
+									data-original-title="" title="" aria-describedby="tooltip597079"/>
+							</div>
+							<div class="col-lg-6 pb16 pt16">
+								<img src="/ehcs_evo_tech_website/static/src/img/save2.webp"
+									class="img img-fluid mx-auto" 
+									data-original-title="" title="" aria-describedby="tooltip597079"/>
+							</div>
+						</div>
+					</div>
+				</section>	
+					
+				
+					 <section class="s_text_image pt32 pb32" data-name="Text - Image">
+						<div class="container">
+							<div class="row align-items-center">
+								<div class="col-lg-5 pt16 pb16">
+									<img src="/ehcs_evo_tech_website/static/src/img/img2.png"
+										class="img img-fluid mx-auto" alt="Odoo • Text and Image"
+										data-original-title="" title="" aria-describedby="tooltip597079"/>
+								</div>
+								<div class="col-lg-7 pb16 pt16">
+									<p class="blue" style="font-size:23px;"> <b> Wann ist der EL-11 für Sie die richtige Wahl? </b> </p>
+										<ul id="ul" style="font-size: 15px; margin-left: -25px; ">
+											<li>Sie benötigten Bauteile bis zu einer Größe von 270 x 200 x 210 mm (B x T x H)  </li>
+											<li> Sie wollen in den professionellen 3D-Druck einsteigen (Industrie)
+											</li>
+											<li> Sie verarbeiten relativ geringe Mengen an Material
+											 </li>
+											<li>Sie verarbeiten keine Materialien die sehr schnell Wasser aufnehmen und benötigen keine integrierte Materialtrocknung
+											</li>
+											<li>Sie bearbeiten viele verschiedene Materialien und wollen volle Kontrolle über die Produktionsparameter. </li>
+										</ul>
+										
+										<p class="" style="font-size: 15px; ">
+											Treffen diese Punkte für Sie zu, dann ist der EL-11 die richtige Wahl für Sie. Wenn nein, ist vielleicht auch unser 3D- Drucker EL-102 für Sie interessant.
+
+											<br/>
+										</p>
+										<a href="/3d-drucker-el-102/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade "
+											style="color: white !important; background-color: #008bd2;"
+											data-original-title="" title="">Zum EL-102 3D Drucker</a>
+										<a href="/angebotsanfrage/?evolizer=EL-102/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade "
+											style="color: white !important; background-color: #008bd2;"
+											data-original-title="" title="">Jetzt Angebot einholen</a>
+								</div>
+							</div>
+						</div>
+					</section> 
+				<section class="pt32 pb32" data-name="Title" >
+					<div class="container">
+							<center>
+								<p class="blue align-items-center" style="font-size : 23px">
+										Technische Daten
+								</p>
+							
+							<table>
+								<tbody>
+									<tr>
+										<th>Druckgröße (B x T x H)</th>
+										<td>270 x 200 x 205 mm</td>
+									</tr>
+									<tr>
+										<th>Bauraum (Volumen)</th>
+										<td>11,3 Liter</td>
+									</tr>
+									<tr>
+										<th>Gehäusegröße (B x T x H)</th>
+										<td>860 x 840 540 mm</td>
+									</tr>
+									<tr>
+										<th>Gewicht</th>
+										<td>ca. 60kg</td>
+									</tr>
+									<tr>
+										<th>Lautstärke</th>
+										<td>ca. 49 dB</td>
+									</tr>
+									<tr>
+										<th>Positionsgenauigkeit</th>
+										<td>0,03 mm</td>
+									</tr>
+									<tr>
+										<th>Schichtstärke</th>
+										<td>0,10 – 0,75 mm</td>
+									</tr>
+									<tr>
+										<th>Düsendurchmesser</th>
+										<td>0,2 – 0,8 mm</td>
+									</tr>
+									<tr>
+										<th>Extruderanzahl</th>
+										<td>2</td>
+									</tr>
+									<tr>
+										<th>Druckbretttemperatur</th>
+										<td>bis 100° Celsius</td>
+									</tr>
+									<tr>
+										<th>Bauraumtemperatur</th>
+										<td>bis 60° Celsius</td>
+									</tr>
+									<tr>
+										<th>Düsentemperatur</th>
+										<td>bis 270° Celsius, bis 330° Celsius Hochtemperaturoption</td>
+									</tr>
+									<tr>
+										<th>Gehäusebelüftung</th>
+										<td>Abzug durch Aktivkohlefilter</td>
+									</tr>
+									<tr>
+										<th>Minimale Wandstärke</th>
+										<td>0,3 mm</td>
+									</tr>
+									<tr>
+										<th>Elektrischer Anschluss</th>
+										<td>230 V</td>
+									</tr>
+									<tr>
+										<th>Leistungsaufnahme</th>
+										<td>ca. 250 W</td>
+									</tr>
+									<tr>
+										<th>Unterstützte Betriebssysteme</th>
+										<td>Windows, Android, Linux, Apple OS, Apple iOS</td>
+									</tr>
+									<tr>
+										<th>Interner Datenspeicher</th>
+										<td>16 GB</td>
+									</tr>
+									<tr>
+										<th>Display</th>
+										<td>7 Zoll Touch Display, 800 x 480 Display, 70° Sichtbereich, 125
+											ppi</td>
+									</tr>
+									<tr>
+										<th>Schnittstellen</th>
+										<td>WLan, LAN, USB</td>
+									</tr>
+								</tbody>
+							</table>
+							</center>
+					</div>
+				</section>
+					
+				<section class="s_text_image pt32 pb32" data-name="Text - Image">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-5 pt16 pb16">
+								<img src="/ehcs_evo_tech_website/static/src/img/img3.jpg"
+									class="img img-fluid mx-auto" alt="Odoo • Text and Image"
+									data-original-title="" title="" aria-describedby="tooltip597079"/>
+							</div>
+							<div class="col-lg-7 pb16 pt16">
+								<h2 class="blue"> <b> Über EVO-tech </b> </h2>
+									<p class="" style="font-size: 15px; ">
+										EVO-tech aus Schörfling am Attersee ist Entwickler und Hersteller von 3D Druckern für industrielle Anwendungen.
+										<br/>
+									</p>
+									<p class="" style="font-size: 15px; ">
+										Auf Basis von jahrelanger Erfahrung positioniert sich EVO-tech als Komplettanbieter in der additiven Fertigung.
+
+										<br/>
+									</p>
+									<a href="/ueber-uns/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade "
+										style="color: white !important; background-color: #008bd2;"
+										data-original-title="" title="">Jetzt Angebot einholen</a>
+							</div>
+						</div>
+					</div>
+				</section>
+					
+					<section class="pt28 pb28" data-name="Title" style="background-color: #008bd2!important">
+						<div class="container">
+							<div class="row s_nb_column_fixed">
+								<div class="col-lg-12 s_title pt16 pb16" style="text-align: center;">
+									<p class="s_title_default">
+										<p style="font-size:20px;color: white;margin-left: -30%; margin-top:1%">Gehen Sie mit uns gemeinsam den nächsten EVO-lutionsschritt in der additiven Fertigung.</p>
+										<a href="/contactus/" class="blue btn btn-gamma flat btn-lg" data-original-title="" title="" 
+											style="background-color: white; margin-left:80%; margin-top : -7%; ">
+											<b style=" font-size: 14px; "> Jetzt Kontaktieren </b>
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+				</section>
+				
+				<section class="pt32 pb32" data-name="Title" >
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+						</div>
+					</div>
+				</section>
+
+			</div>
+		</t>
+	</template>
+</odoo>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		
+		<!-- SUBMENU Customer -->
+		<record id="menu_customer_subone" model="website.menu">
+			<field name="name">KVP</field>
+			<field name="url">/kunden-area/kvp-kontinuierlicher-verbesserungsprozess/</field>
+			<field name="sequence" type="int">81</field>
+			<field name="parent_id" ref="ehcs_evo_tech_website.menu_kunden-area" />
+			<field name="website_id" ref="website.default_website"/> 
+		</record>
+		
+		<record id="menu_customer_subtwo" model="website.menu">
+			<field name="name">Handbücher</field>
+			<field name="url">/kunden-area/material-datenblaetter/</field>
+			<field name="sequence" type="int">82</field>
+			<field name="parent_id" ref="ehcs_evo_tech_website.menu_kunden-area" />
+			<field name="website_id" ref="website.default_website"/> 
+		</record>
+		
+		<record id="menu_customer_three" model="website.menu">
+			<field name="name">Support</field>
+			<field name="url">/kunden-area/support/</field>
+			<field name="sequence" type="int">83</field>
+			<field name="parent_id" ref="ehcs_evo_tech_website.menu_kunden-area" />
+			<field name="website_id" ref="website.default_website"/> 
+		</record>
+		
+		<record id="menu_customer_four" model="website.menu">
+			<field name="name">Firmware</field>
+			<field name="url">/kunden-area/firmware/</field>
+			<field name="sequence" type="int">84</field>
+			<field name="parent_id" ref="ehcs_evo_tech_website.menu_kunden-area" />
+			<field name="website_id" ref="website.default_website"/> 
+		</record>
+		
+		<record id="menu_customer_five" model="website.menu">
+			<field name="name">Simplify</field>
+			<field name="url">/kunden-area/simplify/</field>
+			<field name="sequence" type="int">85</field>
+			<field name="parent_id" ref="ehcs_evo_tech_website.menu_kunden-area" />
+			<field name="website_id" ref="website.default_website"/> 
+		</record>
+		
+		<record id="menu_customer_six" model="website.menu">
+			<field name="name">Datenblätter</field>
+			<field name="url">/kunden-area/material-datenblaetter/</field>
+			<field name="sequence" type="int">86</field>
+			<field name="parent_id" ref="ehcs_evo_tech_website.menu_kunden-area" />
+			<field name="website_id" ref="website.default_website"/> 
+		</record>
+		
+		<record id="menu_customer_seven" model="website.menu">
+			<field name="name">Know-How</field>
+			<field name="url">/additive-fertigung/</field>
+			<field name="sequence" type="int">87</field>
+			<field name="parent_id" ref="ehcs_evo_tech_website.menu_kunden-area" />
+			<field name="website_id" ref="website.default_website"/> 
+		</record>
+		
+		<record id="menu_customer_seven_sub" model="website.menu">
+			<field name="name">Additive Fertigung</field>
+			<field name="url">/additive-fertigung/</field>
+			<field name="sequence" type="int">88</field>
+			<!-- <field name="parent_id" ref="ehcs_evo_tech_website.menu_customer_seven" /> -->
+			<field name="parent_id" ref="ehcs_evo_tech_website.menu_kunden-area" />
+			<field name="website_id" ref="website.default_website"/> 
+		</record>
+		
+		<record id="menu_customer_eight" model="website.menu">
+			<field name="name">Rapid Prototyping</field>
+			<field name="url">/rapid-prototyping/</field>
+			<field name="sequence" type="int">89</field>
+			<field name="parent_id" ref="ehcs_evo_tech_website.menu_kunden-area" />
+			<field name="website_id" ref="website.default_website"/> 
+		</record>
+		
+		<record id="menu_customer_nine" model="website.menu">
+			<field name="name">Simplify 3D Software</field>
+			<field name="url">/simplify3d/</field>
+			<field name="sequence" type="int">90</field>
+			<field name="parent_id" ref="ehcs_evo_tech_website.menu_kunden-area" />
+			<field name="website_id" ref="website.default_website"/> 
+		</record>
+	
+	</data>
+</odoo>
+
+		

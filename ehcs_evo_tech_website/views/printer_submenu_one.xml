@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_menu_drucker_submenu" name="website.theme_menu_drucker_submenu">
+		<t t-call="website.layout">
+			<t t-set="additional_title">Eco-tech 3D Druck</t>
+			<div id="wrap" class="oe_structure oe_empty">
+				
+				<section class="s_banner parallax s_parallax_is_fixed pt96 pb96 s_parallax_no_overflow_hidden" data-scroll-background-ratio="1" data-name="Banner"
+					style="background-image: none;">
+					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+						style="background-image: url(&quot;/theme_odoo_experts/static/src/img/backgrounds/03.jpg&quot;); background-position: 50% 0px;" />
+						<div class="container">
+							<section class="s_text_image " data-name="Text - Image">
+						<div class="container">
+							<div class="row align-items-center">
+								<div class="col-lg-7 ">
+									<span class="blue" style="font-size: 48px;">
+										<b> Der neue EL-102 3D-Drucker.	</b>
+									</span>
+									<br/>
+									<span class="blue" style="font-size:28px;">
+										 Gehen Sie mit uns gemeinsam den nächsten EVO-lutionsschritt in der additiven Fertigung.
+									 </span>
+								</div>
+								<div class="col-lg-5 ">
+									<img src="/ehcs_evo_tech_website/static/src/img/data/el-102_freigestellt_klein-min_-420x624.png"
+										class="img img-fluid mx-auto" 
+										data-original-title="" title="" aria-describedby="tooltip597079"/>
+								</div>
+							</div>
+						</div>
+					</section>
+						</div>
+				</section>
+				
+				
+				<section class="s_text_block pt32 pb32" data-name="Text block" style="">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 pt32 pb32">
+							<p class="lead" />
+							<div style="text-align: center;" class="blue">
+								<span style="font-size: 22px;">
+									<b>
+										Der EL-102 3D Drucker. Es ist Zeit, etwas Großes zu schaffen.
+									</b>
+								</span>
+							</div>
+							<p style="text-align: center;font-size: 15px;">
+								Bei der Entwicklung des neuen EVO-tech EL-102 Industrie 3D-Druckers, stand neben dem Ausbau der Materialvielfalt die 
+								Erhöhung der Produktivität sowie der Serientauglichkeit im Fokus. Durch die integrierte Materialtrocknung sowie den auf 100°C 
+								aufheizbaren Innenraum ist eine Produktion unter stets gleichen Bedingungen gewährleistet. 
+								Vakuumspanntisch und schnell wechselbare Plastifiziereinheit machen eine sortenreine Produktion möglich.
+							</p>
+							
+						</div>
+					</div>
+				</div>
+				</section>
+				
+				<section class="s_features pt32 pb0" data-name="Features" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-6 pt32 pb32 text-center">
+								<p class="o_default_snippet_text blue" style="font-size:23px;">
+									Volle Optimierung auf Reproduzierbarkeit und Serientauglichkeit
+								</p>
+								<ul id="ul" style="font-size: 15px; text-align: left; " >
+										<li>Materialtrocknung bei bis zu 80°C, bekannt aus Spritzguss und Extrusion, inklusive Schutz vor Übertrocknung.</li>
+										<li>Bis zu 100°C Innenraumtemperatur, ermöglicht die reproduzierbare Verarbeitung von technischen Kunststoffen </li>
+										<li> Absolute Materialsortenreinheit, da beim Düsenwechsel die gesamte Schmelzezone mitausgewechselt wird. </li>
+								</ul>
+							</div>
+							<div class="col-lg-6 pt32 pb32 text-center" style="color: #555555; background-color: #f8f9fa !important;">
+								<p class="o_default_snippet_text blue" style="font-size:23px;">
+									Unbegrenzte Möglichkeiten in der Materialverarbeitung
+								</p>
+								<ul id="ul" style="font-size: 15px; text-align: left; " >
+										<li>
+											Mit einem offenen Materialsystem, Düsentemperaturen >400°C und einer Innenraumheizung von bis zu 100°C ist der EL-102 offen mit Ihnen Neues zu erschaffen.
+										</li>
+										<li>
+											Vakuumspanntisch, um für jedes Material die ideale Druckoberfläche spannen zu können.
+										</li>
+										<li> 
+											Vordefinierte Einstellungen von Materialien erleichtern Ihnen den Arbeitsalltag.
+										</li>
+										<li> 
+											2 seperate Düsen mit Reinigungsstation verhindern, dass die nicht druckende Düse Fäden zieht.
+										</li>
+										<li>
+											Freie Einstellbarkeit jedes Parameters.
+										</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="pt32 pb32" data-name="Title" >
+					<div class="container">
+						<div class=" blue">
+							<center>
+							<span style="font-size:25px;">
+								Vorteile und Nutzen des EL-102 3D-Druckers
+							</span>
+							</center>
+						</div>
+					</div>
+				</section>
+				
+				 <section class="s_features_grid pb24 pt0" data-name="Features Grid">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-6 s_col_no_bgcolor pb24">
+									<div class="row">
+										<div class="col-lg-12 pt16 pb16" data-name="Box">
+											<img src="/ehcs_evo_tech_website/static/src/img/sub3d1.webp" class=" fa-files-o   s_features_grid_icon" />
+											<div class="s_features_grid_content">
+												<p class="o_default_snippet_text blue" style="font-size:20px;">100°C Bauraumtemperatur</p>
+												<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: 0%;margin-left: 1%;"></hr>
+												<p class="o_default_snippet_text" style="font-size: 15px; ">
+													Die hohe Innenraumtemperatur sorgt für spannungsfreie Bauteile und verbessert die Festigkeit der Bauteile.
+												</p>
+												<ul id="ul" style="font-size: 15px; text-align: left; " >
+														<li>
+															Hohe Reproduzierbarkeit
+														</li>
+														<li>
+															Höhere Festigkeiten
+														</li>
+														<li> 
+															Weniger Spannungen im Bauteil
+														</li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-lg-12 pt16 pb16" data-name="Box" style="color: #555555; background-color: #f8f9fa !important; margin-top:50px;">
+											<img src="/ehcs_evo_tech_website/static/src/img/sub3d2.webp" class=" fa-files-o   s_features_grid_icon" />
+											<div class="s_features_grid_content" >
+												<p class="o_default_snippet_text blue" style="font-size:20px;">Bauraum 500 x 400 x 510mm </p>
+												<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: -1%;margin-left: 1%;"></hr>
+												<p class="o_default_snippet_text" style="font-size: 15px; ">
+													Auch für größere Bauteile perfekt geeignet.
+												</p>
+											</div>
+										</div>
+										<div class="col-lg-12 pt16 pb16" data-name="Box">
+											<img src="/ehcs_evo_tech_website/static/src/img/sub3d3.webp" class=" fa-files-o   s_features_grid_icon" />
+											<div class="s_features_grid_content">
+												<p class="o_default_snippet_text blue" style="font-size:20px;">Hochtemperaturdüsen</p>
+												<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: -2%;margin-left: 1%;"></hr>
+												<p class="o_default_snippet_text" style="font-size: 15px; ">
+													Der EL-102 ist mit Hochtemperaturdüsen bis zu 420°C ausgestattet. Dadurch sind nahezu alle Polymere verarbeitbar. </p>
+											</div>
+										</div>
+										<div class="col-lg-12 pt16 pb16" data-name="Box" style="color: #555555; background-color: #f8f9fa !important;">
+											<img src="/ehcs_evo_tech_website/static/src/img/sub3d7.webp" class=" fa-files-o   s_features_grid_icon" />
+											<div class="s_features_grid_content">
+												<p class="o_default_snippet_text blue" style="font-size:20px;">Filamenttrocknung</p>
+												<hr style="width: 15%;border: 2px solid #008bd2!important;margin-top: 0%;margin-left: 1%;"></hr>
+												<p class="o_default_snippet_text" style="font-size: 15px; ">
+													Durch eine geregelte Materialfeuchtigkeit wird hohe Prozessstabilität und Reproduzierbarkeit gewährleistet.
+												</p>
+												<ul id="ul" style="font-size: 15px; text-align: left; " >
+														<li>
+															Definierte Materialfeuchtigkeit
+														</li>
+														<li>
+															Bis zu 10 kg große Filamentspulen
+														</li>
+														<li> 
+															Hohe Reproduzierbarkeit
+														</li>
+														<li>
+															Prozessstabilität
+														</li>
+														<li>
+															Schutz vor Übertrocknung
+														</li>
+														<li> 
+															Weniger Rüstzeiten
+														</li>
+														<li>
+															Weniger Verschnitt
+														</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6 s_col_no_bgcolor pb24">
+									<div class="row">
+										<div class="col-lg-12 pt16 pb16" data-name="Box">
+											<img src="/ehcs_evo_tech_website/static/src/img/sub3d4.webp" class=" fa-files-o   s_features_grid_icon" />
+											<div class="s_features_grid_content">
+												<p class="o_default_snippet_text blue" style="font-size:20px;">Integrierte Wasserkühlung </p>
+												<hr style="width: 15%;border: 2px solid #008bd2!important;margin-top: 0%;margin-left: 1%;"></hr>
+												<p class="o_default_snippet_text" style="font-size: 15px; ">Die intergrierte Wasserkühlung schützt im 100°C heißen Bauraum alle temperaturempfindlichen Komponenten und sorgt so für eine lange Lebenszeit und Prozessstabilität.</p>
+												<ul id="ul" style="font-size: 15px; text-align: left; " >
+														<li>
+															Hohe Reproduzierbarkeit
+														</li>
+														<li>
+															Erhöhung der Lebensdauer
+														</li>
+														<li> 
+															Prozessstabilität
+														</li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-lg-12 pt16 pb16" data-name="Box" style="color: #555555; background-color: #f8f9fa !important;">
+											<img src="/ehcs_evo_tech_website/static/src/img/sub3d5.webp" class=" fa-files-o   s_features_grid_icon" />
+											<div class="s_features_grid_content">
+												<p class="o_default_snippet_text blue" style="font-size:20px;">Zwei unabhängige Düsen
+												</p>
+												<hr style="width: 10%;border: 2px solid #008bd2!important;margin-top: -1%;margin-left: 1%;"></hr>
+												<p class="o_default_snippet_text" style="font-size: 15px; "> Zwei unabhängige Düsen in einer Achse inklusive Reinigungsstation sorgen für ein perfektes Druckbild.
+												</p>
+											</div>
+										</div>
+										<div class="col-lg-12 pt16 pb16" data-name="Box">
+											<img src="/ehcs_evo_tech_website/static/src/img/sub3d6.webp" class=" fa-files-o   s_features_grid_icon" />
+											<div class="s_features_grid_content">
+												<p class="o_default_snippet_text blue" style="font-size:20px;">Sortenreines Drucken </p>
+												<hr style="width: 10%;border: 2px solid #008bd2!important;margin-top: -2%;margin-left: 1%;"></hr>
+												<p class="o_default_snippet_text" style="font-size: 15px; "> 
+												Bei jedem Düsenwechsel wird automatisch die gesamte Schmelzzone
+												mitgewechselt, wodurch es zu keiner Vermischung der Materialien kommen kann.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					
+					<section class="s_text_image pt32 pb32" data-name="Text - Image">
+						<div class="container">
+							<div class="row align-items-center">
+								<div class="col-lg-5 pt16 pb16">
+									<img src="/ehcs_evo_tech_website/static/src/img/img2.png"
+										class="img img-fluid mx-auto" alt="Odoo • Text and Image"
+										data-original-title="" title="" aria-describedby="tooltip597079"/>
+								</div>
+								<div class="col-lg-7 pb16 pt16">
+									<p class="blue" style="font-size:30px;"> <b> Wann ist der EL-102 für Sie die richtige Wahl? </b> </p>
+										<ul id="ul" style="font-size: 15px; margin-left: -25px; ">
+											<li>Sie benötigten Bauteile bis zu einer Größe von 500 x 400 x 510 mm (B x T x H) </li>
+											<li> Sie wollen mehrere Bauteile auf einmal drucken
+											</li>
+											<li> Sie verarbeiten große Mengen an Material
+											 </li>
+											<li>Sie verarbeiten Materialien die sehr schnell Wasser aufnehmen und benötigen eine integrierte Materialtrocknung
+											</li>
+											<li>Sie bearbeiten viele verschiedene Materialien und wollen volle Kontrolle über die Produktionsparameter. </li>
+										</ul>
+										
+										<p class="" style="font-size: 15px; ">
+											Trifft einer dieser Punkte für Sie zu, dann ist der EL-102 die richtige Wahl für Sie.
+											<br/>
+										</p>
+										<a href="/angebotsanfrage/?evolizer=EL-102/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade "
+											style="color: white !important; background-color: #008bd2;"
+											data-original-title="" title="">Jetzt Angebot einholen</a>
+								</div>
+							</div>
+						</div>
+					</section>
+					
+					<section class="s_text_image pt32 pb32" data-name="Text - Image">
+						<div class="container">
+							<div class="row align-items-center">
+								<div class="col-lg-7 pb16 pt16">
+									<p class="blue" style="font-size:30px;"> <b> Offenes Materialsystem und große Filamentvielfalt
+									 </b> </p>
+										<p class="" style="font-size: 15px; ">
+											Anders als konventionelle 3D Druck Modelle binden Sie die EVO-lizer 3D Drucker von 
+											EVO-tech nicht an bestimmte Hersteller technischer Kunststoffe. Mit mehr als 11 selbst 
+											entwickelten Filamenten bietet Ihnen EVO-tech jedoch eine große Auswahl an Kunststoffen, 
+											die speziell für unsere EVO-lizer Industrie 3D-Drucker optimiert wurden.
+											Einige unserer Materialien sind auch auf 10 kg Filamentrollen erhältlich, um Verschnitt und Rüstzeiten zu verringern.
+											<br/>
+										</p>
+										<ul id="ul" style="font-size: 15px; margin-left: -25px; ">
+											<li>flammhemmend </li>
+											<li> UV- und temperaturbeständig bis über 200 °C </li>
+											<li> elektrostatisch dissipativ </li>
+											<li>lebensmitteltauglich </li>
+											<li>abriebfest und chemikalienbeständig</li>
+										</ul>
+										<a href="/cnc-academy/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade "
+											style="color: white !important; background-color: #008bd2;"
+											data-original-title="" title=""> Mehr Informationen</a>
+								</div>
+								<div class="col-lg-5 pt16 pb16">
+									<img src="/ehcs_evo_tech_website/static/src/img/img1.webp"
+										class="img img-fluid mx-auto" alt="Odoo • Text and Image"
+										data-original-title="" title="" aria-describedby="tooltip597079"/>
+								</div>
+							</div>
+						</div>
+					</section>
+					
+					<section class="pt32 pb32" data-name="Title" >
+						<div class="container">
+								<center>
+									<h1 class="blue align-items-center">
+											Technische Daten
+									</h1>
+									<table width="896">
+										<tbody>
+											<tr>
+												<td>
+													<strong>Druckgröße (B x T x H)</strong>
+												</td>
+												<td>
+													<strong>500 x 400 x 510 mm</strong>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>Bauraum (Volumen)</strong>
+												</td>
+												<td>102 Liter</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>Gehäusegröße ohne Display(B x T x H)</strong>
+												</td>
+												<td>1150 x 800 x 1900 mm</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>Gehäusegröße mit Display(B x T x H)</strong>
+												</td>
+												<td>1150 x 870 x 1900 mm</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>Platz vor dem Drucker für Türöffnung</strong>
+												</td>
+												<td>Mind. 1200 mm</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>Platz hinter dem Drucker</strong>
+												</td>
+												<td>Mind. 200 mm</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>Platz links vom Drucker für Servicetür</strong>
+												</td>
+												<td>Mind. 1000 mm</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>Gewicht</strong>
+												</td>
+												<td>ca. 500 kg</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>Lautstärke</strong>
+												</td>
+												<td>ca. 62 dB</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>Positionsgenauigkeit</strong>
+												</td>
+												<td>0,02 mm</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>Schichtstärke</strong>
+												</td>
+												<td>0,1 – 0,8 mm</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>Düsendurchmesser</strong>
+												</td>
+												<td>0,3 – 0,8 mm</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>Extruderanzahl</strong>
+												</td>
+												<td>2</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>Druckbetttemperatur</strong>
+												</td>
+												<td>Max. 200°C</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>Bauraumtemperatur</strong>
+												</td>
+												<td>bis 100°C</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>Düsentemperatur</strong>
+												</td>
+												<td>bis 420°C</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>Gehäusebelüftung</strong>
+												</td>
+												<td>Abzug durch Aktivkohlefilter</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>Minimale Wandstärke</strong>
+												</td>
+												<td>0,3 mm</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>Elektrischer Anschluss</strong>
+												</td>
+												<td>400V / 16A / Absicherung C13 oder C16</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>Leistungsaufnahme</strong>
+												</td>
+												<td>von 240W bis 4500W</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>Unterstützte Betriebssysteme</strong>
+												</td>
+												<td>Windows, Linux, Apple, Android</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>Interner Datenspeicher</strong>
+												</td>
+												<td>16 GB / 32 GB</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>Display</strong>
+												</td>
+												<td>10,1 Zoll Touch, 1200 x 800 Pixel</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>Schnittstellen</strong>
+												</td>
+												<td>WLAN / LAN</td>
+											</tr>
+										</tbody>
+									</table>
+								</center>
+						</div>
+					</section>
+					
+					<section class="s_text_image pt32 pb32" data-name="Text - Image">
+						<div class="container">
+							<div class="row align-items-center">
+								<div class="col-lg-5 pt16 pb16">
+									<img src="/ehcs_evo_tech_website/static/src/img/img3.jpg"
+										class="img img-fluid mx-auto" alt="Odoo • Text and Image"
+										data-original-title="" title="" aria-describedby="tooltip597079"/>
+								</div>
+								<div class="col-lg-7 pb16 pt16">
+									<h2 class="blue"> <b> Über EVO-tech </b> </h2>
+										<p class="" style="font-size: 15px; ">
+											EVO-tech aus Schörfling am Attersee ist Entwickler und Hersteller von 3D Druckern für industrielle Anwendungen.
+											<br/>
+										</p>
+										<p class="" style="font-size: 15px; ">
+											Auf Basis von jahrelanger Erfahrung positioniert sich EVO-tech als Komplettanbieter in der additiven Fertigung.
+
+											<br/>
+										</p>
+										<a href="/ueber-uns/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade "
+											style="color: white !important; background-color: #008bd2;"
+											data-original-title="" title="">Mehr über EVO-tech</a>
+								</div>
+							</div>
+						</div>
+					</section>
+					
+				<section class="pt28 pb28" data-name="Title" style="background-color: #008bd2!important">
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+							<div class="col-lg-12 s_title pt16 pb16" style="text-align: center;">
+								<p class="s_title_default">
+									<p style="font-size:20px;color: white;margin-left: -30%; margin-top:1%">Gehen Sie mit uns gemeinsam den nächsten EVO-lutionsschritt in der additiven Fertigung.</p>
+									<a href="/contactus/" class="blue btn btn-gamma flat btn-lg" data-original-title="" title="" 
+										style="background-color: white; margin-left:80%; margin-top : -7%; ">
+										<b style=" font-size: 14px; "> Jetzt Kontaktieren </b>
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="pt32 pb32" data-name="Title" >
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+						</div>
+					</div>
+				</section>
+
+			</div>
+		</t>
+	</template>
+</odoo>

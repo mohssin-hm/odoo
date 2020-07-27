@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_submenu_tab_inocon" name="website.theme_submenu_tab_inocon">
+		<t t-call="website.layout">
+			<t t-set="additional_title">INOCON</t>
+			<div id="wrap" class="oe_structure oe_empty">
+				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
+					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
+					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/img_6646-scaledq.jpg&quot;); background-position: 50% 0px;" />
+						<div class="container">
+							<div class="row s_nb_column_fixed">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
+									data-name="Box">
+									<div class="row">
+										<div class="col-lg-12 s_title s_col_no_bgcolor"
+											data-name="Title">
+											<h1 class="s_title_default" style="text-align: center; ">
+												<font style="font-size: 42px; color: white;">
+													<b>INOCON</b>
+												</font>
+											</h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</section>
+					
+					<section class="s_text_image pt32 pb32" data-name="Text - Image">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-6 pb16 pt16">
+								<p class="blue" style="font-size: 21px; "> <b> ENORME EINSPARUNGSPOTENTIALE IM SONDERMASCHINENBAU!  </b> </p>
+								<p style="font-size: 15px; ">
+									<b >
+										Kostenreduktion durch additive Fertigung
+									</b>
+								</p>
+								<p class="" style="font-size: 15px; ">
+									Kleine Stückzahlen, große Teilevielfalt und hohe Materialanforderungen
+									für die Produktion von Plasmabeschichtungsanlagen sind die täglichen
+									Herausforderungen der Inocon Technologie GmbH. Durch die
+									additive Fertigungsanlage und das Hochtemperaturdruckmaterial der Firma
+									EVO-tech werden bei der Produktion
+									einiger Teile bis zu 90 % Kosten eingespart.
+								</p>
+							</div>
+							<div class="col-lg-6 pt16 pb16">
+								<img src="/ehcs_evo_tech_website/static/src/img/inocon-gmbh.jpg"
+									class="img img-fluid mx-auto" 
+									data-original-title="" title="" aria-describedby="tooltip597079"/>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>	
+					</div>
+				</section>
+					
+				<section class="s_text_block  " data-name="Text block" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<br/><br/>
+								<p style="text-align: left; font-size: 21px; " class="blue">
+									<b> Beschichtung für jeden Untergrund </b>
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Die Inocon Technologie GmbH verfügt über große Erfahrungen, Erfolge und zahlreiche Patente im Bereich Plasmahärten, Plasmaschweißen und -löten sowie über einen Plasmavorheizer für die Siliziumindustrie. Die Plasmakompetenz wird durch eine neuartige, patentierte und verschleißarme Plasmabeschichtungstechnologie erweitert und ist mit feinsten metallischen Pulvern und Dämpfen im atmosphärischen Bereich noch ein sehr junger und wenig erforschter Technologiebereich. Dabei wird einem Plasmastrahl Pulver oder Dampf zugeführt und in Atmosphäre eine Funktionsschicht abgeschieden.
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Im Zuge der neuen Technologieentwicklung wurden mehrere Beschichtungsköpfe und eine neue Pulverzuführungstechnologie für feinste Pulver entwickelt. Bei der Anwendung der Inocon Plasmatechnologie mit Pulvern und Dämpfen können Funktionsschichten insbesondere auch auf sensiblen Substraten aufgebracht werden. So können z. B. Leiterbahnen aus Kupfer oder Zinn auf Papier, Holz und praktisch allen Kunststoffen aufgebracht werden, ohne dass die zu beschichtenden Oberflächen beschädigt werden.
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Dies ist in Hinblick auf die hohen Schmelztemperaturen der Pulver eine bemerkenswerte Eigenschaft. Anwendungen derartiger Leiterbahnen sind zum Beispiel Handyantennen, LED-Strukturen oder auch reibwerterhöhende und verschleißmindernde Schichten.									
+								</p>
+								<p style="text-align: left; font-size: 15px; " >
+									<i>
+										Wir können nun sehr schnell Einzelteile und Kleinserien aus technischen Kunststoffen fertigen und sparen noch zusätzlich 90 % der Kosten bei den Bauteilen.
+									</i>
+								</p>
+								<p style="text-align: left; font-size: 16px; " class="blue" >
+									<b> Dr. Fritz Pesendorfer, Inhaber der Inocon Technologie GmbH	</b>
+								</p>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>	
+					</div>
+				</section>
+				
+				<section class="s_text_block  " data-name="Text block" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<br/><br/>
+								<p style="text-align: left; font-size: 21px; " class="blue">
+									<b>Umfangreiche Einsatzgebiete für Plasmaköpfe </b>
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Die Aufbringung von Silikat- und Silikon-Dünnschichten über Dampf erzeugt durchsichtige Schichtdicken von wenigen Nanometern, die sehr weite Anwendungsbereiche umfassen: das Aufbringen von hydrophilen oder hydrophoben Schichten sowie Barriere-, Haft- bzw. auch Antihaftschichteigenschaften auf Papier, Folien und fast allen denkbaren Oberflächen.
+								</p>
+								<p style="text-align: left; font-size: 15px; " >
+									Konkrete Anwendungen sind derzeit das Beschichten von Glas bzw. Keramik (Anm.: sechs- bis siebenfache Haftfestigkeit), Antihaftschichten auf Produktionswalzen oder auch biozide Schichten für verschiedenste Anwendungen (wie Anti-Fouling für Dächer, Fassaden und Schiffsrümpfe) und Eliminierung von Keimen in Krankenhäusern, Arztpraxen, öffentliche Toiletten etc. Die Inocon Technologie ist die mit Abstand effizienteste Technologie am Markt, um die derzeit gängigen Schichten mittels PVD (Physikalische vakuumbasierende Gasphasenabscheidung) und CVD (Chemische vakuumbasierende Gasphasenabscheidung) durch atmosphärisch aufgebrachte Schichten zu ersetzen.
+								</p>
+								<p style="text-align: left; font-size: 15px; " >
+									Die Schichten erfordern vergleichsweise sehr niedrige Investitionen bei zumindest gleichwertigen Eigenschaften und sind auch in automatisierte Prozesse integrierbar. Da bei Atmosphärendruck gearbeitet werden kann, sind keine Vakuumkammern nötig, was kürzere Durchlaufzeiten und die Beschichtung größerer Werkstücke ermöglicht.
+								</p>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>
+					</div>
+				</section>
+				
+				<section class="s_text_block  " data-name="Text block" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<br/><br/>
+								<p style="text-align: left; font-size: 21px; " class="blue">
+									<b> Große Teilevielfalt, kleine Losgrößen  </b>
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Die Vielzahl an Anwendungsgebieten bringt ebenso vielfältige und unterschiedliche Anforderungen an die einzelnen Anlagen mit sich, die oftmals in vollautomatische Systeme integriert sind. Die daraus resultierenden kleinen Stückzahlen und hohe Teilevarianz führen in der Produktion der erforderlichen Bauteile zu enormen Produktionskosten. Aus diesem Grund besuchte Inhaber Dr. Fritz Pesendorfer Anfang Februar die Eröffnung der neuen Produktionsstätte der EVO-tech GmbH in Schörfling am Attersee. „Ich war überrascht, dass bei uns in Oberösterreich ein so innovatives Unternehmen 3D-Drucker produziert. Für mich war besonders die große Materialvielfalt, wie zum Beispiel das Hochtemperaturfilament oder das UV-Beständige Filament, interessant. Bisher haben uns diese fehlenden Eigenschaften am Einsatz der Additiven Fertigung gehindert“ sagt Dr. Pesendorfer.
+								</p>
+								<p style="text-align: left; font-size: 15px; " >
+									Kurz danach hat die Firma Inocon Technology GmbH die erste Testanwendung definiert. Es sollte eine Schutzabdeckung am Plasmakopf, bestehend aus drei verschraubbaren Teilen, additiv gefertigt werden. Neben hoher Genauigkeit war vor allem die Temperaturbeständigkeit sowie die elektrische Durchschlagsfestigkeit ein entscheidendes Kriterium für den Einsatz der Additiven Fertigung in der Kleinserienfertigung dieser Teile. „Ich war überrascht, dass PPS bereits additiv verarbeitet werden kann. Noch mehr hat mich jedoch das Einsparungspotential von 90 % im Vergleich zur zerspanenden Fertigung überzeugt“, sagt Pesendorfer.
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Der Grund der Kostenersparnis liegt klar auf der Hand. Müssen doch bei der spanabtragenden Fertigung die drei Bauteile aus 2,3 kg Rohmaterial herausgefräst werden, wobei 85 % des Materials im Abfall landen. Bei der Additiven Fertigung wird nur das Material aufgetragen, das auch benötigt wird. Außerdem läuft die additive Fertigungsanlage der Firma EVO-tech mannlos und durch die geringen Anschaffungskosten ist ein deutlich geringerer Stundensatz als bei einer Fräsmaschine anzusetzen, was zu wesentlich niedrigeren Stückkosten führt. „Durch die Möglichkeit Bienenwabenstrukturen in unsere Bauteile zu integrieren, ermöglicht es uns der 3D-Drucker, das Bauteilgewicht um 50 % zu senken, was enorme Vorteile für unsere bewegten Achsen birgt“, sagt Konstrukteur Markus Rotter.
+								</p>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>
+					</div>
+				</section>
+				
+				<section class="s_text_block  " data-name="Text block" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<br/><br/>
+								<p style="text-align: left; font-size: 21px; " class="blue">
+									<b> Hohes Potenzial für die Zukunft </b>
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Die Anwendungsmöglichkeiten sind bei Inocon noch lange nicht erschöpft.
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Durch die hohe Durchschlagsfestigkeit des PPS von EVO-tech sollten in Kürze elektronische Isolationsbauteile aus Peek durch gedruckte PPS Bauteile ersetzt werden, um auch in diesem Bereich die Produktionskosten zu senken und die Flexibilität zu steigern. Außerdem sieht die Firmenleitung vor allem auch in der Produktion von Montagehilfsmitteln und der Herstellung von Einzelteilen hohes Potenzial für die Zukunft.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="pt32 pb32" data-name="Title" >
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+						</div>
+					</div>
+				</section>
+				
+			</div>
+		</t>
+	</template>
+</odoo>

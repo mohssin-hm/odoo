@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	 <template id="preheader" inherit_id="website.layout" name="preHeader">
+        <xpath expr="//div[@id='wrapwrap']/header/nav" position="before">
+            <nav id="preheader">
+                <div class="container">
+                    <div class="row">
+                           <div class="col-lg-12" id="connect">
+                            <ul class="list-unstyled" style="margin-bottom : 0rem; margin-left : 70% ">
+                                <li style="font-size: 13px;" class="blue">
+                               	<i class="fa fa-phone"/> <span class="o_force_ltr" t-field="res_company.phone"/>
+                               		<span style="margin-left: 3%;"> Termine </span>
+					                <button class="btn btn-sm btn-secondary dropdown-toggle blue" 
+					                	type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					                    <span t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][2].split('/').pop()"/>
+					                    <span class="caret ml4"/>
+					                </button>
+					                <div class="dropdown-menu" role="menu">
+					                    <t t-foreach="languages" t-as="lg">
+					                        <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
+					                           class="dropdown-item js_change_lang"
+					                           t-att-data-url_code="lg[1]">
+					                            <t t-esc="lg[2].split('/').pop()"/>
+					                        </a>
+					                    </t>
+					                </div>
+                                </li>
+                            </ul>
+                            
+                       	</div>
+                    </div>
+                </div>
+            </nav>
+        </xpath>
+    </template>
+    
+	<!-- Footer Changes -->
+	<template id="footer_custom" inherit_id="website.layout" name="Footer">
+		<xpath expr="//div[@id='footer']" position="replace">
+			<div class="footer-area-wrap invert">
+				<div class="container" style="background-color: #e6e6e6;">	<br/>
+					<section id="footer-area" class="footer-area widget-area blue row">
+						<aside id="text-2" class="col-xs-12 col-sm-6 col-md-6 col-lg-3 widget widget_text">
+							<h2 class="widget-title">Kontakt</h2>
+							<div class="textwidget">
+								<p class="greyc">	EVO-tech GmbH </p>
+								<p class="greyc"> Gahberggasse 9a	<br/>
+									4861 Schörfling am Attersee, Austria
+								</p>
+								<p class="greyc">	Pavillon 36 Messegelände <br/>
+									30521 Hannover, Deutschland
+								</p>
+								<p class="greyc"> +43 7662 38400	<br/>
+									<a class="blue" href="mailto:julia.brand@evo-tech.eu">julia.brand@evo-tech.eu</a>
+								</p>
+								<p>
+									<a href="https://www.facebook.com/evotech3dprinting/"
+										data-wpel-link="external" target="_self" rel="follow">
+										<picture class="size-full wp-image-1271">
+											<source type="image/webp" srcset="https://evo-tech.eu/wp-content/uploads/2017/12/fb-findusonfacebook-online-144_de_de.png.webp"/>
+												<img src="https://evo-tech.eu/wp-content/uploads/2017/12/fb-findusonfacebook-online-144_de_de.png"
+													alt="Facebook Button" width="144" height="27"/>
+										</picture>
+									</a>
+								</p>
+							</div>
+						</aside>
+						
+						<aside id="text-4" class="col-xs-12 col-sm-6 col-md-6 col-lg-3 widget widget_text">
+							<h2 class="widget-title" style="margin-left: -15px; ">Newsletter Anmeldung</h2>
+							 
+							 <form action="/website_form/" method="post" class="s_website_form container-fluid mt32 o_fake_not_editable"
+								enctype="multipart/form-data" data-name="Form Builder" data-model_name="mail.mail" 
+									data-success_page="/contactus-thank-you" style="padding-left: -1px;">
+									<div class="row form-group form-field d-none">
+										<div class="col-lg-3 col-md-4">
+											<label class="col-form-label o_fake_editable" for="email_to">
+											</label>
+										</div>
+										<div class="col-lg-7 col-md-8">
+											<input type="text" class="form-control o_website_form_input"
+												name="email_to" value="mehuljadav0077@gmail.com" />
+										</div>
+									</div>
+									<div class="form-group row form-field o_website_form_custom o_website_form_required_custom o_fake_not_editable" style="width: 70%; ">
+										<p class="col-form-label o_fake_editable" for="Your Name">Name</p>
+										<br />
+										<input type="text" class="form-control o_website_form_input" name="Your Name" required="" />
+									</div>
+									<div class="form-group row form-field o_website_form_required_custom " style="width: 70%; "> 
+										<p class="col-form-label o_fake_editable" for="email_from">E-Mail-Adresse </p>
+										<br />
+										<input type="email" class="form-control o_website_form_input" name="email_from" required="" />
+									</div>
+									<div class="form-group row">
+										<div class="s_btn text-left pt16 pb16">
+											<button class="btn btn-primary flat btn-lg o_website_form_send o_default_snippet_text"
+												style="background-color: #e6e6e6; border: 1px solid; color: #008bd2; ">
+												Send
+											</button>
+											<span id="o_website_form_result" />
+										</div>
+									</div>
+							</form>
+						</aside>
+
+						<aside id="nav_menu-2" class="col-xs-12 col-sm-6 col-md-6 col-lg-3 widget widget_nav_menu">
+							<h2 class="widget-title">Links</h2>
+							<ul class="list-unstyled">
+                                <li><a href="https://evo-tech.eu/kontakt/" style="color : #008bd2;"> Kontakt </a></li>
+                                <li><a href="https://evo-tech.eu/termine/" style="color : #008bd2;"> Termine </a></li>
+                                <li><a href="https://evo-tech.eu/jobs/" style="color : #008bd2;"> Jobs </a></li>
+                                <li><a href="https://evo-tech.eu/presse/" style="color : #008bd2;"> Presse </a></li>
+                                <li><a href="https://evo-tech.eu/impressum/" style="color : #008bd2;">  Impressum </a></li>
+                                <li><a href="https://evo-tech.eu/datenschutz/" style="color : #008bd2;">  Datenschutz </a></li>
+                            </ul>
+						</aside>
+
+						<aside id="nav_menu-3" class="col-xs-12 col-sm-6 col-md-6 col-lg-3 widget widget_nav_menu">
+							<h2 class="widget-title">EVO-tech in Deutschland</h2>
+							<ul class="list-unstyled">
+                                <li><a href="https://evo-tech.eu/3d-drucker-in-deutschland/" style="color : #008bd2;"> 3D Drucker in Deutschland </a></li>
+                                <li><a href="https://evo-tech.eu/rapid-prototyping-deutschland/" style="color : #008bd2;"> Rapid Prototyping in der deutschen Industrie </a></li>
+                            </ul>
+						</aside>
+					</section>
+
+					<div class="col-lg-12" id="connect">
+						<ul class="list-unstyled" style="margin-bottom : 0rem; margin-left : 60% ">
+							<li style="font-size: 16px;" class="blue">
+								<span style="word-spacing: 30px;"> <a href="https://evo-tech.eu/kontakt/" style="color : #008bd2;"> Kontakt </a> </span>
+								<span style="word-spacing: 30px;"> <a href="https://evo-tech.eu/termine/" style="color : #008bd2;"> Termine </a> </span>
+								<span style="word-spacing: 30px;"> <a href="https://evo-tech.eu/jobs/" style="color : #008bd2;"> Jobs </a> </span>
+								<span style="word-spacing: 30px;"> <a href="https://evo-tech.eu/presse/" style="color : #008bd2;"> Presse </a> </span>
+								<span style="word-spacing: 30px;"> <a href="https://evo-tech.eu/impressum/" style="color : #008bd2;"> Impressum </a> </span>
+								<span style="word-spacing: 30px;"> <a href="https://evo-tech.eu/datenschutz/" style="color : #008bd2;"> Datenschutz </a> </span>
+								<span style="word-spacing: 30px;">
+									<!-- <a id="back2Top" href="#" class="top text-right">
+										<img src="/ehcs_evo_tech_website/static/src/img/logo/018_284_arrow_up_hide-512.webp" style="width:6%;"></img>
+					                </a> -->
+					                <a id="back2Top" title="Back to top" href="#">&#10148;</a>		
+								</span>
+							</li>
+						</ul>
+					</div>
+				
+				</div>
+				
+			</div>
+		</xpath>
+	</template>
+	
+	<template id="footer_template_changes" inherit_id="web.frontend_layout" name="Footer Style Change">
+		<xpath expr="//div[hasclass('o_footer_copyright')]" position="replace">
+			<attribute name="class" add="footer-text-color" />
+				<div id="mySidenav" class="sidenav">
+			  	<a href="/angebotsanfrage" id="projects" class="fa fa-edit fa-3x" > ANGEBOT</a>
+			  	<a href="/contactus/" id="contact" class="fa fa-envelope-o fa-3x" > KONTAKT</a>
+			</div>
+		</xpath>
+	</template>
+
+
+</odoo>
+     				

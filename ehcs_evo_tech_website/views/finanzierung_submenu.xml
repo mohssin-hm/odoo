@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_menu_drucker_submenu_three" name="website.ueber_page">
+		<t t-call="website.layout">
+			<t t-set="additional_title">Finanzierung</t>
+			<div id="wrap" class="oe_structure oe_empty">
+
+				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
+					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none;     background: rgba(34, 30, 34, 0.32);">
+					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/evo-tech_3d-druck-beispiel1.jpg&quot;); background-position: 50% 0px;" />
+						<div class="container">
+							<div class="row s_nb_column_fixed">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
+									data-name="Box">
+									<div class="row">
+										<div class="col-lg-12 s_title s_col_no_bgcolor"
+											data-name="Title">
+											<h1 class="s_title_default" style="text-align: center; ">
+												<font style="font-size: 42px;color: white;">
+													<b>3D DRUCKER ALL INCLUSIVE LEASING</b>
+												</font>
+											</h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</section>
+					
+				<section class="s_text_block pt32 pb32" data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 pb32">
+								<p class="lead" />
+								<div style="text-align: center;" class="">
+									<span style="font-size: 20px;">
+										<b>
+											Sie möchten die Technologie von morgen schon heute nutzen, ohne dabei Ihr Investitionsbudget zu belasten?
+										</b>
+									</span>
+								</div>
+								<p style="text-align: center;font-size: 15px;">
+									Dann bietet Ihnen Leasing die optimale Möglichkeit. Nach Ende der Vertragslaufzeit entscheiden Sie, ob Sie den 3D-Drucker erwerben oder durch Abschluss eines neuerlichen Leasingvertrages auf ein neues bzw. anderes Modell umsteigen wollen.
+								</p>
+								<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>	
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_features  pb0" data-name="Features">
+					<div class="container">
+						<div class="row">
+							<div class="pt32 pb32 text-left col-lg-6">
+								<p class=" blue" style="font-size: 26px; ">
+									<b>  Vorteile:</b>
+								</p>
+								<ul id="ul" style="font-size: 17px; margin-left: -25px; ">
+									<li>Leasing hilft Ihrer Liquidität  </li>
+									<li> Schont das Eigenkapital </li>
+									<li> Stärkt Ihre Bonität  </li>
+									<li>Service inklusive </li>
+									<li> Garantie inklusive </li>
+									<li> Gewährleistet absolute Kostensicherheit </li>
+								</ul>
+							</div>
+							<div class="pt32 pb32 text-left col-lg-6">
+								<p class=" blue" style="font-size: 26px; ">
+									<b> Bestandteile Leasingangebot	</b>
+								</p>
+								<ul id="ul" style="font-size: 17px; margin-left: -25px; ">
+									<li>3D Drucker mit top Ausstattung  </li>
+									<li> Materialstartpaket </li>
+									<li> 1 Tag Einschulung und Inbetriebnahme </li>
+									<li>5 Jahre volle Garantie </li>
+									<li> 1 mal jährlich Servicierung</li>
+									<li> Keine Kosten für Ersatzteile </li>
+								</ul>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>	
+					</div>
+				</section>
+				
+				<section class="s_features  pb0" data-name="Features">
+					<div class="container">
+						<div class="row">
+							<div class="pt32 pb32 text-left col-lg-6">
+								<center>
+									<img src="/ehcs_evo_tech_website/static/src/img/facc1.webp"> </img> <br/><br/>
+								</center>
+									<table style="border: 4px solid #008bd2 !important;width: 100%;height: 200px;">
+										<tbody>
+											<tr>
+												<td width="480" colspan="3" style=" background-color: #008bd2; ">
+													<span style="color: white !important;font-weight: 800;font-size: 19px;">LEASINGANGEBOT EL-11</span>
+												</td>
+											</tr>
+											<tr>
+												<td width="340" style="text-align:left;font-size: 17px;">
+													<span style="color: #008bd2 !important; font-weight: 800;">Monatliche Nettoleasingrate</span>
+												</td>
+												<td width="70" style="text-align:left;font-size: 17px;">
+													<span style="color: #008bd2 !important; font-weight: 800;">437,09</span>
+												</td>
+												<td width="70" style="text-align:left;font-size: 17px;">
+													<span style="color: #008bd2 !important; font-weight: 800;">EUR</span>
+												</td>
+											</tr>
+											<tr>
+												<td width="340" style="text-align:left;font-size: 17px;">Laufzeit</td>
+												<td width="70" style="text-align:left;font-size: 17px;">48</td>
+												<td width="70" style="text-align:left;font-size: 17px;">Mon.</td>
+											</tr>
+											<tr>
+												<td width="340" style="text-align:left;font-size: 17px;">Bearbeitungsgebühr</td>
+												<td width="70" style="text-align:left;font-size: 17px;">0,00</td>
+												<td width="70" style="text-align:left;font-size: 17px;">EUR</td>
+											</tr>
+											<tr>
+												<td width="340" style="text-align:left;font-size: 17px;">Restwert</td>
+												<td width="70" style="text-align:left;font-size: 17px;">2.091,55</td>
+												<td width="70" style="text-align:left;font-size: 17px;">EUR</td>
+											</tr>
+										</tbody>
+									</table>
+									<br/> <br/>
+									<center>
+									<a href="/contactus/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade "
+											style="color: white !important; background-color: #008bd2;"
+											data-original-title="" title="">Jetzt Anfragen</a>
+									</center>
+							</div>
+							<div class="pt32 pb32 text-left col-lg-6">
+								<center>
+									<img src="/ehcs_evo_tech_website/static/src/img/facc2.webp"></img> <br/> <br/>
+								</center>
+								<table style="border: 4px solid #008bd2 !important;width: 100%;height: 200px;">
+										<tbody>
+											<tr>
+												<td width="480" colspan="3" style=" background-color: #008bd2; ">
+													<span style="color: white !important;font-weight: 800;font-size: 19px;">LEASINGANGEBOT EL-102</span>
+												</td>
+											</tr>
+											<tr>
+												<td width="340" style="text-align:left;font-size: 17px;">
+													<span style="color: #008bd2 !important; font-weight: 800;">Monatliche Nettoleasingrate</span>
+												</td>
+												<td width="70" style="text-align:left;font-size: 17px;">
+													<span style="color: #008bd2 !important; font-weight: 800;">1.430,98</span>
+												</td>
+												<td width="70" style="text-align:left;font-size: 17px;">
+													<span style="color: #008bd2 !important; font-weight: 800;">EUR</span>
+												</td>
+											</tr>
+											<tr>
+												<td width="340" style="text-align:left;font-size: 17px;">Laufzeit</td>
+												<td width="70" style="text-align:left;font-size: 17px;">48</td>
+												<td width="70" style="text-align:left;font-size: 17px;">Mon.</td>
+											</tr>
+											<tr>
+												<td width="340" style="text-align:left;font-size: 17px;">Bearbeitungsgebühr</td>
+												<td width="70" style="text-align:left;font-size: 17px;">0,00</td>
+												<td width="70" style="text-align:left;font-size: 17px;">EUR</td>
+											</tr>
+											<tr>
+												<td width="340" style="text-align:left;font-size: 17px;">Restwert</td>
+												<td width="70" style="text-align:left;font-size: 17px;">6.969,10</td>
+												<td width="70" style="text-align:left;font-size: 17px;">EUR</td>
+											</tr>
+										</tbody>
+									</table>
+									<br/> <br/>
+									<center>
+									<a href="/contactus/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade "
+											style="color: white !important; background-color: #008bd2;"
+											data-original-title="" title="">Jetzt Anfragen</a>
+									</center>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="pt32 pb32" data-name="Title" >
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+						</div>
+					</div>
+				</section>
+				
+			</div>
+		</t>
+	</template>
+</odoo>

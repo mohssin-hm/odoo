@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		
+		<!-- SUBMENU About -->
+		<record id="menu_about_subone" model="website.menu">
+			<field name="name">Über Uns</field>
+			<field name="url">/ueber-uns/</field>
+			<field name="sequence" type="int">71</field>
+			<field name="parent_id" ref="ehcs_evo_tech_website.menu_ueberuns" />
+			<field name="website_id" ref="website.default_website" />
+		</record>
+		
+		<record id="menu_about_subtwo" model="website.menu">
+			<field name="name">Academy</field>
+			<field name="url">/academy/</field>
+			<field name="sequence" type="int">72</field>
+			<field name="parent_id" ref="ehcs_evo_tech_website.menu_ueberuns" />
+			<field name="website_id" ref="website.default_website" />
+		</record>
+		
+		<record id="menu_about_subthree" model="website.menu">
+			<field name="name">Termine</field>
+			<field name="url">/termine/</field>
+			<field name="sequence" type="int">73</field>
+			<field name="parent_id" ref="ehcs_evo_tech_website.menu_ueberuns" />
+			<field name="website_id" ref="website.default_website" />
+		</record>
+		
+		<record id="menu_about_subfour" model="website.menu">
+			<field name="name">Jobs</field>
+			<field name="url">/jobs/</field>
+			<field name="sequence" type="int">74</field>
+			<field name="parent_id" ref="ehcs_evo_tech_website.menu_ueberuns" />
+			<field name="website_id" ref="website.default_website" />
+		</record>
+		
+		<record id="menu_about_five" model="website.menu">
+			<field name="name">Presse</field>
+			<field name="url">/presse/</field>
+			<field name="sequence" type="int">75</field>
+			<field name="parent_id" ref="ehcs_evo_tech_website.menu_ueberuns" />
+			<field name="website_id" ref="website.default_website" />
+		</record>
+		
+	</data>
+</odoo>

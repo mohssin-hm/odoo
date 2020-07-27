@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_menu_filamente_submenu_ele" name="website.filamente_page">
+		<t t-call="website.layout">
+			<t t-set="additional_title"> PPS </t>
+			<div id="wrap" class="oe_structure oe_empty">
+			
+				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
+					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none;     background-color: rgba(66, 117, 211, 0.63);">
+					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/druckmaterial-3d-druck_smaller.jpg&quot;); background-position: 50% 0px;" />
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+							<div class=" jumbotron rounded pt32 pb32 col-lg-12"
+								data-name="Box">
+								<div class="row">
+									<div class="col-lg-12 s_title s_col_no_bgcolor"
+										data-name="Title">
+										<h1 class="s_title_default" style="text-align: center; ">
+											<font style="font-size: 50px; color: white;">
+												<b> PPS FILAMENT </b>
+											</font>
+										</h1>
+										<h3 class="s_title_default" style="text-align: center; font-size: 24px; color: white;">
+											POLYPHENYLENSULFID
+										</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_text_block pt32 pb32" data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 pb32">
+								<p class="lead" />
+								<div style="text-align: center;" class="blue">
+								</div>
+								<p style="text-align: center;font-size: 16px;">
+									PPS (Polyphenylensulfid) ist ein hitzebeständiges 3D-Druck Filament und wird zu Recht auch Hochleistungskunststoff genannt. Dieser teilkristalline Kunststoff zeichnet sich durch seine besondere Widerstandsfähigkeit und die höchste Temperaturbeständigkeit unter allen thermoplastischer Kunststoffe aus. Seine mechanischen Eigenschaften, wie z.B. Formstabilität, bleiben auch bei Dauereinsätzen bei Hochtemperaturen von 200 Grad erhalten. Beeindruckend ist auch seine chemische Beständigkeit gegenüber nahezu allen Lösungsmitteln, vielen Säuren und Laugen. Zudem sind Polyphenylensulfide hochgradig undurchlässig gegenüber Flüssigkeiten und Gasen und zeichnen sich durch ihre geringe Wasseraufnahme und Kriechneigung aus.
+								</p>
+								<br/>
+								<p style="text-align: center;font-size: 16px;">
+									Aufgrund seiner hohen elektrischen Durchschlagsfestigkeit ist das PPS Filament ideal als Isolator geeignet. Die beeindruckenden Eigenschaften von PPS erlauben einen sehr vielseitigen Einsatz im 3D-Druck. Gerade im Elektronik- und Fahrzeugsektor werden mithilfe von PPS und der additiven Fertigung Formteile hergestellt, die höchsten mechanischen, elektrischen, thermischen und chemischen Beanspruchungen standhalten müssen.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_features pt32 pb0" data-name="Features" style="color: #555555; background-color: #f8f9fa !important;">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-6 pt32 pb32 text-center">
+								<p class="o_default_snippet_text blue" style="font-size:23px;margin-left: -52%;">
+									Verarbeitungsparameter:
+								</p>
+								<table>
+									<tbody>
+										<tr>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> Extrusionstemperatur:		 </td>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> 335 °C</td>
+										</tr>
+										<tr>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> Plattformtemperatur: </td>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> 	120 °C</td>
+										</tr>
+										<tr>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">Druckoberfläche:</td>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">	Kapton</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="col-lg-6 pt32 pb32 text-left" style="color: #555555; background-color: #f8f9fa !important;">
+								<p class="o_default_snippet_text " style="font-size:16px;">
+									Da es sich bei PPS um einen teilkristallinen Kunststoff handelt und sowohl die Verarbeitungs- als auch die Glasübergangstemperatur (90 °C) sehr hoch sind ist ein geschlossener und beheizter Bauraum, mit aktiver Temperaturregelung, für einen stabilen Fertigungsprozess unerlässlich.
+								</p>
+								<br/>
+								<p class="o_default_snippet_text " style="font-size:16px;">
+									Bei der Verarbeitung von PPS bilden sich während des Druckprozesses, auch mit beheiztem Bauraum, Spannungen im inneren des Bauteils, weshalb die Haftung des Bauteils auf der Druckplattform einen wichtigen Prozessparameter darstellt. Außerdem hat sich gezeigt, dass diese Spannungen so stark werden könne, dass sich dünne Dauerdruckplatten, etwa aus Carbonfaser oder Aluminium, während des Druckens verformen, die Bauplattform sollte also entsprechend dimensioniert sein.
+								</p>
+								
+								<a href="/3d-drucker-el-11/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade " style="color: white !important; background-color: #008bd2;" data-original-title="" title="">Continue to EL-11</a>
+								<a href="/3d-drucker-el-102/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade " style="color: white !important; background-color: #008bd2; margin-left: 5%;" data-original-title="" title="">Continue to EL102 </a>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_features pt32 pb0" data-name="Features" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 pt32 pb32 text-left" >
+								<span class="o_default_snippet_text blue" style="font-size:22px;">
+									Post-Processing
+								</span>
+								<br/>
+								<p class="o_default_snippet_text " style="font-size:16px;">	
+									PPS kann mechanisch bearbeitet und mit und ohne „Inset“ geschraubt werden. Aufgrund der chemischen Beständigkeit sind Klebeverbindungen mit Lösemittelklebstoffen nicht möglich, jedoch sind Verbindungen mittels 2-Komponenten Epoxidharz oder Polyurethanklebern möglich. [1]
+								</p>
+								<p class="o_default_snippet_text " style="font-size:16px;">	
+									Um PPS Bauteile zu lackieren ist eine Behandlung der Oberfläche etwa durch Beflammen oder eine Grundierung auf Polyurethanbasis notwendig.[1]
+								</p>
+							</div>
+							
+							<div class="col-lg-4 pt32 pb32 text-left" >
+								<span class="o_default_snippet_text blue" style="font-size:22px;">
+									Löslichkeit/Beständigkeit
+								</span>
+								<br/>
+								<p class="o_default_snippet_text " style="font-size:16px;">	
+									PPS ist formstabil bis 200° C und zudem gegenüber nahezu allen Lösemitteln, vielen Säuren und Laugen beständig. Aufgrund der großen Vielfalt in diesem Bereich muss die Beständigkeit des Materials nach Bedarf abgeklärt werden.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_features  pb0" data-name="Features" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 pb32 text-left" >
+								<span class="o_default_snippet_text blue" style="font-size:22px;">
+									Einsatzbereiche
+								</span>
+								<br/>
+								<p class="o_default_snippet_text " style="font-size:16px;">	
+									Aufgrund seiner hohen Temperaturbeständigkeit eignet sich PPS für dauerhafte Hochtemperaturanwendungen unter hohen mechanischen Beanspruchungen, etwa als 3D-gedruckte Laminierform zur mehrfachen Verwendung in Autoklaven bei hohen Temperaturen und Drücken.
+								</p>
+								<p class="o_default_snippet_text " style="font-size:16px;">	
+									Dank der herausragenden Chemikalienbeständigkeit kann PPS problemlos sterilisiert werden, was es ideal für Anwendungen im Medizinbereich macht.
+
+								</p>
+								<p class="o_default_snippet_text " style="font-size:16px;">	
+									PPS ist von Natur aus flammbeständig und erreicht ab einer Dicke von 0,4mm die Einstufung V0 nach UL 94. (Verlöschen der Flamme nach 10s, max. 30s nachglimmen, kein brennendes Abtropfen)
+								</p>
+							</div>
+							
+						</div>
+					</div>
+				</section>
+				
+				<section class="" data-name="Title" style="background-color: #008bd2!important">
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+							<div class="col-lg-12 s_title pt12" style="text-align: center;">
+								<div class="row align-items-center" style="margin-top: 1%;">
+									<div class="col-lg-1 ">
+										<i class="mpc-transition fa fa-4x fa-phone" style="color: white;margin-left: 60%;margin-top: -10%;"></i>
+									</div>
+									<div class="col-lg-6 ">
+										<p style="font-size:20px;color: white; margin-top:1%">
+										Sie benötigen mehr Informationen? Wir beraten Sie gerne.
+										</p>	
+									</div>
+								</div>
+								<p class="s_title_default">
+									<a href="/contactus/" class="blue btn btn-gamma flat btn-lg" data-original-title="" title="" 
+										style="background-color: white; margin-left:80%; margin-top : -7%; ">
+										<b style=" font-size: 14px; "> Jetzt Kontaktieren </b>
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="pt40 pb32" data-name="Title" >
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+						</div>
+					</div>
+				</section>
+				
+			</div>
+		</t>
+	</template>
+</odoo>

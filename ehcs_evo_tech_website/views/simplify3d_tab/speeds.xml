@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_submenu_tab_speeds" name="website.theme_submenu_tab_speeds">
+		<t t-call="website.layout">
+			<t t-set="additional_title">Speeds Tab</t>
+			<div id="wrap" class="oe_structure oe_empty">
+
+				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
+					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
+					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/img_6646_3-scaled.jpg&quot;); background-position: 50% 0px;" />
+						<div class="container">
+							<div class="row s_nb_column_fixed">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
+									data-name="Box">
+									<div class="row">
+										<div class="col-lg-12 s_title s_col_no_bgcolor"
+											data-name="Title">
+											<h1 class="s_title_default" style="text-align: center; ">
+												<font style="font-size: 62px;color: white;">
+													<b>Speeds TAB</b>
+												</font>
+											</h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</section>
+				
+				<section class="s_text_block pt32 " data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 ">
+								<img src="/ehcs_evo_tech_website/static/src/img/speeds-tab.png.webp" style=" width: 100%; "></img>
+							</div>
+							<div class="col-lg-12 pt32 text-left">
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Speeds
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Im Gegensatz zu anderen Slicern legt Simplify3d die Geschwindigkeiten nicht direkt fest. Stattdessen wird eine allgemeine Druckgeschwindigkeit definiert und die Geschwindigkeiten für die einzelnen Bereiche des Drucks ergeben sich mittels Prozentangaben. Auf diese Weise muss nur ein Wert geändert werden, um die Geschwindigkeit des Drucks anzupassen.
+								</p>
+
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Default Printing Speed
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Dieser Wert gibt die allgemeine Druckgeschwindigkeit vor.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Outline Underspeed
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Dieser Wer legt die Geschwindigkeit des äußersten Perimeters, in Abhängigkeit der allgemeinen Druckgeschwindigkeit fest.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Solid Infill Underspeed
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Dieser Wert legt die Geschwindigkeit der Füllung in Abhängigkeit zur allgemeinen Druckgeschwindigkeit fest.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Support Structure Underspeed
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Dieser Wert legt die Geschwindigkeit der Stützstruktur in Abhängigkeit zur allgemeinen Druckgeschwindigkeit fest.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										X/Y Axis Movement Speed
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Dieser Wert legt die Leerlaufgeschwindigkeit des Druckkopfs in X/Y-Richtung fest. Dieser Wert sollte möglichst hoch gewählt werden, um die Druckzeit zu verkürzen und Stringing zu verhindern.
+								</p>
+								
+								<br/>
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Z Axis Movement Speed
+									</b>
+								</p>
+								<br/>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Speed Overrides
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Beim Drucken von feinen Details in Z-Richtung kann es vorkommen, dass diese Bereiche nicht genug Zeit zum Abkühlen haben und noch weich sind, wodurch sie durch das Auftragen der nächsten Schicht verschmiert werden. Um dies zu verhindern bietet Simplify3d die Möglichkeit die Geschwindigkeit für Schichten mit kleinem Querschnitt zu verringern
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Adjust Printing Speed for Layers below … sec
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Die Checkbox aktiviert das Überschreiben der Schichten und der Wert gibt an, ab wann dieses Feature angewandt wird.
+									<br/>
+									Dieses Feature greift nur bei Schichten mit kleinem Gesamtquerschnitt. Um feine Details in Schichten mit großem Querschnitt zu Drucken siehe: Print Islands sequentially im Layers Tab.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Allow Speed reductions down to …
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Gibt den Prozentsatz an, bis zu dem die Geschwindigkeit reduziert wird.
+								</p>
+								
+							</div>
+							<div class="col-lg-12 pt32 text-center">
+								<a href="/simplify3d/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade" style="color: white !important; background-color: #008bd2; "
+									data-original-title="" title="">
+									
+									Zurück zur Übersicht
+								</a>
+							</div>							
+						</div>
+					</div>
+				</section>
+				
+				<section class="pt32 pb32" data-name="Title" >
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+						</div>
+					</div>
+				</section>
+				
+			</div>
+		</t>
+	</template>
+</odoo>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_submenu_tab_temperature" name="website.theme_submenu_tab_temperature">
+		<t t-call="website.layout">
+			<t t-set="additional_title">Temperature Tab</t>
+			<div id="wrap" class="oe_structure oe_empty">
+
+				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
+					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
+					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/img_6646_3-scaled.jpg&quot;); background-position: 50% 0px;" />
+						<div class="container">
+							<div class="row s_nb_column_fixed">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
+									data-name="Box">
+									<div class="row">
+										<div class="col-lg-12 s_title s_col_no_bgcolor"
+											data-name="Title">
+											<h1 class="s_title_default" style="text-align: center; ">
+												<font style="font-size: 62px;color: white;">
+													<b>Temperature TAB</b>
+												</font>
+											</h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</section>
+				
+				
+				<section class="s_text_block pt32 " data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 ">
+								<img src="/ehcs_evo_tech_website/static/src/img/temperature-tab.png.webp" style=" width: 100%; "></img>
+							</div>
+							<div class="col-lg-12 pt32 text-left">
+								<p style="font-size: 16px;">
+									In diesem Tab werden die Einstellungen für die Temperatur der Bauplattform und der Extruder getroffen. Die Verarbeitungstemperatur ist der wichtigste Prozessparameter und sollte entsprechend sorgfältig eingestellt werden.
+								</p>
+
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Hot-End Temperatur
+									</b>
+								</p>
+								<span style="font-size: 16px;">
+									Eine zu hoch gewählte Temperatur führt zu verschmierten Bauteilen,
+									„ <b><u> Stringing </u> </b>“ und im schlimmsten Fall zum thermischen Abbau des
+									Kunststoffs, wobei es auch zur Ausbildung giftiger Dämpfe kommen kann.
+									Bei zu niedrig gewählter Temperatur kann es zu unzureichender
+									Schichthaftung, ungenügender Extrusion oder dem Durchrutschen des
+									Extrudermotors bzw. dem Aufreiben des Filaments kommen.
+								</span>
+								<span>
+									Die Extrusionstemperatur der ersten Schicht hat außerdem Einfluss
+									darauf, wie gut das Bauteil auf der Druckplattform haftet.
+									Für den 3D-Druck existiert meist keine exakte Idealtemperatur. Vielmehr
+									existiert ein Temperaturbereich, in dem der Kunststoff verarbeitet
+									werden kann. Pauschal lässt sich zwar sagen, dass am unteren Ende des
+									Temperaturbereichs bessere Ergebnisse in Hinsicht auf Detailgenauigkeit
+									und Aussehen des Bauteils erzielt werden könne, während am oberen Ende
+									bessere Schichthaftungen und Bauteilstabilitäten erzielt werden können.
+									Dies hängt jedoch noch von anderen Verarbeitungsparametern ab.
+								</span>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Plattformtemperatur
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Die Temperatur der Bauplattform hat großen Anteil daran, wie gut das Bauteil darauf haftet. Bei zu geringer Temperatur löst sich das Bauteil nach einigen gedruckten Schichten von der Bauplattform. Ist die Temperatur zu hoch gewählt bekommt das Bauteil einen sogenannten Elefantenfuß, die erste Schicht steht über den Rest des Bauteils hervor. Dieser Effekt tritt auf, wenn die erste Schicht des Bauteils auf der Bauplattform fest verankert ist, die Schichten darüber sich aber durch die abgestrahlte Wärme verformen können und Schwindung auftritt.
+								</p>
+								
+								<p style="font-size: 22px;" class="blue">
+									<b>
+										Overview
+									</b>
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Temperature Identifier
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Gibt an, welcher Senosor für das Ablesen der Temperatur zuständig ist. Die ist für einige Kommandos der Firmware notwendig.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Temperature Controller Type
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Gibt an, ob es sich beim Temperaturkontroller um einen Extruder oder eine beheizte Bauplattform handelt.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Wait for Temperature controller to stabilize before beginning build
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Wird diese Checkbox ausgewählt wartet der 3D-Drucker ab, bis sich die eingestellte Temperatur stabilisiert hat, bevor er mit dem Druck beginnt. Diese Checkbox sollte immer ausgewählt werden, da ansonsten die Temperatur zu Beginn des Drucks noch erheblich schwanken kann und zu inkonsistenten Ergebnissen führen kann.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Per-Layer Temperature Setpoints
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Hier kann die Temperatur für jede Schicht einzeln variiert werden. In der Regel wird diese Einstellung verwendet, wenn für die erste Schicht eine andere Temperatur als für den Rest des Bauteils verwendet werden soll, um die Haftung auf der Bauplattform zu optimieren
+								</p>
+								
+							</div>
+							<div class="col-lg-12 pt32 text-center">
+								<a href="/simplify3d/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade" style="color: white !important; background-color: #008bd2; "
+									data-original-title="" title="">
+									
+									Zurück zur Übersicht
+								</a>
+							</div>							
+						</div>
+					</div>
+				</section>
+				
+				<section class="pt32 pb32" data-name="Title" >
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+						</div>
+					</div>
+				</section>
+				
+			</div>
+		</t>
+	</template>
+</odoo>

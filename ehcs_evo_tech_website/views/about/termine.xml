@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_menu_about_subthree" name="website.theme_menu_about_subthree">
+		<t t-call="website.layout">
+			<t t-set="additional_title">Termine</t>
+			<div id="wrap" class="oe_structure oe_empty">
+			
+					<section class="s_text_block pt32 pb32" data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-10 pt32 pb32">
+								<p class="lead" />
+								<div style="text-align: left;" class="">
+									<span style="font-size: 22px; color: black;">
+											Messen und Veranstaltungstermine
+									</span>
+								</div>
+								<p style="text-align: left;font-size: 16px;">
+									Die dynamische Entwicklung und die steigende Bedeutung des 3D-Drucks im gewerblichen und industriellen Bereich manifestieren sich auch an zahlreichen einschlägigen Informationsveranstaltungen. Große Messen oder kleinere Exhibitions sind ideale Gelegenheiten, um sich über die Vorteile und Möglichkeiten in der additiven Fertigung zu informieren und EVO-tech kennenzulernen. Denn wir sind auf zahlreichen Veranstaltungen mit dabei und freuen uns auch dort auf Ihren Besuch.
+								</p>
+							</div>
+						</div>
+					</div>
+					<hr style=" border-top-style: solid; border-top-color: #f9f9f9; width: 100%; border-top-width: 3px; "></hr>	
+				</section>
+					
+				<section class="s_text_block pt32 pb32" data-name="Text block" style="">
+					<div class="container">
+						<span class="text:left" style="font-size : 22px; color: black;">
+							Bevorstehende Veranstaltungen
+						</span>
+						<div class="row">
+							<div class="col-lg-10 pt32 pb32">
+								<div class="row no-gutters content">
+				                      <div class="col-lg-3 s_news_carousel_date text-center  ">
+				                          <img src="/ehcs_evo_tech_website/static/src/img/desktop_hintergrund-scaled.jpg"  style=" width: 100%; "></img>
+				                      </div>
+				                      &#160;&#160;&#160;&#160;
+				                      <div class="col-lg-8 s_news_carousel_content">
+				                      		<div class="event-title">
+												<h2 class="o_default_snippet_text blue">
+													<a href="/events/opening-moenchengladbach/" style="color: #008bd2;"
+														data-wpel-link="internal" target="_self" rel="follow">
+														 Softopening @Mönchengladbach 
+													</a>
+												</h2>
+												<h4 class="location" style="color:black; font-size:16px;">
+													<a target="_self" style="color: #3a3a3a; !important"
+														href="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode&amp;q=Friedrich-Ebert-Straße+9-11,+41352+Korschenbroich "
+														data-wpel-link="external" rel="follow">Friedrich-Ebert-Straße 9-11, 41352
+														Korschenbroich</a>
+												</h4>
+												<div class="time" style="font-size:14px;">
+													<time datetime="24.06.2020 bis 25.06.2020">24.06.2020 bis 25.06.2020</time>
+												</div>
+											</div>
+				                      </div>
+				                     <hr style=" border-top-style: solid; border-top-color: #008bd2; width: 100%; border-top-width: 3px; "></hr>	
+				                </div>
+				                <br/><br/>
+				                
+				                <div class="row no-gutters content">
+				                      <div class="col-lg-3 s_news_carousel_date text-center  ">
+				                          <img src="/ehcs_evo_tech_website/static/src/img/fakuma_300x368_100.jpg" style="width:35%" ></img>
+				                      </div>
+				                      &#160;&#160;&#160;&#160;
+				                      <div class="col-lg-8 s_news_carousel_content">
+				                      		<div class="event-title">
+												<h2 class="o_default_snippet_text blue">
+													<a href="/events/fakuma-2/" style="color: #008bd2;"
+														data-wpel-link="internal" target="_self" rel="follow"> FAKUMA </a>
+												</h2>
+												<h4 class="location" style="color:black; font-size:16px;">
+													<a target="_self" style="color: #3a3a3a; !important"
+														href="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode&amp;q=Messe+Friedrichshafen "
+														data-wpel-link="external" rel="follow">Messe Friedrichshafen</a>
+												</h4>
+												<div class="time" style="font-size:14px;">
+													<time datetime="13.10.2020 bis 17.10.2020">13.10.2020 bis 17.10.2020</time>
+												</div>
+											</div>
+				                      </div>
+				                      <hr style=" border-top-style: solid; border-top-color: #008bd2; width: 100%; border-top-width: 3px; "></hr>	
+				                </div>
+				                <br/><br/>
+				                
+				                <div class="row no-gutters content">
+				                      <div class="col-lg-3 s_news_carousel_date text-center  ">
+				                          <img src="/ehcs_evo_tech_website/static/src/img/formnext-logo_popup.jpg" style="width:90%"></img>
+				                      </div>
+				                      &#160;&#160;&#160;&#160;
+				                      <div class="col-lg-8 s_news_carousel_content">
+				                      		<div class="event-title">
+												<h2 class="o_default_snippet_text blue">
+													<a href="/events/formnext-2/" style="color: #008bd2;"
+														data-wpel-link="internal" target="_self" rel="follow"> Formnext </a>
+												</h2>
+												<h4 class="location" style="color:black; font-size:16px;">
+													<a target="_self" style="color: #3a3a3a; !important"
+														href="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode&amp;q=Messe+Frankfurt,+Ludwig-Erhard-Anlage+1,+60327 "
+														data-wpel-link="external" rel="follow">Messe Frankfurt, Ludwig-Erhard-Anlage
+														1, 60327</a>
+												</h4>
+												<div class="time" style="font-size:14px;">
+													<time datetime="10.11.2020 bis 13.11.2020">10.11.2020 bis 13.11.2020</time>
+												</div>
+											</div>
+				                      </div>
+				                      <hr style=" border-top-style: solid; border-top-color: #008bd2; width: 100%; border-top-width: 3px; "></hr>	
+				                </div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				
+                                
+			</div>
+		</t>
+	</template>
+</odoo>

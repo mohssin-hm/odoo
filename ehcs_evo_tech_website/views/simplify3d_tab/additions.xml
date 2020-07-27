@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_submenu_tab_additions" name="website.theme_submenu_tab_additions">
+		<t t-call="website.layout">
+			<t t-set="additional_title">Additions Tab</t>
+			<div id="wrap" class="oe_structure oe_empty">
+
+				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
+					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
+					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/img_6646_3-scaled.jpg&quot;); background-position: 50% 0px;" />
+						<div class="container">
+							<div class="row s_nb_column_fixed">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
+									data-name="Box">
+									<div class="row">
+										<div class="col-lg-12 s_title s_col_no_bgcolor"
+											data-name="Title">
+											<h1 class="s_title_default" style="text-align: center; ">
+												<font style="font-size: 62px;color: white;">
+													<b>ADDITIONS TAB</b>
+												</font>
+											</h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</section>
+				
+				<section class="s_text_block pt32 " data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 ">
+								<img src="/ehcs_evo_tech_website/static/src/img/other-tab.png.webp" style=" width: 100%; "></img>
+							</div>
+							<div class="col-lg-12 pt32 text-left">
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Use Skirt/Brim
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Bei einem Skirt bzw. Brim handelt es sich um zusätzliche Bahnen die, in der ersten Schicht, um das Bauteil herumgedruckt werden.
+								</p>
+
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Skirt Extruder
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Diese Option legt den Extruder fest, mit dem der Skirt bzw. Brim gedruckt wird.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Skirt Layers
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Hier wird festgelegt über wie viele Schichten der Skirt bzw. Brim gedruckt wird. Bei Verwendung eines Skirt sollte diese Einstellung auf 1 belassen werden. Bei der Verwendung von Materialien, die so stark schwinden, dass sie den Brim zerreißen, können 2 oder mehr Schichten verwendet werden. Hierbei sollte jedoch beachtet werden, dass es mit zunehmender Dicke des Brims schwieriger wird diesen ohne Beschädigung des Bauteils wieder zu entfernen.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Skirt Offset from Part
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Hier wird festgelegt, wie weit der Skirt bzw. Brim vom Bauteil entfernt gedruckt wird. Von einem Skirt spricht man, wenn diese Bahn ein paar Milimeter entfernt vom Bauteil gelegt werden. Dies wird in der Regel eingesetzt um Druck in der Düse aufzubauen bevor mit der Fertigung des eigentlichen Bauteils begonnen wird. Ein Brim ist mit dem Bauteil verbunden. Dieser wird verwendet um die Haftungsfläche des Bauteils auf der Bauplattform zu vergrößern.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Skirt Outlines
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Diese Option legt die Anzahl der Außenlinien fest. Die Breite des Skirt bzw. Brim ergibt sich aus der Anzahl der Linien sowie der Extrusion Width aus dem Layer Tab und der im First Layer Bereich vorgenommenen Modifikationen. Dies sollte besonders bei der Verwendung von sehr dünnen bzw sehr dicken Düsen beachtet werden, da der Brim dann besonders schmal bzw. breit ausfällt.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Use Raft
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Der Raft ist eine Unterkonstruktion, auf welcher dann das Bauteil gedruckt wird. Für den Raft gibt es verschiedene Anwendungen. In der Regel wird ein Raft verwendet, um die Haftung des Bauteils auf der Bauplattform zu verbessern, oder um eine exakt ebene Schicht zu schaffen, auf der dann das Bauteil gedruckt wird. Darüber hinaus kann der Raft auch verwendet werden, wenn das Bauteil in der ersten Schicht einen großen Querschnitt hat und die Haftung des Materials auf der Bauplattform so groß werden würde, dass sich das Bauteil nicht mehr zerstörungsfrei entfernen lassen würde. Da die unteren Schichten des Raft aus mehreren dicken Bahnen bestehen, die in einigem Abstand parallel zueinander aufgelegt werden lassen sich diese nach dem Druck einfacher entfernen. Ein Raft besteht aus zwei unterschiedlichen Typen von Schichten. Die oberen Schichten sind feiner gedruckt als die unteren, ausßerdem lässt sich die Dichte des Infills bei diesen Schichten steuern. Di unteren Schichten sind gröber gedruckt und besitzen eine festgelegte Infill-Dichte.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Use Raft
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Der Raft ist eine Unterkonstruktion, auf welcher dann das Bauteil gedruckt wird. Für den Raft gibt es verschiedene Anwendungen. In der Regel wird ein Raft verwendet, um die Haftung des Bauteils auf der Bauplattform zu verbessern, oder um eine exakt ebene Schicht zu schaffen, auf der dann das Bauteil gedruckt wird. Darüber hinaus kann der Raft auch verwendet werden, wenn das Bauteil in der ersten Schicht einen großen Querschnitt hat und die Haftung des Materials auf der Bauplattform so groß werden würde, dass sich das Bauteil nicht mehr zerstörungsfrei entfernen lassen würde. Da die unteren Schichten des Raft aus mehreren dicken Bahnen bestehen, die in einigem Abstand parallel zueinander aufgelegt werden lassen sich diese nach dem Druck einfacher entfernen. Ein Raft besteht aus zwei unterschiedlichen Typen von Schichten. Die oberen Schichten sind feiner gedruckt als die unteren, ausßerdem lässt sich die Dichte des Infills bei diesen Schichten steuern. Di unteren Schichten sind gröber gedruckt und besitzen eine festgelegte Infill-Dichte.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Raft Extruder
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Diese Option legt den Extruder fest, mit dem der Raft gedruckt wird. Bei gleichzeitiger Verwendung eines Brim sollte der selbe Extruder gewählt werden, um eine ausreichende Haftung zwischen den Bahnen sicherzustellen.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Raft Top Layers
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Diese Option legt die Anzahl der oberen Schichten des Rafts fest. Um eine stabile Unterlage zu erhalten sollten hier mindestens drei Schichten eingestellt werden. Eine geringere Anzahl an Schichten spart Material und Druckzeit, hält aber unter Umständen den Belastungen durch das abkühlende Bauteil nicht stand. Bei der Verwendung von feinen Düsen ist es sinnvoll die Anzahl, je nach verwendetem Material, zu erhöhen. Möchte man keine oberen Schichten sondern nur die, grob gedruckten, Schichten der Raft Base Layers lassen sich die Raft Top Layers auch auf null einstellen.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Raft Base Layers
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Diese Option legt die Anzahl der unteren Schichten des Rafts fest. Diese Schichten werden dicker und langsamer gedruckt als die Raft Top Layer. Daher benötigen diese Schichten viel Zeit und Material. Da sich durch die Einstellung von mehr als
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Separation Distance
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Die Separation Distance gibt die Distanz zwischen der obersten Schicht des Rafts und der untersten Schicht des Bauteils an. Auf diese weise lässt sich die Haftung des Bauteils direkt steuern. Als Richtwerte können die halbe Schichthöhe als Minimalwert und die ganze Schichthöhe als Maximalwert dienen, jedoch hängen die genauen Werte vom verwendeten Material, der Primary Layer Height und dem Düsendurchmesser ab.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Raft Top Infill
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Der Raft Top Infill gibt an, wie dicht die Raft Top Layers gedruckt werden. Um eine schöne erste Schicht beim Bauteil zu erhalten sollten hier 100% gewählt werden. Wenn man die Haftung des Bauteils am Raft vermindern möchte kann man den Wert, soweit wie notwendig, reduzieren.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Above Raft Speed
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Above Raft Speed legt die Geschwindigkeit fest, mit der die erste Schicht des Bauteils auf den Raft gedruckt wird. Langsamere Geschwindigkeiten ergeben bessere Haftung.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Use Prime Pillar
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Der Prime Pillar ist ein Quader mit quadratischer Grundfläche der in jeder Schicht als erstes nach einem Düsenwechsel gedruckt wird. Ursprünglich war diese Option für Drucker gedacht, die zwei verschiedene Filamente in der selben Düse verwenden, jedoch birgt diese Option auch Vorteile für Drucker mit zwei Düsen. Da der Prime Pillar nach einem Düsenwechsel gedruckt wird kann er verwendet werden um in der neuen Düse Druck aufzubauen und einen sauberen Startpunkt am Bauteil zu erhalten.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Prime Pillar Extruder
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Mit der Option Prime Pillar Extruder kann angegeben werden, welche Extruder den Prime Pillar verwenden. Beim Drucken mit zwei Düsen sollte diese Option auf „All Extruders“ eingestellt werden, da dann der Slicer entscheidet, welche Düse in welcher Schicht verwendet wird.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Pillar Width
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Die Pillar Width gibt die Seitenlänge der quadratischen Grundfläche des Pillars an. Für niedrig Objekte kann diese Einstellung auf 10 mm eingestellt werden. Beim Druck von höheren Objekten sollte die Grundfläche entsprechend größer gewählt werden, damit sich der Prime Pillar während des Drcukes nicht von der Bauplattform löst.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Pillar Location
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Die Pillar Location gibt die Position des Prime Pillars relativ zum Objekt an.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Speed Multiplier
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Der Speed Multiplier gibt an, mit wieviel Prozent der Primary Print Speed der Prime Pillar gedruckt wird. Speziell bei höheren Objekten sollte dieser Wert etwas niedriger gewählt werden, um das Lösen des Prime Pillars von der Bauplattform zu vermeiden.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Use Ooze Shield
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Das Ooze Shield ist eine Hülle, die einigem Abstand um das Bauteil herum gedruck wird. Da es bei der Verwendung von zwei Düsen dazu kommen kann, dass aus der nicht verwendeten Düse etwas Material tropft, wird dieses Feature verwendet um das überschüssige Material abzustreifen, bevor die Düse mit dem Bauteil in Kontakt kommt.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Ooze Shield Extruder
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Mit dieser Einstellung wird der Extruder festgelegt, mit dem das Ooze Shield gedruckt wird. Da das Ooze Shield nur während des Drucks eine Funktion besitzt und danach weggeworfen wird sollte hier der Extruder verwendet werden, in dem das günstigere Material geladen ist.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Offset from Part
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Der Offset from Part gibt den Abstand an, in dem das Ooze Shield vom Bauteil gedruckt wird. Hier hat sich ein Wert von 5 -10 mm bewährt. Das Ooze Shield sollte nicht zu weit vom Bauteil entfernt sein, da sonst auf dem Weg zum Bauteil wieder Filament aus der Düse Tropfen kann, jedoch auch nicht zu nahe, da man sonst das Verschmelzen mit dem Bauteil riskiert.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Ooze Shield Outlines
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Dieser Wert legt die Anzahl an Linien fest, aus der ein Ooze Shield pro Schicht besteht. Hier hat sich ein Wert von 2 als guter Mittelwert zwischen Stabilität und Materialverbrauch erwiesen.
+								</p>
+							</div>
+							<div class="col-lg-12 pt32 text-center">
+								<a href="/simplify3d/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade" style="color: white !important; background-color: #008bd2; "
+									data-original-title="" title="">
+									
+									Zurück zur Übersicht
+								</a>
+							</div>							
+						</div>
+					</div>
+				</section>
+				
+				<section class="pt32 pb32" data-name="Title" >
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+						</div>
+					</div>
+				</section>
+				
+			</div>
+		</t>
+	</template>
+</odoo>

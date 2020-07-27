@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="assets_frontend" name="website assets" inherit_id="web.assets_frontend">
+		<xpath expr="." position="inside">
+		
+			<script type='text/javascript' src='/ehcs_evo_tech_website/static/src/js/theme.js'></script>
+			<link rel="stylesheet" type="text/css" href="/ehcs_evo_tech_website/static/src/css/theme.css" />
+			<script type='text/javascript' src='/ehcs_evo_tech_website/static/src/css/theme.scss'></script>
+			  <!-- <link rel="stylesheet" type="text/scss" href="/theme folder/static/scss/style.scss"/> -->
+		</xpath>
+	</template>
+	
+	 <template id="theme_clarico_vega" inherit_id="website.snippets">
+		 <xpath expr="//div[@id='snippet_mega_menu']/div[hasclass('o_panel_body')]" position="inside">
+		 	<t t-snippet="ehcs_evo_tech_website.megamenu_style_1"
+               t-thumbnail="/ehcs_evo_tech_website/static/src/img/data/snippet.png"/>
+            <t t-snippet="ehcs_evo_tech_website.megamenu_style_2"
+               t-thumbnail="/ehcs_evo_tech_website/static/src/img/data/snippet.png"/>
+             <t t-snippet="ehcs_evo_tech_website.megamenu_style_3"
+               t-thumbnail="/ehcs_evo_tech_website/static/src/img/data/snippet.png"/>
+             <t t-snippet="ehcs_evo_tech_website.megamenu_style_4"
+               t-thumbnail="/ehcs_evo_tech_website/static/src/img/data/snippet.png"/>
+             <t t-snippet="ehcs_evo_tech_website.megamenu_style_5"
+               t-thumbnail="/ehcs_evo_tech_website/static/src/img/data/snippet.png"/>
+             <t t-snippet="ehcs_evo_tech_website.megamenu_style_6"
+               t-thumbnail="/ehcs_evo_tech_website/static/src/img/data/snippet.png"/>
+               
+		 </xpath>
+	 </template>
+	 
+</odoo>

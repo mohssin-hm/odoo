@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_menu_branchen_subthree" name="website.theme_menu_branchen_subthree">
+		<t t-call="website.layout">
+			<t t-set="additional_title">WERKZEUG UND VORRICHTUNGSBAU</t>
+			<div id="wrap" class="oe_structure oe_empty">
+
+				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
+					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
+					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/entwicklung_2000x700_100.jpg&quot;); background-position: 50% 0px;" />
+						<div class="container">
+							<div class="row s_nb_column_fixed">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
+									data-name="Box">
+									<div class="row">
+										<div class="col-lg-12 s_title s_col_no_bgcolor"
+											data-name="Title">
+											<h1 class="s_title_default" style="text-align: center; ">
+												<font style="font-size: 52px; color: white;">
+													<b>WERKZEUG UND VORRICHTUNGSBAU</b>
+												</font>
+											</h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</section>
+					
+				<section class="s_features  pb0" data-name="Features">
+					<div class="container">
+						<div class="row">
+							<div class="pt32 pb32 text-left col-lg-8">
+								<p class=" blue" style="font-size: 20px; ">
+									<b>   Werkzeug- und Vorrichtungsbau mit 3D-Druck</b>
+								</p>
+								<p style="font-size: 16px;">
+									<b>Rapid Tooling mit dem EVO-lizer </b>
+									 Die Produktion spezieller Werkzeuge, Vorrichtungen und Bauteile gilt in vielen Branchen als zentraler Knackpunkt im Fertigungsprozess. Denn konventionelle Verfahren sind oft teuer, zeitaufwendig und technisch sehr anspruchsvoll. Mit dem EVO-lizer und speziellen technischen Kunststoffen bietet Ihnen EVO-tech eine zukunftsweisende Alternative, die schon heute in zahlreichen Unternehmen für signifikante Effizienzgewinne sorgt.
+								</p>
+							</div>
+							
+							<div class="pt32 pb32 text-left col-lg-4" style="width:130%"> 
+								<p class=" blue" style="font-size: 20px; ">
+									<b> Anwendungsbeispiele: </b>
+								</p>
+								<ul id="ul" style="font-size: 15px; margin-left: -25px; ">
+									<li>Vakuumgreifer</li>
+									<li>3D Konturspannbacken </li>
+									<li>Messvorrichtungen</li>
+									<li>Messlehren</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				
+				<section class="s_features  pb0" data-name="Features">
+					<div class="container">
+						<div class="row">
+							<div class="pt32 pb32 text-left col-lg-6">
+								<div class="media_iframe_video o_we_selected_image"
+									data-oe-expression="//www.youtube.com/embed/yzjwCw2jTWU?autoplay=0&amp;rel=0&amp;loop=1&amp;playlist=yzjwCw2jTWU&amp;modestbranding=1">
+									<div class="css_editable_mode_display" data-original-title=""
+										title="" aria-describedby="tooltip210892">
+									</div>
+									<div class="media_iframe_video_size" contenteditable="false">
+									</div>
+									<iframe src="//www.youtube.com/embed/yzjwCw2jTWU?autoplay=0&amp;rel=0&amp;loop=1&amp;playlist=yzjwCw2jTWU&amp;modestbranding=1"
+										frameborder="0" contenteditable="false"
+										allowfullscreen="allowfullscreen"></iframe>
+								</div>
+							</div>
+							
+							<div class="pt32 pb32 text-left col-lg-6" style="width:130%"> 
+								<div class="media_iframe_video o_we_selected_image"
+									data-oe-expression="//www.youtube.com/embed/IhC9neGNdIY?autoplay=0&amp;rel=0&amp;loop=1&amp;playlist=IhC9neGNdIY&amp;modestbranding=1">
+									<div class="css_editable_mode_display" data-original-title=""
+										title="" aria-describedby="tooltip495352">
+									</div>
+									<div class="media_iframe_video_size" contenteditable="false">
+									</div>
+									<iframe src="//www.youtube.com/embed/IhC9neGNdIY?autoplay=0&amp;rel=0&amp;loop=1&amp;playlist=IhC9neGNdIY&amp;modestbranding=1"
+										frameborder="0" contenteditable="false"
+										allowfullscreen="allowfullscreen"></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_features  pb0" data-name="Features">
+					<span class=" blue" style="font-size: 20px;margin-left: 17%;">
+						<b>   Erfahrungen mit dem EVO-lizer 3D-Drucker </b>
+					</span>	<br/>
+					<span style="font-size: 17px; margin-left: 17%;"> 
+						Die Erfahrung unserer Kunden zeigt: Der EVO-lizer spielt seine Stärken vor allem dann voll aus, wenn Bauteile komplex sind oder gänzlich neu entwickelt werden müssen:
+					</span>
+					<div class="container">
+						<div class="row">
+							<div class=" pb32 text-left col-lg-6">
+								<ul id="ul" style="font-size: 15px; margin-left: -25px; ">
+									<li>rationelle Fertigung von Einzelteilen oder individualisierten Kleinserien </li>
+									<li> Konstruktionsfreiheit auf höchstem Niveau  </li>
+									<li> längere Standzeiten der Werkzeuge  </li>
+									<li> rasche Amortisation </li>
+								</ul>
+							</div>
+							
+							<div class=" pb32 text-left col-lg-6" style="width:130%"> 
+								<ul id="ul" style="font-size: 15px; margin-left: -25px; ">
+									<li> Reduktion von Ausschussquoten und Stückkosten   </li>
+									<li> verkürzte Produktionszyklen  </li>
+									<li> u. v. m. </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_text_block  " data-name="Text block" style="color: #555555; background-color: #f8f9fa !important;">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<br/><br/>
+								<p style="text-align: center;font-size: 20px; " class="blue">
+									<b> EVO-tech begleitet Ihren Einstieg in die additive Fertigung	</b>
+								</p>
+								<p style="text-align: center;font-size: 16px;">
+									Das Service von EVO-tech geht jedoch weit über die Bereitstellung des EVO-lizers hinaus. Kunden im Werkzeug- und Maschinenbau profitieren von unserem anwendungstechnischen Know-how sowie von anwendungsspezifisch modifizierten technischen Kunststoffen. Selbstverständlich begleitet EVO-tech Unternehmen auch bei Ihrem Einstieg in die additive Fertigung. Christoph Gruber, Leiter Werkzeugbau und
+								</p>
+								<br/><br/>
+								<p style="text-align: center;font-size: 16px; font-style: italic;">
+									Für uns ist der EVO-lizer eine perfekte Ergänzung im Maschinenpark. Und in EVO-tech haben wir einen Partner gefunden, der uns beim Einstieg in die für uns neue Technologie kompetent und zuverlässig begleitet hat.
+								</p>
+								<p style="text-align: center;font-size: 20px; " class="blue">
+									<b> Christoph Gruber, Leiter Werkzeugbau Metusan GmbH	</b>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>	<br/><br/>
+				
+				<section class="s_text_block  " data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<p style="text-align: center;font-size: 20px; " class="blue">
+									<b> Vorrichtungen und Prüflehren schnell umgesetzt</b>
+								</p>
+								<p style="text-align: center;font-size: 16px;">
+									Die Additive Fertigung hat ihren Weg aus dem reinen Prototyping auch in den Vorrichtungsbau gefunden. Unternehmen nutzen die Technologie, um schnell und einfach Betriebsmittel und Werkzeugkomponenten für die Serienproduktion herzustellen. So nutzt seit Kurzem auch die Metusan Metallwarenhandelsgesellschaft m.b.H. eine EVO-lizer FDM-Maschine der EVO-tech GmbH zu diesem Zweck.
+								</p>
+								<br/><br/>
+								<p style="text-align: center;font-size: 20px; " class="blue">
+									<b> Additive Fertigung als Alternative 	</b>
+								</p>
+								<p style="text-align: center;font-size: 16px;">
+									Seit einem halben Jahr kommt bei Metusan auch ein EVO-lizer FDM-Gerät der oberösterreichischen EVO-tech GmbH zum Einsatz. „Das Thema interessiert mich persönlich schon lange. Nach Abstimmung im Hause haben wir beschlossen zu evaluieren, ob 3D-Druck für unser Unternehmen einen Nutzen bringen kann“, schildert Christoph Gruber, Leiter Werkzeugbau und Lehrlingsausbildung bei Metusan, den Einstieg
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>	<br/><br/>
+				
+				<section class="s_text_block  " data-name="Text block" style="color: #555555; background-color: #f8f9fa !important;">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<br/><br/>
+								<p style="text-align: center;font-size: 16px;">
+									„Wir möchten uns bei dieser Gelegenheit für die hervorragende Zusammenarbeit und natürlich auch Ihr einwandfreies Produkt bedanken, der 3D-Drucker funktioniert soweit hervorragend und wir sind sehr zufrieden!“
+								</p>
+								<p style="text-align: center;font-size: 20px; " class="blue">
+									<b> Sixten Ermert, SIXIO GmbH 	</b>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section><br/><br/>
+				
+				<section class="s_text_block  " data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<p style="text-align: center;font-size: 16px;">
+									Dabei war von vornherein klar, dass die Additive Fertigung nur in den Bereichen Vorrichtungsbau und Herstellung von Betriebsmitteln und Hilfsmitteln infrage kommt. „Wesentlicher Ansatzpunkt war eine neue Maschine im Bereich Kupferrohrbearbeitung. Dort haben wir Biegeeinsätze benötigt, die weich genug sind, um die Kupferrohre nicht zu beschädigen. Für die Herstellung der Werkzeugeinsätze mit herkömmlichen Verfahren hätten wir zusätzlich Werkzeuge anschaffen müssen.   Hinzu kommt, dass das Einmessen dieser zusätzlichen Werkzeuge zu weiteren Verzögerungen geführt hätte“, erklärt Gruber und führt weiter aus: „Solange es nur darum geht, bestehende Vorrichtungen in gleicher Weise zu ersetzen, oder ganz einfache Spannbacken herzustellen, ist man mit herkömmlichem Fräsen meist schneller. Sobald die Teile aber an Komplexität zunehmen oder eine komplette Neuentwicklung notwendig wird, ist man mit der Additiven Fertigung eindeutig im Vorteil.“
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_features  pt30 pb0" data-name="Features" style="color: #555555; background-color: #f8f9fa !important;">
+					<div class="container">
+							<center class="blue" style=" font-size: 22px; ">
+								<br/><br/>
+								<b> 	VO-LIZER 3D-Druck befeuert die Automobilindustrie	</b>
+							</center>
+						<div class="row">
+							<div class="pt32 pb32 text-left col-lg-6">
+								<center>
+									<img src="/ehcs_evo_tech_website/static/src/img/facc2.webp"></img> <br/> <br/>
+									<p class="blue" style=" font-size: 18px; ">
+										<b> 3D Drucker EL-102	</b>
+									</p>
+									<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: -1%;"></hr>
+									<p style=" font-size: 15px; ">
+										Ermöglicht gleichzeitiges Drucken mehrerer Bauteile und die Verarbeitung von großen Materialmengen bis zu einer Größe von 500 x 400 x 510 mm (B x T x H).
+									</p>
+								</center>
+								<br/> 
+								<center>
+								<a href="/3d-drucker-el-102/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade "
+										style="color: white !important; background-color: #008bd2;"
+										data-original-title="" title="">Mehr zum EL-102</a>
+								</center>
+							</div>
+							
+							<div class="pt32 pb32 text-left col-lg-6">
+								<center>
+									<img src="/ehcs_evo_tech_website/static/src/img/facc1.webp"> </img> <br/><br/>
+									<p class="blue" style=" font-size: 18px; ">
+										<b> 3D Drucker EL-11	</b>
+									</p>
+									<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: -1%;"></hr>
+									<p style=" font-size: 15px; ">
+										Ermöglicht Erstellung von Bauteilen bis 270 x 200 x 210mm (B x T x H) bei extrem geringen Betriebskosten und offenem System für Filamente.
+									</p>
+								</center>
+								<br/>
+								<center>
+								<a href="/3d-drucker-el-11/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade "
+										style="color: white !important; background-color: #008bd2;"
+										data-original-title="" title="">Mehr zum EL-11</a>
+								</center>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				
+				<section class="s_text_block  " data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+							<br/><br/>
+								<p style="text-align: left; font-size: 20px; " class="blue">
+									<b> Ersatzteile aus dem „Drucker“	</b>
+								</p>
+								<p style="text-align: left;font-size: 16px;">
+									Dass auch Ersatzteile für Maschinen und Anlagen, sowie eine Menge anderer Hilfsmittel mittlerweile mit der FDM-Maschine produziert werden, damit hat bei Metusan vor einem halben Jahr, als man den EVO-lizer gekauft hatte, wohl niemand gerechnet. Das Anwendungsspektrum der Additiven Fertigung ist also weitaus größer als zunächst erwartet.   Darüber freut sich Gruber sichtlich und meint abschließend: „Wir sind gespannt, wo sich die Technologie noch hin entwickeln wird und was wir als nächstes mit dem Gerät machen werden. Für uns ist der EVO-lizer jedenfalls eine lohnende Ergänzung im Maschinenpark und in EVO-tech haben wir einen Partner gefunden, der uns beim Einstieg in die für uns neue Technologie kompetent und zuverlässig begleitet hat.“
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_text_block  " data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+							<br/><br/>
+								<p style="text-align: left; font-size: 20px; " class="blue">
+									<b> Zusatznutzen wird oft erst später erkannt</b>
+								</p>
+								<p style="text-align: left;font-size: 16px;">
+									Oftmals ist beim Einstiegsprojekt noch nicht klar, wo die Additive Fertigung überall zum Einsatz kommen kann. „Im Falle von Metusan standen eine Vorrichtung für das Spannen von gebogenen Kupferrohren für den Zuschnitt im Vordergrund. Es wurde eine Formunterschale gebraucht, in die ein mehrfach gebogenes Rohr eingelegt wird. Anschließend presst ein Zylinder von oben ein Gegenstück an. Das so gehaltene Rohr kann dann sicher zum Trennen an ein Kreissägeblatt herangeführt werden“, schildert Markus Kaltenbrunner, Geschäftsführer der EVO-tech GmbH, das Einstiegsprojekt. „Diese Halterung konnte viel schneller als üblich zum Einsatz gebracht werden. Die Bauzeit in ABS-Kunststoff betrug lediglich eine Stunde. Auch wenn wir neue Rohrgeometrien benötigen, können wir jetzt innerhalb kürzester Zeit passende Halterungen herstellen“, so Gruber. Zusätzlich wurde der EVO-lizer dazu verwendet, Prüflehren herzustellen, um dreidimensionale Rohrgeometrien einfach im Produktionsverlauf kontrollieren zu können. „Diese Prüflehren hätten wir mit unseren bestehenden Maschinen gar nicht herstellen können. Wir hätten dazu eine 5-Achs-Fräsmaschine gebraucht. So konnten wir in nur 1,5 Stunden auf eine fertige Prüflehre zugreifen. Auch für die Qualitätssicherung ermöglicht uns die neue Maschine somit eine rasche Herstellung erforderlicher Betriebsmittel“, freut sich der Bereichsleiter.
+
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="pt28 pb28" data-name="Title" style="background-color: #008bd2!important">
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+							<div class="col-lg-12 s_title " style="text-align: center;">
+								<div class="row align-items-center">
+									<div class="col-lg-6 ">
+										<p style="font-size:20px;color: white; margin-top: 5%;">
+										Sie benötigen mehr Informationen? Wir beraten Sie gerne.
+										</p>	
+									</div>
+								</div>
+								<p class="s_title_default">
+									<a href="/contactus/" class="blue btn btn-gamma flat btn-lg" data-original-title="" title="" 
+										style="background-color: white; margin-left:80%; margin-top : -7%; ">
+										<b style=" font-size: 14px; "> Jetzt Kontaktieren </b>
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_text_image pt32 pb32" data-name="Text - Image">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-6 pb16 pt16">
+								<h2 class="blue"> <b> Metusan GmbH
+								 </b> </h2>
+								<p class="" style="font-size: 16px; ">
+									Die Additive Fertigung hat ihren Weg aus dem reinen Prototyping auch in den Vorrichtungsbau gefunden. Unternehmen nutzen die Technologie, um schnell und einfach Betriebsmittel und Werkzeugkomponenten für die Serienproduktion herzustellen.
+									<br/>
+								</p>
+								<br/>
+								<a href="/metusan/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade"
+											style="color: white !important; background-color: #008bd2;"
+											data-original-title="" title="">Mehr Informationen</a>
+							</div>
+							<div class="col-lg-6 pt16 pb16">
+								<img src="/ehcs_evo_tech_website/static/src/img/metusan_600x300_10.jpg.webp"
+									class="img img-fluid mx-auto" alt="Odoo • Text and Image"
+									data-original-title="" title="" aria-describedby="tooltip597079"/>
+							</div>
+							<hr style=" border-top-style: solid; border-top-color: #f9f9f9; width: 99%; border-top-width: 3px; "></hr>	
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_features pt0 pb0" data-name="Features">
+					<center>
+						<p class="blue" style=" font-size: 22px; margin-top: 3%; ">
+							<b> Auszug aus unserer Kundenliste im Bereich Automotive	</b>
+						</p>
+					</center>
+		       	 <div class="container">
+		            <div class="row">
+		                <div class="pt32 text-center col-lg-3 pb0">
+		                    <a href="https://www.siemens.com/at/de/home.html" title="siemens"
+								class="mpc-item mpc-transition" data-wpel-link="external"
+								target="_self" rel="follow">
+								<img class="mpc-transition "
+									src="/ehcs_evo_tech_website/static/src/img/logo/siemens.png"
+									width="250" height="100" alt="Siemens Logo" title="Siemens_250x250_00"/>
+							</a>
+		                </div>
+		                 <div class="pt32 text-center col-lg-3 pb0">
+		                   <a href="https://schleich.com/de/"
+								title="schleich" class="mpc-item mpc-transition"
+								data-wpel-link="external" target="_self" rel="follow">
+								<img class="mpc-transition "
+									src="/ehcs_evo_tech_website/static/src/img/logo/schleich-_250x250_00-250x100.png"
+									width="250" height="100" alt="Schleich Logo"
+									title="schleich _250x250_00"/>
+							</a>
+		                </div>
+		                <div class="pt32 pb32 text-center col-lg-3">
+		                   <a href="https://www.boehringer-ingelheim.at/de"
+								title="boehringer-ingelheim" class="mpc-item mpc-transition"
+								data-wpel-link="external" target="_self" rel="follow">
+								<img class="mpc-transition "
+									src="/ehcs_evo_tech_website/static/src/img/logo//boehringer_250x250_00-250x100.png"
+									width="250" height="100" alt="boehringer Logo"
+									title="boehringer_250x250_00"/>
+							</a>
+		                </div><div class="pt32 pb32 text-center col-lg-3">
+		                   <a href="https://www.innotech.at/de/home"
+								title="innotech" class="mpc-item mpc-transition"
+								data-wpel-link="external" target="_self" rel="follow">
+								<img class="mpc-transition "
+									src="/ehcs_evo_tech_website/static/src/img/logo/innotech_250x250_00-250x100.png"
+									width="250" height="100" alt="innotech Logo Kunde Evotech 3D Drucker"
+									title="innotech_250x250_00"/>
+							</a>
+		                </div>
+		                
+		                
+		                 <div class="pt32 text-center col-lg-3 pb0">
+		                    <a href="https://www.agru.at/de/" title="agru"
+								class="mpc-item mpc-transition" data-wpel-link="external"
+								target="_self" rel="follow">
+								<img class="mpc-transition "
+									src="/ehcs_evo_tech_website/static/src/img/logo/agru_250x250_00-250x100.png"
+									width="250" height="100" alt="agru Logo" title="agru_250x250_00"/>
+							</a>
+		                </div>
+		                 <div class="pt32 text-center col-lg-3 pb0">
+		                     <a href="https://bitter.at/" title="bitter"
+								class="mpc-item mpc-transition" data-wpel-link="external"
+								target="_self" rel="follow">
+								<img class="mpc-transition "
+									src="/ehcs_evo_tech_website/static/src/img/logo/bitter.png"
+									width="250" height="100" alt="bitter Logo" title="bitter_250x250_00"/>
+							</a>
+		                </div>
+		                <div class="pt32 pb32 text-center col-lg-3">
+			                  <a href="https://www.igus.at/" title="igus"
+									class="mpc-item mpc-transition" data-wpel-link="external"
+									target="_self" rel="follow">
+									<img class="mpc-transition "
+										src="/ehcs_evo_tech_website/static/src/img/logo/igus_250x250_00-200x100.png"
+										width="200" height="100" alt="igus Logo" title="igus_250x250_00"/>
+								</a>
+			                </div>
+		                <div class="pt32 pb32 text-center col-lg-3">
+		                  <a href="https://www.dicht.de/de/" title="dicht"
+								class="mpc-item mpc-transition" data-wpel-link="external"
+								target="_self" rel="follow">
+								<img class="mpc-transition "
+									src="/ehcs_evo_tech_website/static/src/img/logo/haenssler_250x250_00-250x100.png"
+									width="250" height="100" alt="Haenssler Logo"
+									title="haenssler_250x250_00"/>
+							</a>
+		                </div>
+		                
+		                <div class="pt32 text-center col-lg-3 pb0">
+		                    <a href="https://www.drcollin.de/"
+								title="drcollin" class="mpc-item mpc-transition"
+								data-wpel-link="external" target="_self" rel="follow">
+								<img class="mpc-transition "
+									src="/ehcs_evo_tech_website/static/src/img/logo/collin_250x250_00-250x100.png"
+									width="250" height="100" alt="collin Logo" title="collin_250x250_00"/>
+							</a>
+		                </div>
+		                 <div class="pt32 text-center col-lg-3 pb0">
+		                     <a href="https://www.wintersteiger.com/de/Home"
+								title="wintersteiger" class="mpc-item mpc-transition"
+								data-wpel-link="external" target="_self" rel="follow">
+								<img class="mpc-transition "
+									src="/ehcs_evo_tech_website/static/src/img/logo/wintersteiger_250x250_00-250x100.png"
+									width="250" height="100" alt="Wintersteiger Logo"
+									title="wintersteiger_250x250_00"/>
+							</a>
+		                </div>
+		                <div class="pt32 pb32 text-center col-lg-3">
+		                   <a href="https://www.kiefer-mold.de/"
+								title="kiefer" class="mpc-item mpc-transition"
+								data-wpel-link="external" target="_self" rel="follow">
+								<img class="mpc-transition "
+									src="/ehcs_evo_tech_website/static/src/img/logo/kiefer_werkzeugbau_250x250_00-200x100.png"
+									width="200" height="100" alt="Kiefer Logo"
+									title="Kiefer_Werkzeugbau_250x250_00"/>
+							</a>
+		                </div>
+		                <div class="pt32 pb32 text-center col-lg-3">
+		                   <a href="https://www.mkm-international.de/"
+								title="mkm-international" class="mpc-item mpc-transition"
+								data-wpel-link="external" target="_self" rel="follow">
+								<img class="mpc-transition "
+									src="/ehcs_evo_tech_website/static/src/img/logo/mkm_250x250_00-250x100.png"
+									width="250" height="100" alt="MKM Logo" title="MKM_250x250_00"/>
+							</a>
+		                </div>
+		                
+		                <div class="pt32 pb32 text-center col-lg-3">
+		                  <a href="https://www.metusan.at/" title="metusan"
+								class="mpc-item mpc-transition" data-wpel-link="external"
+								target="_self" rel="follow">
+								<img class="mpc-transition "
+									src="/ehcs_evo_tech_website/static/src/img/logo/metusan_250x250_00-250x100.png"
+									width="250" height="100" alt="Metusan Logo Kunde Evotech 3D Drucker"
+									title="Metusan_250x250_00"/>
+							</a>
+		                </div>
+		                <div class="pt32 pb32 text-center col-lg-3">
+		                   <a href="https://www.mkm-international.de/"
+								title="mkm-international" class="mpc-item mpc-transition"
+								data-wpel-link="external" target="_self" rel="follow">
+								<img class="mpc-transition "
+									src="/ehcs_evo_tech_website/static/src/img/logo/sixio.png"
+									width="250" height="100" alt="MKM Logo" title="MKM_250x250_00"/>
+							</a>
+		                </div>
+		            </div>
+		        </div>
+		    </section>
+				
+				<section class="pt28 pb28" data-name="Title" style="background-color: #008bd2!important">
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+							<div class="col-lg-12 s_title " style="text-align: center;">
+								<div class="row align-items-center">
+									<div class="col-lg-6 ">
+										<p style="font-size:20px;color: white; margin-top: 5%;">
+										Sie benötigen mehr Informationen? Wir beraten Sie gerne.
+										</p>	
+									</div>
+								</div>
+								<p class="s_title_default">
+									<a href="/contactus/" class="blue btn btn-gamma flat btn-lg" data-original-title="" title="" 
+										style="background-color: white; margin-left:80%; margin-top : -7%; ">
+										<b style=" font-size: 14px; "> Jetzt Kontaktieren </b>
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="pt32 pb32" data-name="Title" >
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+						</div>
+					</div>
+				</section>
+				
+			</div>
+		</t>
+	</template>
+</odoo>

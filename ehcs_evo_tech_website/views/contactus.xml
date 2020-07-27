@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_menu_contactus_page" name="website.contactus_page">
+		<t t-call="website.layout">
+			<t t-set="additional_title"> kontakt</t>
+			<div id="wrap" class="oe_structure oe_empty">
+				
+				<section class="s_text_image pt32 pb32" data-name="Image - Text" style="">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-8 pt16 pb16">
+								<form action="/website_form/" method="post" class="s_website_form container-fluid mt32 o_fake_not_editable"
+										enctype="multipart/form-data" data-name="Form Builder"
+										data-model_name="mail.mail" data-success_page="/contactus-thank-you">
+										<div class="container">
+											<span class="o_form_heading o_fake_editable blue" style="font-size:32px;">Kontaktieren Sie uns! </span>
+											<div class="row form-group form-field d-none">
+												<div class="col-lg-10 col-md-4">
+													<label class="col-form-label o_fake_editable" for="email_to">
+													</label>
+												</div>
+												<div class="col-lg-10 col-md-8">
+													<input type="text" class="form-control o_website_form_input"
+														name="email_to" value="mehuljadav0077@gmail.com" />
+												</div>
+											</div>
+											<div class="form-group row form-field o_website_form_custom o_website_form_required_custom o_fake_not_editable">
+												<div class="col-lg-10 col-md-4">
+													<label class="col-form-label o_fake_editable" for="Name*"
+														style=" font-size: 17px; font-weight:150; ">
+														Name*
+													</label>
+													<br />
+													<input type="text" class="form-control o_website_form_input"
+														name="Name*" required="" />
+												</div>
+											</div>
+											<div class="form-group row form-field o_website_form_custom o_fake_not_editable o_website_form_required_custom">
+												<div class="col-lg-10 col-md-4">
+													<label class="col-form-label o_fake_editable" for="Companies*"
+														style=" font-size: 17px; font-weight:150; ">
+														Unternehmen
+														<br />
+													</label>
+													<br />
+													<input type="text" class="form-control o_website_form_input"
+														name="Companies*" required="" />
+												</div>
+											</div>
+											<div class="row form-group form-field o_website_form_custom o_fake_not_editable">
+												<div class="col-lg-10 col-md-4">
+													<label class="col-form-label o_fake_editable" for="Address"
+														style=" font-size: 17px; font-weight:150; ">Adresse
+													</label>
+													<br />
+													<textarea class="form-control o_website_form_input"
+														name="Address" />
+												</div>
+											</div>
+											<div class="form-group row form-field o_website_form_required_custom o_fake_not_editable">
+												<div class="col-lg-10 col-md-4">
+													<label class="col-form-label o_fake_editable"
+														style=" font-size: 17px; font-weight:150; " for="email_from">E-Mail*</label>
+													<br />
+													<input type="email" class="form-control o_website_form_input"
+														name="email_from" required="" />
+												</div>
+											</div>
+											<div class="form-group row form-field o_website_form_custom o_fake_not_editable o_website_form_required_custom">
+												<div class="col-lg-10 col-md-4">
+													<label class="col-form-label o_fake_editable" for="Phone*"
+														style=" font-size: 17px; font-weight:150; ">
+														Telefon*
+													</label>
+													<br />
+													<input type="text" class="form-control o_website_form_input"
+														name="Phone*" required="" />
+												</div>
+											</div>
+											<div class="form-group row form-field o_website_form_required_custom o_fake_not_editable">
+												<div class="col-lg-10 col-md-4">
+													<label class="col-form-label o_fake_editable" for="subject"
+														style=" font-size: 17px; font-weight:150; ">
+														Betreff*
+													</label>
+													<br />
+													<input type="text" class="form-control o_website_form_input"
+														name="subject" required="" />
+												</div>
+											</div>
+											<div class="form-group row form-field o_website_form_custom o_website_form_required_custom o_fake_not_editable">
+												<div class="col-lg-10 col-md-4">
+													<label class="col-form-label o_fake_editable"
+														style=" font-size: 17px; font-weight:150; " for="Your message*">Ihre Nachricht*
+													</label>
+													<br />
+													<textarea class="form-control o_website_form_input"
+														name="Your message*" required="" />
+												</div>
+											</div>
+											<div class="form-group row s_btn text-left pt16 pb16"
+												data-name="Button">
+												<div style="margin-left: 15px; ">
+													<button class="btn btn-primary flat btn-lg o_website_form_send o_default_snippet_text"
+														style="background-color: white; border: 1px solid; color: #008bd2; ">
+														Abschicken
+													</button>
+													<span id="o_website_form_result" />
+												</div>
+											</div>
+										</div>
+									</form>
+							</div>
+							
+							<div class="col-lg-4 ">
+								<div class="s_website_form container-fluid mt32 o_fake_not_editable">
+										<div class="container">
+											<div class="container">
+												<span style="font-size: 24px;" class="blue">
+														Ihre Ansprechpartner:
+												</span>
+												<div class="row">
+													<div class=" text-left col-lg-12">
+														<img src="/ehcs_evo_tech_website/static/src/img/about.webp" style=" border-radius: 8px; width:80%"> </img>
+														<p class=" blue" style="font-size: 23px; "> 
+															Julia Brand	<br/> 
+														</p>
+														<p class=" blue" style="font-size: 20px; margin-top: -7%;">
+															Sekretariat / Vertriebsinnendienst
+														</p> 
+														<p class="o_default_snippet_text" style="font-size: 18px; ">
+															<strong>Telefon:</strong>
+																 +43 7662 / 38400
+															<br/>
+															<strong>E-Mail:</strong>
+															<a href="mailto:julia.brand@evo-tech.eu" class="blue">julia.brand@evo-tech.eu</a>
+														</p>
+														
+														<span style="font-size: 24px;" class="blue">
+															Kontaktdaten
+														</span> <br/>
+														<span style="font-size: 16px;" > 
+															EVO-tech GmbH 	<br/>
+															Gahberggasse 9a, 4861 Schörfling am <br/>
+															Attersee, Austria	<br/>
+															Pavillon 36 Messegelände, 30521<br/>
+															Hannover, Germany <br/> 
+															Tel.: +43 7662 38400 	<br/>
+															Fax: +43 7662 / 38400 – 57
+														</span>	
+													</div>
+												</div>
+											</div>
+										</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_text_block pt0 pb4" data-name="Text block">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12  pb32">
+								<p class="lead o_default_snippet_text" />
+									<div style="text-align: left;">
+										<h1 class="blue">
+											Wir beraten Sie gerne
+										</h1>
+									</div>
+									<div style="text-align: left;">
+										<span style="font-size: 0.99	rem;">
+     		 								Wir von EVO-tech sind bemüht, auf Ihre Fragen individuell zu antworten und Ihnen mit Rat und Tat zur Seite zu stehen.
+											Der EVO-lizer ist ein professioneller 3D-Drucker, der Ihnen in einer Vielzahl von Aufgabenstellungen in den unterschiedlichsten Branchen kostengünstige Lösungen liefert.
+											Überzeugen auch Sie sich – wir beraten Sie gerne!
+										</span>
+									</div>
+								<p />
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<center>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85500.88714721141!2d13.591453228371396!3d47.95760512466852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4774017959962b5b%3A0x93bf81087bbe2b6!2sEVO-tech%203D%20Drucker!5e0!3m2!1sen!2sin!4v1592488643850!5m2!1sen!2sin"
+						width="1100" height="450" frameborder="0" style="border:0;"
+						allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				</center>
+				
+				<!-- <iframe src="https://www.google.com/maps/d/embed?mid=1SwU2EiMZeNHTEtn0ne28WRP0RQFtVwq8" width="640" height="480"></iframe> -->
+					
+				<section class="s_text_block pt0 pb4" data-name="Text block">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12  pb32">
+								<p class="lead o_default_snippet_text" />
+									<div style="text-align: left;">
+										<h1 class="blue">
+											Unser Service
+										</h1>
+									</div>
+									<div style="text-align: left;">
+										<span style="font-size: 0.99rem;">
+     		 								Mit der PC Fernwartung AnyDesk können wir Ihnen schnell und unkompliziert bei Fragen und Problemen weiterhelfen.
+										</span>
+										<div style="margin-top: 1%; ">
+											<a href="https://get.anydesk.com/3osNQ4nt/EVOremoteDesk.exe"
+												data-wpel-link="external" target="_self" rel="follow">
+												<img src="https://get.anydesk.com/_static/dl-btn-wb-medium.png"
+													alt="Download AnyDesk" />
+											</a>
+										</div>
+									</div>
+								<p />
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div>
+		</t>
+	</template>
+</odoo>
+

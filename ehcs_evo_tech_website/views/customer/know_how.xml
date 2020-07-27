@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_menu_customer_subseven" name="website.theme_menu_customer_subseven">
+		<t t-call="website.layout">
+			<t t-set="additional_title">Additive Fertigung/</t>
+			<div id="wrap" class="oe_structure oe_empty">
+
+				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
+					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
+					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/img_6646-scaled.jpg&quot;); background-position: 50% 0px;" />
+						<div class="container">
+							<div class="row s_nb_column_fixed">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
+									data-name="Box">
+									<div class="row">
+										<div class="col-lg-12 s_title s_col_no_bgcolor"
+											data-name="Title">
+											<h1 class="s_title_default" style="text-align: center;margin-top: 20%;">
+												<font style="font-size: 62px;color: white;">
+													<b>ADDITIVE FERTIGUNG</b>
+												</font>
+											</h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</section>
+
+				<section class="s_text_image pt32 pb32" data-name="Text - Image">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-8 pb16 pt16">
+								<h2 class="blue"> <b> Was ist additive Fertigung? </b> </h2>
+								<p class="" style="font-size: 16px; ">
+									Additive Fertigung oder generative Fertigungsverfahren bzw. englisch: additive manufacturing (AM) ist eine generelle Bezeichnung für alle Verfahren, welche eine kostengünstige und schnelle Möglichkeit zur Fertigung von Prototypen und Modellen, aber auch Endprodukten bieten. Meist wird der Begriff als Synonym zu 3D-Druck verwendet, allerdings wird mit dem Ausdruck Additive Fertigung noch besser verständlich, dass es sich dabei um eine professionelles Verfahren handelt. Bei der additiven Fertigung wird das Bauteil durch schichtweises Hinzufügen des Werkstoffes gefertigt. Die additive Fertigung ist ein professionelles Produktionsverfahren, dass das Gegenteil zu konventionellen abtragenden Fertigungsmethoden darstellt. Bei abtragenden Fertigungsmethoden wird beispielsweise aus einem festen Materialblock das Modell durch Fräsen herausgearbeitet. Bei der additiven Fertigung hingegen wird das Modell Schicht für Schicht aus den Werkstoffen aufgebaut. Werkstoffe können zum Beispiel unterschiedliche Metalle, Kunststoffe oder Verbundstoffe sein. Oft wird additive Fertigung im Rahmen von Rapid Prototyping angewandt, also bei der Herstellung von Prototypen in der Industrie.
+									<br/>
+								</p>
+							</div>
+							<div class="col-lg-4 ">
+								<img src="/ehcs_evo_tech_website/static/src/img/modell_vasen-detail.jpg"
+									class="img img-fluid mx-auto"  data-original-title="" title="" aria-describedby="tooltip597079"/>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>	
+					</div>
+				</section>
+				
+				<section class="s_text_image pt32 pb32" data-name="Text - Image">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-4 pb16 pt16" style=" margin-top: -7%; ">
+								<h2 class="blue"> <b> Vorteile von additiver Fertigung </b> </h2>
+								<p class="" style="font-size: 16px; ">
+									Konventionelle Fertigung, wie beispielsweise Fräsen, Bohren oder Drehen stößt oft an Grenzen. Manche Konstruktionen können durch konventionelle Technologien gar nicht umgesetzt werden. Die additive Fertigung ermöglicht einen „design driven manufacturing process“. Das heißt, dass nicht länger die Konstruktion von der Fertigungsmethode bestimmt wird, sondern umgekehrt. Mit Hilfe der additiven Fertigung können also auch sehr komplexe Modelle gefertigt werden, welche trotzdem extrem stabil sind.
+									<br/>
+								</p>
+							</div>
+							
+							<div class="col-lg-8 pb16 pt16">
+								<h2 class="blue"> <b> Merkmale/Vorteile der additiven Fertigung </b> </h2>
+								<ul id="ul" style="font-size: 16px; ">
+									<li>Werkzeuglose Fertigung – es werden bei der Herstellung von
+										Bauteilen keine Werkzeuge benötigt, wodurch die Einmalkosten nahezu
+										nicht vorhanden sind.</li>
+									<li>Umfassende Designfreiheit – auch komplexe Modelle können gefertigt
+										werden</li>
+									<li>Flexibilität – Fertigung vor Ort und nach Bedarf</li>
+									<li>Skalierbarkeit – Serien- oder Einzelfertigung</li>
+									<li>Verkürzen von Produktentwicklungs- und Markteinführungszeit</li>
+									<li>Möglichkeit von laufenden Anpassungen auch in der laufenden
+										Serienfertigung</li>
+									<li>Fertigung von Produkten in mikroskopisch kleinen Maßstab (z.B. in
+										der Medizin- oder Elektrotechnik)</li>
+									<li>Hohe Qualität und Wirtschaftlichkeit</li>
+									<li>Einsparen von Ressourcen</li>
+									<li>Geografisch unabhängig (es sind keine großen Produktionsstandorte
+										und große Werkzeuge nötig)</li>
+									<li>Individualisierbarkeit von Produkten – Es können Produkte auf den
+										Kunden ohne Mehrkosten angepasst werden</li>
+								</ul>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>	
+					</div>
+				</section>
+				
+				<section class="s_text_image pt32 pb32" data-name="Text - Image">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-8 pb16 pt16">
+								<h2 class="blue"> <b>  Anwendungsbereiche im 3D Druck</b> </h2>
+								<p class="" style="font-size: 16px; ">
+									Die Grundlage für additive Fertigung stellt eine CAD-Datei (Computer Aided Design) mit digitalen Konstruktionsdaten dar. Anwendungsbereiche im 3D Druck sind sehr unterschiedlich. Folgend ein kurzer Überblick über die wichtigsten Bereiche:
+								</p>
+								<ul id="ul" style="font-size: 16px; ">
+									<li>Prototypenbau</li>
+									<li>Serienproduktion</li>
+									<li>Bildungseinrichtungen</li>
+									<li>Werkzeug und Vorrichtungsbau</li>
+									<li>Maschinenbau</li>
+									<li>Automotive</li>
+								</ul>
+							</div>
+							<div class="col-lg-4 pb16 pt16" >
+								<img src="/ehcs_evo_tech_website/static/src/img/frf3369_2-scaled.jpg" style="width: 100%; "></img>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>	
+					</div>
+				</section>
+
+				<section class="s_features  pt30 pb0" data-name="Features" style="color: #555555; background-color: #f8f9fa !important;">
+					<div class="container">
+						<br/> <br/> <br/>
+						<center class="blue" style=" font-size: 22px; ">
+							<b> 	Professionelle Fertigung mit 3D Druckern	</b>
+						</center>
+						<div class="row">
+							<div class="pt32 pb32 text-left col-lg-6">
+								<center>
+									<img src="/ehcs_evo_tech_website/static/src/img/facc2.webp"></img> <br/> <br/>
+									<p class="blue" style=" font-size: 18px; ">
+										<b> 3D Drucker EL-102	</b>
+									</p>
+									<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: -1%;"></hr>
+									<p style=" font-size: 15px; ">
+										Ermöglicht gleichzeitiges Drucken mehrerer Bauteile und die Verarbeitung von großen Materialmengen bis zu einer Größe von 500 x 400 x 510 mm (B x T x H).
+									</p>
+								</center>
+								<br/> 
+								<center>
+								<a href="/3d-drucker-el-102/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade "
+										style="color: white !important; background-color: #008bd2;"
+										data-original-title="" title="">Mehr zum EL-102</a>
+								</center>
+							</div>
+							
+							<div class="pt32 pb32 text-left col-lg-6">
+								<center>
+									<img src="/ehcs_evo_tech_website/static/src/img/facc1.webp"> </img> <br/><br/>
+									<p class="blue" style=" font-size: 18px; ">
+										<b> 3D Drucker EL-11	</b>
+									</p>
+									<hr style="width: 20%;border: 2px solid #008bd2!important;margin-top: -1%;"></hr>
+									<p style=" font-size: 15px; ">
+										Ermöglicht Erstellung von Bauteilen bis 270 x 200 x 210mm (B x T x H) bei extrem geringen Betriebskosten und offenem System für Filamente.
+									</p>
+								</center>
+								<br/>
+								<center>
+								<a href="/3d-drucker-el-11/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade "
+										style="color: white !important; background-color: #008bd2;"
+										data-original-title="" title="">Mehr zum EL-11</a>
+								</center>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_text_block pt32 pb32" data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 pb32">
+								<p class="lead" />
+								<div style="text-align: center;" class="blue">
+									<span style="font-size: 21px;">
+										<b>
+											Verfahren additiver Fertigung
+										</b>
+									</span>
+								</div>
+								<p style="text-align: center;font-size: 16px;">
+									Das Prinzip der additiven Fertigung ist ein stufenweiser Aufbau, bei dem der Werkstoff Schicht für Schicht aufgetragen wird. Je nachdem welches Verfahren gewählt wurde und welche Materialien verwendet werden, ist der Aufbau unterschiedlich.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_features  pb0" data-name="Features">
+					<div class="container">
+						<div class="row">
+							<div class="pt32 pb32 text-left col-lg-7">
+								<p class=" blue" style="font-size: 20px; ">
+									<b> Schmelzschichtung (Fused Filament Fabrication) </b>
+								</p>
+								<p style="font-size: 16px; ">
+									Bei der Fused Filament Fabrication (FFF) oder auch Fused Deposition
+									Modeling (FDM) genannt wird mit geschmolzenen Kunststoffdraht z.B.
+									Kunststoff (vor allem ABS oder PLA) gedruckt. Das zugegebene
+									Material wird von einem beheizten Extruder geschmolzen und auf ein
+									beheiztes Druckbett aufgetragen. Das Werkstück wird Linie für Linie
+									und Schicht für Schicht gefertigt, wobei die nächste Ebene immer
+									erst aufgetragen wird, wenn die vorherige Schicht erstarrt ist.
+									Dieses Verfahren hat die größte mögliche verarbeitbare
+									Materialpalette. Auch der EVO-lizer 3D-Drucker wendet das
+									FFF-Verfahren für den 3D-Druck an. Das folgende Video erklärt den
+									Ablauf der Schmelzschichtung anhand des EVO-tech 3D-Druckers.
+								</p>
+							</div>
+					
+							<div class="pt32 pb32 text-left col-lg-5" style="width:130%">
+								<div class="media_iframe_video o_we_selected_image"
+									data-oe-expression="//www.youtube.com/embed/P5w6VPjL70k?autoplay=0&amp;rel=0&amp;loop=1&amp;playlist=P5w6VPjL70k&amp;modestbranding=1">
+									<div class="css_editable_mode_display" data-original-title=""
+										title="" aria-describedby="tooltip288745">
+									</div>
+									<div class="media_iframe_video_size" contenteditable="false">
+									</div>
+									<iframe src="//www.youtube.com/embed/P5w6VPjL70k?autoplay=0&amp;rel=0&amp;loop=1&amp;playlist=P5w6VPjL70k&amp;modestbranding=1"
+										frameborder="0" contenteditable="false"
+										allowfullscreen="allowfullscreen"></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_text_block  pb32" data-name="Text block" style="color: #555555; background-color: #f8f9fa !important;">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 pb32">
+								<p class="lead" />
+								<div style="text-align: left;" class="blue">
+									<span style="font-size: 22px;">
+										<b>
+											3D Pulver-Druck
+										</b>
+									</span>
+								</div>
+								<p style="text-align: left; font-size: 16px;">
+									Für den 3D Druck mit Pulver eignen sich unterschiedliche Materialien. Vorrangig wird mit Kunststoff, oder Gips gedruckt, es eignen sich jedoch auch Glas, Keramik oder andere pulverförmige Materialien. Ähnlich wie bei einem herkömmlichen Tintenstrahldrucker, funktioniert auch ein 3D Drucker mit Druckköpfen. Mit diesen wird flüssiger Kleber in kleinen Mengen auf eine Pulverschicht aufgetragen. Die pulverförmigen Stoffe verhärten sich und verkleben die Schichten des Stücks miteinander. So entsteht das Modell Schicht für Schicht.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="s_text_block  pb32" data-name="Text block" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 pb32">
+								<p class="lead" />
+								<div style="text-align: left;" class="blue">
+									<span style="font-size: 22px;">
+										<b>
+											Selektives Laserschmelzen (SLM)
+										</b>
+									</span>
+								</div>
+								<p style="text-align: left; font-size: 16px;">
+									Beim selektiven Laserschmelzen wird der Werkstoff nicht durch einen Binder verbunden, sondern mit Hilfe eines Hochleistungslasers verschmolzen. Mit diesem Verfahren lassen sich auch Werkstücke aus Metall fertigen.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_text_block  pb32" data-name="Text block" style="color: #555555; background-color: #f8f9fa !important;">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 pb32">
+								<p class="lead" />
+								<div style="text-align: left;" class="blue">
+									<span style="font-size: 22px;">
+										<b>
+											3D Pulver-Druck
+										</b>
+									</span>
+								</div>
+								<p style="text-align: left; font-size: 16px;">
+									Für den 3D Druck mit Pulver eignen sich unterschiedliche Materialien. Vorrangig wird mit Kunststoff, oder Gips gedruckt, es eignen sich jedoch auch Glas, Keramik oder andere pulverförmige Materialien. Ähnlich wie bei einem herkömmlichen Tintenstrahldrucker, funktioniert auch ein 3D Drucker mit Druckköpfen. Mit diesen wird flüssiger Kleber in kleinen Mengen auf eine Pulverschicht aufgetragen. Die pulverförmigen Stoffe verhärten sich und verkleben die Schichten des Stücks miteinander. So entsteht das Modell Schicht für Schicht.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="s_text_block  pb32" data-name="Text block" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 pb32">
+								<p class="lead" />
+								<div style="text-align: left;" class="blue">
+									<span style="font-size: 22px;">
+										<b>
+											Elektronenstrahlschmelzen (Electron Beam Additive Manufacturing)
+										</b>
+									</span>
+								</div>
+								<p style="text-align: left; font-size: 16px;">
+									Dieses Verfahren ist vergleichbar mit dem selektiven Laserschmelzen, wobei anstatt des Lasers ein Elektronenstrahl als Energiequelle verwendet wird.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_text_block  pb32" data-name="Text block" style="color: #555555; background-color: #f8f9fa !important;">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 pb32">
+								<p class="lead" />
+								<div style="text-align: left;" class="blue">
+									<span style="font-size: 22px;">
+										<b>
+											Stereolithografie
+										</b>
+									</span>
+								</div>
+								<p style="text-align: left; font-size: 16px;">
+									Bei diesem Fertigungsverfahren werden die Modelle in einem mit flüssigen Photopolymer gefüllten Becken aufgebaut. Ein Laser projiziert die Schichten des Modells auf die Oberfläche. Das flüssige Photopolymer erstarrt nach einer bestimmten Belichtungszeit, bildet die erste Schicht und verbindet sich mit dem darunter liegenden Druckbett. Danach wird das Druckbett nach unten gezogen und die nächste Schicht aufgebaut.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="s_text_block  pb32" data-name="Text block" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 pb32">
+								<p class="lead" />
+								<div style="text-align: left;" class="blue">
+									<span style="font-size: 22px;">
+										<b>
+											Digital Light Processing (DLP)
+										</b>
+									</span>
+								</div>
+								<p style="text-align: left; font-size: 16px;">
+									Die Funktionsweise entspricht der der Stereolithografie, als Lichtquelle kommt hier jedoch ein DLP-Projektor zum Einsatz.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_text_block  pb32" data-name="Text block" style="color: #555555; background-color: #f8f9fa !important;">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 pb32">
+								<p class="lead" />
+								<div style="text-align: left;" class="blue">
+									<span style="font-size: 22px;">
+										<b>
+											Multi Jet Modeling (MJM), Polyjet Verfahren
+										</b>
+									</span>
+								</div>
+								<p style="text-align: left; font-size: 16px;">
+									MJM ist eine Mischform aus Stereolithografie und herkömmlichem 2D Druck. Ein flüssiger Kunststoff wird auf eine Plattform aufgetragen und mit einer im Druckknopf integrierten Lichtquelle sofort ausgehärtet. Dieses Verfahren ist sehr detailgenau.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="s_text_block  pb32" data-name="Text block" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 pb32">
+								<p class="lead" />
+								<div style="text-align: left;" class="blue">
+									<span style="font-size: 22px;">
+										<b>
+											Film Transfer Imaging Verfahren (FTI)
+										</b>
+									</span>
+								</div>
+								<p style="text-align: left; font-size: 16px;">
+									FTI funktioniert ähnlich wir das MJM Verfahren. Hierbei kommt eine Transportfolie zum Einsatz: Mit ihr wird der flüssige Kunststoff aufgetragen.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				
+				<section class="pt28 pb28" data-name="Title" style="background-color: #008bd2!important">
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+							<div class="col-lg-12 s_title " style="text-align: center;">
+								<div class="row align-items-center">
+									<div class="col-lg-6 ">
+										<p style="font-size:20px;color: white; margin-top: 5%;">
+										Sie benötigen mehr Informationen? Wir beraten Sie gerne.
+										</p>	
+									</div>
+								</div>
+								<p class="s_title_default">
+									<a href="/contactus/" class="blue btn btn-gamma flat btn-lg" data-original-title="" title="" 
+										style="background-color: white; margin-left:80%; margin-top : -7%; ">
+										<b style=" font-size: 14px; "> Jetzt Kontaktieren </b>
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="pt32 pb32" data-name="Title" >
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+						</div>
+					</div>
+				</section>
+				
+				<!-- <img width="1753" height="158" src="https://evo-tech.eu/wp-content/uploads/2020/03/workflow_dienstleistung.jpg" alt="" 
+					srcset="https://evo-tech.eu/wp-content/uploads/2020/03/workflow_dienstleistung.jpg 1753w, https://evo-tech.eu/wp-content/uploads/2020/03/workflow_dienstleistung-300x27.jpg 300w, https://evo-tech.eu/wp-content/uploads/2020/03/workflow_dienstleistung-600x54.jpg 600w, https://evo-tech.eu/wp-content/uploads/2020/03/workflow_dienstleistung-1024x92.jpg 1024w, https://evo-tech.eu/wp-content/uploads/2020/03/workflow_dienstleistung-768x69.jpg 768w, https://evo-tech.eu/wp-content/uploads/2020/03/workflow_dienstleistung-1536x138.jpg 1536w, https://evo-tech.eu/wp-content/uploads/2020/03/workflow_dienstleistung-536x48.jpg 536w" 
+					sizes="(max-width: 1753px) 100vw, 1753px"/>		 -->		
+				
+				
+			</div>
+		</t>
+	</template>
+</odoo>

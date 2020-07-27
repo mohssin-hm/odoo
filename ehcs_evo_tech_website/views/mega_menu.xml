@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+ <!--==================== Mega Menu 1 ============================-->
+    <template id="megamenu_style_1" name="3D DRUCKER Menu">
+        <section class="container-fluid py-4">
+       		<div class="container">
+            <div class="row">
+                <section class="col-lg-9 align-self-center">
+                    <div class="row">
+                        <section class="col-lg-4 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/3d-drucker-el-102/" >
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png">
+                                             </img>
+                                         </a>
+                                    </div>
+                                    <a href="/3d-drucker-el-102/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:15%; text-transform: initial;">
+                                    		3D Drucker El-102
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-4 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/3d-drucker-el-11/" >
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                        </a>
+                                    </div>
+                                    <a href="/3d-drucker-el-11/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:15%; text-transform: initial;">
+                                    		3D Drucker El-11
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-4 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/3d-drucker-all-inclusive-leasing/">
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                         </a>
+                                    </div>
+                                    <a href="/3d-drucker-all-inclusive-leasing/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:15%; text-transform: initial;">
+                                    		Finanzierung
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+                <section class="col-lg-3">
+                    <div class="te_img_hide_small_devices">
+                    	<a href="/3d-drucker-el-102/" >
+                        <img class="img img-responsive img-fluid d-block mx-auto" 
+                             src="/ehcs_evo_tech_website/static/src/img/data/el-102_freigestellt_klein-min_-420x624.png" 
+                             style=" max-width: 70%; "></img>
+                        </a>
+                    </div>
+                </section>
+            </div>
+            </div>
+        </section>
+    </template>
+    
+<!--==================== Mega Menu 2 ============================-->
+    <template id="megamenu_style_2" name="Filamente Menu">
+        <section class="container-fluid py-2">
+       		<div class="container">
+            <div class="row">
+                <section class="col-lg-9 align-self-center">
+                    <div class="row">
+                        <section class="col-lg-3 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/filamente/ultem-9085/" >
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png">
+                                             </img>
+                                         </a>
+                                    </div>
+                                    <a href="/filamente/ultem-9085/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:15%; text-transform: initial;">
+                                    		Ultem 9085
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-3 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/filamente/ultem-1010/" >
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                        </a>
+                                    </div>
+                                    <a href="/filamente/ultem-1010/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:15%; text-transform: initial;">
+                                    		Ultem 1010
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-3 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/filamente/polyamid-cf/">
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                         </a>
+                                    </div>
+                                    <a href="/filamente/polyamid-cf/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:1%; text-transform: initial;">
+                                    		PA + Carbonfaser 
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-3 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/filamente/abs/">
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                         </a>
+                                    </div>
+                                    <a href="/filamente/abs/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:35%; text-transform: initial;">
+                                    		ABS
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        
+                        <section class="col-lg-3 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/filamente/abs-esd/" >
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png">
+                                             </img>
+                                         </a>
+                                    </div>
+                                    <a href="/filamente/abs-esd/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:25%; text-transform: initial;">
+                                    		ABS-ESD
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-3 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/filamente/abs-fr/" >
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                        </a>
+                                    </div>
+                                    <a href="/filamente/abs-fr/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:25%; text-transform: initial;">
+                                    		ABS-FR
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-3 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/filamente/pc-lexan/">
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                         </a>
+                                    </div>
+                                    <a href="/filamente/pc-lexan/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:26%; text-transform: initial;">
+                                    		PC-Lexan 
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-3 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/filamente/iglidur/">
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                         </a>
+                                    </div>
+                                    <a href="/filamente/iglidur/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:27%; text-transform: initial;">
+                                    		Iglidur
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-3 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/filamente/asa/" >
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png">
+                                             </img>
+                                         </a>
+                                    </div>
+                                    <a href="/filamente/asa/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:35%; text-transform: initial;">
+                                    		ASA
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-3 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/filamente/abs-pc/" >
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                        </a>
+                                    </div>
+                                    <a href="/filamente/abs-pc/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:30%; text-transform: initial;">
+                                    		PC-ABS
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-3 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/filamente/pps/">
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                         </a>
+                                    </div>
+                                    <a href="/filamente/pps/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:36%; text-transform: initial;">
+                                    		PPS
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-3 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/filamente/pla/">
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                         </a>
+                                    </div>
+                                    <a href="/filamente/pla/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:34%; text-transform: initial;">
+                                    		PLA
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        
+                        <section class="col-lg-3 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/filamente/pet/" >
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png">
+                                             </img>
+                                         </a>
+                                    </div>
+                                    <a href="/filamente/pet/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:35%; text-transform: initial;">
+                                    		PET
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-3 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/filamente/metall-druck/" >
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                        </a>
+                                    </div>
+                                    <a href="/filamente/metall-druck/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:25%; text-transform: initial;">
+                                    		Metall
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-3 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/filamente/tpu/">
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                         </a>
+                                    </div>
+                                    <a href="/filamente/tpu/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:34%; text-transform: initial;">
+                                    		TPU 
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-3 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/evo-supp/">
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                         </a>
+                                    </div>
+                                    <a href="/evo-supp/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:20%; text-transform: initial;">
+                                    		EVO-SUPP
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+                <section class="col-lg-3">
+                    <div class="te_img_hide_small_devices">
+                    	<a href="/filamente/" >
+                        <img class="img img-responsive img-fluid d-block mx-auto" 
+                             src="/ehcs_evo_tech_website/static/src/img/data/el-102_freigestellt_klein-min_-420x624.png" 
+                             ></img>
+                        </a>
+                    </div>
+                </section>
+            </div>
+            </div>
+        </section>
+    </template>
+    
+<!--==================== Mega Menu 3 ============================-->
+    <template id="megamenu_style_3" name="3D Druck Dienstleistung Menu">
+        <section class="container-fluid py-4">
+       		<div class="container">
+            	<div class="row">
+                <section class="col-lg-12 align-self-center">
+                    <div class="row">
+                        <section class="col-lg-4 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                        </section>
+                        <section class="col-lg-3 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/3d-druck-dienstleistung/" >
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                        </a>
+                                    </div>
+                                    <a href="/3d-druck-dienstleistung/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:3%; text-transform: initial;">
+                                    		3D Druck Dienstleistung
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-4 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                        </section>
+                    </div>
+                </section>
+            	</div>
+            </div>
+        </section>
+    </template>
+    
+<!--==================== Mega Menu 4 ============================-->
+ <template id="megamenu_style_4" name="Branchen Menu">
+        <section class="container-fluid py-4">
+       		<div class="container">
+            <div class="row">
+                <section class="col-lg-9 align-self-center">
+                    <div class="row">
+                        <section class="col-lg-4 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/automotive/" >
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png">
+                                             </img>
+                                         </a>
+                                    </div>
+                                    <a href="/automotive/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:20%; text-transform: initial;">
+                                    		Automotive
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-4 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/maschinenbau/" >
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                        </a>
+                                    </div>
+                                    <a href="/maschinenbau/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:15%; text-transform: initial;">
+                                    		Maschinenbau
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-4 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/werkzeug-und-vorrichtungsbau/">
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                         </a>
+                                    </div>
+                                    <a href="/werkzeug-und-vorrichtungsbau/" class="nav-link" >
+                                    	<span style="font-size:18px;margin-left: 10%; text-transform: initial;">
+                                    		Werkzeug und <br/> Vorrichtungsbau 
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        
+                         <section class="col-lg-4 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/bildungseinrichtungen/" >
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png">
+                                             </img>
+                                         </a>
+                                    </div>
+                                    <a href="/bildungseinrichtungen/" class="nav-link">
+                                    	<span style="font-size:18px;  text-transform: initial;">
+                                    		Bildungseinrichtungen
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-4 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/prototypenbau/" >
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                        </a>
+                                    </div>
+                                    <a href="/prototypenbau/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:15%; text-transform: initial;">
+                                    		Prototypenbau
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-4 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/serienproduktion/">
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                         </a>
+                                    </div>
+                                    <a href="/serienproduktion/" class="nav-link">
+                                    	<span style="font-size:18px;margin-left: 10%; text-transform: initial;">
+                                    		Serienproduktion
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+                <section class="col-lg-3">
+                    <div class="te_img_hide_small_devices">
+                    	<a href="/branchen/" >
+	                        <img class="img img-responsive img-fluid d-block mx-auto" 
+	                             src="/ehcs_evo_tech_website/static/src/img/data/el-102_freigestellt_klein-min_-420x624.png"  >
+	                        </img>
+                        </a>
+                    </div>
+                </section>
+            </div>
+            </div>
+        </section>
+    </template>
+
+<!--==================== Mega Menu 5 ============================-->
+ <template id="megamenu_style_5" name="Über EVO-tech Menu">
+        <section class="container-fluid py-4">
+       		<div class="container">
+            <div class="row">
+                <section class="col-lg-9 align-self-center">
+                    <div class="row">
+                        <section class="col-lg-4 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/ueber-uns/" >
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png">
+                                             </img>
+                                         </a>
+                                    </div>
+                                    <a href="/ueber-uns/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:25%; text-transform: initial;">
+                                    		Über Uns
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-4 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/academy/" >
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                        </a>
+                                    </div>
+                                    <a href="/academy/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:25%; text-transform: initial;">
+                                    		Academy
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-4 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/termine/">
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                         </a>
+                                    </div>
+                                    <a href="/termine/" class="nav-link" >
+                                    	<span style="font-size:18px;margin-left: 25%; text-transform: initial;">
+                                    		Termine
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        
+                        <section class="col-lg-4 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/jobs/" >
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                        </a>
+                                    </div>
+                                    <a href="/jobs/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:30%; text-transform: initial;">
+                                    		Jobs
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-4 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/presse/">
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                         </a>
+                                    </div>
+                                    <a href="/presse/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left: 25%; text-transform: initial;">
+                                    		Presse
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+                <section class="col-lg-3">
+                    <div class="te_img_hide_small_devices">
+                    	<a href="/ueber-uns/" >
+	                        <img class="img img-responsive img-fluid d-block mx-auto" 
+	                             src="/ehcs_evo_tech_website/static/src/img/data/el-102_freigestellt_klein-min_-420x624.png"  >
+	                        </img>
+                        </a>
+                    </div>
+                </section>
+            </div>
+            </div>
+        </section>
+    </template>    
+   
+<!--==================== Mega Menu 6 ============================-->
+    <template id="megamenu_style_6" name="kunden-area Menu">
+        <section class="container-fluid py-2">
+       		<div class="container">
+            <div class="row">
+                <section class="col-lg-9 align-self-center">
+                    <div class="row">
+                        <section class="col-lg-3 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/kunden-area/kvp-kontinuierlicher-verbesserungsprozess/" >
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png">
+                                             </img>
+                                         </a>
+                                    </div>
+                                    <a href="/kunden-area/kvp-kontinuierlicher-verbesserungsprozess/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:35%; text-transform: initial;">
+                                    		KVP
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-3 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/kunden-area/material-datenblaetter/" >
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                        </a>
+                                    </div>
+                                    <a href="/kunden-area/material-datenblaetter/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:10%; text-transform: initial;">
+                                    		Handbücher
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-3 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/kunden-area/support/">
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                         </a>
+                                    </div>
+                                    <a href="/kunden-area/support/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:20%; text-transform: initial;">
+                                    		Support
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-3 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/kunden-area/firmware/">
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                         </a>
+                                    </div>
+                                    <a href="/kunden-area/firmware/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:18%; text-transform: initial;">
+                                    		Firmware
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        
+                        <section class="col-lg-3 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/kunden-area/simplify/" >
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png">
+                                             </img>
+                                         </a>
+                                    </div>
+                                    <a href="/kunden-area/simplify/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:25%; text-transform: initial;">
+                                    		Simplify
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-3 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/kunden-area/material-datenblaetter/" >
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                        </a>
+                                    </div>
+                                    <a href="/kunden-area/material-datenblaetter/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:3%; text-transform: initial;">
+                                    		Datenblätter
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-3 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/additive-fertigung/">
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                         </a>
+                                    </div>
+                                    <a href="/additive-fertigung/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:15%; text-transform: initial;">
+                                    		Know-How
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-3 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/rapid-prototyping/" >
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png">
+                                             </img>
+                                         </a>
+                                    </div>
+                                    <a href="/rapid-prototyping/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:10%; text-transform: initial;">
+                                    		Rapid <br/>
+                                    		Prototyping
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-3 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/simplify3d/" >
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                        </a>
+                                    </div>
+                                    <a href="/simplify3d/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:10%; text-transform: initial;">
+                                    		Simplify <br/> 
+                                    		3D Software
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="col-lg-3 te_menu_flip_box col-md-2 col-6 col-sm-3">
+                            <div class="row align-items-center">
+                                <section class="text-center col-12 te_icon_text">
+                                    <div class="te_menu_flip_box_inner flip-card">
+                                    	<a href="/additive-fertigung/">
+                                        <img class="img img-responsive img-fluid d-block mx-auto flip-card-inner"
+                                             src="/website/static/src/img/snippets_demo/s_references_5.png"></img>
+                                         </a>
+                                    </div>
+                                    <a href="/additive-fertigung/" class="nav-link">
+                                    	<span style="font-size:18px; margin-left:15%; text-transform: initial;">
+                                    		Additive	<br/> 
+                                    		Fertigung
+                                    	</span>
+                                    </a>
+                                </section>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+                <section class="col-lg-3">
+                    <div class="te_img_hide_small_devices">
+                    	<a href="/kunden-area/" >
+                        <img class="img img-responsive img-fluid d-block mx-auto" 
+                             src="/ehcs_evo_tech_website/static/src/img/data/el-102_freigestellt_klein-min_-420x624.png" 
+                             ></img>
+                        </a>
+                    </div>
+                </section>
+            </div>
+            </div>
+        </section>
+    </template>
+    
+</odoo>

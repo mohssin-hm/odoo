@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_submenu_tab_advanced" name="website.theme_submenu_tab_advanced">
+		<t t-call="website.layout">
+			<t t-set="additional_title">Advanced Tab</t>
+			<div id="wrap" class="oe_structure oe_empty">
+
+				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
+					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
+					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/img_6646_3-scaled.jpg&quot;); background-position: 50% 0px;" />
+						<div class="container">
+							<div class="row s_nb_column_fixed">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
+									data-name="Box">
+									<div class="row">
+										<div class="col-lg-12 s_title s_col_no_bgcolor"
+											data-name="Title">
+											<h1 class="s_title_default" style="text-align: center; ">
+												<font style="font-size: 62px;color: white;">
+													<b>Advanced Tab</b>
+												</font>
+											</h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</section>
+				
+				<section class="s_text_block pt32 " data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 ">
+								<img src="/ehcs_evo_tech_website/static/src/img/simplify3d_tab/advanced-tab.png" style=" width: 100%; "></img>
+							</div>
+							<div class="col-lg-12 pt32 text-left">
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Layer Modifications
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Mit den Einstellungen in diesem Bereich lässt sich ein Prozess in Z-Richtung ab einer eingestellten Höhe starten bzw. beenden. Dies kann von Nutzen sein um ein Modell in Z-Richtung aufzuteilen, indem man einfach den Druck ab einer eingestellten Höhe abbricht, oder das Bauteil mit unterschiedlichen Einstellungen, z.B. unterschiedlich dicke Schichten, drucken möchte.
+								</p>
+
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Start Printing at height
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Gibt die Z-Höhe an, ab der der Prozess beginnt. <br/>
+									Simplify3d beginnt in dieser Höhe mit dem Druck, es obliegt dem Nutzer, dafür zu sorgen, dass ein anderer Prozess für die darunterliegenden Schichten sorgt.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Stop Printing at height
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Gibt die Z-Höhe an, ab der der Prozess endet.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Thin Wall Behavior
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Thin Wall Behavior legt das Verhalten des Druckers bei der Fertigung von Wandstärken fest, die kleiner oder, in ungünstigem Maß, größer als die Extrusion Width sind.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										External Thin Wall Type
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Bei External Thin Walls handelt es sich um Wandstärken, die dünner sind als die Extrusion Width. In diesem Unterpunkt kann entschieden werden, wie der Slicer mit den entsprechenden Bereichen des Bauteils umgeht.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Perimeters only
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									In dieser Einstellung werden Wände nur aus Perimetern aufgebaut, Bereiche welche dünner als die Extrusion Width sind werden nicht gedruckt. Dies ist in der Regel die Standardeinstellung.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Allow Single Extrusion Walls
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									In dieser Einstellung werden Bereiche welche dünner als die Extrusion Width sind mit sogenannten Single Extrusions aufgebaut. Hierfür wird der Vorschub des Filaments reduziert und das Extrudierte Material mit der Düse mitgezogen. Auf diese Weise lassen sich auch Wandstärken realisieren, welche kleiner als der Düsendurchmesser sind.
+								</p>
+								<p style="font-size: 16px;">
+									Bei variierenden Wandstärken wird der Vorschub dynamisch angepasst, sodass die Wandstärke der des Modells entspricht. Allerdings geschieht der Wechsel von Perimeter auf Single Extrusion nicht dynamisch, hier setzt der Extruder ab und beginnt eine neue Linie.
+								</p>
+								
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Internal Thin Wall Type
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Bei External Thin Walls handelt es sich um Wandstärken, die dünner sind als die Extrusion Width. In diesem Unterpunkt kann entschieden werden, wie der Slicer mit den entsprechenden Bereichen des Bauteils umgeht.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Perimeters only
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									In dieser Einstellung wird der entstehende Spalt mit einer einzelnen, zu den Perimetern parallelen, Linie ausgefüllt. Diese kann um einiges breiter oder schmäler als die Extrusion Width sein.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Allow single extrusion fill
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Die Pillar Width gibt die Seitenlänge der quadratischen Grundfläche des Pillars an. Für niedrig Objekte kann diese Einstellung auf 10 mm eingestellt werden. Beim Druck von höheren Objekten sollte die Grundfläche entsprechend größer gewählt werden, damit sich der Prime Pillar während des Drcukes nicht von der Bauplattform löst.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Allow gap fill
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									In dieser Einstellung wird der entstehende Spalt mittels Gap Fill aufgefüllt. Gap Fill ist eine dem Infill ähnliche Struktur, jedoch von den für das Infill getroffenen Einstellungen unabhängig.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Allowed Perimeter Overlap
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Gibt den Prozentsatz an, zu dem sich Perimeter überlappen dürfen. Höhere Werte führen dazu, dass eher Perimeter verwendet werden um Thin Internal Walls aufzufüllen, bevor Single Extrusions oder Gap Fill verwendet werden.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Single Extrusions
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									In diesem Bereich lässt sich das Verhalten der Single Extrusions aus dem Bereich Thin Wall Behavior steuern.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Minimum Extrusion Length
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Gibt die Minimale Länge an, die eine Single Extrusion haben muss um überhaupt gedruckt zu werden. Dieser Wert sollte relativ niedrig gewählt werden, da ansonsten Fehlstellen im Bauteil entstehen können.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Minimum Printing Width
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Gibt den Minimalen Prozentsatz der Extrusion Width an, den eine Single Extrusion haben darf.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Maximum Printing Width
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Gibt den Maximalen Prozentsatz der Extrusion Width an, den eine Single Extrusion haben darf.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Endpoint Extension Distance
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Gibt die Länge an, um die die Enden jeder Single Extrusion verlängert werden, um besser mit dem Rest des Bauteils zu verschweißen. Ein guter Richtwert hierfür ist der halbe Düsendurchmesser.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Ooze Control Behavior
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Diese Checkbox sorgt dafür, dass Retracts nur dann durchgeführt werden, wenn der Druckkopf offene Bereiche überfährt, also Perimeter kreuzt.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Only retract when crossing open spaces
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Gibt den Maximalen Prozentsatz der Extrusion Width an, den eine Single Extrusion haben darf.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Force retraction between layers
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Mit dieser Checkbox werden beim Schichtwechsel Retracts durchgeführt.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Minimum travel for retraction
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Gibt die minimale Leerlauflänge an, die der Druckkopf zurücklegen muss, ab der ein Retract durchgeführt wird.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Perform retraction during wipe movement
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Diese Checkbox sorgt dafür, dass Retracts während der Wipe Bewegung durchgeführt werden.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Perform retraction during wipe movement
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Diese Checkbox sorgt dafür, dass Retracts während der Wipe Bewegung durchgeführt werden.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Only wipe extruder for outer-most perimeters
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Diese Checkbox sorgt dafür, dass Wipe Bewegungen nur für den äußersten Perimeter verwendet werden, was besonders bei großen Modellen, mit mehreren Perimetern Druckzeit spart
+								</p>
+								
+								<br> </br>
+								<p style="font-size: 24px;" class="blue">
+									<b>
+										Movement Behavior
+									</b>
+								</p>
+								<br> </br>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Avoid crossing outline for travel movements
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Diese Checkbox sorgt dafür, dass der Druckkopf, bevor er einen Perimeter kreuzt, eher einen anderen Weg nimmt, auf dem keine Perimeter gekreuzt werden. Dies ist besonders bei flexiblen Filamenten sinnvoll, da bei diesen, in der Regel, sehr starkes Oozing auftritt
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Maximum allowed detour factor
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Dieser Faktor gibt an, wie viel länger der Umweg sein darf, um keinen Perimeter zu Kreuzen. Ein Faktor von 2 bedeutet zum Beispiel, dass der Umweg doppelt so lang sein darf.
+								</p>
+								
+								<br> </br>
+								<p style="font-size: 24px;" class="blue">
+									<b>
+										Slicing Behavior
+									</b>
+								</p><br> </br>
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Non-manifold segments
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Diese Option bestimmt, wie mit fehlerhaften Bereichen im Modell umgegangen werden soll. Hier kann entschieden werden, ob fehlerhafte Bereiche einfach gelöscht werden sollen, oder ob Simplify3d versuchen soll diese automatisch zu reparieren.
+								</p>
+								
+								<p style="font-size: 20px;" class="blue">
+									<b>
+										Merge all outlines into a single solid model
+									</b>
+								</p>
+								<p style="font-size: 16px;">
+									Diese Option nimmt die äußersten Linien des Modells und füllt die gesamte Schicht auf. Dies macht es zwar möglich einige fehlerhafte Modelle zu reparieren, jedoch verliert man dadurch alle Features im inneren des Bauteils (z.B. Bohrungen).
+								</p>
+
+							</div>
+							<div class="col-lg-12 pt32 text-center">
+								<a href="/simplify3d/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade" style="color: white !important; background-color: #008bd2; "
+									data-original-title="" title="">
+									
+									Zurück zur Übersicht
+								</a>
+							</div>							
+						</div>
+					</div>
+				</section>
+				
+				<section class="pt32 pb32" data-name="Title" >
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+						</div>
+					</div>
+				</section>
+				
+			</div>
+		</t>
+	</template>
+</odoo>

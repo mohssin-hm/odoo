@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_submenu_tab_smart_labs" name="website.theme_submenu_tab_smart_labs">
+		<t t-call="website.layout">
+			<t t-set="additional_title">SMART LABS CARINTHIA</t>
+			<div id="wrap" class="oe_structure oe_empty">
+
+				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
+					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
+					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/gehaeuse_1200x800_100.jpg&quot;); background-position: 50% 0px;" />
+						<div class="container">
+							<div class="row s_nb_column_fixed">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
+									data-name="Box">
+									<div class="row">
+										<div class="col-lg-12 s_title s_col_no_bgcolor"
+											data-name="Title">
+											<h1 class="s_title_default" style="text-align: center; ">
+												<font style="font-size: 42px; color: white;">
+													<b>SMART LABS CARINTHIA</b>
+												</font>
+											</h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</section>
+					
+				<section class="s_text_block  " data-name="Text block" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<br/><br/>
+								<p style="text-align: left; font-size: 21px; " class="blue">
+									<b> INDUSTRIE 4.0: DER EVO-LIZER VERKNÜPFT HIGHTECH MIT NIEDRIGEN KOSTEN!</b>
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									<b>
+									„Schneller als ein Porsche?“ mit dem EVO-lizer…
+									</b>
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Im Rahmen eines Forschungsprojekts wurde ein Elektro-Gokart entwickelt, welches in sagenhaften 3“ von 0 auf 100km/h beschleunigt! Hierbei zählt jedes Gramm – deshalb wurden viele Carbonbauteile sowie additiv gefertigte Bauteile verwendet. Der EVO-lizer kann Volumskörper mit Wabenstrukturen automatisch verstärken, wodurch bei nahezu gleichbleibender Festigkeit bis zu 80% Gewicht eingespart werden kann.
+								</p>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>	
+					</div>
+				</section>
+				
+				<section class="s_text_block  " data-name="Text block" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<br/><br/>
+								<p style="text-align: left; font-size: 21px; " class="blue">
+									<b> Die konkreten Aufgabenstellungen – schnelle &amp; kostengünstige Herstellung von Einzelanfertigungen und Kleinserien! </b>
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Um im Rahmen der Smart Labs Carinthia mit hoher Effizienz und Effektivität entwickeln und fertigen zu können, ist es notwendig, trotz Einsatz von High Tech auf die Kosten zu schauen. Gerade aus diesem Grund ist der Einsatz des EVO-lizers extrem wichtig! Denn nur so können Prototypen wesentlich schneller und kostengünstiger durch die Studierenden selbst hergestellt werden als zB mittels CNC-Maschinen. Weiters werden bereits von den Smart Labs entwickelte Bauteile mit dem EVO-lizer gefertigt und im Endprodukt eingesetzt. Die Vorteile hierbei sind der nicht vorhandene Rüstaufwand, die hohe Flexibilität, die schnelle Verfügbarkeit und die hohe Qualität der gedruckten Bauteile.
+								</p>
+								<br/>
+								<p style="text-align: left; font-size: 15px; " >
+									Der EVO-lizer ist DAS Werkzeug um die Innovationen &amp; Start Ups in den Smart Labs Carinthia zu fördern
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Martin Fischer, Forschungsmitarbeiter Smart Lab Carinthia
+								</p>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>
+					</div>
+				</section>
+				
+				<section class="s_text_block  " data-name="Text block" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<br/><br/>
+								<p style="text-align: left; font-size: 21px; " class="blue">
+									<b> Das Projekt – ein intelligentes Batterie-Managementsystem  </b>
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Einen kosten- und kapazitätsmäßigen Flaschenhals bei der Entwicklung von elektrisch betriebenen (und damit nachhaltigen) technischen Geräten (E-Bike, Hybridantrieb um nur zwei zu nennen) stellen die benötigten Akkupacks dar. Neben Gewicht und Leistung ist vor allem der Zustand, den ein Akku im Zuge seiner Lebensdauer hat, von enormer Bedeutung! Gemeinsam mit dem Fraunhofer Institut Italien wurde ein intelligentes Batterie-Managementsystem entwickelt, welches Auskunft über den Lade- und Funktionszustand sowie über den Alterungsprozess der jeweiligen Batteriezellen gibt!
+								</p>
+								<br/>
+								<p style="text-align: left; font-size: 15px; " >
+									Durch das frühzeitige Detektieren defekter Zellen und der damit verbundenen Möglichkeit diese punktgenau zu tauschen, erhöht sich die Wirtschaftlichkeit konventioneller Akkupacks. Zielgruppe dieses Produktes sind alle Unternehmen, die sich mit der Ladetechnik von elektrochemischen Zellen beschäftigen. Die Forschungsergebnisse der FH-Villach werden direkt aufgegriffen und verbessern dadurch die Wirtschaftlichkeit der nächsten Akku-Generationen.
+								</p>
+								<img src="/ehcs_evo_tech_website/static/src/img/elektronikgehaeuse_1200x800_100www.jpg " style="width:100%;"> </img>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>
+					</div>
+				</section>
+				
+				<section class="s_text_block  " data-name="Text block" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<br/><br/>
+								<p style="text-align: left; font-size: 21px; " class="blue">
+									<b> Nutzen </b>
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Mit dem EVO-lizer war es möglich, in der Entwicklungsphase innerhalb kürzester Zeit diesem Produkt ein professionelles Äußeres zu geben und schnell und unkompliziert auf Änderungen in der Bauweise zu reagieren – Kosten und Zeit wurden eingespart.
+
+								</p>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>
+					</div>
+				</section>
+				
+				<section class="s_text_block  " data-name="Text block" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<br/><br/>
+								<p style="text-align: left; font-size: 21px; " class="blue">
+									<b> Die Smart Labs Carinthia – am Puls der Industrie 4.0! </b>
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Die Smart Labs Carinthia in Klagenfurt und Villach wurden im Feb. 2015 gegründet und werden als innovatives Zentrum, das bei Unternehmensgründungen, für Start Ups und allem rund um Industrie 4.0 zur Verfügung steht, genützt. Damit wird ein deutliches Zeichen für die technologischen Aktivitäten des Wirtschaftsstandorts Kärnten gesetzt – die Smart Labs sind ein gemeinsames Projekt der FH Kärnten (Bereich Engineering &amp; IT) und der Alpen-Adria Universität Klagenfurt (Fakultät Wirtschaftswissenschaften).
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									In den 3D-Druck- und Prototyping-Laboren können Studierende und Forschende ihre Konzepte nahtlos von der Idee über den Protoyp bis zur Vermarktung umsetzen. Und zwar in Form eines niederschwelligen Zugangs, denn die Ideen können mit fachlicher Unterstützung in den Smart Labs rasch und einfach realisiert werden. Dadurch fördern die beiden Labore nicht nur den Innovationsgeist, sondern auch Entrepreneurship. Unterschiedliche Disziplinen bringen sich ein, um zum Beispiel Entwurfsmuster zu erstellen, neue Produktionsabläufe zu testen oder Marketingstrategien zu erproben.
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Statement Prof. Dr. Erich Hartlieb (FH Kärnten): „Das Smart Lab ist für uns einerseits die konsequente Weiterentwicklung eines professionellen Umfeldes zur Unterstützung von Innovationen und Start Ups und knüpft im Innovationsprozess unmittelbar an die Innovationswerkstatt als Creative Space an. Andererseits bildet das Smart Lab mit den verfügbaren Fertigungstechnologien eine Lernfabrik und damit auch die Chance, gemeinsam mit Partnern aus Wissenschaft und Industrie das Thema Industrie 4.0 weiterzuentwickeln.“
+								</p>
+								<img src="/ehcs_evo_tech_website/static/src/img/go-kart_600x300_10wweee.jpg " style="width:100%;"> </img>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>
+					</div>
+				</section>
+					
+					
+				<section class="s_text_block  " data-name="Text block" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<br/><br/>
+								<p style="text-align: left; font-size: 21px; " class="blue">
+									<b> Der Einsatz des EVO-lizers in den Smart Labs Carinthia  </b>
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Die Smart Labs Carinthia setzen den EVO-lizer für die Umsetzung und Validierung von konkreten Anwendungsprojekten für die Industrie 4.0 ein. In Kombination mit Laserschneider, Schneidplotter, 3D-Scanner und CNC-Fräse und CNC-Drehautomaten leistet der EVO-lizer einen essentiellen Beitrag im Rahmen der Erforschung der Maschine zu Maschine Kommunikation und deren praktischen Umsetzung.
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Die gewonnenen Ergebnisse haben direkte Auswirkungen auf die Produktivität von Maschinenkonfigurationen, Produktionsprozessen und Arbeitsabläufen in der Industrie
+								</p>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>
+					</div>
+				</section>
+				
+				
+				<section class="pt32 pb32" data-name="Title" >
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+						</div>
+					</div>
+				</section>
+				
+			</div>
+		</t>
+	</template>
+</odoo>

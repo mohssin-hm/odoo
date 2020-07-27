@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_menu_filamente_submenu_four" name="website.filamente_page">
+		<t t-call="website.layout">
+			<t t-set="additional_title"> ABS</t>
+			<div id="wrap" class="oe_structure oe_empty">
+			
+				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
+					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none;     background-color: rgba(66, 117, 211, 0.63);">
+					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/druckmaterial-3d-druck_smaller.jpg&quot;); background-position: 50% 0px;" />
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+							<div class=" jumbotron rounded pt32 pb32 col-lg-12"
+								data-name="Box">
+								<div class="row">
+									<div class="col-lg-12 s_title s_col_no_bgcolor"
+										data-name="Title">
+										<h1 class="s_title_default" style="text-align: center; ">
+											<font style="font-size: 50px; color: white;">
+												<b> ABS FILAMENT</b>
+											</font>
+										</h1>
+										<h3 class="s_title_default" style="text-align: center; font-size: 24px; color: white;">
+										ACRYLNITRILE BUTADIEN STYROL
+										</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				
+				<section class="s_text_image pt32 pb32" data-name="Text - Image">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-6 pb16 pt16">
+								<p class="" style="font-size: 17px; ">
+									<b> ABS </b>
+									<span class=" blue" > (Acrylnitril-Butadien-Styrol-Copolymerisat) </span>
+									ist ein hochwertiger, amorpher, thermoplastischer Kunststoff, der im professionellen 3D Druck am häufigsten eingesetzt wird. Das ABS Filament zeichnet sich durch seine Beständigkeit gegenüber Temperaturen bis 95 Grad, Ölen, Fetten und diversen Chemikalien aus.
+								</p>
+								
+								<h2 class="blue"> <b> Eigenschaften von ABS Filamenten </b> </h2>
+								<p class="" style="font-size: 17px; ">
+										Das Datenblatt sowie das Sicherheitsdatenblatt, finden Sie unter folgenden Links:
+									
+									<ul id="ul" style="text-align: left; font-size: 0.9375rem; margin-left: -5%">
+										<li> ABS Filament Datenblatt</li>
+										<li>  Filament Sicherheitsdatenblätter gesamt</li>
+									</ul>
+									<br/>
+									<b style="font-size: 17px; "> Auszug aus dem ABS-Datenblatt:</b>
+									<table>
+										<tbody>
+											<tr>
+												<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">  HDT – Temperaturbeständigkeit	 </td>
+												<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> 		95°C </td>
+											</tr>
+											<tr>
+												<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> Dichte:</td>
+												<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> 	1,08g/cm³</td>
+											</tr>
+											<tr>
+												<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">Lagerung</td>
+												<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">	Bei Raumtemperatur, geschützt vor direktem Sonnenlicht und Feuchtigkeit </td>
+											</tr>
+										</tbody>
+									</table>
+								</p>
+							</div>
+							<div class="col-lg-6 pt16 pb16">
+								<img src="/ehcs_evo_tech_website/static/src/img/imgw.jpg"
+									class="img img-fluid mx-auto" 
+									data-original-title="" title="" aria-describedby="tooltip597079"/>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_features pt32 pb0" data-name="Features" style="color: #555555; background-color: #f8f9fa !important;">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-6 pt32 pb32 text-left">
+								<p class="o_default_snippet_text blue" style="font-size:23px;">
+									Druckparameter für ABS Filament
+								</p>
+								<p style="font-size:18px;">
+									Die Verarbeitungsparameter können je nach 3D Druckermodell und Bauteil abweichen. Unter folgenden Links können Sie unsere Simplify3D Profile für ABS herunterladen:
+								</p>
+								
+								<ul id="ul" style="font-size: 17px; text-align: left; " >
+										<li>EL-102 FFF Dateien</li>
+										<li>EL-11 FFF Dateien </li>
+								</ul>
+								<b style="font-size: 17px;">
+									ABS Druckparameter:
+								</b>
+								<table>
+									<tbody>
+										<tr>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> Extrusionstemperatur: </td>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> 	220 – 240 °C</td>
+										</tr>
+										<tr>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> Druckbetttemperatur:</td>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> 	88 °C (1.Schicht)100 °C (ab 2.Schicht) </td>
+										</tr>
+										<tr>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">Druckoberfläche:</td>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">	Kapton</td>
+										</tr>
+										<tr>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">Aktivkohlefilter:</td>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">	Erforderlich</td>
+										</tr>
+										<tr>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">Innenraumheizung:</td>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; ">
+											>50°C
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="col-lg-6 pt32 pb32 text-left" style="color: #555555; background-color: #f8f9fa !important;">
+								<p class="o_default_snippet_text blue" style="font-size:23px;">
+									Nachbearbeitung von ABS
+								</p>
+								<p style="font-size:18px;">
+									Folgende Nachbearbeitungsmethoden können bei ABS verwendet werden:
+								</p>
+								
+								<ul id="ul" style="font-size: 17px; text-align: left; " >
+										<li>
+											Schleifen
+										</li>
+										<li>
+											Füllern
+										</li>
+										<li> 
+											Lackieren
+										</li>
+										<li> 
+											Kleben mit Aceton, 2-Komponentenkleber oder Sekundenkleber
+										</li>
+										<li>
+											Fräßen
+										</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="pt32 pb32" data-name="Title" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-9 pt32 pb32 text-left blue">
+								<h1>	<b> Downloads </b>	</h1>		
+							<ul id="ul" style="font-size: 17px; text-align: left; " class="blue">
+							<li>
+								<a class="download-link blue" title="Version 1"
+									href="https://evo-tech.eu/download/322789/"
+									data-wpel-link="internal" target="_self" rel="follow">ABS
+									Filament Datenblatt
+								</a>
+							</li>
+							<li>
+								<a class="download-link blue" title=""
+									href="https://evo-tech.eu/download/323065/"
+									data-wpel-link="internal" target="_self" rel="follow">Filament
+									Sicherheitsdatenblätter gesamt
+								</a>
+							</li>
+							<li>
+								<a class="download-link blue" title=""
+									href="https://evo-tech.eu/download/323111/"
+									data-wpel-link="internal" target="_self" rel="follow">EL-102
+									FFF Dateien
+								</a>
+							</li>
+							<li>
+								<a class="download-link blue" title=""
+									href="https://evo-tech.eu/download/323104/"
+									data-wpel-link="internal" target="_self" rel="follow">EL-11
+									FFF Dateien
+								</a>
+							</li>
+						</ul>					
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_faq_collapse pt20 pb32" data-name="Accordion" >
+			        <div class="container">
+			            <div class="row s_nb_column_fixed">
+			                <div class="col-lg-12 s_title pt16 pb16">
+			                    <h1 class="s_title_thin"><font  class="o_default_snippet_text blue">
+			                    	<b> Fragen und Antworten zum ABS Filament:	</b>
+			                    </font></h1>
+			                </div>
+			            </div>
+			            <div class="row s_col_no_bgcolor">
+			                <div class="col-lg-12 pt16 pb16">
+			                    <div id="myCollapse" class="accordion" role="tablist">
+			                        <div class="card bg-white">
+			                            <a href="#" role="tab" data-toggle="collapse" aria-expanded="true" class="card-header o_default_snippet_text" data-parent="#myCollapse" data-target="#myCollapseTab1592576462306"
+			                            	style=" color: black !important; " >
+			                            	Was ist ABS Kunststoff?
+			                            </a>
+			                            <div class="collapse show" role="tabpanel" id="myCollapseTab1592576462306">
+			                                <div class="card-body">
+			                                    <p class="card-text o_default_snippet_text" style="font-size:18px;">
+			                                    ABS Kunststoff ist der am häufigsten eingesetzte Kunststoff als Filament für den professionellen 3D Druck.
+			                                    </p>
+			                                </div>
+			                            </div>
+			                        </div>
+			                        <div class="card bg-white">
+			                            <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="collapsed card-header o_default_snippet_text" data-parent="#myCollapse" data-target="#myCollapseTab1592576462307"
+			                            	style=" color: black !important; " >
+			                            	Wie sind die Verarbeitungstemperaturen für den 3D Druck von ABS?
+			                            </a>
+			                            <div class="collapse" role="tabpanel" id="myCollapseTab1592576462307">
+			                                <div class="card-body">
+			                                   <ul id="ul" style="font-size: 17px; text-align: left; " class="">
+													<li>ABS braucht eine Extruder- bzw. Düsentemperatur von 220°C-240°C,
+													</li>
+													<li>eine Heizbetttemperatur von mindestens 80°C</li>
+													<li>eine beheizte Kammer mit mindestens 70°C</li>
+												</ul>
+			                                </div>
+			                            </div>
+			                        </div>
+			                        <div class="card bg-white">
+			                            <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="collapsed card-header o_default_snippet_text" data-parent="#myCollapse" data-target="#myCollapseTab1592576462308"
+			                            	style=" color: black !important; " >
+			                            	Was kann ich gegen Verzug und Warping beim 3D Druck von ABS machen?
+			                            </a>
+			                            <div class="collapse" role="tabpanel" id="myCollapseTab1592576462308">
+			                                <div class="card-body">
+			                                	<p style=" margin-left: -62%; font-size: 16px; ">
+				                                	Wichtig ist, dass Sie folgende Punkte beachten:
+			                                	</p>
+			                                     <ul id="ul" style="font-size: 17px; text-align: left; " class="">
+													<li>Heizbett auf mindestens 80°C einstellen
+													</li>
+													<li> Erste Schicht mit 50% Geschwindigkeit fahren</li>
+													<li> Angeraute, gereinigte und passende Druckoberfläche verwenden </li>
+												</ul>
+			                                </div>
+			                            </div>
+			                        </div>
+			                         <div class="card bg-white">
+			                            <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="collapsed card-header o_default_snippet_text" data-parent="#myCollapse" data-target="#myCollapseTab1592576462309"
+			                            	style=" color: black !important; " >
+			                            	Ist ABS UV beständig?
+			                            </a>
+			                            <div class="collapse" role="tabpanel" id="myCollapseTab1592576462309">
+			                                <div class="card-body">
+			                                	  <p class="card-text o_default_snippet_text" style="font-size:18px;">
+				                                    ABS ist nur bedingt UV-Beständig und kann durch Sonneneinstrahlung brüchig werden. Für Außenanwendungen empfehlen wir unser UV-beständiges ASA Filament.
+				                                  </p>
+			                                </div>
+			                            </div>
+			                        </div>
+			                        
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			    </section>										
+				
+				
+			
+			</div>
+		</t>
+	</template>
+</odoo>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_menu_about_subfive" name="website.theme_menu_about_subfive">
+		<t t-call="website.layout">
+			<t t-set="additional_title">Presse</t>
+			<div id="wrap" class="oe_structure oe_empty">
+
+				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
+					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
+					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/data/standort_evotech_aussen.jpg&quot;); background-position: 50% 0px;" />
+						<div class="container">
+							<div class="row s_nb_column_fixed">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
+									data-name="Box">
+									<div class="row">
+										<div class="col-lg-12 s_title s_col_no_bgcolor"
+											data-name="Title">
+											<h1 class="s_title_default" style="text-align: center; ">
+												<font style="font-size: 42px; color: white;">
+													<b>PRESSE</b>
+												</font>
+											</h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</section>
+					
+				<section class="s_text_block pt32 pb32" data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 pb32">
+								<p class="lead" />
+								<div style="text-align: left;" class="blue">
+									<span style="font-size: 22px;">
+										<b>
+											Fakten, News und Bilder
+										</b>
+									</span>
+								</div>
+								<p style="text-align: left; font-size: 15px;">
+									Aufgrund der dynamischen Entwicklungen in der additiven Fertigung im Allgemeinen und bei EVO-tech im Speziellen sind Neuigkeiten in beiden Bereichen quasi an der Tagesordnung. Gleichzeitig wollen wir es Ihnen so einfach wie möglich machen, sich schnell und bequem darüber zu informieren. Deshalb servieren wir Ihnen an dieser Stelle Pressetexte, Pressespiegel sowie Bilder zum einfachen Nachlesen und Downloaden.
+								</p>
+							</div>
+						</div>
+					</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9; width: 68%; border-top-width: 3px; "></hr>	
+				</section>
+				
+				<section class="s_features  pb0" data-name="Features">
+					<div class="container">
+						<div class="row">
+							<div class="pt32 pb32 text-left col-lg-14">
+								<span class=" blue" style="font-size: 20px; ">
+									<b>   Pressespiegel</b>
+								</span> <br/><br/>
+								<span style="font-size:15px;">
+									<b> PROFIT: </b>  Additive manufacturing from Lake Attersee,  profit, 2019
+										<br/>
+									<b> K-Zeitung: </b> Experience industrial 3D printing live,  K-Zeitung, September 2019
+										<br/>
+									<b>  K-Zeitung: </b>  3D printing „Made in Austria“,  K-Zeitung, March 2019
+										<br/>
+									<b>  The incubator: </b>  3D printing: The new future of local production ?,  brutkasten magazine # 7 „The world in 5 years“, November 2018
+										<br/>
+									<b> X-technology „  </b> Quality shows size“:  PMT GmbH is one of the first users of the new EL-102 from EVO-tech,  X-technology additive manufacturing 3 / October 2018
+										<br/>
+									<b> Fakuma X Express </b> Another parameter under control  2018_10 Fakuma X Express
+										<br/>
+									<b>  Mediaplanet </b> Those who trust us learn very quickly  2018_05 Mediaplanet
+										<br/>
+									<b>  OÖ Nachrichten </b>  amazement and discovery at the Long Night of Research  2018_04 OÖ Nachrichten
+										<br/>
+									<b>  Tips 	</b>  Vöcklabrucker companies in Hanover  2018_04 Tips
+										<br/>
+									<b> OÖ Nachrichten </b> assistance instead of competition: robots and humans work hand in hand  2018_04 OÖ Nachrichten
+										<br/>
+									<b>  Factory.net </b> EVO-tech celebrated its 5th anniversary in  2018_02 Factory.net
+										<br/>
+									<b>  APA OTS: </b> EVO-tech opens second location in Hanover  2017_10 APA OTS
+										<br/>
+									<b> K-Zeitung Online : </b> Live 3D printing with metal filament from BASF   2017_10 K-Zeitung Online
+										<br/>
+									<b>  Industry </b> magazine: Metal printing process for additive series production  2017_08 Industry magazine
+										<br/>
+									<b>  OÖ Nachrichten : </b> EVO-tech produces stainless steel with 3D printer  2017_07 OÖ Nachrichten
+										<br/>
+									<b> K-Zeitung Online :</b> EVO-tech – In-house exhibition dedicated to metal printing   2017_07 K-Zeitung Online
+										<br/>
+									<b> Innovation Upper Austria: </b> The all- round printer   2017_07 Innovation Upper Austria
+										<br/>
+									<b> Construction practice: </b>  The additive revolution is in full swing   2017_07 construction practice
+										<br/>
+									<b>  Rapid.Tech: </b> Rapid.Tech 2017 shows world first for additive manufacturing  2017_06 Rapid.Tech
+										<br/>
+									<b> Upper Austria news:</b>  winner Pegasus trophy   2017_06 Upper Austria news
+										<br/>
+									<b> OÖ Nachrichten: </b> Pegasus 2017: These are the finalists   2017_04 OÖ Nachrichten, Pegasus 2017
+										<br/>
+									<b> 3DMake: </b> EVO-tech presents advanced 3D printer  2017_03 EVO-tech presents advanced 3D printer
+										<br/>
+									<b> x-Technik:</b>  With filament printing for metal parts  2017_02 x-Technik
+
+								</span>
+							</div>
+							
+							<div class="pt32 pb32 text-left col-lg-4" style="width:130%"> 
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="pt32 pb32" data-name="Title" >
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+						</div>
+					</div>
+				</section>
+				
+			</div>
+		</t>
+	</template>
+</odoo>

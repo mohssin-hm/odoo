@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<!-- SUBMENU BRANCHEN -->
+		<record id="menu_branchen_subone" model="website.menu">
+			<field name="name">Automotive</field>
+			<field name="url">/automotive/</field>
+			<field name="sequence" type="int">61</field>
+			<field name="parent_id" ref="ehcs_evo_tech_website.menu_branchen" />
+			<field name="website_id" ref="website.default_website" />
+		</record>
+		
+		<record id="menu_branchen_subtwo" model="website.menu">
+			<field name="name">Maschinenbau</field>
+			<field name="url">/maschinenbau/</field>
+			<field name="sequence" type="int">62</field>
+			<field name="parent_id" ref="ehcs_evo_tech_website.menu_branchen" />
+			<field name="website_id" ref="website.default_website" />
+		</record>
+		
+		<record id="menu_branchen_subthree" model="website.menu">
+			<field name="name">Werkzeug und Vorrichtungsbau</field>
+			<field name="url">/werkzeug-und-vorrichtungsbau/</field>
+			<field name="sequence" type="int">63</field>
+			<field name="parent_id" ref="ehcs_evo_tech_website.menu_branchen" />
+			<field name="website_id" ref="website.default_website" />
+		</record>
+		
+		<record id="menu_branchen_subfour" model="website.menu">
+			<field name="name">Bildungseinrichtungen</field>
+			<field name="url">/bildungseinrichtungen/</field>
+			<field name="sequence" type="int">64</field>
+			<field name="parent_id" ref="ehcs_evo_tech_website.menu_branchen" />
+			<field name="website_id" ref="website.default_website" />
+		</record>
+		
+		<record id="menu_branchen_five" model="website.menu">
+			<field name="name">Prototypenbau</field>
+			<field name="url">/prototypenbau/</field>
+			<field name="sequence" type="int">65</field>
+			<field name="parent_id" ref="ehcs_evo_tech_website.menu_branchen" />
+			<field name="website_id" ref="website.default_website" />
+		</record>
+		
+		<record id="menu_branchen_six" model="website.menu">
+			<field name="name">Serienproduktion</field>
+			<field name="url">/serienproduktion/</field>
+			<field name="sequence" type="int">66</field>
+			<field name="parent_id" ref="ehcs_evo_tech_website.menu_branchen" />
+			<field name="website_id" ref="website.default_website" />
+		</record>
+
+		
+	</data>
+</odoo>

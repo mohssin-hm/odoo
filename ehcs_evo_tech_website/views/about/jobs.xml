@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_menu_about_subfour" name="website.ueber_page">
+		<t t-call="website.layout">
+			<t t-set="additional_title">Jobs</t>
+			<div id="wrap" class="oe_structure oe_empty">
+
+				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
+					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
+					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/evo-tech_team-scaled.jpg&quot;); background-position: 50% 0px;" />
+						<div class="container">
+							<div class="row s_nb_column_fixed">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
+									data-name="Box">
+									<div class="row">
+										<div class="col-lg-12 s_title s_col_no_bgcolor"
+											data-name="Title">
+											<h1 class="s_title_default" style="text-align: center; ">
+												<font style="font-size: 42px; color: white;">
+													<b>JOBS</b>
+												</font>
+											</h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</section>
+					
+				<section class="s_text_block pt32 pb32" data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 pb32">
+								<p class="lead" />
+								<div style="text-align: left;" class="blue">
+									<span style="font-size: 22px;">
+										<b>
+											Jobs bei EVO-tech
+										</b>
+									</span>
+								</div>
+								<p style="text-align: left;font-size: 16px;">
+									So vielfältig wie die Möglichkeiten des 3D-Drucks sind auch die Aufgaben in diesem Bereich. Darüber hinaus erweisen sich Jobs in der additiven Fertigung und in der Entwicklung technischer Kunststoffe immer mehr als Versicherung für die berufliche Zukunft. Denn seit Jahren legt die Branche im Consumer-Bereich rasante Wachstumsraten hin. Noch besser sieht es im professionellen B2B-Bereich aus, wo EVO-tech in mehrfacher Hinsicht gerade die Marktführerschaft übernimmt.
+								</p>
+							</div>
+						</div>
+					</div>
+					<hr style=" border-top-style: solid; border-top-color: #f9f9f9; width: 68%; border-top-width: 3px; "></hr>	
+				</section>
+				
+				<section class="s_features  pb0" data-name="Features">
+					<div class="container">
+						<div class="row">
+							<div class="pt32 pb32 text-left col-lg-12">
+								<span class=" blue" style="font-size: 32px; ">
+									<b>   Hardware- und Embedded Software Entwickler (m/w) </b>
+								</span> <br/>
+								<p  style="font-size:17px;">
+									<strong>Ihre Aufgaben:</strong>
+									<br />
+									– Projektmanagement für Elektronik Hard- und Softwareentwicklung
+									<br />
+									– Weiterentwicklung bestehender 3D Drucker und Neukonzeption
+									mechatronischer Produkte
+									<br />
+									– Projektleitung im Bereich hardwarenaher Softwareentwicklung
+									<br />
+									– Konzeption von Softwarearchitekturen und Sicherstellung der
+									Codequalität
+									<br />
+									– Inbetriebnahme und Testung von Prototypen
+									<br />
+									– Abstimmung von Software, Hardware (Sensorik, Antriebstechnik)
+									<br />
+									– Strukturierte, analytische Lösungsfindung technischer
+									Problemstellungen
+									<br />
+									– Durchführung von Anwenderschulungen in Österreich und
+									Deutschland
+									<br />
+									– Serienüberführung
+								</p>
+								<p  style="font-size:17px;">
+									<strong>Anforderungen:</strong>
+									<br />
+									– Abgeschlossene Ausbildung (Uni/FH/HTL) im Bereich Mechatronik,
+									Elektronik,
+									<br />
+									Informatik mit mehrjähriger Berufserfahrung
+									<br />
+									– Einschlägige Erfahrung mit mechatronischen Produkten
+									<br />
+									– Gute Programmierkenntnisse (C, C++) und Freude an der
+									hardwarenahen Programmierung
+									<br />
+									vorausgesetzt
+									<br />
+									-Gute Englischkenntnisse
+									<br />
+									– Zuverlässige, strukturierte und proaktive Arbeitsweise
+									<br />
+									– Teamfähige, kommunikative Person
+									<br />
+									– Reisebereitschaft für Schulungen
+									<br />
+									– Erfahrungen mit HTML und Javascript von Vorteil
+								</p>
+								<p  style="font-size:17px;">
+									<strong>Wir bieten:</strong>
+									<br />
+									– Betriebliche Gleitzeitregelung
+									<br />
+									– Weiterbildungsmöglichkeiten
+									<br />
+									– In dieser Position erwartet Sie ein Gehalt ab 3.000€ pro Monat.
+									<br />
+									Die Höhe der Überbezahlung richtet sich nach Ihrer individuellen
+									Berufserfahrung
+									<br />
+									und Qualifikation.
+								</p>
+									<p  style="font-size:17px;">
+										Ihre Bewerbung und Rückfragen richten Sie bitte an:
+										<br />
+										Markus Kaltenbrunner
+										<br />
+										Geschäftsführender Gesellschafter
+										<br />
+										markus.kaltenbrunner@evo-tech.eu
+										<br />
+										+43 7662 384 00
+									</p>
+								
+							</div>
+							<div class="pt32 pb32 text-left col-lg-4" style="width:130%"> 
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				
+				<section class="pt32 pb32" data-name="Title" >
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+						</div>
+					</div>
+				</section>
+				
+			</div>
+		</t>
+	</template>
+</odoo>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="menu_about_subthree_moenchengladbach" name="website.menu_about_subthree_moenchengladbach">
+		<t t-call="website.layout">
+			<t t-set="additional_title">Event </t>
+			<div id="wrap" class="oe_structure oe_empty">
+					<section class="s_text_block pt32 pb32" data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 pt32 pb32">
+								<p class="lead" />
+								<div style="text-align: left;" class="">
+									<span style="font-size: 36px; color: black;">
+											Softopening @Mönchengladbach
+									</span>
+								</div>
+								<p style="text-align: left;font-size: 20px;">
+									<b>
+									EVO-tech eröffnet neuen Showroom in Deutschland
+									</b>
+								</p>
+								<p style="text-align: left;font-size: 18px;">
+									Wir laden Sie am <b>  24. und 25. Juni 2020 </b> herzlich ein, uns 
+									<b> in unserem Showroom in Mönchengladbach </b> zu besuchen.
+								</p>
+								<p style="text-align: left;font-size: 18px;"> 
+									Erleben Sie live, wie 3D-Druck funktioniert, welche Möglichkeiten der 3D-Druck bietet oder tauschen Sie Erfahrungen mit unseren 3D Druck Spezialisten aus.
+								</p>
+								<p style="text-align: left;font-size: 18px;">
+									Um die derzeit nötigen Vorsichtsmaßnahmen planen zu können, melden Sie sich bitte an.
+								</p>
+								
+							<form action="/website_form/" method="post" class="s_website_form container-fluid mt32 o_fake_not_editable"
+									enctype="multipart/form-data" data-name="Form Builder" contenteditable="false" data-model_name="mail.mail"
+									data-success_page="/contactus-thank-you">
+									<div class="container">
+										<h1 class="o_form_heading" contenteditable="true"></h1>
+										<div class="row form-group form-field d-none">
+											<div class="col-lg-3 col-md-4">
+												<label class="col-form-label" for="email_to">
+												</label>
+											</div>
+											<div class="col-lg-7 col-md-8">
+												<input type="text" class="form-control o_website_form_input"
+													name="email_to" value="mehuljadav0077@gmail.com"/>
+											</div>
+										</div>
+										<div  class="form-group row form-field o_website_form_custom o_website_form_required_custom o_fake_not_editable"
+											contenteditable="false">
+											<div class="col-lg-10 col-md-4">
+												<label class="col-form-label o_fake_editable" for="Name"
+													contenteditable="true">
+													<span style="color: rgb(58, 58, 58); font-family: Roboto, sans-serif; font-size: 16px; font-weight: 400;">Name (Pflichtfeld)</span>
+												</label>
+												<br/>
+												<input type="text" class="form-control o_website_form_input"
+													name="Name (Pflichtfeld)" required=""/>
+											</div>
+										</div>
+									
+										<div class="form-group row form-field o_website_form_custom o_fake_not_editable"
+											contenteditable="false">
+											<div class="col-lg-10 col-md-4">
+												<label class="col-form-label o_fake_editable"
+													for="Partner Name" contenteditable="true">
+													<span
+														style="color: rgb(58, 58, 58); font-family: Roboto, sans-serif; font-size: 16px; font-weight: 400;">Unternehmen</span>
+												</label>
+												<input type="text" class="form-control o_website_form_input"
+													name="Partner Name"/>
+											</div>
+										</div>
+								
+										<div class="form-group row form-field o_website_form_required_custom o_fake_not_editable"
+											contenteditable="false">
+											<div class="col-lg-10 col-md-4">
+												<label class="col-form-label o_fake_editable" for="email_from"
+													contenteditable="true">
+													<span
+														style="color: rgb(58, 58, 58); font-family: Roboto, sans-serif; font-size: 16px; font-weight: 400;">E-Mail-Adresse (Pflichtfeld)</span>
+												</label>
+												<input type="email" class="form-control o_website_form_input"
+													name="email_from" required=""/>
+											</div>
+										</div>
+											<div class="form-group row form-field o_website_form_custom o_fake_not_editable"
+											contenteditable="false">
+											<div class="col-lg-10 col-md-4">
+												<label class="col-form-label o_fake_editable" for="Phone"
+													contenteditable="true">
+													<font style="color: rgb(58, 58, 58); font-family: Roboto, sans-serif; font-size: 16px; font-weight: 400; vertical-align: inherit;">
+														<font style="vertical-align: inherit;">Telefonnummer</font>
+													</font>
+													<br/>
+												</label>
+												<input type="text" class="form-control o_website_form_input"
+													name="Phone"/>
+											</div>
+										</div>
+										<div class="row form-group form-field o_website_form_custom o_fake_not_editable" contenteditable="false">
+											<div class="col-lg-10 col-md-4">
+												<label class="col-form-label o_fake_editable" for="Custom Selection" contenteditable="true">
+													<span style="color: rgb(58, 58, 58); font-family: Roboto, sans-serif; font-size: 16px; font-weight: 400;">Datum</span>
+												</label>
+												<select class="form-control o_website_form_input" name="Custom Selection">
+													<option value="24.06.2020">
+														24.06.2020
+													</option>
+													<option value="25.06.2020">
+														25.06.2020
+													</option>
+												</select>
+											</div>
+										</div>
+										
+										<div class="row form-group form-field o_website_form_custom o_fake_not_editable o_website_form_required_custom"
+											contenteditable="false">
+											<div class="col-lg-10 col-md-4">
+												<label class="col-form-label o_fake_editable" for="Custom Selection" contenteditable="true">
+													<span style="color: rgb(58, 58, 58); font-family: Roboto, sans-serif; font-size: 16px; font-weight: 400;">Uhrzeit</span>
+												</label>
+												<select class="form-control o_website_form_input" name="Custom Selection"  required="">
+													<option value="13:00 Uhr">
+														13:00 Uhr
+													</option>
+													<option value="14:00 Uhr">
+														14:00 Uhr
+													</option>
+													<option value="15:00 Uhr">
+														15:00 Uhr
+													</option>
+													<option value="16:00 Uhr">
+														16:00 Uhr
+													</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group row">
+											<div class="offset-lg-3 offset-md-4 col-md-8 col-lg-7">
+												<button class="btn btn-primary btn-lg o_website_form_send">Send</button>
+												<span id="o_website_form_result"></span>
+											</div>
+										</div>
+									</div>
+								</form>
+								
+								
+								<br/>
+								<div class="single-event-time1" style="padding-top: 20px;">
+									<span style="font-size : 18px;"> Zeitplan</span>
+									<div class="event-date-time" style="font-size : 15px;">
+										Datum:
+										<time> 24.06.2020 bis 25.06.2020</time>
+									</div>
+									<div class="event-date-time" style="font-size : 15px;">
+										Zeit:
+										<time>8:00 bis 17:00</time>
+									</div>
+								</div>
+								<br/><br/>
+								<div style="font-size :15px;">
+									<a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Softopening @Mönchengladbach&amp;dates=20200624T080000/20200625T170000&amp;ctz=Europe/Vienna&amp;details=For+details,+link+here:+https://evo-tech.eu/events/opening-moenchengladbach/&amp;location=Friedrich-Ebert-Straße 9-11, 41352 Korschenbroich&amp;sf=true&amp;output=xml"
+										target="_self" rel="follow" data-wpel-link="external"
+										style="color: #008bd2; ">
+										Zu Google Kalender hinzufügen
+									</a>
+									<b> |	</b>
+									<a href="https://evo-tech.eu/wp-content/plugins/simple-event-planner/public/partials/single-event/ical.php?startDate=20200624&amp;endDate=20200625&amp;startTime=T080000&amp;endTime=T170000&amp;uid=325408&amp;location=Friedrich-Ebert-Straße 9-11, 41352 Korschenbroich&amp;subject=Softopening @Mönchengladbach&amp;url= https://evo-tech.eu/events/opening-moenchengladbach/"
+										data-wpel-link="internal" target="_self" rel="follow"
+										style="color: #008bd2; "> iCal downloaden </a>
+								</div>
+								<br/><br/>
+								<div class="event-venue">
+									<span style="font-size :16px;"> Tagungsort</span>
+									<div class="event-info">
+										<i class="fa fa-2x fa-map-marker" style="color: #008bd2;"></i>
+										<span style="font-size:15px;">Messe Frankfurt, Ludwig-Erhard-Anlage 1, 60327</span>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-lg-4 pt32 pb32">
+								<img src="/ehcs_evo_tech_website/static/src/img/desktop_hintergrund-scaled.jpg"
+									style=" width: 100%; ">
+								</img>
+							</div>
+						</div>
+					</div>
+					<hr style=" border-top-style: solid; border-top-color: #f9f9f9; width: 100%; border-top-width: 3px; "></hr>	
+				</section>
+			</div>
+		</t>
+	</template>
+	
+	
+	
+	<template id="menu_about_subthree_event_fakuma" name="website.ueber_page">
+		<t t-call="website.layout">
+			<t t-set="additional_title">FAKUMA</t>
+			<div id="wrap" class="oe_structure oe_empty">
+				<section class="s_text_block pt32 pb32" data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7 pt32 pb32">
+								<p class="lead" />
+								<div style="text-align: left;" class="">
+									<span style="font-size: 32px; color: black;">
+											FAKUMA
+									</span>
+								</div>
+								<p style="text-align: left;font-size: 18px; "> 
+									<a href="https://formnext.mesago.com/frankfurt/de.html" style="color: #008bd2; "
+										data-wpel-link="external" target="_self" rel="follow">
+									Internationale Fachmesse für Kunststoffverarbeitung
+									</a>
+								</p>
+								
+								<div class="single-event-time1" style="padding-top: 20px; font-size :15px;">
+									<h3> Zeitplan</h3>
+									<div class="event-date-time">
+										Datum:
+										<time>  13.10.2020 bis 17.10.2020</time>
+									</div>
+								</div>
+								<div class="event-venue">
+									<span style="font-size :16px;"> Tagungsort</span>
+								</div>
+								<br/><br/><br/>
+								<div style="font-size :15px;">
+										<a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=FAKUMA&amp;dates=20201013T000000/20201017T000000&amp;ctz=Europe/Vienna&amp;details=For+details,+link+here:+https://evo-tech.eu/events/fakuma-2/&amp;location=Messe Friedrichshafen&amp;sf=true&amp;output=xml"
+											target="_self" rel="follow" data-wpel-link="external" style="color: #008bd2; ">Zu Google Kalender
+											hinzufügen</a>
+										<b> |	</b>
+										<a href="https://evo-tech.eu/wp-content/plugins/simple-event-planner/public/partials/single-event/ical.php?startDate=20201013&amp;endDate=20201017&amp;startTime=T000000&amp;endTime=T000000&amp;uid=322054&amp;location=Messe Friedrichshafen&amp;subject=FAKUMA&amp;url= https://evo-tech.eu/events/fakuma-2/"
+											data-wpel-link="internal" target="_self" rel="follow" style="color: #008bd2; "> iCal downloaden </a>
+								</div>
+								<div class="event-venue">
+									<div class="event-info">
+										<i class="fa fa-2x fa-map-marker" style="color: #008bd2;"></i>
+										<span style="font-size:15px;">Messe Frankfurt, Ludwig-Erhard-Anlage 1, 60327</span>
+									</div>
+								</div>
+								<br/>
+							</div>
+							<div class="col-lg-5 pt32 pb32">
+								<img src="/ehcs_evo_tech_website/static/src/img/fakuma_300x368_100.jpg" style="width: 50%; "> </img>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</t>
+	</template>
+	
+	
+	<template id="menu_about_subthree_event_formnext2" name="website.ueber_page">
+		<t t-call="website.layout">
+			<t t-set="additional_title">FORMNEXT</t>
+			<div id="wrap" class="oe_structure oe_empty">
+				<section class="s_text_block pt32 pb32" data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7 pt32 pb32">
+								<p class="lead" />
+								<div style="text-align: left;" class="">
+									<span style="font-size: 32px; color: black;">
+											Formnext
+									</span>
+								</div>
+								<p style="text-align: left;font-size: 15px; "> Die Messe
+									<a href="https://formnext.mesago.com/frankfurt/de.html" style="color: #008bd2; "
+										data-wpel-link="external" target="_self" rel="follow">formnext Frankfur</a>
+									t am Main ist eine internationale Fachmesse für additive
+									Fertigungstechnologien/3D-Druck sowie Werkzeug- und Formenbau.
+								</p>
+								<p style="text-align: left;font-size: 15px;">
+									Die formnext zeigt, wie sich die Prozesskette von einer Produktidee bis zu dessen Produktion entwickelt.
+								</p>
+								<p style="text-align: left;font-size: 15px;">
+									Sie führt die Additiven und konventionellen Verfahren zusammen und präsentiert die nächste Generation der Produktentwicklung.
+								</p>
+								<div class="single-event-time1" style="padding-top: 20px; font-size :15px;">
+									<h4> Zeitplan</h4>
+									<div class="event-date-time">
+										Datum:
+										<time> 10.11.2020 bis 13.11.2020</time>
+									</div>
+								</div>
+								<div style="font-size :15px;">
+									<a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Formnext&amp;dates=20201110T000000/20201113T000000&amp;ctz=Europe/Vienna&amp;details=For+details,+link+here:+https://evo-tech.eu/events/formnext-2/&amp;location=Messe Frankfurt, Ludwig-Erhard-Anlage 1, 60327&amp;sf=true&amp;output=xml"
+										target="_self" rel="follow" data-wpel-link="external" style="color: #008bd2; ">
+										Zu Google Kalender hinzufügen</a>
+										<b> |	</b>
+									<a href="https://evo-tech.eu/wp-content/plugins/simple-event-planner/public/partials/single-event/ical.php?startDate=20201110&amp;endDate=20201113&amp;startTime=T000000&amp;endTime=T000000&amp;uid=322076&amp;location=Messe Frankfurt, Ludwig-Erhard-Anlage 1, 60327&amp;subject=Formnext&amp;url= https://evo-tech.eu/events/formnext-2/"
+										data-wpel-link="internal" target="_self" rel="follow" style="color: #008bd2; "> iCal downloaden </a>
+								</div>
+								<br/>
+								<div class="event-venue">
+									<h2> Tagungsort</h2>
+									<div class="event-info">
+										<i class="fa fa-2x fa-map-marker" style="color: #008bd2;"></i>
+										<span style="font-size:15px;">Messe Frankfurt, Ludwig-Erhard-Anlage 1, 60327</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-5 pt32 pb32">
+								<img src="/ehcs_evo_tech_website/static/src/img/formnext-logo_popup.jpg" style="width: 100%; "> </img>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</t>
+	</template>
+	
+</odoo>

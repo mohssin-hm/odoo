@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+		<delete model="website.menu" search="[('id','=', ref('website.menu_home'))]"/>
+		 
+        <record id="menu_filamente" model="website.menu">
+            <field name="name">FLIAMENTE</field>
+            <field name="url">/filamente/</field>
+            <field name="sequence" type="int">21</field>
+            <field name="parent_id" search="[('parent_id', '=', False), ('website_id', '=', obj().env.ref('website.default_website').id)]"/>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+
+        <record id="menu_branchen" model="website.menu">
+            <field name="name">BRANCHEN</field>
+           <field name="url">/branchen/</field>
+            <field name="sequence" type="int">23</field>
+            <field name="parent_id" search="[('parent_id', '=', False), ('website_id', '=', obj().env.ref('website.default_website').id)]"/>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+
+        <record id="menu_ueberuns" model="website.menu">
+            <field name="name">Über EVO-TECH</field>
+           <field name="url">/ueber-uns/</field>
+            <field name="sequence" type="int">24</field>
+            <field name="parent_id" search="[('parent_id', '=', False), ('website_id', '=', obj().env.ref('website.default_website').id)]"/>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+        
+        <record id="menu_kunden-area" model="website.menu">
+            <field name="name">KUNDENBEREICH</field>
+           <field name="url">/kunden-area/</field>
+            <field name="sequence" type="int">25</field>
+            <field name="parent_id" search="[('parent_id', '=', False), ('website_id', '=', obj().env.ref('website.default_website').id)]"/>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+
+        <!-- SUBMENU 3d-drucker -->
+        <record id="submenu_3d_drucker_one" model="website.menu">
+            <field name="name">3D Drucker El-102</field>
+            <field name="url">/3d-drucker-el-102/</field>
+            <field name="sequence" type="int">31</field>
+            <field name="website_id" ref="website.default_website"/> 
+        </record>
+        <record id="submenu_3d_drucker_two" model="website.menu">
+            <field name="name">3D Drucker El-11</field>
+            <field name="url">/3d-drucker-el-11/</field>
+            <field name="sequence" type="int">32</field>
+            <field name="website_id" ref="website.default_website"/> 
+        </record>
+        <record id="submenu_3d_drucker_three" model="website.menu">
+            <field name="name">Finanzierung</field>
+            <field name="url">/3d-drucker-all-inclusive-leasing/</field>
+            <field name="sequence" type="int">33</field>
+            <field name="website_id" ref="website.default_website"/> 
+        </record>
+        <record id="menu_3d_drucker" model="website.menu">
+            <field name="name">3D DRUCKER</field>
+            <field name="url">/3d-drucker-el-102/</field>
+            <field name="sequence" type="int">20</field>
+            <field name="parent_id" search="[('parent_id', '=', False), ('website_id', '=', obj().env.ref('website.default_website').id)]"/>
+            <field name="website_id" ref="website.default_website"/>
+            <field name="child_id" eval="[(4, ref('submenu_3d_drucker_one')), (4, ref('submenu_3d_drucker_two')), (4, ref('submenu_3d_drucker_three'))]"/>
+        </record>
+
+        <!-- SUBMENU DIENSTLEISTUNG -->
+        <record id="submenu_3d-druck-dienstleistung_one" model="website.menu">
+            <field name="name">3D Druck Dienstleistung</field>
+            <field name="url">/3d-druck-dienstleistung/</field>
+            <field name="sequence" type="int">22</field>
+            <!-- <field name="parent_id" ref="menu_3d-druck-dienstleistung" /> -->
+            <field name="website_id" ref="website.default_website"/> 
+        </record>
+        <record id="menu_3d-druck-dienstleistung" model="website.menu">
+            <field name="name">DIENSTLEISTUNG</field>
+            <field name="sequence" type="int">22</field>
+            <field name="parent_id" search="[('parent_id', '=', False), ('website_id', '=', obj().env.ref('website.default_website').id)]"/>
+            <field name="website_id" ref="website.default_website"/>
+            <field name="child_id" eval="[(4, ref('submenu_3d-druck-dienstleistung_one'))]"/>
+        </record>
+
+    </data>
+</odoo>

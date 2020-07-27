@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_submenu_tab_kolm_motoren" name="website.theme_submenu_tab_kolm_motoren">
+		<t t-call="website.layout">
+			<t t-set="additional_title">KOLM MOTOREN</t>
+			<div id="wrap" class="oe_structure oe_empty">
+				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
+					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none; background: rgba(34, 30, 34, 0.32);">
+					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/img_6646-scaledq.jpg&quot;); background-position: 50% 0px;" />
+						<div class="container">
+							<div class="row s_nb_column_fixed">
+								<div class=" jumbotron rounded pt32 pb32 col-lg-12"
+									data-name="Box">
+									<div class="row">
+										<div class="col-lg-12 s_title s_col_no_bgcolor"
+											data-name="Title">
+											<h1 class="s_title_default" style="text-align: center; ">
+												<font style="font-size: 42px; color: white;">
+													<b>KOLM MOTOREN</b>
+												</font>
+											</h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</section>
+					
+					<section class="s_text_image pt32 pb32" data-name="Text - Image">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-6 pb16 pt16">
+								<h2 class="blue"> <b> MASSARBEIT ERFORDERT INDIVIDUELLE LÖSUNGEN  </b> </h2>
+								<p style="font-size: 15px; ">
+								<b style="font-size: 16px; ">
+									Folgende Leistungen bieten wir Ihnen an:
+								</b>
+								</p>
+								<p class="" style="font-size: 15px; ">
+									Die Aufgabenstellung war, die Kühlluftführung beim Weltrekordmotor zu optimieren. Nur durch Optimierung im Detail wurde es möglich, aus 310 cm³ Hubraum 25 PS zu generieren und damit den Geschwindigkeitsweltrekord von 308 km/h aufzustellen. Die dadurch gewonnenen Erkenntnisse wurden in Serienteile überführt. Durch die hohe Komplexität, die hohe Variantenvielfalt und die dadurch bedingten geringen Stückzahlen werden die Luftführungen nach wie vor mit dem EVOlizer gefertigt und als Bestandteil einer Komplettlösung verkauft.
+								</p>
+							</div>
+							<div class="col-lg-6 pt16 pb16">
+								<img src="/ehcs_evo_tech_website/static/src/img/kolm_1200x800_100.jpg"
+									class="img img-fluid mx-auto" 
+									data-original-title="" title="" aria-describedby="tooltip597079"/>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>	
+					</div>
+				</section>
+					
+				<section class="s_text_block  " data-name="Text block" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<br/><br/>
+								<p style="text-align: left; font-size: 21px; " class="blue">
+									<b> Der Einsatz des EVO-lizers bei KOLM Motoren </b>
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Ausdrucke aus dem EVO-lizer werden bei KOLM Motoren in der Forschung und Entwicklung verwendet. Dies ist lt. DI Kolm eine phantastische Möglichkeit, wesentlich schneller und unabhängiger als beim CNC-Verfahren zu arbeiten. Darüber hinaus werden Freiformteile mit hoher Komplexität auch für die Serie mit dem EVO-lizer gefertigt.
+								</p>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>	
+					</div>
+				</section>
+				
+				<section class="s_text_block  " data-name="Text block" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<br/><br/>
+								<p style="text-align: left; font-size: 21px; " class="blue">
+									<b>Lösungen ohne Kompromisse</b>
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Es wird besonderer Wert auf ausgereifte und erprobte Lösungen gelegt, sowohl bei Normteilen, als auch bei sämtlichem Material! Kompromisse, die zu Lasten der Qualität der Motoren gehen könnten, werden absolut nicht eingegangen. So werden Wuchtgewichte aus Wolfram für Kurbelwellen, Helicoil-Einsätze für hoch beanspruchte Gewinde, Kurbelgehäuse aus Luftfahrtaluminium, gebaute Kurbelwellen und nadelgelagerte Stahlpleuel verbaut – also nur das Beste vom Besten.
+								</p>
+								<br/>
+								<p style="text-align: left; font-size: 15px; " >
+									Weiters sind alle hochbelasteten Stahlteile gehärtet oder nitriert. Darüberhinaus werden die Kolm Motoren auch einem 100 Stunden Dauertest unterzogen und leistungsgeprüft. Ein hauseigener Leistungsprüfstand ermöglicht eine exakte Aussage zur Leistung der einzelnen Motoren.
+								</p>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>
+					</div>
+				</section>
+				
+				<section class="s_text_block  " data-name="Text block" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<br/><br/>
+								<p style="text-align: left; font-size: 21px; " class="blue">
+									<b> KOLM Engines – Weltmarktführer bei großvolumigen Viertaktmotoren für den Modellflug! </b>
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									DI Johann Kolm (CEO von Kolm Engines) hat sich mit seinem Unternehmen an die Spitze eines Marktsegmentes gesetzt, in dem es darum geht, 4-Takt-Benzinmotoren für den Modellbau zu konstruieren und zu bauen. Die Konstruktion erfolgt mit Hilfe eines 3D-CAD-Systems, die Daten werden zum Teil in das CAD/CAM-System übernommen, teilweise werden die Teile auch „händisch“ programmiert. Das Besondere an KOLM Engines ist, dass von der Entwicklung bis zur Produktion der Einzelteile alles im Haus passiert und alle Teile genaueste Qualitätskontrollen durchlaufen, bevor diese verbaut werden. Natürlich ist ein Teile- bzw. Messprotokoll ebenso selbstverständlich wie die Registrierung mittels Seriennummer.
+								</p>
+								<p style="text-align: left; font-size: 15px; " >
+									<i> In der Weltspitze zählt jedes kleine Detail.	</i>
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									DI Johann Kolm, Kolm Engines GmbH
+								</p>
+							</div>
+						</div>
+						<hr style=" border-top-style: solid; border-top-color: #f9f9f9;  border-top-width: 3px; "></hr>
+					</div>
+				</section>
+				
+				<section class="s_text_block  " data-name="Text block" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 ">
+								<br/><br/>
+								<p style="text-align: left; font-size: 21px; " class="blue">
+									<b> Warum ist KOLM Engines Weltmarktführer? </b>
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Man überlässt nichts dem Zufall, geht keine Kompromisse ein: „Man bekommt, was man bezahlt!“ ist ein weiteres Motto von DI Johann Kolm! Kolm Engines sind rein österreichische Qualitätsprodukte, da die gesamte Entwicklung, die Tests UND die Produktion im eigenen Hause durchgeführt werden. Weiters werden die Motoren von absoluten Spezialisten – allesamt begeisterte Modellflieger – entwickelt, gefertigt und montiert. Durch diese enorme Fertigungs- und Entwicklungstiefe resultiert hohe Kompetenz, Flexibilität sowie höchste Qualität.
+								</p>
+								<p style="text-align: left; font-size: 16px; " >
+									Höchste Qualität auch bei Zukaufteilen: Bevorzugte Lieferanten aus Österreich und Deutschland machen Qualität, Zuverlässigkeit und Liefertreue möglich.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="pt32 pb32" data-name="Title" >
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+						</div>
+					</div>
+				</section>
+				
+			</div>
+		</t>
+	</template>
+</odoo>

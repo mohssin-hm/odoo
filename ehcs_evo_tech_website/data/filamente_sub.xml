@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+	
+		<!-- SUBMENU filamente -->
+		<record id="menu_filamente_subone" model="website.menu">
+			<field name="name">Ultem 9085</field>
+			<field name="url">/filamente/ultem-9085/</field>
+			<field name="sequence" type="int">41</field>
+			<field name="parent_id"
+				ref="ehcs_evo_tech_website.menu_filamente" />
+			<field name="website_id" ref="website.default_website" />
+		</record>
+
+		<record id="menu_filamente_subtwo" model="website.menu">
+			<field name="name">Ultem 1010</field>
+			<field name="url">/filamente/ultem-1010/</field>
+			<field name="sequence" type="int">42</field>
+			<field name="parent_id"
+				ref="ehcs_evo_tech_website.menu_filamente" />
+			<field name="website_id" ref="website.default_website" />
+		</record>
+
+		<record id="menu_filamente_subthree" model="website.menu">
+			<field name="name">PA + Carbonfaser </field>
+			<field name="url">/filamente/polyamid-cf/</field>
+			<field name="sequence" type="int">43</field>
+			<field name="parent_id"
+				ref="ehcs_evo_tech_website.menu_filamente" />
+			<field name="website_id" ref="website.default_website" />
+		</record>
+
+		<record id="menu_filamente_four_" model="website.menu">
+			<field name="name">ABS</field>
+			<field name="url">/filamente/abs/</field>
+			<field name="sequence" type="int">44</field>
+			<field name="parent_id"
+				ref="ehcs_evo_tech_website.menu_filamente" />
+			<field name="website_id" ref="website.default_website" />
+		</record>
+
+		<record id="menu_filamente_subfive" model="website.menu">
+			<field name="name">ABS-ESD</field>
+			<field name="url">/filamente/abs-esd/</field>
+			<field name="sequence" type="int">45</field>
+			<field name="parent_id"
+				ref="ehcs_evo_tech_website.menu_filamente" />
+			<field name="website_id" ref="website.default_website" />
+		</record>
+
+		<record id="menu_filamente_subsix" model="website.menu">
+			<field name="name">ABS-FR</field>
+			<field name="url">/filamente/abs-fr/</field>
+			<field name="sequence" type="int">46</field>
+			<field name="parent_id"
+				ref="ehcs_evo_tech_website.menu_filamente" />
+			<field name="website_id" ref="website.default_website" />
+		</record>
+
+		<record id="menu_filamente_subseven" model="website.menu">
+			<field name="name">PC - Lexan</field>
+			<field name="url">/filamente/pc-lexan/</field>
+			<field name="sequence" type="int">47</field>
+			<field name="parent_id"
+				ref="ehcs_evo_tech_website.menu_filamente" />
+			<field name="website_id" ref="website.default_website" />
+		</record>
+
+		<record id="menu_filamente_subeight" model="website.menu">
+			<field name="name"> Iglidur</field>
+			<field name="url">/filamente/iglidur/</field>
+			<field name="sequence" type="int">48</field>
+			<field name="parent_id"
+				ref="ehcs_evo_tech_website.menu_filamente" />
+			<field name="website_id" ref="website.default_website" />
+		</record>
+
+		<record id="menu_filamente_subnine" model="website.menu">
+			<field name="name">ASA</field>
+			<field name="url">/filamente/asa/</field>
+			<field name="sequence" type="int">49</field>
+			<field name="parent_id"
+				ref="ehcs_evo_tech_website.menu_filamente" />
+			<field name="website_id" ref="website.default_website" />
+		</record>
+
+		<record id="menu_filamente_subten" model="website.menu">
+			<field name="name"> PC-ABS </field>
+			<field name="url">/filamente/abs-pc/</field>
+			<field name="sequence" type="int">50</field>
+			<field name="parent_id"
+				ref="ehcs_evo_tech_website.menu_filamente" />
+			<field name="website_id" ref="website.default_website" />
+		</record>
+
+		<record id="menu_filamente_subele" model="website.menu">
+			<field name="name">PPS</field>
+			<field name="url">/filamente/pps/</field>
+			<field name="sequence" type="int">51</field>
+			<field name="parent_id"
+				ref="ehcs_evo_tech_website.menu_filamente" />
+			<field name="website_id" ref="website.default_website" />
+		</record>
+
+		<record id="menu_filamente_subtwel" model="website.menu">
+			<field name="name">PLA</field>
+			<field name="url">/filamente/pla/</field>
+			<field name="sequence" type="int">52</field>
+			<field name="parent_id"
+				ref="ehcs_evo_tech_website.menu_filamente" />
+			<field name="website_id" ref="website.default_website" />
+		</record>
+
+		<record id="menu_filamente_subthir" model="website.menu">
+			<field name="name"> PET</field>
+			<field name="url">/filamente/pet/</field>
+			<field name="sequence" type="int">53</field>
+			<field name="parent_id"
+				ref="ehcs_evo_tech_website.menu_filamente" />
+			<field name="website_id" ref="website.default_website" />
+		</record>
+
+		<record id="menu_filamente_subfour" model="website.menu">
+			<field name="name">Metall</field>
+			<field name="url">/filamente/metall-druck/</field>
+			<field name="sequence" type="int">54</field>
+			<field name="parent_id"
+				ref="ehcs_evo_tech_website.menu_filamente" />
+			<field name="website_id" ref="website.default_website" />
+		</record>
+
+		<record id="menu_filamente_subfifty" model="website.menu">
+			<field name="name">TPU</field>
+			<field name="url">/filamente/tpu/</field>
+			<field name="sequence" type="int">55</field>
+			<field name="parent_id"
+				ref="ehcs_evo_tech_website.menu_filamente" />
+			<field name="website_id" ref="website.default_website" />
+		</record>
+
+		<record id="menu_filamente_subsixty" model="website.menu">
+			<field name="name">EVO-SUPP</field>
+			<field name="url">/evo-supp/</field>
+			<field name="sequence" type="int">56</field>
+			<field name="parent_id"
+				ref="ehcs_evo_tech_website.menu_filamente" />
+			<field name="website_id" ref="website.default_website" />
+		</record>
+
+	</data>
+</odoo>

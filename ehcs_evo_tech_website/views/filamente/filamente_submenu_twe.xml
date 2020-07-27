@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_menu_filamente_submenu_twe" name="website.filamente_page">
+		<t t-call="website.layout">
+			<t t-set="additional_title"> PLA </t>
+			<div id="wrap" class="oe_structure oe_empty">
+			
+				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
+					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none;     background-color: rgba(66, 117, 211, 0.63);">
+					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/druckmaterial-3d-druck_smaller.jpg&quot;); background-position: 50% 0px;" />
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+							<div class=" jumbotron rounded pt32 pb32 col-lg-12"
+								data-name="Box">
+								<div class="row">
+									<div class="col-lg-12 s_title s_col_no_bgcolor"
+										data-name="Title">
+										<h1 class="s_title_default" style="text-align: center; ">
+											<font style="font-size: 50px; color: white;">
+												<b> PLA FILAMENT</b>
+											</font>
+										</h1>
+										<h3 class="s_title_default" style="text-align: center; font-size: 24px; color: white;">
+											POLYACTID
+										</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+					<section class="s_text_block pt32 pb32" data-name="Text block" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 pb32">
+								<p class="lead" />
+								<div style="text-align: center;" class="blue">
+								</div>
+								<p style="text-align: center;font-size: 16px;">
+									PLA (Polyactid) ist ein biobasierter Kunststoff, der im Hobbybereich eines der am häufigsten eingesetzten Materialien im 3D Druck nach dem FDM Verfahren ist. PLA besteht zu 100% aus biogenen, also nachwachsenden Rohstoffen (Zucker und Maisstärke) und ist damit auch biologisch abbaubar, also kompostierbar.
+								</p>
+								<p style="text-align: center;font-size: 16px;">
+									PLA Filament ist ein verformbarer Kunststoff (Thermoplast) und zeichnet sich durch eine leicht glänzende und kratzfeste Oberfläche aus.  Er kann zudem eingefärbt werden, ist resistent gegenüber vielen Chemikalien und bis 65 Grad temperaturbeständig.
+								</p>
+								<p style="text-align: center;font-size: 16px;">
+									PLA Kunststoff kommt vor allem im Design- und Architekturbereich zum Einsatz. Aufgrund seiner Eigenschaften darf er nach EU- und U.S. Gesetzen auch für Lebensmittelverpackungen, für Cateringartikel (z.B. Becher, Teller, Besteck), im Kosmetikbereich und für Spielwaren eingesetzt werden.  Auch im Medizinbereich werden Implantate, die nur für eine bestimmte Zeit im Körper verbleiben sollen, aus dem Bio Filament PLA hergestellt, weil dieser vom Körper selbst abgebaut wird!
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_features pt32 pb0" data-name="Features" style="color: #555555; background-color: #f8f9fa !important;">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-6 pt32 pb32 text-center">
+								<p class="o_default_snippet_text blue" style="font-size:23px;margin-left: -52%;">
+									Verarbeitungsparameter:
+								</p>
+								<table>
+									<tbody>
+										<tr>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> Extrusionstemperatur:		 </td>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> 	195 – 220 °C</td>
+										</tr>
+										<tr>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> Plattformtemperatur:</td>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> 		40 °C – 60 °C</td>
+										</tr>
+										<tr>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> Druckoberfläche:</td>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> 		Kapton </td>
+										</tr>
+									</tbody>
+								</table>
+								<br/>
+							
+							</div>
+							
+							<div class="col-lg-6 pt32 pb32 text-left" style="color: #555555; background-color: #f8f9fa !important;">
+								<p class="text-left " style="font-size:16px;">
+									PLA weist nur geringe Schwindungswerte auf ( &lt; 0,5%). Jedoch sollte der Bauraum, im Interesse der Konsistenz der Ergebnisse eingehaust sein, um etwa Schwankungen der Ergebnisse bei unterschiedlichen Raumtemperaturen vorzubeugen.
+								</p>
+								<p class="o_default_snippet_text " style="font-size:16px;">
+									PLA Filament hält sehr gut auf der Kapton Oberfläche. Die Verwendung eines „Brim“ ist in der Regel nur bei spitz zulaufenden Strukturen, oder Überhängen nach der ersten Schicht notwendig.
+								</p>
+								<br/>
+								<a href="/3d-drucker-el-11/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade " style="color: white !important; background-color: #008bd2;" data-original-title="" title="">Continue to EL-11</a>
+								
+								<a href="/3d-drucker-el-102/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade " style="color: white !important; background-color: #008bd2; margin-left: 5%;" data-original-title="" title="">Continue to EL102 </a>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_features pt32 pb0" data-name="Features" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 pt32 pb32 text-left" >
+								<span class="o_default_snippet_text blue" style="font-size:22px;">
+									<b>
+										Post-Processing
+									</b>
+								</span>
+								<br/>
+								<p class="o_default_snippet_text " style="font-size:16px;">	
+									Für PLA Filament steht eine breite Palette an Post-Processing Methoden zur Verfügung. Der Kunststoff kann bemalt, geklebt und mit und ohne Insert verschraubt werden. Es ist möglich PLA mechanisch zu bearbeiten, jedoch sollte dabei darauf geachtet werden, dass sich das Bauteil nicht zu stark erwärmt, da geschmolzener Kunststoff das Werkzeug verkleben und das Bauteil beschädigen kann.
+								</p>
+							</div>
+							
+							<div class="col-lg-4 pt32 pb32 text-left" >
+								<span class="o_default_snippet_text blue" style="font-size:22px;">
+									<b>
+										Löslichkeit/Beständigkeit
+
+									</b>
+								</span>
+								<br/>
+								<p class="o_default_snippet_text " style="font-size:16px;">	
+									Polylactide sind in vielen organischen Lösungsmitteln lösbar (etwa Dichlormethan, Trichlormethan, schlechter in Aceton, nicht in Alkoholen). Der Kunststoff ist beständig gegenüber Ölen und Fetten 
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_features pt32 pb0" data-name="Features" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 pt32 pb32 text-left" >
+								<span class="o_default_snippet_text blue" style="font-size:22px;">
+									<b>
+										Einsatzbereiche
+									</b>
+								</span>
+								<br/>
+								<p class="o_default_snippet_text " style="font-size:16px;">	
+									Aufgrund seiner einfachen Verarbeitung und ästhetisch hochwertigen Optik wird PLA häufig in Büroumgebungen, etwa Künstlerateliers oder Architektenbüros eingesetzt.
+								</p>
+								<p class="o_default_snippet_text " style="font-size:16px;">	
+									PLA Kunststoff ist lebensmittelecht und darf nach EU und US Gesetzen in Kontakt mit Lebensmitteln eingesetzt werden. Auch im Medizinbereich werden, entsprechende Zertifizierungen vorausgesetzt, Implantate, die nur für eine bestimmte Zeit im Körper verbleiben sollen, aus dem Bio Filament PLA hergestellt, weil dieser vom Körper selbst abgebaut wird.
+								</p>
+								
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="" data-name="Title" style="background-color: #008bd2!important">
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+							<div class="col-lg-12 s_title pt12" style="text-align: center;">
+								<div class="row align-items-center" style="margin-top: 1%;">
+									<div class="col-lg-1 ">
+										<i class="mpc-transition fa fa-4x fa-phone" style="color: white;margin-left: 60%;margin-top: -10%;"></i>
+									</div>
+									<div class="col-lg-6 ">
+										<p style="font-size:20px;color: white; margin-top:1%">
+										Sie benötigen mehr Informationen? Wir beraten Sie gerne.
+										</p>	
+									</div>
+								</div>
+								<p class="s_title_default">
+									<a href="/contactus/" class="blue btn btn-gamma flat btn-lg" data-original-title="" title="" 
+										style="background-color: white; margin-left:80%; margin-top : -7%; ">
+										<b style=" font-size: 14px; "> Jetzt Kontaktieren </b>
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="pt40 pb32" data-name="Title" >
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+						</div>
+					</div>
+				</section>
+				
+			</div>
+		</t>
+	</template>
+</odoo>
