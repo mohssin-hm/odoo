@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_submenu_tab_drucker_deutschland" name="website.theme_submenu_tab_drucker_deutschland">
+		<t t-call="website.layout">
+			<t t-set="additional_title">3D Drucker in Deutschland - EVO-tech 3D Drucker</t>
+			<t t-set="website_meta_title">3D Drucker in Deutschland - EVO-tech 3D Drucker</t>
+			<t t-set="website_meta_description">
+				3D Drucker in Deutschland - EVO-tech ist der führende Hersteller von 3D Druckern | höchster Qualitätsanspruch | bester Service. Mehr über die 3D Drucker!
+			</t>
+			
+			<div id="wrap" class="oe_structure oe_empty">
+				<section class="s_banner parallax s_parallax_is_fixed pt96 pb96 s_parallax_no_overflow_hidden"
+					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none;">
+					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+						style="background-image: url(&quot;/theme_odoo_experts/static/src/img/backgrounds/03.jpg&quot;); background-position: 50% 0px;" />
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+							<section class="s_text_image " data-name="Text - Image">
+								<div class="container">
+									<div class="row align-items-center">
+										<div class="col-lg-7 ">
+											<h2 class="blue" style="font-size: 45px;"> 
+												<b> 
+													3D Drucker von EVO-tech.
+												</b> 
+											</h2>
+												<h3> <b style="font-size: 22px;" class="blue">
+													Entdecken Sie den nächsten Schritt in der EVO-lution des 3D Drucks in Deutschland.
+													</b>
+												</h3>
+												<a href="/3d-drucker-el-102/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade "
+													style="color: white !important; background-color: #008bd2;"
+													data-original-title="" title="">Zum 3D Drucker EL-102</a>
+										</div>
+										<div class="col-lg-5 ">
+											<img src="/ehcs_evo_tech_website/static/src/img/data/el-102_freigestellt_klein-min_-420x624.png" class="img img-fluid mx-auto" data-original-title="" title="" aria-describedby="tooltip597079"/>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</section>
+					
+				<section class="s_text_block pt32 pb32" data-name="Text block" style="">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 pt32 pb32">
+							<p class="lead" />
+							<div style="text-align: center;" class="blue">
+								<span style="font-size: 26px;">
+									<b>
+										Unsere 3D Drucker für Deutschland
+									</b>
+								</span>
+							</div>
+							<p style="text-align: center;font-size: 17px;">
+								Unsere Produktion in Oberösterreich, unser Firmenstandort in Hannover und technische Service-Mitarbeiter in den Regionen Bayern und Baden Württemberg erlauben es uns, Ihren EVO-tech 3D Drucker mit kurzen Lieferzeiten und einem professionellen Service vor Ort zu installieren.
+								<br/> <br/>
+								Verlassen Sie sich auf höchste Qualität in der Produktion und beste Betreuung über die gesamte Laufzeit Ihres 3D Druckers. Wir bieten auch Schulungen über unsere Academy für Sie an.
+							</p>
+							
+						</div>
+					</div>
+				</div>
+				</section>
+				
+				<section class="s_features  pt30 pb0" data-name="Features" style="color: #555555; background-color: #f8f9fa !important;">
+					<div class="container">
+							<center class="blue" style=" font-size: 22px; ">
+							</center>
+						<div class="row">
+							<div class="pt32 pb32 text-left col-lg-6">
+								<center>
+									<a href="/3d-drucker-el-102/">
+										<img src="/ehcs_evo_tech_website/static/src/img/facc2.webp"></img> <br/> <br/>
+									</a>
+									<p class="blue" style=" font-size: 18px; ">
+										<b> EL-102	</b>
+									</p>
+									<hr style="width: 10%;border: 2px solid #008bd2!important;margin-top: -1%;"></hr>
+									<p style=" font-size: 17px; ">
+										Industrielles 3D-Drucken ohne Kompromisse. Auf höchstem Niveau.
+									</p>
+								</center>
+								<br/> 
+								<center>
+								<a href="/3d-drucker-el-102/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade "
+										style="color: white !important; background-color: #008bd2;"
+										data-original-title="" title="3d-drucker-el-102">Mehr zum EL-102</a>
+								</center>
+							</div>
+							
+							<div class="pt32 pb32 text-left col-lg-6">
+								<center>
+									<a href="/3d-drucker-el-11/">
+										<img src="/ehcs_evo_tech_website/static/src/img/facc1.webp"> </img> <br/><br/>
+									</a>
+									<p class="blue" style=" font-size: 18px; ">
+										<b> EL-11	</b>
+									</p>
+									<hr style="width: 10%;border: 2px solid #008bd2!important;margin-top: -1%;"></hr>
+									<p style=" font-size: 17px; ">
+										Der professionelle 3D Drucker für den Einstieg.
+									</p>
+								</center>
+								<br/>
+								<center>
+								<a href="/3d-drucker-el-11/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade "
+										style="color: white !important; background-color: #008bd2;"
+										data-original-title="" title="3d-drucker-el-11">Mehr zum EL-11</a>
+								</center>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_text_image pt32 pb32"
+					data-name="Image - Text">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-6 pt16 pb16">
+								<img src="/ehcs_evo_tech_website/static/src/img/evotech-kreis-455x440.jpg"
+									class="img img-fluid mx-auto" alt="Odoo • Image and Text" />
+							</div>
+							<div class="col-lg-6 pt16 pb16">
+								<div class="wpb_wrapper">
+									<div id="mpc_textblock-745eea17a7701c5"
+										class="mpc-textblock mpc-typography--mpc_preset_29 mpc-inited blue"
+										style="opacity: 1; " >
+										<span class="blue" style="font-size: 28px; font-weight: 500; ">
+											<b>	ZEIT FÜR EINE EVO-LUTION IN DER ADDITIVEN FERTIGUNG	</b>
+										</span>
+									</div>
+									<div id="mpc_textblock-165eea17a77028c" class="mpc-textblock mpc-typography--mpc_preset_5 mpc-inited"
+										style="opacity: 1;">
+										<div class="tm_pb_blurb_content">
+											<p style="font-size: 16px; ">
+											Der professionelle 3D-Druck revolutioniert die Konstruktion und
+												Produktion von Bauteilen. Als innovativer Hersteller und
+												Komplettanbieter von 3D Druckern und Filamenten für den 3D Druck
+												setzt EVO-tech seit Jahren neue Standards und perfektioniert den 3D
+												Druck gemeinsam mit seinen Kunden täglich aufs Neue.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_three_columns  pt32 pb32" data-name="Columns">
+					<div class="container">
+						<center> 
+							<span class="blue" style="font-size: 28px; font-weight: 500; ">
+								 Anwendungsbeispiele für 3D Druck in Deutschland 
+							</span>
+						</center>
+						<div class="row d-flex align-items-stretch">
+							<div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+								<div class="card bg-white" style="border: 0; ">
+									<img class="card-img-top"
+										src="/ehcs_evo_tech_website/static/src/img/home1.jpg"/>
+									<div class="card-body">
+										<h2 class="card-title o_default_snippet_text blue">
+										Maschinenbau mit 3D Druck
+										</h2>
+										<hr style="width: 10%;border: 2px solid #008bd2!important;margin-top: -1%;"></hr>
+										<p class="card-text o_default_snippet_text" style="font-size: 17px; ">
+											Hier finden Sie einige Firmen, die den 3D Druck im Bereich Maschinenbau erfolgreich einsetzen.
+
+										</p>
+											<a href="/maschinenbau/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade"
+											style="color: white !important; background-color: #008bd2; margin-top: 15%;" 
+											data-original-title="" title="maschinenbau">weiterlesen</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+								<div class="card bg-white" style="border: 0; ">
+									<img class="card-img-top"
+										src="/ehcs_evo_tech_website/static/src/img/home2.jpg"/>
+									<div class="card-body">
+										<h2 class="card-title o_default_snippet_text blue">Vorrichtungsbau mit 3D Druckern </h2>
+										<hr style="width: 10%;border: 2px solid #008bd2!important;margin-top: -1%;"></hr>
+										<p class="card-text o_default_snippet_text" style="font-size: 17px; ">
+											Lesen Sie hier, wie Sie Ihren Betrieb durch den Einsatz von 3D Druckern optimieren können.
+										</p>
+											<a href="/bildungseinrichtungen/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade"
+											style="color: white !important; background-color: #008bd2; margin-top:10%;"
+											data-original-title="" title="bildungseinrichtungen">weiterlesen</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+								<div class="card bg-white" style="border: 0; ">
+									<img class="card-img-top"
+										src="/ehcs_evo_tech_website/static/src/img/home3.jpg"/>
+									<div class="card-body">
+										<h2 class="card-title o_default_snippet_text blue">Bildungseinrichtungen und 3D Drucker </h2>
+										<hr style="width: 10%;border: 2px solid #008bd2!important;margin-top: -1%;"></hr>
+										<p class="card-text o_default_snippet_text" style="font-size: 17px; ">
+											Bereits viele Bildungsinstitute in Deutschland verwenden EVO-tech 3D Drucker. Hier finden Sie Anwendungsbeispiele.
+										</p>
+											<a href="/werkzeug-und-vorrichtungsbau/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade"
+											style="color: white !important; background-color: #008bd2;"
+											data-original-title="" title="werkzeug-und-vorrichtungsbau">weiterlesen</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="s_text_image pt0 pb0" data-name="Image - Text">
+					<div class="container">
+						<div class="row ">
+							<div class="col-lg-4 pt16 pb16" style="margin-left: -10%; ">
+							<div id="myCarousel1593239254405" class="s_quotes_carousel carousel slide s_carousel_boxed"
+								data-interval="1000" data-name="Quotes" >
+								<div class="carousel-inner">
+									<div class="carousel-item oe_img_bg pt40 pb40 active"
+										style="background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/data/greiner_250x250_00.png.webp&quot;); background-position: 50% 50%;"
+										data-name="Slide">
+										<div class="container">
+											<div class="row content">
+												<blockquote>
+												</blockquote>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item oe_img_bg pt40 pb40"
+										style="background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/data/innotech_250x250_00.png.webp&quot;); background-position: 50% 50%;"
+										data-name="Slide">
+										<div class="container">
+											<div class="row content">
+												<blockquote >
+												</blockquote>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item oe_img_bg pt40 pb40"
+										style="background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/data/jku_250x250_00.png.webp&quot;); background-position: 50% 50%;"
+										data-name="Slide">
+										<div class="container">
+											<div class="row content">
+												<blockquote >
+												</blockquote>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item oe_img_bg pt40 pb40"
+										style="background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/data/swarco_250x250_00.png.webp&quot;); background-position: 50% 50%;"
+										data-name="Slide">
+										<div class="container">
+											<div class="row content">
+												<blockquote >
+												</blockquote>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item oe_img_bg pt40 pb40"
+										style="background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/data/siemens_250x250_00.png.webp&quot;); background-position: 50% 50%;"
+										data-name="Slide">
+										<div class="container">
+											<div class="row content">
+												<blockquote >
+												</blockquote>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							</div>
+							<div class="col-lg-9 pt16 pb16">
+								<span class="blue" style="font-size: 28px; font-weight: 500; ">
+									Referenzen für den 3D Druck 
+								</span>
+								<p class="o_default_snippet_text" style="font-size:18px;">
+									Viele innovative Unternehmen aus Gewerbe und Industrie, sowie Bildungseinrichtungen in Deutschland, Österreich und der Schweiz arbeiten bereits mit 3D Druckern von EVO-tech und profitieren von den zahlreichen Vorteilen des 3D Druckens. Sie möchten ebenfalls die revolutionäre Technik unserer 3D Drucker kennenlernen?
+								</p>
+								<a href="/kontakt/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade"
+										style="color: white !important; background-color: #008bd2;"
+										data-original-title="" title="kontakt">Kontaktieren Sie uns</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="pt38 pb38" data-name="Title">
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+							<div class="col-lg-12 s_title pt16 pb16" style="text-align: center;">
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div>
+		</t>
+	</template>
+</odoo>

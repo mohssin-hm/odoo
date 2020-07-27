@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="theme_menu_filamente_submenu_ten" name="website.filamente_page">
+		<t t-call="website.layout">
+			<t t-set="additional_title"> ABS-PC - EVO-tech 3D-Drucker </t>
+			<t t-set="website_meta_title"> ABS-PC - EVO-tech 3D-Drucker </t>
+			<t t-set="website_meta_description"> ABS-PC - EVO-tech 3D-Drucker</t>
+						
+			<div id="wrap" class="oe_structure oe_empty">
+				<section class="s_banner parallax s_parallax_is_fixed pt96 s_parallax_no_overflow_hidden pb120"
+					data-scroll-background-ratio="1" data-name="Banner" style="background-image: none;     background-color: rgba(66, 117, 211, 0.63);">
+					<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+						style="text-align: center; background-image: url(&quot;/ehcs_evo_tech_website/static/src/img/druckmaterial-3d-druck_smaller.jpg&quot;); background-position: 50% 0px;" />
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+							<div class=" jumbotron rounded pt32 pb32 col-lg-12" data-name="Box">
+								<div class="row">
+									<div class="col-lg-12 s_title s_col_no_bgcolor" data-name="Title">
+										<h1 class="s_title_default" style="text-align: center; ">
+											<font style="font-size: 48px; color: white;" class="font">
+												<b> ABS-PC FILAMENT </b>
+											</font>
+										</h1>
+										<h3 class="s_title_default" style="text-align: center; font-size: 24px; color: white;">
+											ACRYLNITRIL-BUTADIEN-STYROL POLYCARBONAT
+										</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_features pt32 pb0" data-name="Features" style="color: #555555; background-color: #f8f9fa !important;">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-6 pt32 pb32 text-center">
+								<p class="o_default_snippet_text blue text-left " style="font-size:22px;">
+									<b> Verarbeitungsparameter:	</b>
+								</p>
+								<table>
+									<tbody>
+										<tr>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> Extrusionstemperatur:		 </td>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> 	280 °C</td>
+										</tr>
+										<tr>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> Plattformtemperatur:</td>
+											<td width="302" style=" border: 2px solid #e0e0e8; font-size: 16px; text-align: left; padding: 5px; "> 	90 – 105 °C</td>
+										</tr>
+									</tbody>
+								</table>
+								<br/>
+								<p class="text-left " style="font-size:16px;">
+									PC-ABS ist ein Kunststoff, gemischt aus 
+									<b> Polycarbonat </b>
+									(PC) und 
+									<b> Acrylnitril-Butadien-Styrol </b> (ABS),
+									 und in der Farbe schwarz erhältlich. PC-ABS ist eine Weiterentwicklung des klassischen Kunststoffs ABS. Dieses Filament vereint die Eigenschaften zweier hervorragender FDM-Thermoplaste, nämlich die hohe Festigkeit und Wärmeformbeständigkeit von PC, sowie die gute Zähigkeit bei niedrigen Temperaturen und die einfache Verarbeitbarkeit von ABS.
+								</p>
+							</div>
+							
+							<div class="col-lg-6 pt32 pb32 text-left" style="color: #555555; background-color: #f8f9fa !important;">
+								<p class="o_default_snippet_text " style="font-size:16px;">
+									Dieser Kunststoff weist ein optimiertes Fließverhalten auf und kann im Anschluss lackiert und verklebt werden. Dieser Kunststoff wird besonders in den Bereichen Elektronik und Automotive verwendet. Es verfügt über eine gute elektrische Isolation, weshalb dieses Material gut geeignet ist für das Herstellen von Steckern und Schaltern.
+								</p>
+								<p class="o_default_snippet_text " style="font-size:16px;">
+								Dieses 3D Druckerfilament ist in der Handhabung etwas aufwändiger. Es erfordert hohe Drucktemperaturen und ist hygroskopisch (fähig, Feuchtigkeit zu binden), weshalb es besonders bei der Lagerung sehr anspruchsvoll ist.
+								</p>
+								<br/>
+								<a href="/3d-drucker-el-11/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade " 
+									style="color: white !important; background-color: #008bd2; margin-left: 5%; margin-top: 3%;" 
+									title="3d-drucker-el-11">Continue to EL-11</a>
+								
+								<a href="/3d-drucker-el-102/" class="btn btn-danger blue rounded-circle btn-lg hvr-fade " 
+									style="color: white !important; background-color: #008bd2; margin-left: 5%;  margin-top: 3%;" 
+									title="3d-drucker-el-102">Continue to EL102 </a>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_features pt32 pb0" data-name="Features" >
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-4 pt32 pb32 text-left" >
+								<span class="o_default_snippet_text blue" style="font-size:22px;">
+									<b>
+										Löslichkeit/Beständigkeit
+									</b>
+								</span>
+								<br/>
+								<p class="o_default_snippet_text " style="font-size:16px;">	
+									ABS-PC ist beständig gegen verdünnte Säuren, verdünnte Laugen und Öle und kann in Estern und Ketonen (besonders Aceton) gelöst werden.
+								</p>
+							</div>
+							
+							<div class="col-lg-4 pt32 pb32 text-left" >
+								<span class="o_default_snippet_text blue" style="font-size:22px;">
+									<b>
+										Post-Processing
+									</b>
+								</span>
+								<br/>
+								<p class="o_default_snippet_text " style="font-size:16px;">	
+									Für ABS steht eine breite Palette an Post-Processing Methoden zur Verfügung. Der Kunststoff kann geschweißt, geklebt und lackiert werden.
+								</p>
+							</div>
+							
+							<div class="col-lg-4 pt32 pb32 text-left" >
+								<span class="o_default_snippet_text blue" style="font-size:22px;">
+									<b>
+										Einsatzbereiche
+									</b>
+								</span>
+								<br/>
+								<p class="o_default_snippet_text " style="font-size:16px;">	
+									Gehäusebauteile, Prototypen für Elektrowerkzeuge, Kraftfahrzeugindustrie, Stecker und Schalter
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="s_call_to_action bg-200 pt28 pb28" data-name="Call to Action" style="background-color: #008bd2!important">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-1 pb24">
+								<p class="lead o_default_snippet_text pt16 text-center" style="font-size:20px; color:white; ">
+									<i class="mpc-transition fa fa-3x fa-phone" style=" color: white; "></i>	
+								</p>
+							</div>
+							<div class="col-lg-8 pb24">
+								<p class=" o_default_snippet_text pt16 " style="font-size:20px; color:white; font-weight: 600;">
+									Sie benötigen mehr Informationen? Wir beraten Sie gerne.
+								</p>
+							</div>
+							<div class="col-lg-3 s_btn text-right pt8 pb24" data-name="Button" style=" ">
+								<a href="/kontakt/" class="blue btn btn-gamma flat btn-lg hvr-fade" 
+										style="background-color: white; font-size: 16px;">
+										<b> Jetzt Kontaktieren </b>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="pt40 pb32" data-name="Title" >
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+						</div>
+					</div>
+				</section>
+				
+			</div>
+		</t>
+	</template>
+</odoo>
