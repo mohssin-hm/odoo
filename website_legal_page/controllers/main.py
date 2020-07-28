@@ -13,4 +13,4 @@ class WebsiteLegalPage(http.Controller):
         This is done in this way because 'http.route' wins to
         'website.rewrite' 301 redirections.
         """
-        return request.redirect("/legal")
+#         return request.redirect("/legal")
