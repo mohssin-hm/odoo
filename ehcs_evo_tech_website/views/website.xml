@@ -15,8 +15,8 @@
 							<span style="margin-left: 2%;"> Termine </span>
 						</a>
 					
-						<button class="btn btn-sm btn-secondary dropdown-toggle blue" style="font-size: 16px;" type="button" 
-								data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						<button class="btn btn-sm btn-secondary dropdown-toggle blue" style="font-size: 16px; background-color: white; border-color: white; box-shadow: none;" 
+								type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 							<span t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][2].split('/').pop()" />
 							<span class="caret ml4" />
 																					
@@ -55,7 +55,6 @@
 								</t>
 							</div>
 						</div>
-						
 					</div>
             </nav>
         </xpath>
@@ -329,5 +328,11 @@
 		</xpath>
     </template>
       
+	<template id="ahrefs_site_verification" inherit_id="website.layout" >
+		<xpath expr="//t[@t-set='website_meta']" position="before">
+			<meta name="ahrefs-site-verification" content="c59da5b760ee74c4d4380e7209d13447ac1b9c51464db425ae3060e291c6f8c6"/>
+		</xpath>
+	</template>
+	   
 </odoo>
      				
