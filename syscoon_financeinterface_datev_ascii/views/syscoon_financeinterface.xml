@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="syscoon_financeinterface_search_view" model="ir.ui.view">
+            <field name="name">syscoon.financeinterface.searc.view</field>
+            <field name="model">syscoon.financeinterface</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <xpath expr="//search" position="inside">
+                    <filter name="datev_ascii_moves" domain="[('mode', '=', 'datev_ascii')]" string="DATEV ASCII Moves"/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>
