@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Inherit Account Move Form -->
+        <record id="view_move_form_syscoon_financeinterface" model="ir.ui.view">
+            <field name="name">account.move.form.syscoon.financeinterface</field>
+            <field name="model">account.move</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group[1]" position="inside">
+                    <group id="syscoon_financeinterface_export" groups="syscoon_financeinterface.group_syscoon_financeinterface">
+                        <field name="export_id" readonly="1"/>
+                        <field name="export_manual"/>
+                        <field name="export_account_counterpart" readonly="0" attrs="{'invisible': [('export_manual', '=', False)]}"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+
+   </data>
+</odoo>
