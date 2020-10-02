@@ -316,7 +316,7 @@ msgstr ""
 #. module: syscoon_financeinterface_datev_import
 #: model:ir.model.fields.selection,name:syscoon_financeinterface_datev_import.selection__syscoon_datev_import__state__draft
 msgid "Draft"
-msgstr ""msgstr "Entwurf"
+msgstr "msgstr "Entwurf"
 
 #. module: syscoon_financeinterface_datev_import
 #: model:ir.model.fields.selection,name:syscoon_financeinterface_datev_import.selection__syscoon_datev_import_assignment__type__due_date
@@ -498,7 +498,7 @@ msgstr "Buchungssätze"
 #. module: syscoon_financeinterface_datev_import
 #: model:ir.model.fields.selection,name:syscoon_financeinterface_datev_import.selection__syscoon_datev_import_config__payment_difference_handling__open
 msgid "Keep open"
-v
+msgstr "Offen halten"
 
 #. module: syscoon_financeinterface_datev_import
 #: model:ir.model.fields.selection,name:syscoon_financeinterface_datev_import.selection__syscoon_datev_import_assignment__account_move_line_field__name

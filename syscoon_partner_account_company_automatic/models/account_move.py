@@ -21,7 +21,7 @@ class AccountMove(models.Model):
                     partner_default_id = str(partner['property_account_receivable_id'].id)
                     default_property_id = self.env['ir.property'].search(['&', 
                         ('name', '=', 'property_account_receivable_id'), ('res_id', '=', None),
-                        ('company_id', '=', self.env.user.company_id.id)
+                        ('company_id', '=', self.env.company.id)
                     ])
                     if default_property_id:
                         property_id = str(default_property_id['value_reference'].split(',')[1])
@@ -33,7 +33,8 @@ class AccountMove(models.Model):
                 if journal_id.type == 'purchase':
                     partner_default_id = str(partner['property_account_payable_id'].id)
                     default_property_id = self.env['ir.property'].search(['&', (
-                        'name', '=', 'property_account_payable_id'), ('res_id', '=', None), ('company_id', '=', self.env.user.company_id.id)])
+                        'name', '=', 'property_account_payable_id'), ('res_id', '=', None),
+                        ('company_id', '=', self.env.company.id)])
                     if default_property_id:
                         property_id = str(default_property_id[0]['value_reference'].split(',')[1])
                         if property_id == partner_default_id:
@@ -51,7 +52,7 @@ class AccountMove(models.Model):
         for val in vals_list:
             accounts = False
             partner_default_id = False
-            if val.get('journal_id'):
+            if val.get('journal_id') and val.get('partner_id'):
                 journal_id = self.env['account.journal'].browse(val['journal_id'])
                 if journal_id.type in ['sale', 'purchase']:
                     partner = self.env['res.partner'].browse(val['partner_id'])
@@ -61,7 +62,7 @@ class AccountMove(models.Model):
                         partner_default_id = str(partner['property_account_receivable_id'].id)
                         default_property_id = self.env['ir.property'].search(['&', 
                             ('name', '=', 'property_account_receivable_id'), ('res_id', '=', None),
-                            ('company_id', '=', self.env.user.company_id.id)
+                            ('company_id', '=', self.env.company.id)
                         ])
                         if default_property_id:
                             property_id = str(default_property_id['value_reference'].split(',')[1])
@@ -73,7 +74,8 @@ class AccountMove(models.Model):
                     if journal_id.type == 'purchase':
                         partner_default_id = str(partner['property_account_payable_id'].id)
                         default_property_id = self.env['ir.property'].search(['&', (
-                            'name', '=', 'property_account_payable_id'), ('res_id', '=', None), ('company_id', '=', self.env.user.company_id.id)])
+                            'name', '=', 'property_account_payable_id'), ('res_id', '=', None), 
+                            ('company_id', '=', self.env.company.id)])
                         if default_property_id:
                             property_id = str(default_property_id[0]['value_reference'].split(',')[1])
                             if property_id == partner_default_id:

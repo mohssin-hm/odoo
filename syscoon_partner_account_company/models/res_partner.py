@@ -21,11 +21,11 @@ class ResPartner(models.Model):
         ctx = context
         auto_account = self.env['ecoservice.partner.auto.account.company']
         receivable_property = self.env['ir.property'].search([
-                                ('company_id', '=', self.env.user.company_id.id),
+                                ('company_id', '=', self.env.company.id),
                                 ('res_id', '=', False),
                                 ('name', '=', 'property_account_receivable_id')])
         payable_property = self.env['ir.property'].search([
-                                ('company_id', '=', self.env.user.company_id.id),
+                                ('company_id', '=', self.env.company.id),
                                 ('res_id', '=', False),
                                 ('name', '=', 'property_account_payable_id')])
         receivable = False#
@@ -52,18 +52,18 @@ class ResPartner(models.Model):
                 receivable_values = {
                     'customer_number': receivable
                 }
-                if self.env.user.company_id.add_number_to_partner_ref:
+                if self.env.company.add_number_to_partner_ref:
                     receivable_values['ref'] = receivable
-                if self.env.user.company_id.use_separate_accounts:
+                if self.env.company.use_separate_accounts:
                     receivable_values['property_account_receivable_id'] = receivable_id.id
                 partner.write(receivable_values)
             if payable:
                 payable_values = {
                     'supplier_number': payable,
                 }
-                if self.env.user.company_id.add_number_to_partner_ref:
+                if self.env.company.add_number_to_partner_ref:
                     payable_values['ref'] = payable
-                if self.env.user.company_id.use_separate_accounts:
+                if self.env.company.use_separate_accounts:
                     payable_values['property_account_payable_id'] = payalbe_id.id
                 partner.write(payable_values)
         return receivable, payable, receivable_id, payalbe_id

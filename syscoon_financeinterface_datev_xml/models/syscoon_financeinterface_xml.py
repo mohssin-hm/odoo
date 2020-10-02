@@ -148,18 +148,26 @@ class syscoonFinanceinterfaceXML(models.TransientModel):
 
     def get_invoice_item_list(self, move_id, invoice_mode):
         vals = []
+        total_invoice_amount = 0.0
         for line in move_id.invoice_line_ids:
+            total_invoice_amount += line.price_total
             if not line.display_type and not line.price_subtotal == 0.0:
                 item = {}
-                item['description_short'] = line.name and line.name[:40] or _('Description')
+                item['description_short'] = line.name[:40] or _('Description')
                 item['quantity'] = line.quantity or 1.0
                 item['price_line_amount'] = {}
                 item['price_line_amount']['tax'] = line.tax_ids and line.tax_ids[0].amount or 0.0
                 if invoice_mode == 'extended':
-                    if line.price_total - line.price_subtotal:
-                        item['price_line_amount']['tax_amount'] = line.price_total - line.price_subtotal
-                    item['price_line_amount']['gross_price_line_amount'] = line.price_total
-                    item['price_line_amount']['net_price_line_amount'] = line.price_subtotal
+                    if move_id.type in ['out_refund', 'in_refund']:
+                        if move_id.currency_id.round(line.price_total - line.price_subtotal) != 0.0:
+                            item['price_line_amount']['tax_amount'] = - (line.price_total - line.price_subtotal)
+                        item['price_line_amount']['gross_price_line_amount'] = - line.price_total
+                        item['price_line_amount']['net_price_line_amount'] = - line.price_subtotal
+                    else:
+                        if move_id.currency_id.round(line.price_total - line.price_subtotal) != 0.0:
+                            item['price_line_amount']['tax_amount'] = line.price_total - line.price_subtotal
+                        item['price_line_amount']['gross_price_line_amount'] = line.price_total
+                        item['price_line_amount']['net_price_line_amount'] = line.price_subtotal
                     item['price_line_amount']['currency'] = line.currency_id.name or 'EUR'
                     item['accounting_info'] = {}
                     item['accounting_info']['account_no'] = line.account_id.code.lstrip('0')
@@ -169,18 +177,34 @@ class syscoonFinanceinterfaceXML(models.TransientModel):
                     if line.analytic_tag_ids and line.analytic_tag_ids[0]:
                         item['accounting_info']['cost_category_id2'] = line.analytic_tag_ids[0].name
                 vals.append(item)
+        if move_id.currency_id.round(total_invoice_amount) != move_id.amount_total:
+            difference = move_id.currency_id.round(total_invoice_amount - move_id.amount_total)
+            last_val = vals[-1]
+            del vals[-1]
+            if last_val['price_line_amount'].get('tax_amount'):
+                last_val['price_line_amount']['tax_amount'] = move_id.currency_id.round(last_val['price_line_amount']['tax_amount'] - difference)
+            last_val['price_line_amount']['gross_price_line_amount'] = move_id.currency_id.round(item['price_line_amount']['gross_price_line_amount'] - difference)
+            vals.append(last_val)
         return vals
 
     def get_total_amount(self, move_id, invoice_mode):
         vals = {}
-        vals['total_gross_amount_excluding_third-party_collection'] = move_id.amount_total
+        if move_id.type in ['out_refund', 'in_refund']:
+            vals['total_gross_amount_excluding_third-party_collection'] = - move_id.amount_total
+        else:
+            vals['total_gross_amount_excluding_third-party_collection'] = move_id.amount_total
         if invoice_mode == 'extended':
-            vals['net_total_amount'] = move_id.amount_untaxed
+            if move_id.type in ['out_refund', 'in_refund']:
+                vals['net_total_amount'] = - move_id.amount_untaxed
+            else:
+                vals['net_total_amount'] = move_id.amount_untaxed
         vals['currency'] = move_id.currency_id.name or 'EUR'
         tax_lines = move_id.line_ids.filtered(lambda line: line.tax_line_id)
+        tax_key_lines = move_id.line_ids.filtered(lambda line: line.tax_ids)
         vals['tax_line'] = []
         res = {}
         done_taxes = set()
+        done_tax_key_lines = set()
         for line in tax_lines:
             res.setdefault(line.tax_line_id.tax_group_id, {'rate': 0.0, 'base': 0.0, 'amount': 0.0})
             res[line.tax_line_id.tax_group_id]['rate'] = line.tax_line_id.amount
@@ -190,16 +214,27 @@ class syscoonFinanceinterfaceXML(models.TransientModel):
                 # The base should be added ONCE
                 res[line.tax_line_id.tax_group_id]['base'] += line.tax_base_amount
                 done_taxes.add(tax_key_add_base)
+        for line in tax_key_lines:
+            if line.tax_ids[0].amount == 0.0:
+                res.setdefault(line.tax_ids[0].tax_group_id, {'rate': 0.0, 'base': 0.0, 'amount': 0.0})
+                res[line.tax_ids[0].tax_group_id]['base'] += line.debit + line.credit
         res = sorted(res.items(), key=lambda l: l[0].sequence)
         for group, amounts in res:
             line_vals = {}
             line_vals['tax'] = amounts['rate']
             line_vals['currency'] = move_id.currency_id.name
             if invoice_mode == 'extended':
-                line_vals['net_price_line_amount'] = amounts['base']
-                line_vals['gross_price_line_amount'] = amounts['base'] + amounts['amount']
-                if amounts['amount']:
-                    line_vals['tax_amount'] = amounts['amount']
+                if move_id.type in ['out_refund', 'in_refund']:
+                    line_vals['net_price_line_amount'] = - amounts['base']
+                    line_vals['gross_price_line_amount'] = - (amounts['base'] + amounts['amount'])
+                else:
+                    line_vals['net_price_line_amount'] = amounts['base']
+                    line_vals['gross_price_line_amount'] = amounts['base'] + amounts['amount']
+                if amounts['amount'] > 0.0:
+                    if move_id.type in ['out_refund', 'in_refund']:
+                        line_vals['tax_amount'] = - amounts['amount']
+                    else:
+                        line_vals['tax_amount'] = amounts['amount']
             vals['tax_line'].append(line_vals)
         if not vals['tax_line']:
             line_vals = {}

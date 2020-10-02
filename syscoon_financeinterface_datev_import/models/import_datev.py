@@ -10,6 +10,10 @@ import time
 from datetime import datetime
 from io import StringIO
 
+ACCOUNT_TYPES = [
+    'account.data_account_type_revenue', 'account.data_account_type_other_income',
+    'account.data_account_type_expenses', 'account.data_account_type_direct_costs',
+] 
 
 class ImportDatev(models.Model):
     """
@@ -332,6 +336,12 @@ class ImportDatev(models.Model):
             return_object =  self.env[object].search([(field, '=', value)])
         return return_object
 
+    def get_account_types(self):#
+        types = []
+        for ref in ACCOUNT_TYPES:
+            types.append(self.env.ref(ref).id)
+        return types
+
     def create_values(self, list):
         moves = []
         partner = self.env['res.partner']
@@ -463,7 +473,7 @@ class ImportDatev(models.Model):
                         credit_move_line['analytic_tag_ids'] = [(6, 0, self.get_object(v['type'].object, v['type'].field, v['import_value']).ids)]
 
             if tax_id:
-                if debit_move_line['account_id'].user_type_id.type == 'other':
+                if debit_move_line['account_id'].user_type_id.id in self.get_account_types():
                     if debit_move_line['debit']:
                         taxes = tax_id.compute_all(debit_move_line['debit'])
                         debit_move_line['debit'] = taxes['total_excluded']
@@ -472,7 +482,7 @@ class ImportDatev(models.Model):
                         debit_move_line['credit'] = taxes['total_excluded']
                     debit_move_line['tax_ids'] = [(6, 0, tax_id.ids)]
                     debit_move_line['tag_ids'] = [(6, 0, taxes['base_tags'])]
-                if credit_move_line['account_id'].user_type_id.type == 'other':
+                if credit_move_line['account_id'].user_type_id.id in self.get_account_types():
                     if credit_move_line['debit']:
                         taxes = tax_id.compute_all(credit_move_line['debit'])
                         credit_move_line['debit'] = taxes['total_excluded']
@@ -490,7 +500,7 @@ class ImportDatev(models.Model):
                         opposite_move = self.env['account.move'].search([('datev_ref', '=', move['ref'])])
                     if opposite_move:
                         for l in opposite_move.line_ids:
-                            if l.account_id.user_type_id.type == 'other':
+                            if l.account_id.user_type_id.id in self.get_account_types():
                                 if l.tax_ids:
                                     tax_id = l.tax_ids[0]
                     if tax_id and tax_id.datev_discount_account:
