@@ -299,8 +299,8 @@ class syscoonFinanceinterface(models.Model):
         export_line['Belegfeld 1'], group  = self.create_doc_field(line[:36], group)
         maturity_dates = []
         for l in line.move_id.line_ids:
-            if l.date_maturity:
-                maturity_dates.append(l.date)
+            if l.invoice_date_due:
+                maturity_dates.append(l.invoice_date_due)
         if maturity_dates:
             export_line['Belegfeld 2'] = self.convert_date(max(maturity_dates), '%d%m%y')
         export_line['Buchungstext'] = self.create_label(line)[:60]

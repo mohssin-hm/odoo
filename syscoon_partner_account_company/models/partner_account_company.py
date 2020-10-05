@@ -10,7 +10,7 @@ class ecoservice_partner_auto_account_company(models.Model):
 
     def get_accounts(self, partner_id, receivable_code, payable_code, ctx={}):
         partner_name = partner_id.name
-        config_ids = self.env.user.company_id
+        config_ids = self.env.company
         account_obj = self.env['account.account']
         receivable_account_id, receivable_code = False, False
         payable_account_id, payable_code = False, False

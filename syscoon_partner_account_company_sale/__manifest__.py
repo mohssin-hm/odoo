@@ -4,7 +4,7 @@
 
 {
     'name': 'Partner Debitoren- / Kreditorenkonto Automatik -Sale',
-    'version': '13.0.1.0.3',
+    'version': '13.0.1.0.4',
     'author': 'syscoon GmbH',
     'license': 'OPL-1',
     'category': 'Accounting',
