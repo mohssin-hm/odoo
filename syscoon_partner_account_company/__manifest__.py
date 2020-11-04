@@ -4,7 +4,7 @@
 
 {
     'name': 'Partner Debitoren- / Kreditorenkonto',
-    'version': '13.0.1.0.7',
+    'version': '13.0.1.0.8',
     'author': 'syscoon GmbH',
     'license': 'OPL-1',
     'category': 'Accounting',

@@ -392,6 +392,7 @@ class syscoonFinanceinterface(models.Model):
         """ Generates a list of dicts which have all the exportlines to datev """
         export_lines = []
         account_ids = []
+        converted_partner = False
         for partner_id in partner_ids:
             partner_numbers = []
             if partner_id.customer_number:
@@ -404,66 +405,69 @@ class syscoonFinanceinterface(models.Model):
                         converted_partner, account_id = self.generate_rewe_partner(partner_id, number, self.export_template_accounts())
                     else:
                         converted_partner, account_id = self.generate_duo_partner(partner_id, number, self.export_template_accounts_duo())
-                export_lines.append(converted_partner)
-                account_ids.append(account_id.id)
+                if converted_partner:
+                    export_lines.append(converted_partner)
+                    account_ids.append(account_id.id)
         return export_lines, account_ids
 
     def generate_rewe_partner(self, partner_id, number, template):
-        """ Checks if lines are exportable and inits the generation of the export line """
-        account_id = self.env['account.account'].search([('code', '=', number)]) or False
-        template['Konto'] = account_id and account_id.code or number 
-        template['Kurzbezeichnung'] = partner_id.name[:15] or ''
-        if partner_id.is_company:
-            template['Name (Adressattyp Unternehmen)'] = partner_id.name
-            template['Unternehmensgegenstand'] = partner_id.industry_id.full_name or ''
-            template['Adressattyp'] = 1
-        else:
-            template['Name (Adressattyp natürl. Person)'] = partner_id.name
-            template['Adressattyp'] = 2
-        if partner_id.vat and partner_id.vat[:2] in ('BE', 'BG', 'DK', 'DE', 'EE',
-                'FI', 'FR', 'GR', 'GB', 'IE', 'IT', 'HR', 'LV', 'LT', 'LU', 'MT',
-                'NL', 'AT', 'PL', 'PT', 'RO', 'SE', 'SK', 'SI', 'ES', 'CZ', 'HU', 'CY'):
-            template['EU-Land'] = partner_id.vat[:2]
-            template['EU-UStID'] = partner_id.vat[2:]
-        if partner_id.title:
-            template['Anrede'] = partner_id.title.name or ''
-        template['Adressart'] = 'STR'
-        template['Straße'] = partner_id.street or ''
-        template['Postleitzahl'] = partner_id.zip or ''
-        template['Ort'] = partner_id.city or ''
-        template['Land'] = partner_id.country_id.code or ''
-        template['Telefon'] = partner_id.phone or ''
-        template['E-Mail'] = partner_id.email or ''
-        template['Internet'] = partner_id.website or ''
-        count = 1
-        if partner_id.bank_ids:
-            for bank in partner_id.bank_ids:
-                template['Bankbezeichnung %s' % count] = bank.bank_id.name or ''
-                template['Abw. Kontoinhaber %s' % count] = bank.acc_holder_name or ''
-                if bank.acc_type == 'iban':
-                    template['IBAN-Nr. %s' % count] = bank.acc_number or ''
-                    template['SWIFT-Code %s' % count] = bank.bank_id.bic or ''
-                else:
-                    template['Bankleitzahl %s' % count] = bank.bank_id.bic or ''
-                    template['Bank-Kontonummer %s' % count] = bank.acc_number or ''
-                    template['Länderkennzeichen %s' % count] = bank.bank_id.country.code or ''
-                if count == 1:
-                    template['Kennz. Hauptbankverb. %s' % count] = 1
-                else:
-                    template['Kennz. Hauptbankverb. %s' % count] = 0
-        template['Kunden-/Lief.-Nr.'] = partner_id.ref or ''
-        if account_id and account_id.datev_diverse_account:
-            template['Diverse-Konto'] = 1
-        else:
-            template['Diverse-Konto'] = 0
-        if partner_id.child_ids:
-            for child_id in partner_id.child_ids:
-                if child_id.type == 'invoice':
-                    template['Straße (Rechnungsadresse)'] = child_id.street or ''
-                    template['Postleitzahl (Rechnungsadresse)'] = child_id.zip or ''
-                    template['Ort (Rechnungsadresse)'] = child_id.city or ''
-                    template['Land (Rechnungsadresse)'] = child_id.country_id.code or ''
-                    template['Adresszusatz (Rechnungsadresse)'] = child_id.street2 or ''
+        template_id = account_id = False
+        if partner_id:
+            """ Checks if lines are exportable and inits the generation of the export line """
+            account_id = self.env['account.account'].search([('code', '=', number)]) or False
+            template['Konto'] = account_id and account_id.code or number 
+            template['Kurzbezeichnung'] = partner_id.name and partner_id.name[:15] or ''
+            if partner_id.is_company:
+                template['Name (Adressattyp Unternehmen)'] = partner_id.name or ''
+                template['Unternehmensgegenstand'] = partner_id.industry_id.full_name or ''
+                template['Adressattyp'] = 1
+            else:
+                template['Name (Adressattyp natürl. Person)'] = partner_id.name or ''
+                template['Adressattyp'] = 2
+            if partner_id.vat and partner_id.vat[:2] in ('BE', 'BG', 'DK', 'DE', 'EE',
+                    'FI', 'FR', 'GR', 'GB', 'IE', 'IT', 'HR', 'LV', 'LT', 'LU', 'MT',
+                    'NL', 'AT', 'PL', 'PT', 'RO', 'SE', 'SK', 'SI', 'ES', 'CZ', 'HU', 'CY'):
+                template['EU-Land'] = partner_id.vat[:2]
+                template['EU-UStID'] = partner_id.vat[2:]
+            if partner_id.title:
+                template['Anrede'] = partner_id.title.name or ''
+            template['Adressart'] = 'STR'
+            template['Straße'] = partner_id.street or ''
+            template['Postleitzahl'] = partner_id.zip or ''
+            template['Ort'] = partner_id.city or ''
+            template['Land'] = partner_id.country_id.code or ''
+            template['Telefon'] = partner_id.phone or ''
+            template['E-Mail'] = partner_id.email or ''
+            template['Internet'] = partner_id.website or ''
+            count = 1
+            if partner_id.bank_ids:
+                for bank in partner_id.bank_ids:
+                    template['Bankbezeichnung %s' % count] = bank.bank_id.name or ''
+                    template['Abw. Kontoinhaber %s' % count] = bank.acc_holder_name or ''
+                    if bank.acc_type == 'iban':
+                        template['IBAN-Nr. %s' % count] = bank.acc_number or ''
+                        template['SWIFT-Code %s' % count] = bank.bank_id.bic or ''
+                    else:
+                        template['Bankleitzahl %s' % count] = bank.bank_id.bic or ''
+                        template['Bank-Kontonummer %s' % count] = bank.acc_number or ''
+                        template['Länderkennzeichen %s' % count] = bank.bank_id.country.code or ''
+                    if count == 1:
+                        template['Kennz. Hauptbankverb. %s' % count] = 1
+                    else:
+                        template['Kennz. Hauptbankverb. %s' % count] = 0
+            template['Kunden-/Lief.-Nr.'] = partner_id.ref or ''
+            if account_id and account_id.datev_diverse_account:
+                template['Diverse-Konto'] = 1
+            else:
+                template['Diverse-Konto'] = 0
+            if partner_id.child_ids:
+                for child_id in partner_id.child_ids:
+                    if child_id.type == 'invoice':
+                        template['Straße (Rechnungsadresse)'] = child_id.street or ''
+                        template['Postleitzahl (Rechnungsadresse)'] = child_id.zip or ''
+                        template['Ort (Rechnungsadresse)'] = child_id.city or ''
+                        template['Land (Rechnungsadresse)'] = child_id.country_id.code or ''
+                        template['Adresszusatz (Rechnungsadresse)'] = child_id.street2 or ''
         return template, account_id
         
     def generate_duo_partner(self, partner_id, number, template):
