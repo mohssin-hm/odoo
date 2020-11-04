@@ -6,6 +6,10 @@ from odoo import models, fields, api, _
 import re
 from lxml import etree
 
+EU_VAT = ['BE', 'BG', 'DK', 'DE', 'EE', 'FI', 'FR', 'GR', 'GB', 'IE',
+          'IT', 'HR', 'LV', 'LT', 'LU', 'MT', 'NL', 'AT', 'PL', 'PT',
+          'RO', 'SE', 'SK', 'SI', 'ES', 'CZ', 'HU', 'CY']
+
 class syscoonFinanceinterfaceXML(models.TransientModel):
     _name = 'syscoon.financeinterface.xml'
     _description = 'definitions for the syscoon financeinterface DATEV XML-export'
@@ -61,7 +65,7 @@ class syscoonFinanceinterfaceXML(models.TransientModel):
             ip = move_id.company_id
             booking_info = False
         vals = {}
-        if ip.vat:
+        if ip.vat and ip.vat[:2] in EU_VAT:
             vals['vat_id'] = ip.vat
         vals['address'] = {}
         if ip.name:
@@ -105,8 +109,8 @@ class syscoonFinanceinterfaceXML(models.TransientModel):
             sp = move_id.commercial_partner_id
             booking_info = True
         vals = {}
-        if sp.vat:
-            vals['vat'] = sp.vat
+        if sp.vat and sp.vat[:2] in EU_VAT:
+            vals['vat_id'] = sp.vat
         vals['address'] = {}
         if sp.name:
             vals['address']['name'] = sp.name[:50]
@@ -153,7 +157,7 @@ class syscoonFinanceinterfaceXML(models.TransientModel):
             total_invoice_amount += line.price_total
             if not line.display_type and not line.price_subtotal == 0.0:
                 item = {}
-                item['description_short'] = line.name[:40] or _('Description')
+                item['description_short'] = line.name and line.name[:40] or _('Description')
                 item['quantity'] = line.quantity or 1.0
                 item['price_line_amount'] = {}
                 item['price_line_amount']['tax'] = line.tax_ids and line.tax_ids[0].amount or 0.0
@@ -171,7 +175,7 @@ class syscoonFinanceinterfaceXML(models.TransientModel):
                     item['price_line_amount']['currency'] = line.currency_id.name or 'EUR'
                     item['accounting_info'] = {}
                     item['accounting_info']['account_no'] = line.account_id.code.lstrip('0')
-                    item['accounting_info']['booking_text'] = line.name[:60] or _('Description')
+                    item['accounting_info']['booking_text'] = line.name and line.name[:60] or _('Description')
                     if line.analytic_account_id:
                         item['accounting_info']['cost_category_id'] = line.analytic_account_id.code
                     if line.analytic_tag_ids and line.analytic_tag_ids[0]:
@@ -246,7 +250,7 @@ class syscoonFinanceinterfaceXML(models.TransientModel):
     def get_additional_footer(self, move_id):
         vals = {}
         vals['type'] = 'text'
-        vals['content'] = move_id.narration[:60]
+        vals['content'] = move_id.narration and move_id.narration[:60] or ''
         return vals
 
     def make_invoice_xml(self, move_id, invoice_mode):
@@ -322,7 +326,7 @@ class syscoonFinanceinterfaceXML(models.TransientModel):
         if move_id.narration:
             additional_info_footer = etree.SubElement(invoice, 'additional_info_footer')
             additional_info_footer.attrib['type'] = 'text'
-            additional_info_footer.attrib['content'] = move_id.narration[:60]
+            additional_info_footer.attrib['content'] = move_id and move_id.narration[:60] or ''
 
         return invoice
 

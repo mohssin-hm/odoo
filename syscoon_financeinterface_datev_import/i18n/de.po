@@ -7,19 +7,21 @@ msgstr ""
 "Project-Id-Version: Odoo Server 13.0+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-13 12:30+0000\n"
-"PO-Revision-Date: 2020-08-13 12:30+0000\n"
+"PO-Revision-Date: 2020-10-06 18:43+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: \n"
+"Language: de\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #. module: syscoon_financeinterface_datev_import
 #: code:addons/syscoon_financeinterface_datev_import/models/import_datev.py:0
 #, python-format
 msgid "%s cant be converted."
-msgstr ""msgstr "%s kann nicht konvertiert werden."
+msgstr "%s kann nicht konvertiert werden."
 
 #. module: syscoon_financeinterface_datev_import
 #: code:addons/syscoon_financeinterface_datev_import/models/import_datev.py:0
@@ -44,7 +46,7 @@ msgstr "%s stimmt nicht mit %s überein. Bitte prüfen."
 #: model:ir.model.fields.selection,name:syscoon_financeinterface_datev_import.selection__syscoon_datev_import_assignment__type__account
 #: model:syscoon.datev.import.assignment,name:syscoon_financeinterface_datev_import.assignment_account
 msgid "Account"
-msgstr ""msgstr "Konto"
+msgstr "Konto"
 
 #. module: syscoon_financeinterface_datev_import
 #: model:ir.model.fields,field_description:syscoon_financeinterface_datev_import.field_syscoon_datev_import_assignment__account_move_field
@@ -89,7 +91,7 @@ msgstr "Aktivitätsstatus"
 #. module: syscoon_financeinterface_datev_import
 #: model:ir.model.fields,help:syscoon_financeinterface_datev_import.field_syscoon_datev_import_assignment__padding
 msgid "Adds 0 to the left of the Value to fill up to necessary lenght"
-msgstr "Fügt eine 0 auf der linken Seite des Wertes hinzu damit die erforderliche Länge erreicht wird."
+msgstr "Fügt eine 0 auf der linken Seite des Wertes hinzu damit die erforderliche Länge erreicht wird"
 
 #. module: syscoon_financeinterface_datev_import
 #: model:ir.model.fields.selection,name:syscoon_financeinterface_datev_import.selection__syscoon_datev_import_assignment__account_move_line_field__amount
@@ -316,7 +318,7 @@ msgstr ""
 #. module: syscoon_financeinterface_datev_import
 #: model:ir.model.fields.selection,name:syscoon_financeinterface_datev_import.selection__syscoon_datev_import__state__draft
 msgid "Draft"
-msgstr "msgstr "Entwurf"
+msgstr "Entwurf"
 
 #. module: syscoon_financeinterface_datev_import
 #: model:ir.model.fields.selection,name:syscoon_financeinterface_datev_import.selection__syscoon_datev_import_assignment__type__due_date
@@ -343,7 +345,7 @@ msgstr "Fehler"
 #: code:addons/syscoon_financeinterface_datev_import/models/import_datev.py:0
 #, python-format
 msgid "Expense Discount Account not selected in Template!"
-msgstr "Skontokonto für Ausgaben ist nicht in der Vorlage hinterlegt"
+msgstr "Skontokonto für Ausgaben ist nicht in der Vorlage hinterlegt!"
 
 #. module: syscoon_financeinterface_datev_import
 #: model:ir.model.fields,field_description:syscoon_financeinterface_datev_import.field_syscoon_datev_import_assignment__field
@@ -570,7 +572,7 @@ msgstr "Pflichtfeld wenn die Datei im DATEV ASCII format ist."
 #. module: syscoon_financeinterface_datev_import
 #: model:ir.model.fields.selection,name:syscoon_financeinterface_datev_import.selection__syscoon_datev_import_config__payment_difference_handling__reconcile
 msgid "Mark invoice as fully paid"
-msgstr "Rechnung vollständig als bezahlt markieren."
+msgstr "Rechnung vollständig als bezahlt markieren"
 
 #. module: syscoon_financeinterface_datev_import
 #: model:ir.model.fields,field_description:syscoon_financeinterface_datev_import.field_syscoon_datev_import__message_has_error
@@ -662,7 +664,7 @@ msgstr "Zusammenfassung der nächsten Aktivität"
 #. module: syscoon_financeinterface_datev_import
 #: model:ir.model.fields,field_description:syscoon_financeinterface_datev_import.field_syscoon_datev_import__activity_type_id
 msgid "Next Activity Type"
-msgstr "Nächste Aktivitätsart
+msgstr "Nächste Aktivität"
 
 #. module: syscoon_financeinterface_datev_import
 #: code:addons/syscoon_financeinterface_datev_import/models/import_datev.py:0
@@ -803,7 +805,7 @@ msgstr ""
 "Status basierend auf Aktivitäten\n"
 "Überfällig: Fälligkeitsdatum ist bereits überschritten\n"
 "Heute: Aktivitätsdatum ist heute\n"
-"Geplant: Zukünftige Aktivitäten".                                                           
+"Geplant: zukünftige Aktivitäten."
 
 #. module: syscoon_financeinterface_datev_import
 #: model:ir.model.fields.selection,name:syscoon_financeinterface_datev_import.selection__syscoon_datev_import_assignment__field_type__string
@@ -830,8 +832,8 @@ msgstr "Steuerschlüssel"
 #: code:addons/syscoon_financeinterface_datev_import/models/import_datev.py:0
 #, python-format
 msgid ""
-"There is more than one file attached to this record. Please make sure that "
-"there is only one attached CSV-file."
+"There is more than one file attached to this record. Please make sure that there is only one "
+"attached CSV-file."
 msgstr ""
 "Es gibt mehr als eine Datei, die an diesen Datensatz angehängt ist. Bitte stellen Sie sicher, dass "
 "nur eine Datei angehängt wurde."

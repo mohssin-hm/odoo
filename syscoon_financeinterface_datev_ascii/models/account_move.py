@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
-from odoo import models, fields, _
+from odoo import api, fields, models, _
 from odoo.exceptions import UserError
 
 import re
@@ -13,22 +13,7 @@ class AccountMove(models.Model):
     _inherit = 'account.move'
 
     datev_checks_enabled = fields.Boolean('Perform Datev Checks', default=lambda self: self.env.user.company_id.datev_checks_enabled)
-    datev_ref = fields.Char(string='DATEV Ref', index=True)
-
-    def post(self):
-        """Inherits the post method to provide the DATEV checks"""
-        for move in self:
-            if move.datev_checks_enabled:
-                self.make_datev_checks(move)
-        return super(AccountMove, self).post()
-
-    def write(self, vals):
-        if vals.get('state') == 'posted':
-            if self.journal_id.type == 'purchase' and self.ref:
-                vals['datev_ref'] = re.sub(r'[\W_]+', '', self.ref)
-            else:
-                vals['datev_ref'] = re.sub(r'[\W_]+', '', self.name)
-        return super(AccountMove, self).write(vals)
+    datev_ref = fields.Char('DATEV Ref', compute='_compute_datev_ref', store=True, index=True)
 
     def make_datev_checks(self, move):
         """Checks the move and the move lines if the counteraccount is set and
@@ -57,4 +42,13 @@ class AccountMove(models.Model):
             raise UserError('\n'.join(errors))
         return errors
 
+    @api.depends('name', 'ref')
+    def _compute_datev_ref(self):
+        for move in self:
+            if move.journal_id.type == 'purchase' and move.ref:
+                move.datev_ref = re.sub(r'[\W_]+', '', move.ref)
+            elif move.name:
+                move.datev_ref = re.sub(r'[\W_]+', '', move.name)
+            else:
+                move.datev_ref = False
 

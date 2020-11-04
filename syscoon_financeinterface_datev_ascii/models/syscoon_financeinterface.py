@@ -297,12 +297,8 @@ class syscoonFinanceinterface(models.Model):
             export_line['Gegenkonto (ohne BU-Schlüssel)'] = self.remove_leading_zero(line.move_id.export_account_counterpart.code)
         export_line['Belegdatum'] = self.convert_date(line.date, self.env.company.datev_voucher_date_format)
         export_line['Belegfeld 1'], group  = self.create_doc_field(line[:36], group)
-        maturity_dates = []
-        for l in line.move_id.line_ids:
-            if l.invoice_date_due:
-                maturity_dates.append(l.invoice_date_due)
-        if maturity_dates:
-            export_line['Belegfeld 2'] = self.convert_date(max(maturity_dates), '%d%m%y')
+        if line.move_id.invoice_date_due:
+            export_line['Belegfeld 2'] = self.convert_date(line.move_id.invoice_date_due, '%d%m%y')
         export_line['Buchungstext'] = self.create_label(line)[:60]
         if line.analytic_account_id.code:
             export_line['KOST1 - Kostenstelle'] = line.analytic_account_id.code

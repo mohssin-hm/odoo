@@ -3,7 +3,7 @@
 
 {
     'name': 'Finanzinterface - Datev XML Export',
-    'version': '13.0.1.0.19',
+    'version': '13.0.1.0.23',
     'author': 'syscoon GmbH',
     'license': 'OPL-1',
     'category': 'Accounting',

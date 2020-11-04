@@ -13,6 +13,7 @@
                     <group id="syscoon_financeinterface_datev">
                         <group>
                             <field name="datev_checks_enabled"/>
+                            <field name="datev_ref" readonly="0"/>
                         </group>
                     </group>
                 </xpath>

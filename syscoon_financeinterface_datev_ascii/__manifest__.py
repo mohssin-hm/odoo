@@ -3,7 +3,7 @@
 
 {
     'name': 'Finanzinterface - Datev ASCII Export',
-    'version': '13.0.1.0.13',
+    'version': '13.0.1.0.16',
     'author': 'syscoon GmbH',
     'license': 'OPL-1',
     'website': 'https://syscoon.com',
