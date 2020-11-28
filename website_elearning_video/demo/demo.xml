@@ -1,0 +1,12 @@
+<odoo>
+    <data noupdate="1">
+        <record id="demo_1" model="wk.video.types">
+            <field name="name">video/mp4</field>
+        </record>
+
+        <record id="demo_2" model="website.slide.video">
+            <field name="allowed_types" eval="[(6,0,[ref('website_elearning_video.demo_1')])]" />
+            <field name="is_active">True</field>
+        </record>
+    </data>
+</odoo>

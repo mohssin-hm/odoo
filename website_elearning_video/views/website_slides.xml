@@ -1,0 +1,19 @@
+<!-- Copyright (c) 2015-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<!-- "License URL : <https://store.webkul.com/license.html/>" -->
+
+<odoo>
+    <data>
+        <template id="slide_library_assets" inherit_id="web.assets_frontend">
+            <xpath expr="." position="inside">
+              <script type="text/javascript" src="/website_elearning_video/static/src/js/main.js"></script>
+            </xpath>
+          </template>
+
+        <template id="slide_fullscreen_sidebar_category_inherited" inherit_id="website_slides.slide_fullscreen_sidebar_category">
+            <xpath expr="//ul[hasclass('o_wslides_fs_sidebar_section_slides')]//t[@t-foreach='slides']/li" position="attributes">
+                <attribute name="t-attf-data-attachment-id">{{slide.slide_attachment.id}}</attribute>
+            </xpath>
+        </template>
+    </data>
+</odoo>

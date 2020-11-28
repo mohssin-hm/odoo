@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2015-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<!-- "License URL : <https://store.webkul.com/license.html/>" -->
+
+<odoo>
+	<data>
+		<record id="view_inherit_slide_slide_form" model="ir.ui.view">
+			<field name="name">slide.slide.form.view.inherit</field>
+			<field name="model">slide.slide</field>
+			<field name="inherit_id" ref="website_slides.view_slide_slide_form"/>
+			<field name="arch" type="xml">
+				<field name='url' position="before">
+                    <button name="website_elearning_video.video_slide_attachment_wizard_action" attrs="{'invisible': [('document_type', '=', 'url')]}" type="action" class="btn-success" icon="fa-paperclip" string="Add Attachment" style="width: 100%;height: 35px;"/>
+                    <field name="slide_attachment"/>
+                    <field name="document_type"/>
+				</field>
+                <xpath expr="//field[@name='url']" position="attributes">
+                    <attribute name="attrs">{'required': [('image_1920', '=', False),('document_type', '=', 'url')], 'invisible': [('document_type', '!=', 'url')]}</attribute>
+                </xpath>
+			</field>
+		</record>
+	</data>
+</odoo>

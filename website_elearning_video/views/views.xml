@@ -1,0 +1,75 @@
+<!-- Copyright (c) 2015-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<!-- "License URL : <https://store.webkul.com/license.html/>" -->
+
+<odoo>
+    <data> 
+      <record id="website_slide_type_config" model="ir.ui.view">
+        <field name="name">website.slide.video</field>
+        <field name="model">website.slide.video</field>
+        <field name="arch" type="xml">
+          <form string="Choose Video Types" name="Choose Video Types">
+            <group string="Video Types Allowed">
+              <field name="allowed_types" widget="many2many_tags"/>
+              <field name="is_active"/>
+            </group>
+          </form>
+        </field>
+      </record>
+
+      <record id="website_slide_type_config_type" model="ir.ui.view">
+        <field name="name">wk.video.types</field>
+        <field name="model">wk.video.types</field>
+        <field name="arch" type="xml">
+          <form string="Create Video Types" name="Create Video Types">
+            <group col="4" string="Create Types">
+              <field name="name" />
+            </group>
+          </form>
+        </field>
+      </record>
+
+      <record id="website_slide_type_config_tree" model="ir.ui.view">
+        <field name="name">website.slide.video.tree</field>
+        <field name="model">website.slide.video</field>
+        <field name="arch" type="xml">
+          <tree string="Choose Video Types" name="Choose Video Types">
+            <field name="is_active" />
+            <field name="allowed_types" />
+          </tree>
+        </field>
+      </record>
+  
+      <record id="website_slide_type_config_type_tree" model="ir.ui.view">
+        <field name="name">wk.video.types.tree</field>
+        <field name="model">wk.video.types</field>
+        <field name="arch" type="xml">
+          <tree string="Create Video Types" name="Create Video Types">
+            <field name="name" />
+          </tree>
+        </field>
+      </record>
+  
+  
+      <record id="website_slide_type_config_tree_action" model="ir.actions.act_window">
+        <field name="name">Theme Vibrant Configuration</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">website.slide.video</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="website_elearning_video.website_slide_type_config_tree" />
+      </record>
+  
+      <record id="website_slide_type_config_type_tree_action" model="ir.actions.act_window">
+        <field name="name">Theme Vibrant Tag Configuration</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">wk.video.types</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="website_elearning_video.website_slide_type_config_type_tree" />
+      </record>
+  
+      <menuitem name="Website Slides" id="slide_config_main_menu" parent="website_slides.website_slides_menu_configuration" sequence="2" />
+      <menuitem name="Choose Formats" id="choose_format_config" parent="website_elearning_video.slide_config_main_menu" action="website_elearning_video.website_slide_type_config_tree_action" />
+      <menuitem name="Create Formats" id="create_format_config" parent="website_elearning_video.slide_config_main_menu" action="website_elearning_video.website_slide_type_config_type_tree_action" />
+  
+    </data>
+  </odoo>
