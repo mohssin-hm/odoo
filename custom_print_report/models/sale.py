@@ -45,6 +45,23 @@ class SaleOrder(models.Model):
 
     is_printing_inv = fields.Boolean(string='Is Printing Template?', store=True, related='sale_order_template_id.is_printing_inv')
 
+    def _find_mail_template(self, force_confirmation_template=False):
+        template_id = False
+
+        if force_confirmation_template or (self.state == 'sale' and not self.env.context.get('proforma', False)):
+            template_id = int(self.env['ir.config_parameter'].sudo().get_param('sale.default_confirmation_template'))
+            template_id = self.env['mail.template'].search([('id', '=', template_id)]).id
+            if not template_id:
+                template_id = self.env['ir.model.data'].xmlid_to_res_id('sale.mail_template_sale_confirmation', raise_if_not_found=False)
+        if not template_id:
+            template_id = self.env['ir.model.data'].xmlid_to_res_id('sale.email_template_edi_sale', raise_if_not_found=False)
+            if self.is_printing_inv:
+                template = self.env['mail.template'].search([('name', '=', 'Sales Order 3D Printing Service')], limit=1)
+                if template:
+                    template_id = template
+
+        return template_id
+
     def _prepare_invoice(self):
         """
         Prepare the dict of values to create the new invoice for a sales order. This method may be

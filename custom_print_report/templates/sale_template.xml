@@ -240,4 +240,14 @@
             </section>
         </div>
     </template>
+
+    <template id="portal_helpdesk_ticket_inh" inherit_id="helpdesk.portal_helpdesk_ticket">
+        <xpath expr="//t[@t-call='portal.portal_table']" position="after">
+            <!--CUSTOM CODE TO DISPLAY CREATE TICKET BUTTON-->
+            <br/><br/>
+            <center>
+                <a class="btn btn-primary mb-1 pt-1" href="/helpdesk/evo-tech-support-1/submit">Create Ticket</a>
+            </center>
+        </xpath>
+    </template>
 </odoo>
