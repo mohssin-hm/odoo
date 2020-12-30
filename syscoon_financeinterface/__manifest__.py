@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
-{   'name': 'Finanzinterface',
-    'version': '13.0.1.0.5',
+{   'name': 'syscoon Finanzinterface',
+    'version': '13.0.1.0.6',
     'depends': ['account'],
     'author': 'syscoon GmbH',
     'license': 'OPL-1',

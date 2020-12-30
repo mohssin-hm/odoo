@@ -502,7 +502,7 @@ class ImportDatev(models.Model):
                         for l in opposite_move.line_ids:
                             if l.account_id.user_type_id.id in self.get_account_types():
                                 if l.tax_ids:
-                                    tax_id = l.tax_ids[0]
+                                    tax_id = l.tax_ids[0].with_context(force_price_include=True)
                     if tax_id and tax_id.datev_discount_account:
                         for tax in tax_id.datev_discount_account.datev_automatic_tax:
                             if tax.price_include:

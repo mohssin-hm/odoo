@@ -19,4 +19,5 @@ class syscoonFinanceInterfaceConfigSettings(models.TransientModel):
     company_datev_remove_leading_zeros = fields.Boolean(related='company_id.datev_remove_leading_zeros', readonly=False)
     company_datev_group_lines = fields.Boolean(related='company_id.datev_group_lines', readonly=False)
     company_datev_auto_set_accounts = fields.Selection(related='company_id.datev_auto_set_accounts', readonly=False)
+    company_datev_currency_amounts = fields.Boolean(related='company_id.datev_currency_amounts', readonly=False)
 

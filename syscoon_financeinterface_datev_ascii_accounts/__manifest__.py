@@ -2,7 +2,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 {   'name': 'Finanzinterface - Datev ASCII Account Export',
-    'version': '13.0.1.0.12',
+    'version': '13.0.1.0.16',
     'depends': [
         'syscoon_financeinterface_datev_ascii',
         'syscoon_partner_account_company',
