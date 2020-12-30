@@ -15,9 +15,10 @@ class ResCompany(models.Model):
     datev_enable_fixing = fields.Boolean('Codify Moves', help='Sets marker in export to codify the moves when importing in DATEV.', default=False)
     datev_accountant_number = fields.Char('Tax Accountant Number', size=6)
     datev_client_number = fields.Char('Client Number', size=6)
-    datev_voucher_date_format = fields.Selection([('%d%m', 'ddmm'), ('%d%m%y', 'ddmmyy'), ('%d&%m%Y', 'ddmmyyyy')], string='Voucher Date Format', 
+    datev_voucher_date_format = fields.Selection([('%d%m', 'ddmm'), ('%d%m%y', 'ddmmyy')], string='Voucher Date Format', 
         help='Format:\nDay = dd\nMonth = mm\nYear= yyyy', default='%d%m')
     datev_account_code_digits = fields.Integer('Account Code Digits', help='Set the length of the account code digits in the export.', default=4)
     datev_remove_leading_zeros = fields.Boolean('Remove Leading Zeros', help='Removes leading zeros on account-codes. E.g. 0670 becomes 670 in the export.')
     datev_group_lines = fields.Boolean('Group Lines', help='Group move lines with the same accounts, taxes, tax key and analytic accounts')
     datev_auto_set_accounts = fields.Selection(selection=[], string='Set Accounts and Taxes')
+    datev_currency_amounts = fields.Boolean('Activate Currency Amounts')

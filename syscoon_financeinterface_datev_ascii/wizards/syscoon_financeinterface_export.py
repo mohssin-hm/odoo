@@ -20,8 +20,7 @@ class syscoonFinanceinterfaceExport(models.TransientModel):
 
     def _get_default_journal(self):
         """Function to get the default selected journal ids from the company settings"""
-        company_id = self.env.user.company_id
-        return company_id.datev_default_journal_ids.ids
+        return self.env.company.datev_default_journal_ids.ids
 
     def action_start(self):
         """Inherit of the basic start function"""

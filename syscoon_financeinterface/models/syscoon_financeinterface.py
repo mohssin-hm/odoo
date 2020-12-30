@@ -87,7 +87,7 @@ class syscoonFinanceinterfaceBookingtextConfig(models.Model):
     sequence = fields.Integer(string='Sequence', default=10)
     name = fields.Char('Name', compute='_name_get', store=True)
     field = fields.Selection([
-        ('partner_id.name', 'Partner Name'),
+        ('move_id.partner_id.name', 'Partner Name'),
         ('move_name', 'Move Name'),
         ('ref', 'Move Reference'),
         ('name', 'Move Line Name')], string='Fields')

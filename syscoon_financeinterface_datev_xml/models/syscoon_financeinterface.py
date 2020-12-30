@@ -39,7 +39,7 @@ class syscoonFinanceinterface(models.Model):
             if invoice_selection in ['vendors', 'both']:
                 invoice_type.extend(['in_invoice', 'in_refund'])
             moves = self.env['account.move'].search([
-                ('date', '>=', date_from), ('date', '<=', date_to), ('type', 'in', invoice_type),
+                ('invoice_date', '>=', date_from), ('invoice_date', '<=', date_to), ('type', 'in', invoice_type),
                 ('export_id', '=', False), ('state', '=', 'posted')])
             if not moves:
                 raise UserError(_('There are no invoices to export in the selected date range!'))

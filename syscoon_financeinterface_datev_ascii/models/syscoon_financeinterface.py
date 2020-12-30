@@ -233,6 +233,8 @@ class syscoonFinanceinterface(models.Model):
                     continue
             if line.account_id.id == move.export_account_counterpart.id:
                 continue
+            if not line.debit and not line.credit:
+                continue
             converted_line, group = self.generate_export_line(self.export_template(), line)
             export_lines.append(converted_line)
         export_lines = self.group_converted_move_lines(export_lines, group)
@@ -251,48 +253,49 @@ class syscoonFinanceinterface(models.Model):
         if not line.debit and not line.credit:
             total = 0.0
             export_line['Soll/Haben-Kennzeichen'] = 'S'
-        if line.currency_id and line.currency_id != self.env.company.currency_id and line.amount_currency != 0.0:
-            if line.amount_currency < 0:
-                total = -line.amount_currency
-            else:
-                total = line.amount_currency
+        if self.env.company.datev_currency_amounts:
+            if line.currency_id and line.currency_id != self.env.company.currency_id and line.amount_currency != 0.0:
+                if line.amount_currency < 0:
+                    total = -line.amount_currency
+                else:
+                    total = line.amount_currency
         if self.env.company.datev_export_method == 'gross':
             if line.tax_ids:
                 tax_id = line.tax_ids[0]
-                taxes_computed = tax_id.compute_all(total, line.currency_id)
+                taxes_computed = tax_id.compute_all(total, line.currency_id, handle_price_include=False)
                 total = self.compute_total_if_taxes(taxes_computed)
                 if not line.account_id.datev_automatic_account:
                     if tax_id.datev_tax_key:
                         export_line['BU-Schlüssel'] = tax_id.datev_tax_key
                     if tax_id.datev_tax_case:
                         export_line['Sachverhalt'] = tax_id.datev_tax_case
-        if line.currency_id and line.currency_id != self.env.company.currency_id and line.amount_currency != 0.0:
-            if line.balance < 0:
-                base_total = -line.balance
-            else:
-                base_total = line.balance 
-            if self.env.company.datev_export_method == 'gross':
-                if line.tax_ids:
-                    base_tax_id = line.tax_ids[0]
-                    base_taxes_computed = base_tax_id.compute_all(base_total, self.env.company.currency_id)
-                    base_total = self.compute_total_if_taxes(base_taxes_computed)
-            export_line['WKZ Umsatz'] = line.currency_id.name
-            export_line['Basis-Umsatz'] = self.currency_round(base_total, self.env.company.currency_id)
-            export_line['WKZ Basis-Umsatz'] = self.env.company.currency_id.name
-            export_line['Kurs'] = line.currency_id.with_context(date=line.date).rate
-        export_line['Umsatz (ohne Soll/Haben-Kz)'] = self.currency_round(total, line.currency_id)
+        if self.env.company.datev_currency_amounts:
+            if line.currency_id and line.currency_id != self.env.company.currency_id and line.amount_currency != 0.0:
+                if line.balance < 0:
+                    base_total = -line.balance
+                else:
+                    base_total = line.balance 
+                if self.env.company.datev_export_method == 'gross':
+                    if line.tax_ids:
+                        base_tax_id = line.tax_ids[0]
+                        base_taxes_computed = base_tax_id.compute_all(base_total, self.env.company.currency_id, handle_price_include=False)
+                        base_total = self.compute_total_if_taxes(base_taxes_computed)
+                export_line['WKZ Umsatz'] = line.currency_id.name
+                export_line['Basis-Umsatz'] = self.currency_round(base_total, self.env.company.currency_id)
+                export_line['WKZ Basis-Umsatz'] = self.env.company.currency_id.name
+                export_line['Kurs'] = line.currency_id.with_context(date=line.date).rate
+        export_line['Umsatz (ohne Soll/Haben-Kz)'] = self.currency_round(total, self.env.company.currency_id)
         if line.partner_id:
             if line.account_id.user_type_id.type == 'payable' and line.partner_id.supplier_number:
                 export_line['Konto'] = self.remove_leading_zero(line.partner_id.supplier_number)
             if line.account_id.user_type_id.type == 'receivable' and line.partner_id.customer_number:
                 export_line['Konto'] = self.remove_leading_zero(line.partner_id.customer_number)
+            if line.move_id.export_account_counterpart.user_type_id.type == 'payable' and line.partner_id.supplier_number:
+                export_line['Gegenkonto (ohne BU-Schlüssel)'] = self.remove_leading_zero(line.partner_id.supplier_number)
+            if line.move_id.export_account_counterpart.user_type_id.type == 'receivable' and line.partner_id.customer_number:
+                export_line['Gegenkonto (ohne BU-Schlüssel)'] = self.remove_leading_zero(line.partner_id.customer_number)
         if not export_line['Konto']:
             export_line['Konto'] = self.remove_leading_zero(line.account_id.code)
-        if line.move_id.partner_id:
-            if line.move_id.export_account_counterpart.user_type_id.type == 'payable' and line.move_id.partner_id.supplier_number:
-                export_line['Gegenkonto (ohne BU-Schlüssel)'] = self.remove_leading_zero(line.move_id.partner_id.supplier_number)
-            if line.move_id.export_account_counterpart.user_type_id.type == 'receivable' and line.move_id.partner_id.customer_number:
-                export_line['Gegenkonto (ohne BU-Schlüssel)'] = self.remove_leading_zero(line.move_id.partner_id.customer_number)
         if not export_line['Gegenkonto (ohne BU-Schlüssel)']:
             export_line['Gegenkonto (ohne BU-Schlüssel)'] = self.remove_leading_zero(line.move_id.export_account_counterpart.code)
         export_line['Belegdatum'] = self.convert_date(line.date, self.env.company.datev_voucher_date_format)
@@ -301,11 +304,14 @@ class syscoonFinanceinterface(models.Model):
             export_line['Belegfeld 2'] = self.convert_date(line.move_id.invoice_date_due, '%d%m%y')
         export_line['Buchungstext'] = self.create_label(line)[:60]
         if line.analytic_account_id.code:
-            export_line['KOST1 - Kostenstelle'] = line.analytic_account_id.code
+            export_line['KOST1 - Kostenstelle'] = line.analytic_account_id.code[:36]
         if line.analytic_tag_ids:
             export_line['KOST2 - Kostenstelle'] = line.analytic_tag_ids[0].name
         if line.account_id.datev_vatid_required:
-            export_line['EU-Mitgliedstaat u. UStIdNr'] = line.partner_id.vat
+            if line.move_id.partner_shipping_id and line.move_id.partner_shipping_id.vat:
+                export_line['EU-Mitgliedstaat u. UStIdNr'] = line.move_id.partner_shipping_id.vat
+            else:
+                export_line['EU-Mitgliedstaat u. UStIdNr'] = line.move_id.partner_id.vat
         export_line['Festschreibung'] = int(self.env.company.datev_enable_fixing)
         return export_line, group
 
@@ -335,6 +341,7 @@ class syscoonFinanceinterface(models.Model):
             if value:
                 bookingtext.append(value)
         bookingtext = ', '.join(bookingtext)
+        bookingtext = re.sub(r'[\W_]+', '', bookingtext)
         return bookingtext
 
     def get_field(self, model, field_name):
@@ -347,17 +354,14 @@ class syscoonFinanceinterface(models.Model):
         grouped_lines = []
         for ml in move_lines:
             if self.env.company.datev_group_lines and group:
-                if not any( gl['Konto'] == ml['Konto'] and gl['Gegenkonto (ohne BU-Schlüssel)'] == ml['Gegenkonto (ohne BU-Schlüssel)']
-                    and gl['BU-Schlüssel'] == ml['BU-Schlüssel'] and gl['Soll/Haben-Kennzeichen'] == ml['Soll/Haben-Kennzeichen'] 
-                    and gl['WKZ Umsatz'] == ml['WKZ Umsatz'] for gl in grouped_lines):
+                if not any( gl['Konto'] == ml['Konto'] and gl['Gegenkonto (ohne BU-Schlüssel)'] == ml['Gegenkonto (ohne BU-Schlüssel)'] and gl['BU-Schlüssel'] == ml['BU-Schlüssel'] and gl['Soll/Haben-Kennzeichen'] == ml['Soll/Haben-Kennzeichen'] and gl['WKZ Umsatz'] == ml['WKZ Umsatz'] for gl in grouped_lines):
                     grouped_lines.append(ml)
                 else:
                     for gl in grouped_lines:
-                        if gl['Konto'] == ml['Konto'] and gl['Gegenkonto (ohne BU-Schlüssel)'] == ml['Gegenkonto (ohne BU-Schlüssel)'] \
-                            and gl['BU-Schlüssel'] == ml['BU-Schlüssel'] and gl['Soll/Haben-Kennzeichen'] == ml['Soll/Haben-Kennzeichen']:
-                            if gl['Basis-Umsatz'] and ml['Basis-Umsatz']:
+                        if (gl['Konto'] == ml['Konto'] and gl['Gegenkonto (ohne BU-Schlüssel)'] == ml['Gegenkonto (ohne BU-Schlüssel)'] and gl['BU-Schlüssel'] == ml['BU-Schlüssel'] and gl['Soll/Haben-Kennzeichen'] == ml['Soll/Haben-Kennzeichen']):
+                            if gl['Basis-Umsatz'] or gl['Basis-Umsatz'] == 0.0 and ml['Basis-Umsatz']:
                                 gl['Basis-Umsatz'] += ml['Basis-Umsatz']
-                            if gl['Umsatz (ohne Soll/Haben-Kz)'] and ml['Umsatz (ohne Soll/Haben-Kz)']:
+                            if gl['Umsatz (ohne Soll/Haben-Kz)'] or gl['Umsatz (ohne Soll/Haben-Kz)'] == 0.0 and ml['Umsatz (ohne Soll/Haben-Kz)']:
                                 gl['Umsatz (ohne Soll/Haben-Kz)'] += ml['Umsatz (ohne Soll/Haben-Kz)']
                             break
             else:

@@ -39,16 +39,16 @@ class syscoonFinanceinterfaceXML(models.TransientModel):
         if move_id.type in ['out_refund', 'in_refund']:
             vals['invoice_type'] = 'Gutschrift/Rechnungskorrektur'
         if move_id.type in ['in_invoice', 'in_refund'] and move_id.ref:
-            vals['invoice_id'] = re.sub(r'[^\w]', '', move_id.ref[:36])
+            vals['invoice_id'] = re.sub(r'[^\w]', '', move_id.ref[:35])
         else:
-            vals['invoice_id'] = re.sub(r'[^\w]', '', move_id.name[:36])
+            vals['invoice_id'] = re.sub(r'[^\w]', '', move_id.name[:35])
         vals['delivery_date'] = str(move_id.date)
         return vals
 
     def get_accounting_info(self, move_id, invoice_mode):
         vals = {}
         if move_id.type == 'out_invoice':
-            vals['booking_text'] = 'Eröse'
+            vals['booking_text'] = 'Erlöse'
         if move_id.type == 'out_refund':
             vals['booking_text'] = 'Gutschrift Erlöse'
         if move_id.type == 'in_invoice':

@@ -93,6 +93,40 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-12 col-lg-6 o_setting_box" title="Digits for Account Codes">
+                                <div class="o_setting_left_pane"/>
+                                <div class="o_setting_right_pane">
+                                    <span class="o_form_label">Digits for accouont codes</span>
+                                    <div class="text-muted">
+                                        Set here the lenght of the account code digits for your Company
+                                    </div>
+                                    <div class="mt16">
+                                        <div class="content-group" id="send_default">
+                                            <div class="row">
+                                                <field name="company_datev_account_code_digits" class="col-lg-2 ml16"/>
+                                                <label for="company_datev_account_code_digits"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 o_setting_box" title="Removes the leadings Zeros from the Accounts in Odoo during the Export.">
+                                <div class="o_setting_left_pane"/>
+                                <div class="o_setting_right_pane">
+                                    <span class="o_form_label">Export with currency amounts</span>
+                                    <div class="text-muted">
+                                        Activate the currency amounts in the Export. If deactivated, there will be no currency-fields filled in the export.
+                                    </div>
+                                    <div class="mt16">
+                                        <div class="content-group" id="send_default">
+                                            <div class="row">
+                                                <field name="company_datev_currency_amounts" class="col-lg-1 ml16"/>
+                                                <label for="company_datev_currency_amounts"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div id="syscoon_financeinterface_datev_basic_settings">

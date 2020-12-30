@@ -381,7 +381,7 @@ class syscoonFinanceinterface(models.Model):
                     'type': 'binary',
                     'datas': csv,
                 })
-                self.env['account.account'].search([('id', 'in', account_ids)]).write({'datev_exported': True})
+                self.env['account.account'].search([('id', 'in', partner_ids)]).write({'datev_exported': True})
                 return export_id.id
             else:
                 raise UserError(_('Something went wrong, because a export file could not generated!'))
@@ -405,7 +405,7 @@ class syscoonFinanceinterface(models.Model):
                         converted_partner, account_id = self.generate_rewe_partner(partner_id, number, self.export_template_accounts())
                     else:
                         converted_partner, account_id = self.generate_duo_partner(partner_id, number, self.export_template_accounts_duo())
-                if converted_partner:
+                if converted_partner and account_id:
                     export_lines.append(converted_partner)
                     account_ids.append(account_id.id)
         return export_lines, account_ids
@@ -420,10 +420,10 @@ class syscoonFinanceinterface(models.Model):
             if partner_id.is_company:
                 template['Name (Adressattyp Unternehmen)'] = partner_id.name or ''
                 template['Unternehmensgegenstand'] = partner_id.industry_id.full_name or ''
-                template['Adressattyp'] = 1
+                template['Adressattyp'] = 2
             else:
                 template['Name (Adressattyp natürl. Person)'] = partner_id.name or ''
-                template['Adressattyp'] = 2
+                template['Adressattyp'] = 1
             if partner_id.vat and partner_id.vat[:2] in ('BE', 'BG', 'DK', 'DE', 'EE',
                     'FI', 'FR', 'GR', 'GB', 'IE', 'IT', 'HR', 'LV', 'LT', 'LU', 'MT',
                     'NL', 'AT', 'PL', 'PT', 'RO', 'SE', 'SK', 'SI', 'ES', 'CZ', 'HU', 'CY'):
