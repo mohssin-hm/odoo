@@ -58,7 +58,7 @@ class SaleOrder(models.Model):
             if self.is_printing_inv:
                 template = self.env['mail.template'].search([('name', '=', 'Sales Order 3D Printing Service')], limit=1)
                 if template:
-                    template_id = template.id
+                    template_id = template
 
         return template_id
 
