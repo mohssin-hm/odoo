@@ -46,7 +46,7 @@ class AccountMove(models.Model):
         self.ensure_one()
         template = self.env.ref('account.email_template_edi_invoice', raise_if_not_found=False)
         if self.is_printing_inv:
-            template_rec = self.env['email.template'].sudo().search([('name', 'ilike', '3D-Printing-Service-Invoice: Send by email')], limit=1)
+            template_rec = self.env['mail.template'].sudo().search([('name', 'ilike', '3D-Printing-Service-Invoice: Send by email')], limit=1)
             if template_rec:
                 template = template_rec
         lang = get_lang(self.env)
