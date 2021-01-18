@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_wizard_merge_data_ext,access_wizard_merge_data_ext,model_wizard_merge_data_ext,base.group_user,1,1,1,1

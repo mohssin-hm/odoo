@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+
+		<!-- wizard.search.duplicate.data -->
+		<record id="view_wizard_search_duplicate_data_form" model="ir.ui.view">
+			<field name="name">wizard.search.duplicate.data.form</field>
+			<field name="model">wizard.search.duplicate.data</field>
+			<field name="arch" type="xml">
+				<form>
+					<field name="flds_lines">
+						<tree editable="bottom">
+							<field name="sequence" required="1" widget="handle" />
+							<field name="field_id" required="1"
+								context="{'ctx_from_merge_data': 1}"
+								domain="[('model', '=', context.get('active_model')), ('ttype', 'not in', ['datetime', 'many2many', 'html', 'one2many', 'binary']), ('store', '=', True), ('name', '!=', 'id')]"
+								options="{'no_create_edit': True, 'no_open': True, 'no_create': True}" />
+							<field name="wizard_id" invisible="1" />
+						</tree>
+					</field>
+					<footer>
+						<button name="action_find_duplicate_data" string="Find Duplicate Records"
+							type="object" class="oe_highlight" />
+						or
+						<button string="Cancel" class="oe_link" special="cancel" />
+					</footer>
+				</form>
+			</field>
+		</record>
+
+		<act_window id="action_wizard_search_duplicate_data" name="Find Duplicate Data"
+			res_model="wizard.search.duplicate.data" view_mode="form" target="new" />
+
+	</data>
+</odoo>

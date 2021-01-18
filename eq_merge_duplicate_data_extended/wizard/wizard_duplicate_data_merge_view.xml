@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+
+		<!-- Data Merge Wizard -->
+		<record id="view_wizard_duplicate_data_merge_form" model="ir.ui.view">
+			<field name="name">wizard.duplicate.data.merge.form</field>
+			<field name="model">wizard.duplicate.data.merge</field>
+			<field name="arch" type="xml">
+				<form>
+					<group>
+						<field name="take_action" widget="radio" style="width:40%;" />
+					</group>
+					<field name="selected_record_ids">
+						<tree editable="bottom" create="false" decoration-success="keep_original==True"
+							decoration-bf="keep_original==True">
+							<field name="keep_original" />
+							<field name="record_id" required="1" readonly="1"
+								force_save="1" />
+							<field name="record_ref" readonly="1" force_save="1" />
+							<field name="wizard_id" invisible="1" />
+						</tree>
+					</field>
+					<footer>
+						<button name="btn_merge_multiple_data" string="Merge Data"
+							type="object" class="oe_highlight" />
+						or
+						<button string="Cancel" class="oe_link" special="cancel" />
+					</footer>
+				</form>
+			</field>
+		</record>
+
+		<act_window id="action_wizard_duplicate_data_merge" name="Merge Duplicate Data"
+			res_model="wizard.duplicate.data.merge" view_mode="form" target="new"
+			groups="eq_merge_duplicate_data_extended.group_merge_duplicate_data" />
+
+	</data>
+</odoo>
