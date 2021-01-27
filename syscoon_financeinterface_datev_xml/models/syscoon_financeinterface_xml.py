@@ -148,6 +148,8 @@ class syscoonFinanceinterfaceXML(models.TransientModel):
         vals['currency'] = move_id.currency_id.name
         vals['due_date'] = move_id.invoice_date_due
         vals['payment_conditions_text'] = move_id.invoice_payment_term_id.name
+        if move_id.invoice_payment_term_id.datev_payment_conditons_id:
+            vals['payment_conditions_id'] = move_id.invoice_payment_term_id.datev_payment_conditons_id
         return vals
 
     def get_invoice_item_list(self, move_id, invoice_mode):

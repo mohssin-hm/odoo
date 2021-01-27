@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-23 07:02+0000\n"
-"PO-Revision-Date: 2020-11-23 07:02+0000\n"
+"POT-Creation-Date: 2021-01-08 11:11+0000\n"
+"PO-Revision-Date: 2021-01-08 11:11+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -85,6 +85,11 @@ msgstr "Erstellt am"
 #: model:ir.model.fields.selection,name:syscoon_financeinterface_datev_xml.selection__syscoon_financeinterface_export__xml_invoices__customers
 msgid "Customer Invoices"
 msgstr "Kundenrechnungen"
+
+#. module: syscoon_financeinterface_datev_xml
+#: model:ir.model.fields,field_description:syscoon_financeinterface_datev_xml.field_account_payment_term__datev_payment_conditons_id
+msgid "DATEV Payment Term ID"
+msgstr "DATEV Zahlugnsart ID"
 
 #. module: syscoon_financeinterface_datev_xml
 #: model:ir.model.fields.selection,name:syscoon_financeinterface_datev_xml.selection__syscoon_financeinterface__mode__datev_xml
@@ -187,6 +192,17 @@ msgstr "Zuletzt aktualisiert von"
 #: model:ir.model.fields,field_description:syscoon_financeinterface_datev_xml.field_syscoon_financeinterface_xml__write_date
 msgid "Last Updated on"
 msgstr "Zuletzt aktualisiert am"
+
+#. module: syscoon_financeinterface_datev_xml
+#: code:addons/syscoon_financeinterface_datev_xml/models/account_payment_term.py:0
+#, python-format
+msgid "Only a value between 11 and 99 is allowed."
+msgstr "Es ist nur ein Wert zwischen 11 und 99 erlaubt."
+
+#. module: syscoon_financeinterface_datev_xml
+#: model:ir.model,name:syscoon_financeinterface_datev_xml.model_account_payment_term
+msgid "Payment Terms"
+msgstr "Zahlungsbedingungen"
 
 #. module: syscoon_financeinterface_datev_xml
 #: model_terms:ir.ui.view,arch_db:syscoon_financeinterface_datev_xml.view_syscoon_financeinterface_configuration_datev_xml
