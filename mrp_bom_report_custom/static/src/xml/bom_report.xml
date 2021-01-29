@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+    <t t-extend="mrp.report_bom_search">
+        <t t-jquery=".o_mrp_bom_report_type" t-operation="replace">
+            <select class="o_input o_mrp_bom_report_type">
+                <option t-att-data-type="'bom_structure'">BoM Structure</option>
+                <option t-att-data-type="'all'">BoM Structure &amp; Cost-1</option>
+
+                <option t-att-data-type="'all_2'">BoM Structure &amp; Cost-2</option>
+                <option t-att-data-type="'all_3'">BoM Structure &amp; Cost-3</option>
+                <option t-att-data-type="'all_4'">BoM Structure &amp; Cost-4</option>
+            </select>
+        </t>
+    </t>
+</templates>

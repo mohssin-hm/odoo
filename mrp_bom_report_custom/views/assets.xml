@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_backend" name="mrp_bom_report_custom assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/mrp_bom_report_custom/static/src/js/bom_report_widget.js"></script>
+        </xpath>
+   </template>
+</odoo>
