@@ -381,7 +381,7 @@ class syscoonFinanceinterface(models.Model):
                     'type': 'binary',
                     'datas': csv,
                 })
-                self.env['account.account'].search([('id', 'in', partner_ids)]).write({'datev_exported': True})
+                partner_ids.write({'datev_exported': True})
                 return export_id.id
             else:
                 raise UserError(_('Something went wrong, because a export file could not generated!'))
