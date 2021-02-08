@@ -27,7 +27,7 @@
                                         <th>Product</th>
                                         <th name="th_mrp_bom_h" t-if="data['report_structure'] == 'bom_structure'" style="display:none !important;">BoM</th>
                                         <th class="text-right">Quantity</th>
-                                        <th class="text-left" groups="uom.group_uom">Unit of Measure</th>
+                                        <th style="display:none !important;" class="text-left" groups="uom.group_uom">Unit of Measure</th>
                                         <th t-if="data['report_type'] == 'html' or data['report_type'] == 'pdf' and data['report_structure'] in ('all', 'all_3')" class="o_mrp_prod_cost text-right" title="This is the cost defined on the product.">Product Cost</th>
                                         <th t-if="data['report_type'] == 'html' or data['report_type'] == 'pdf' and data['report_structure'] in ('all', 'all_3')" class="o_mrp_bom_cost text-right" title="This is the cost based on the BoM of the product. It is computed by summing the costs of the components and operations needed to build the product.">BoM Cost</th>
                                         <th t-if="data['report_type'] == 'html' and data['has_attachments']" class="o_mrp_has_attachments" title="Files attached to the product">Attachments</th>
@@ -54,7 +54,7 @@
                                             <div><a href="#" t-if="data['report_type'] == 'html'" t-att-data-res-id="data['bom'].id" t-att-data-model="'mrp.bom'" class="o_mrp_bom_action"><t t-esc="data['code']"/></a><t t-else="" t-esc="data['code']"/></div>
                                         </td>
                                         <td class="text-right"><span><t t-esc="data['bom_qty']" t-options='{"widget": "float", "decimal_precision": "Product Unit of Measure"}'/></span></td>
-                                        <td groups="uom.group_uom"><span><t t-esc="data['bom'].product_uom_id.name"/></span></td>
+                                        <td style="display:none !important;" groups="uom.group_uom"><span><t t-esc="data['bom'].product_uom_id.name"/></span></td>
                                         <td t-if="data['report_type'] == 'html' or data['report_type'] == 'pdf' and data['report_structure'] in ('all', 'all_3')" class="o_mrp_prod_cost text-right">
                                             <span><t t-esc="data['price']" t-options='{"widget": "monetary", "display_currency": currency}'/></span>
                                         </td>
@@ -81,7 +81,7 @@
                                         <td t-if="data['report_structure'] != 'bom_structure'" class="text-right o_mrp_prod_cost">
                                             <span><strong></strong></span>
                                         </td>
-                                        <td groups="uom.group_uom"></td>
+                                        <td style="display:none !important;" groups="uom.group_uom"></td>
                                         <td t-if="data['report_type'] == 'html' or data['report_type'] == 'pdf' and data['report_structure'] in ('all', 'all_3')" class="o_mrp_prod_cost text-right">
                                             <span>
                                                 <!-- <t t-esc="data['price']/data['bom_qty']" t-options='{"widget": "monetary", "display_currency": currency}'/> -->
@@ -194,7 +194,7 @@
                   </div>
                 </td>
                 <td class="text-right"><span><t t-esc="l['prod_qty']" t-options="{&quot;widget&quot;: &quot;float&quot;, &quot;decimal_precision&quot;: &quot;Product Unit of Measure&quot;}"/></span></td>
-                <td groups="uom.group_uom"><span><t t-esc="l['prod_uom']"/></span></td>
+                <td style="display:none !important;" groups="uom.group_uom"><span><t t-esc="l['prod_uom']"/></span></td>
                 <td  class="o_mrp_prod_cost text-right">
                     <span t-esc="l['prod_cost']" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: currency}"/>
                 </td>
@@ -224,7 +224,7 @@
                 <td class="text-right">
                     <span t-esc="data['operations_time']" t-options="{&quot;widget&quot;: &quot;float_time&quot;}"/>
                 </td>
-                <td groups="uom.group_uom"><span>Minutes</span></td>
+                <td style="display:none !important;" groups="uom.group_uom"><span>Minutes</span></td>
                 <td class="o_mrp_prod_cost">
                 </td>
                 <td class="o_mrp_bom_cost text-right">
@@ -250,7 +250,7 @@
               <td class="text-right">
                   <span t-esc="op['duration_expected']" t-options='{"widget": "float_time"}'/>
               </td>
-              <td groups="uom.group_uom"><span>Minutes</span></td>
+              <td style="display:none !important;" groups="uom.group_uom"><span>Minutes</span></td>
               <td class="o_mrp_prod_cost" t-if="data['report_type'] == 'html' or data['report_type'] == 'pdf' and data['report_structure'] in ('all', 'all_3')"></td>
               <td class="o_mrp_bom_cost text-right" t-if="data['report_type'] == 'html' or data['report_type'] == 'pdf' and data['report_structure'] in ('all', 'all_3')">
                   <span t-esc="op['total']" t-options='{"widget": "monetary", "display_currency": currency}'/>
@@ -292,7 +292,7 @@
                       <t t-if="l['type'] == 'bom'" t-esc="l['quantity']" t-options="{&quot;widget&quot;: &quot;float&quot;, &quot;decimal_precision&quot;: &quot;Product Unit of Measure&quot;}"/>
                   </span>
               </td>
-              <td groups="uom.group_uom"><span><t t-esc="l['uom']"/></span></td>
+              <td style="display:none !important;" groups="uom.group_uom"><span><t t-esc="l['uom']"/></span></td>
               <td t-if="data['report_type'] == 'html' or data['report_type'] == 'pdf' and data['report_structure'] in ('all', 'all_3')" class="o_mrp_prod_cost text-right">
                   <span t-if="'prod_cost' in l" t-esc="l['prod_cost']" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: currency}"/>
               </td>

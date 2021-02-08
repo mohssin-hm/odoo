@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_attendance.menu_hr_attendance_root" model="ir.ui.menu">
+        <field name="groups_id" eval="[(3, ref('hr_attendance.group_hr_attendance'))]"/>
+    </record>
+
+    <menuitem
+        id="hr_attendance.menu_hr_attendance_root"
+        name="Attendances"
+        sequence="90"
+        groups="hr_attendance_custom.group_attendance_all"
+        web_icon="hr_attendance,static/description/icon.png"
+    />
+
+    <menuitem
+        id="menu_hr_attendance_root_report"
+        name="Attendances"
+        sequence="90"
+        groups="hr_attendance_custom.group_attendance_report"
+        web_icon="hr_attendance,static/description/icon.png"
+    />
+
+    <menuitem
+        id="menu_hr_attendance_report_new"
+        name="Reporting"
+        parent="menu_hr_attendance_root_report"
+        sequence="30"
+        groups="hr_attendance_custom.group_attendance_report"
+    />
+
+    <menuitem
+        id="menu_hr_attendance_theoretical_root_new"
+        name="Theoretical vs Attended Time"
+        parent="menu_hr_attendance_report_new"
+        sequence="15"
+        groups="hr_attendance_custom.group_attendance_report"
+    />
+    <menuitem
+        id="menu_hr_attendance_theoretical_report_new"
+        name="All Employees"
+        action="hr_attendance_report_theoretical_time.hr_attendance_theoretical_action"
+        parent="menu_hr_attendance_report_new"
+        groups="hr_attendance_custom.group_attendance_report"
+        sequence="20"
+    />
+
+</odoo>
