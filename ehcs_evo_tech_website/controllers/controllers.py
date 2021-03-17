@@ -311,14 +311,17 @@ class ThemSubeMenuSimplifyTab(http.Controller):
 #         return request.render('ehcs_evo_tech_website.theme_submenu_tab_rapid_pro_deutschland', {})
 
 
-class WebsiteSale(http.Controller):
-    @http.route([
-        '''/shop''',
-        '''/shop/page/<int:page>''',
-        '''/shop/category/<model("product.public.category"):category>''',
-        '''/shop/category/<model("product.public.category"):category>/page/<int:page>''',
-        '''/shop/product/<model("product.template"):product>'''
-    ], type='http', auth="public", website=True)
-    def shop(self, **kw):
-        return request.render('ehcs_evo_tech_website.ehcs_page_404', {})
+# class WebsiteSale(http.Controller):
+#     @http.route([
+#         '''/shop''',
+#         '''/shop/page/<int:page>''',
+#         '''/shop/category/<model("product.public.category"):category>''',
+#         '''/shop/category/<model("product.public.category"):category>/page/<int:page>''',
+#         '''/shop/product/<model("product.template"):product>'''
+#     ], type='http', auth="public", website=True)
+#     def shop(self, **kw):
+#         return request.render('ehcs_evo_tech_website.ehcs_page_404', {})
+#         
+
+
         
