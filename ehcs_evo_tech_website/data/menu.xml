@@ -93,6 +93,13 @@
             <field name="website_id" ref="website.default_website"/>
             <!-- <field name="child_id" eval="[(4, ref('submenu_3d-druck-dienstleistung_one'))]"/> -->
         </record>
+	<record id="menu_shop" model="website.menu">
+            <field name="name">Shop</field>
+            <field name="url">/shop</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">20</field>
+        </record>
+
 
     </data>
 </odoo>
