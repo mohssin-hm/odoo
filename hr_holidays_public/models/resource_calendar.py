@@ -79,5 +79,8 @@ class ResourceCalendar(models.Model):
                 start_dt, end_dt, self.env.context.get("employee_id", False), tz
             )
             for key in res:
-                res[key] = res[key] | public_holidays
+                try:
+                    res[key] = res[key] | public_holidays
+                except:
+                    res[key] = res[key]
         return res
