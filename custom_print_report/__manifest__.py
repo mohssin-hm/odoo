@@ -32,11 +32,26 @@
     'support': 'hareshkansara00@gmail.com',
     'summary': 'Custom Print Report For Sales/Quotation and Invoices',
     'description': 'Custom Print Report For Sales/Quotation and Invoices',
-    "depends": ['sale_quotation_builder', 'sale_management', 'helpdesk'],
+    "depends": [
+        'sale_quotation_builder',
+        'payment',
+        'sale_management',
+        'helpdesk',
+        'contacts',
+        'website_sale_delivery',
+        'auth_signup',
+        'sale_stock',
+        'website_sale',
+    ],
     "data": [
+        'security/security.xml',
+        'data/data.xml',
         'views/assets.xml',
         'views/sale_quote_template_view.xml',
+        'views/stock_picking_view.xml',
         # Templates
         'templates/sale_template.xml',
+        'templates/auth_signup_template.xml',
     ],
+    'qweb': ['static/src/xml/*.xml'],
 }

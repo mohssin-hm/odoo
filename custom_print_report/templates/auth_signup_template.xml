@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="auth_signup_fields_inh" inherit_id="auth_signup.fields">
+        <xpath expr="." position="inside">
+            <div class="form-group field-vat">
+                <label for="vat">Tax Number</label>
+                <input type="text" t-att-value="vat" name="vat" id="vat_number" class="form-control form-control-sm" t-att-required="'required' if not only_passwords else None" t-att-readonly="'readonly' if only_passwords else None"/>
+            </div>
+
+            <div class="field-confirm_as_company">
+                <div style="float:left;width:15px;">
+                    <input type="checkbox" t-att-value="confirm_as_company" name="confirm_as_company" id="confirm_as_company_id" class="form-control form-control-sm" t-att-required="'required' if not only_passwords else None" t-att-readonly="'readonly' if only_passwords else None"/>
+                </div>
+                <div style="float:right;width:92%;">
+                    <label for="confirm_as_company">I hereby confirm that I am registering as a company and not as an end user</label>
+                </div>
+                <div style="clear:both;"/>
+            </div>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_picking_form_inh" model="ir.ui.view">
+            <field name="name">stock.picking.view.form.inh.custom_print_report</field>
+            <field name="model">stock.picking</field>
+            <field name='inherit_id' ref="stock.view_picking_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//header" position="inside">
+                    <button string='Send By Email' name="button_send_email" type="object" class="btn btn-primary" attrs="{'invisible': ['|', ('state', '!=', 'done'), ('picking_type_code', '!=', 'outgoing')]}"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

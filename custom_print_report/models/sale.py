@@ -21,9 +21,70 @@
 #
 ##############################################################################
 
+from werkzeug.urls import url_encode
 from odoo.tools.misc import get_lang
 from odoo import api, fields, models, _
 from odoo.exceptions import UserError
+
+
+class StockPicking(models.Model):
+
+    _name = 'stock.picking'
+    _inherit = ['stock.picking', 'portal.mixin',
+                'mail.thread', 'mail.activity.mixin', 'utm.mixin']
+
+    def send_template_email(self, template_id, model_desc):
+        ctx = {
+            'default_model': 'stock.picking',
+            'default_res_id': self.id,
+            'default_use_template': bool(template_id),
+            'default_template_id': template_id,
+            'default_composition_mode': 'comment',
+            'custom_layout': "mail.mail_notification_paynow",
+            'force_email': True,
+            'model_description': model_desc,
+        }
+        ctx.update(self._context)
+        compose_record = self.env['mail.compose.message'].sudo(
+        ).with_context(ctx).create({})
+        if compose_record and compose_record.template_id:
+            compose_record.onchange_template_id_wrapper()
+        compose_record.action_send_mail()
+
+    def action_done(self):
+        res = super(StockPicking, self).action_done()
+        for picking in self:
+            if picking.picking_type_code == 'outgoing':
+                template_id = self.env.ref(
+                    'stock.mail_template_data_delivery_confirmation').id
+                model_desc = 'Delivery Order'
+                picking.with_user(self.env.ref('base.user_root').sudo(
+                )).send_template_email(template_id, model_desc)
+        return res
+
+    def button_send_email(self):
+        template = self.env.ref(
+            'stock.mail_template_data_delivery_confirmation')
+        ctx = {
+            'default_model': 'stock.picking',
+            'default_res_id': self.ids[0],
+            'default_use_template': bool(template.id),
+            'default_template_id': template.id,
+            'default_composition_mode': 'comment',
+            'custom_layout': "mail.mail_notification_paynow",
+            'force_email': True,
+            'model_description': 'Delivery Order',
+        }
+        return {
+            'name': _('Send Delivery Confirmation Email'),
+            'type': 'ir.actions.act_window',
+            'view_mode': 'form',
+            'res_model': 'mail.compose.message',
+            'views': [(False, 'form')],
+            'view_id': False,
+            'target': 'new',
+            'context': ctx,
+        }
 
 
 class SaleOrderTemplate(models.Model):
@@ -44,17 +105,21 @@ class AccountMove(models.Model):
             message loaded by default
         """
         self.ensure_one()
-        template = self.env.ref('account.email_template_edi_invoice', raise_if_not_found=False)
+        template = self.env.ref(
+            'account.email_template_edi_invoice', raise_if_not_found=False)
         if self.is_printing_inv:
-            template_rec = self.env['mail.template'].sudo().search([('name', 'ilike', '3D-Printing-Service-Invoice: Send by email')], limit=1)
+            template_rec = self.env['mail.template'].sudo().search(
+                [('name', 'ilike', '3D-Printing-Service-Invoice: Send by email')], limit=1)
             if template_rec:
                 template = template_rec
         lang = get_lang(self.env)
         if template and template.lang:
-            lang = template._render_template(template.lang, 'account.move', self.id)
+            lang = template._render_template(
+                template.lang, 'account.move', self.id)
         else:
             lang = lang.code
-        compose_form = self.env.ref('account.account_invoice_send_wizard_form', raise_if_not_found=False)
+        compose_form = self.env.ref(
+            'account.account_invoice_send_wizard_form', raise_if_not_found=False)
         ctx = dict(
             default_model='account.move',
             default_res_id=self.id,
@@ -87,20 +152,26 @@ class SaleOrder(models.Model):
 
     _inherit = 'sale.order'
 
-    is_printing_inv = fields.Boolean(string='Is Printing Template?', store=True, related='sale_order_template_id.is_printing_inv')
+    is_printing_inv = fields.Boolean(
+        string='Is Printing Template?', store=True, related='sale_order_template_id.is_printing_inv')
 
     def _find_mail_template(self, force_confirmation_template=False):
         template_id = False
 
         if force_confirmation_template or (self.state == 'sale' and not self.env.context.get('proforma', False)):
-            template_id = int(self.env['ir.config_parameter'].sudo().get_param('sale.default_confirmation_template'))
-            template_id = self.env['mail.template'].search([('id', '=', template_id)]).id
+            template_id = int(self.env['ir.config_parameter'].sudo(
+            ).get_param('sale.default_confirmation_template'))
+            template_id = self.env['mail.template'].search(
+                [('id', '=', template_id)]).id
             if not template_id:
-                template_id = self.env['ir.model.data'].xmlid_to_res_id('sale.mail_template_sale_confirmation', raise_if_not_found=False)
+                template_id = self.env['ir.model.data'].xmlid_to_res_id(
+                    'custom_print_report.mail_template_sale_confirmation_inh', raise_if_not_found=False)
         if not template_id:
-            template_id = self.env['ir.model.data'].xmlid_to_res_id('sale.email_template_edi_sale', raise_if_not_found=False)
+            template_id = self.env['ir.model.data'].xmlid_to_res_id(
+                'sale.email_template_edi_sale', raise_if_not_found=False)
             if self.is_printing_inv:
-                template = self.env['mail.template'].search([('name', '=', 'Sales Order 3D Printing Service')], limit=1)
+                template = self.env['mail.template'].search(
+                    [('name', '=', 'Sales Order 3D Printing Service')], limit=1)
                 if template:
                     template_id = template.id
 
@@ -114,10 +185,13 @@ class SaleOrder(models.Model):
         """
         self.ensure_one()
         # ensure a correct context for the _get_default_journal method and company-dependent fields
-        self = self.with_context(default_company_id=self.company_id.id, force_company=self.company_id.id)
-        journal = self.env['account.move'].with_context(default_type='out_invoice')._get_default_journal()
+        self = self.with_context(
+            default_company_id=self.company_id.id, force_company=self.company_id.id)
+        journal = self.env['account.move'].with_context(
+            default_type='out_invoice')._get_default_journal()
         if not journal:
-            raise UserError(_('Please define an accounting sales journal for the company %s (%s).') % (self.company_id.name, self.company_id.id))
+            raise UserError(_('Please define an accounting sales journal for the company %s (%s).') % (
+                self.company_id.name, self.company_id.id))
 
         invoice_vals = {
             'is_printing_inv': self.is_printing_inv,
@@ -143,6 +217,25 @@ class SaleOrder(models.Model):
             'company_id': self.company_id.id,
         }
         return invoice_vals
+
+    def send_template_email(self, template_id, model_desc, cc=''):
+        ctx = {
+            'default_model': 'sale.order',
+            'default_res_id': self.id,
+            'default_use_template': bool(template_id),
+            'default_template_id': template_id,
+            'default_composition_mode': 'comment',
+            'mark_so_as_sent': True,
+            'custom_layout': "mail.mail_notification_paynow",
+            'force_email': True,
+            'model_description': model_desc,
+            'default_partner_ids': [(6, 0, [self.partner_id.id])]
+        }
+        compose_record = self.env['mail.compose.message'].sudo(
+        ).with_context(ctx).create({})
+        if compose_record and compose_record.template_id:
+            compose_record.onchange_template_id_wrapper()
+        compose_record.action_send_mail()
 
 
 class SaleAdvancePaymentInv(models.TransientModel):
@@ -182,3 +275,14 @@ class SaleAdvancePaymentInv(models.TransientModel):
         }
 
         return invoice_vals
+
+
+class ProductTemplate(models.Model):
+
+    _inherit = 'product.template'
+
+    def _get_combination_info(self, combination=False, product_id=False, add_qty=1, pricelist=False, parent_combination=False, only_template=False):
+        combination_info = super(ProductTemplate, self)._get_combination_info(
+            combination=combination, product_id=product_id, add_qty=add_qty, pricelist=pricelist,
+            parent_combination=parent_combination, only_template=only_template)
+        return combination_info

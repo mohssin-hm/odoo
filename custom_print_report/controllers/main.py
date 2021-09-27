@@ -30,7 +30,33 @@ from datetime import date
 from odoo import fields, http, _
 from odoo.exceptions import AccessError, MissingError
 from odoo.addons.portal.controllers.mail import _message_post_helper
+from odoo.addons.auth_signup.controllers.main import AuthSignupHome
+from odoo.addons.website_sale.controllers.main import WebsiteSale
+from odoo.exceptions import UserError
 from odoo.osv import expression
+
+
+class WebsiteSale(WebsiteSale):
+
+    @http.route('/confirm_order_from_quotation', type='http', auth="public", website=True)
+    def send_email_quote(self, **kw):
+        order = request.website.sale_get_order().sudo()
+        if order:
+            order.action_confirm()
+            payment_term = request.env.ref('account.account_payment_term_15days').id
+            order.write({'payment_term_id': payment_term})
+            template_id = order._find_mail_template()
+            model_desc = 'Sales Order'
+            if order.state in ['draft', 'sent']:
+                model_desc = 'Quotation'
+            else:
+                model_desc = 'Sales Order'
+            admin_user = request.env.ref('base.user_root').sudo()
+            order.with_user(admin_user).send_template_email(template_id, model_desc)
+            if order.state == 'draft':
+                order.write({'state': 'sent'})
+
+        return request.redirect("/shop")
 
 
 class SalePortalInh2(CustomerPortal1):
@@ -112,9 +138,11 @@ class SalePortalInh2(CustomerPortal1):
     @http.route(['/my/orders/<int:order_id>/accept'], type='json', auth="public", website=True)
     def portal_quote_accept(self, order_id, access_token=None, name=None, signature=None):
         # get from query string if not on json param
-        access_token = access_token or request.httprequest.args.get('access_token')
+        access_token = access_token or request.httprequest.args.get(
+            'access_token')
         try:
-            order_sudo = self._document_check_access('sale.order', order_id, access_token=access_token)
+            order_sudo = self._document_check_access(
+                'sale.order', order_id, access_token=access_token)
         except (AccessError, MissingError):
             return {'error': _('Invalid order.')}
 
@@ -140,7 +168,8 @@ class SalePortalInh2(CustomerPortal1):
         report_reff = 'sale.action_report_saleorder'
         if order_sudo and order_sudo.is_printing_inv:
             report_reff = 'studio_customization.quotation_order_3cf1c2b5-61cb-44b4-8220-9e13eaa5b037'
-        pdf = request.env.ref(report_reff).sudo().render_qweb_pdf([order_sudo.id])[0]
+        pdf = request.env.ref(report_reff).sudo(
+        ).render_qweb_pdf([order_sudo.id])[0]
 
         _message_post_helper(
             'sale.order', order_sudo.id, _('Order signed by %s') % (name,),
@@ -161,7 +190,8 @@ class InvoicePortalInh2(CustomerPortal2):
     @http.route(['/my/invoices/<int:invoice_id>'], type='http', auth="public", website=True)
     def portal_my_invoice_detail(self, invoice_id, access_token=None, report_type=None, download=False, **kw):
         try:
-            invoice_sudo = self._document_check_access('account.move', invoice_id, access_token)
+            invoice_sudo = self._document_check_access(
+                'account.move', invoice_id, access_token)
         except (AccessError, MissingError):
             return request.redirect('/my')
 
@@ -171,10 +201,32 @@ class InvoicePortalInh2(CustomerPortal2):
                 report_reff = 'studio_customization.invoices_cca33eed-c2c1-4d60-92fc-5a4e47df1710'
             return self._show_report(model=invoice_sudo, report_type=report_type, report_ref=report_reff, download=download)
 
-        values = self._invoice_get_page_view_values(invoice_sudo, access_token, **kw)
+        values = self._invoice_get_page_view_values(
+            invoice_sudo, access_token, **kw)
         acquirers = values.get('acquirers')
         if acquirers:
-            country_id = values.get('partner_id') and values.get('partner_id')[0].country_id.id
-            values['acq_extra_fees'] = acquirers.get_acquirer_extra_fees(invoice_sudo.amount_residual, invoice_sudo.currency_id, country_id)
+            country_id = values.get('partner_id') and values.get(
+                'partner_id')[0].country_id.id
+            values['acq_extra_fees'] = acquirers.get_acquirer_extra_fees(
+                invoice_sudo.amount_residual, invoice_sudo.currency_id, country_id)
 
         return request.render("account.portal_invoice_page", values)
+
+
+class AuthSignupHomeInh(AuthSignupHome):
+
+    def do_signup(self, qcontext):
+        """ Shared helper that creates a res.partner out of a token """
+        values = {key: qcontext.get(key)
+                  for key in ('login', 'name', 'password', 'vat')}
+        if not values:
+            raise UserError(_("The form was not properly filled in."))
+        if values.get('password') != qcontext.get('confirm_password'):
+            raise UserError(_("Passwords do not match; please retype them."))
+        supported_lang_codes = [code for code,
+                                _ in request.env['res.lang'].get_installed()]
+        lang = request.context.get('lang', '').split('_')[0]
+        if lang in supported_lang_codes:
+            values['lang'] = lang
+        self._signup_with_values(qcontext.get('token'), values)
+        request.env.cr.commit()

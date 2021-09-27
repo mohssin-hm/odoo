@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+    <template inherit_id="website_sale.product" id="inh_product">
+        <xpath expr="//a[@id='add_to_cart']" position="after">
+            <br/><br/>
+            <!-- >>>>>> <t t-esc="combination_info"/> -->
+            <table class='table table-sm table-hover table-striped'>
+                <tr>
+                    <th>
+                        Qauntity
+                    </th>
+                    <th>
+                        Price
+                    </th>
+                </tr>
+                <div class="discount_table_area">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </div>
+            </table>
+        </xpath>
+    </template>
+
+    <template inherit_id="website_sale_delivery.cart_delivery" id="inh_cart_delivery">
+        <xpath expr="//tr[@id='order_delivery']/td[1]" position="attributes">
+            <attribute name="class">text-right border-0</attribute>
+        </xpath>
+    </template>
+
+    <template inherit_id="payment.payment_tokens_list" id="inh_payment_tokens_list">
+        <xpath expr="//div[hasclass('card')]" position="attributes">
+            <attribute name="style">text-align:left !important;</attribute>
+        </xpath>
+    </template>
+
     <template id="sale.sale_order_portal_content" name="Sales Order Portal Content">
         <!-- Intro -->
         <div id="introduction" t-attf-class="pb-2 pt-3 #{'card-header bg-white' if report_type == 'html' else ''}">
@@ -249,5 +284,113 @@
                 <a class="btn btn-primary mb-1 pt-1" href="/helpdesk/evo-tech-support-1/submit">Create Ticket</a>
             </center>
         </xpath>
+    </template>
+
+    <template id="website_sale.payment" name="Payment">
+        <t t-call="website.layout">
+            <t t-set="additional_title">Shop - Select Payment Acquirer</t>
+            <t t-set="no_footer">1</t>
+            <style>
+                @media (min-width: 1200px){
+                    .oe_website_sale .toggle_summary_div{
+                        max-width:100%;
+                    }
+                }
+            </style>
+            <div id="wrap">
+                <div class="container oe_website_sale py-2">
+                    <div class="row">
+                        <div class='col-12'>
+                            <t t-call="website_sale.wizard_checkout">
+                                <t t-set="step" t-value="40" />
+                            </t>
+                        </div>
+                        <div class="col-12" t-if="errors">
+                            <t t-foreach="errors" t-as="error">
+                                <div class="alert alert-danger" t-if="error" role="alert">
+                                    <h4>
+                                        <t t-esc="error[0]" />
+                                    </h4>
+                                    <t t-esc="error[1]" />
+                                </div>
+                            </t>
+                        </div>
+                        <div class="col-12 col-xl order-xl-2">
+                            <t t-call="website_sale.cart_summary"/>
+                        </div>
+                        <div class="col-12 col-xl-auto order-xl-1 oe_cart">
+                            <div class="card">
+                                <div class="card-body" id="shipping_and_billing">
+                                    <a class='float-right no-decoration' href='/shop/checkout'><i class="fa fa-edit"/> Edit</a>
+                                    <t t-set="same_shipping" t-value="bool(order.partner_shipping_id==order.partner_id or only_services)" />
+                                    <div><b>Billing<t t-if="same_shipping and not only_services"> &amp; Shipping</t>: </b><span t-esc='order.partner_id' t-options="dict(widget='contact', fields=['address'], no_marker=True, separator=', ')" class="address-inline"/></div>
+                                    <div t-if="not same_shipping and not only_services" groups="sale.group_delivery_invoice_address"><b>Shipping: </b><span t-esc='order.partner_shipping_id' t-options="dict(widget='contact', fields=['address'], no_marker=True, separator=', ')"  class="address-inline"/></div>
+                                </div>
+                            </div>
+
+                            <div class="oe_structure clearfix mt-3" id="oe_structure_website_sale_payment_1"/>
+
+                            <div id="payment_method" class="mt-3" t-if="(acquirers or tokens) and website_sale_order.amount_total">
+                                <h3 class="mb24">Pay with </h3>
+                                <t t-call="payment.payment_tokens_list">
+                                    <t t-set="mode" t-value="'payment'"/>
+                                    <t t-set="submit_txt">Pay Now</t>
+                                    <t t-set="icon_right" t-value="1"/>
+                                    <t t-set="icon_class" t-value="'fa-chevron-right'"/>
+                                    <t t-set="submit_class" t-value="'btn btn-primary'"/>
+                                    <t t-set="pms" t-value="tokens"/>
+                                    <t t-set="form_action" t-value="'/shop/payment/token'"/>
+                                    <t t-set="prepare_tx_url" t-value="'/shop/payment/transaction/'"/>
+                                    <t t-set="partner_id" t-value="partner"/>
+
+                                    <t t-set="back_button_icon_class" t-value="'fa-chevron-left'"/>
+                                    <t t-set="back_button_txt">Return to Cart</t>
+                                    <t t-set="back_button_class" t-value="'btn btn-secondary'"/>
+                                    <t t-set="back_button_link" t-value="'/shop/cart'"/>
+                                </t>
+
+                                <div style="text-align:center;margin-top:-35px;">
+                                    <a href="/confirm_order_from_quotation" class="btn btn-primary">
+                                        <t t-if="order.state == 'draft'">
+                                            Confirm Order
+                                        </t>
+                                        <!-- <t t-if="order.state == 'sent'">
+                                            Resend-Email Quote
+                                        </t>
+                                        <t t-if="order.state in ['sale', 'done']">
+                                            Email SalesOrder
+                                        </t> -->
+                                    </a>
+                                </div>
+
+
+                            </div>
+
+                            <div t-if="not acquirers" class="mt-2">
+                                <a role="button" class="btn-link"
+                                    groups="base.group_system"
+                                    t-attf-href="/web#action=#{payment_action_id}">
+                                        <i class="fa fa-arrow-right"></i> Add payment acquirers
+                                </a>
+                            </div>
+                            <div class="js_payment mt-3" t-if="not website_sale_order.amount_total" id="payment_method">
+                                <form target="_self" action="/shop/payment/validate" method="post" class="float-right">
+                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                                    <a role="button" class="btn btn-primary a-submit" href="#">
+                                        <span t-if="order.amount_total &gt; 0">Pay Now <span class="fa fa-chevron-right"></span></span>
+                                        <span t-if="order.amount_total == 0">Confirm Order <span class="fa fa-chevron-right"></span></span>
+                                    </a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order Confirmation Note: -->
+                <small style="color:red;">*Confirm Order: By click on button "Confirm Order", your quotation become order with your confirmation with payment term as: 15 Days Net after receiving the invoice</small>
+
+                <div class="oe_structure" id="oe_structure_website_sale_payment_2"/>
+            </div>
+        </t>
     </template>
 </odoo>
