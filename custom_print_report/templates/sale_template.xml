@@ -1,31 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template inherit_id="website_sale.product" id="inh_product">
-        <xpath expr="//a[@id='add_to_cart']" position="after">
-            <br/><br/>
-            <!-- >>>>>> <t t-esc="combination_info"/> -->
-            <table class='table table-sm table-hover table-striped'>
-                <tr>
-                    <th>
-                        Qauntity
-                    </th>
-                    <th>
-                        Price
-                    </th>
-                </tr>
-                <div class="discount_table_area">
-                    <tr>
-                        <td></td>
-                        <td></td>
-                    </tr>
+    <template id="product_price_discount_details">
+        <div id="pricelist_discounts">
+            <t t-set="current_pricelist" t-value="website.get_current_pricelist()"/>
+            <div t-if="items">
+                <h6>Discount Details</h6>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-sm">
+                        <tr>
+                            <th>Quantity</th>
+                            <th>Price Per Unit</th>
+                            <th>Total Price</th>
+                        </tr>
+                        <t t-foreach="items" t-as="item">
+                            <tr>
+                                <t t-set="qtys" t-value="[item] * len(product_variant)"/>
+                                <t t-set="partners" t-value="[request.env.user.partner_id] * len(product_variant)"/>
+                                <t t-set="price_product" t-value="current_pricelist.get_products_price(product_variant,qtys, partners)"/>
+                               <td>
+                                    <t t-esc="item if item &gt; 0 else 1"/>
+                                </td>
+                                <td>
+                                    <t t-esc="price_product.get(product_variant.id)" t-options="{'widget': 'monetary','display_currency': current_pricelist.currency_id,}"/>
+                                </td>
+                                <td>
+                                    <t t-esc="price_product.get(product_variant.id) * (item if item &gt; 0 else 1)" t-options="{'widget': 'monetary','display_currency': current_pricelist.currency_id,}"/>
+                                </td>
+                            </tr>
+                        </t>
+                    </table>
                 </div>
-            </table>
+            </div>
+        </div>
+    </template>
+
+    <template id="pricelist_details_product_page" inherit_id="website_sale.product"
+              name="Price Discount details in product detail page" priority="10">
+        <xpath expr="//a[@id='add_to_cart']" position="before">
+            <div id="product_details_ept" class="my-3">
+                <t t-call="custom_print_report.product_price_discount_details"/>
+            </div>
         </xpath>
     </template>
 
     <template inherit_id="website_sale_delivery.cart_delivery" id="inh_cart_delivery">
         <xpath expr="//tr[@id='order_delivery']/td[1]" position="attributes">
             <attribute name="class">text-right border-0</attribute>
+        </xpath>
+        <xpath expr="//tr[@id='order_delivery']/td[2]" position="attributes">
+            <attribute name="class">text-xl-right border-0</attribute>
         </xpath>
     </template>
 

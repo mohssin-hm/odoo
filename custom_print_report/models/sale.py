@@ -285,4 +285,35 @@ class ProductTemplate(models.Model):
         combination_info = super(ProductTemplate, self)._get_combination_info(
             combination=combination, product_id=product_id, add_qty=add_qty, pricelist=pricelist,
             parent_combination=parent_combination, only_template=only_template)
+
+        current_website = False
+
+        if self.env.context.get('website_id'):
+            current_website = self.env['website'].get_current_website()
+            if not pricelist:
+                pricelist = current_website.get_current_pricelist()
+
+        current_pricelist = pricelist
+        # product_variant = self.env['product.product'].browse(combination_info['product_id']) or self
+        product_variant = self.env['product.product'].browse(combination_info['product_id'])
+        if not product_variant:
+            product_variant = self.env['product.product'].search([('product_tmpl_id', '=', self.ids[0])], limit=1)
+        var_qty = current_pricelist.item_ids.filtered(lambda r: (r.applied_on == '0_product_variant' and r.product_id == product_variant)).sorted(key=lambda m: m.min_quantity,reverse=False).mapped('min_quantity')
+        pro_qty = current_pricelist.item_ids.filtered(lambda r: (r.applied_on == '1_product' and r.product_tmpl_id == product_variant.product_tmpl_id)).sorted(key=lambda m: m.min_quantity,reverse=False).mapped('min_quantity')
+        item = []
+        glob_qty = current_pricelist.item_ids.filtered(lambda r: (r.applied_on == '3_global')).sorted(key=lambda m: m.min_quantity,reverse=False).mapped('min_quantity')
+        if var_qty:
+            item = var_qty + [x for x in pro_qty if x < var_qty[0]] + [x for x in glob_qty if x < var_qty[0]]
+        elif not var_qty and pro_qty:
+            item = pro_qty + [x for x in glob_qty if x < pro_qty[0]]
+        elif glob_qty and not var_qty and not pro_qty:
+            item = glob_qty
+        item.sort()
+        items = item
+
+        if self.env.ref('custom_print_report.product_price_discount_details', raise_if_not_found=False):
+            combination_info.update(product_details=self.env['ir.ui.view'].render_template('custom_print_report.product_price_discount_details', values={
+                'product_variant': product_variant,
+                'items': items,
+            }))
         return combination_info
