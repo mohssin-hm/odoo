@@ -2,8 +2,8 @@
 <odoo>
     <template id="product_price_discount_details">
         <div id="pricelist_discounts">
-            <t t-set="current_pricelist" t-value="website.get_current_pricelist()"/>
-            <div t-if="items">
+            <t t-if="website and website.get_current_pricelist()" t-set="current_pricelist" t-value="website.get_current_pricelist()"/>
+            <div t-if="items and current_pricelist and product_variant">
                 <h6>Discount Details</h6>
                 <div class="table-responsive">
                     <table class="table table-bordered table-sm">
