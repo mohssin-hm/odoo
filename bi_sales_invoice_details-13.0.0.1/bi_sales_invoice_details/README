@@ -1,0 +1,3 @@
+1) Version: 13.0.0.1 | Date : 18/02/2021
+-->  Fixed the issue of amount_paid_percent field.
+-->  Fixed the issue of Invoiced Amount, Amount Due and Paid Amount is not computed.
