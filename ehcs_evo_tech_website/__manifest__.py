@@ -4,7 +4,7 @@
     "summary": """ Evo-Tech Website. """,
     "author": "ERP Harbor Consulting Services",
     "website": "http://www.erpharbor.com",
-    "version": "13.0.1.0.0",
+    "version": "13.0.1.0.1",
     "category": "Website",
     "depends": [
         "theme_odoo_experts","website","website_cookie_notice",
