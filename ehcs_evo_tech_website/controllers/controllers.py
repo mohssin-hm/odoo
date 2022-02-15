@@ -49,7 +49,13 @@ class ThemSubeMenuOne(http.Controller):
     
     @http.route('/3d-drucker-el-11/', type='http', auth='public', website=True)
     def drucker_submenu_two(self, **kw):
-        return request.render('ehcs_evo_tech_website.theme_menu_drucker_submenu_two', {})
+        """
+        workaround to redirect page to el-28 information instead of ell-11
+        :param kw:
+        :return:
+        """
+        return request.redirect('/el-28')
+
     
     @http.route('/3d-drucker-all-inclusive-leasing/', type='http', auth='public', website=True)
     def drucker_submenu_three(self, **kw):
