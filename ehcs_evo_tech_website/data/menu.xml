@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-		<delete model="website.menu" search="[('id','=', ref('website.menu_home'))]"/>
+
+        <!-- comment the delete function as the menu have been already removed in exisitng database , keeping the function will thorw error 
+        for missing menu xml ID's -->
+		<!-- <delete model="website.menu" search="[('id','=', ref('website.menu_home'))]"/>
 		<delete model="website.menu" search="[('id','=', ref('website.menu_contactus'))]"/>
 		<delete model="website.menu" search="[('id','=', ref('website_event.menu_events'))]"/>
 		<delete model="website.menu" search="[('id','=', ref('website_sale.menu_shop'))]"/>
-		<delete model="website.page" search="[('id','=', ref('website_legal_page.legal_page_page'))]"/>
+		<delete model="website.page" search="[('id','=', ref('website_legal_page.legal_page_page'))]"/> -->
 		 
 		 <record id="menu_contact_us" model="website.menu">
             <field name="name">Kontakt</field>
